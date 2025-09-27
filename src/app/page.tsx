@@ -1,19 +1,25 @@
 import Hero from "../../components/sections/home/hero";
-import Logos from "../../components/sections/home/logos";
-import ServicesCta from "../../components/sections/home/services-cta";
-import Process from "../../components/sections/home/process";
-import Testimonials from "../../components/sections/home/testimonials";
-import Cta from "../../components/sections/home/cta";
+import UltimateAgency from "../../components/sections/home/logos";
+import SmartSolutions from "../../components/sections/home/services-cta";
+import UnfairAdvantage from "../../components/sections/home/process";
+import FeaturedWork from "../../components/sections/home/testimonials";
+import Testimonial from "../../components/sections/home/cardreviews";
+// import NiceThings from "../../components/sections/home/nice-things";
+import BrandPackages from "../../components/sections/home/cta";
+import GetInTouch from "./../../components/sections/home/get-in-touch";
 
 export default function HomePage() {
   return (
     <main>
       <Hero />
-      <Logos />
-      <ServicesCta />
-      <Process />
-      <Testimonials />
-      <Cta />
+      <UltimateAgency />
+      <SmartSolutions />
+      <UnfairAdvantage />
+      <FeaturedWork />
+      <Testimonial />
+      {/* <NiceThings /> */}
+      <BrandPackages />
+      <GetInTouch />
     </main>
   );
 }

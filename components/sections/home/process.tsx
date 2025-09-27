@@ -1,41 +1,53 @@
-const steps = [
-    {
-        k: "01",
-        title: "Diagnose",
-        text: "We audit your market, analytics, and funnel to find leverage points.",
-    },
-    {
-        k: "02",
-        title: "Design",
-        text: "We craft a measurable strategy and a clear roadmap tied to KPIs.",
-    },
-    {
-        k: "03",
-        title: "Deploy",
-        text: "We build pages, content, and campaigns with fast feedback loops.",
-    },
-    {
-        k: "04",
-        title: "Compound",
-        text: "We iterate based on data to unlock compounding growth over time.",
-    },
-];
+import Image from "next/image";
 
-export default function Process() {
+export default function UnfairAdvantage() {
+    const advantages = [
+        { icon: "/icons/expert.png", title: "Industry Experts" },
+        { icon: "/icons/deliverytruck.png", title: "Timely Delivery" },
+        { icon: "/icons/businessgrowth.png", title: "Increase in ROI" },
+        { icon: "/icons/support.png", title: "Dedicated Support" },
+        { icon: "/icons/scale.png", title: "Protective measures", tall: true },
+    ];
+
     return (
-        <section className="px-6 py-20">
-            <div className="mx-auto max-w-6xl">
-                <h2 className="text-3xl md:text-4xl font-bold">A simple process. Serious outcomes.</h2>
-                <p className="mt-2 text-gray-600 max-w-2xl">
-                    Clarity first, then momentum—so you see results sooner and keep improving.
-                </p>
+        <section className="bg-[#EA7BBF] py-16 md:py-24 font-[var(--font-recent-grotesk)]">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
+                {/* LEFT HEADING */}
+                <div>
+                    <h2 className="text-white font-extrabold leading-[0.95] text-[52px] sm:text-[72px] lg:text-[96px]">
+                        Your <br />
+                        Unfair <br />
+                        Advantage
+                    </h2>
+                    <p className="mt-6 text-white font-semibold max-w-md text-base sm:text-lg">
+                        Working with Hypertech Verse is easy. Here’s what you can expect
+                        from a typical branding project
+                    </p>
+                </div>
 
-                <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                    {steps.map((s) => (
-                        <div key={s.k} className="rounded-2xl border p-6">
-                            <div className="text-xs font-mono tracking-widest text-gray-500">{s.k}</div>
-                            <h3 className="mt-2 text-xl font-semibold">{s.title}</h3>
-                            <p className="mt-2 text-sm text-gray-600">{s.text}</p>
+                {/* RIGHT CARDS */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    {advantages.map((adv, i) => (
+                        <div
+                            key={i}
+                            className={`bg-[#EFB300] rounded-xl flex flex-col items-center justify-start text-center p-6 ${adv.tall ? "row-span-2" : ""
+                                }`}
+                        >
+                            {/* Inner white box for icon */}
+                            <div className="bg-white rounded-lg p-4 flex items-center justify-center mb-4 w-full">
+                                <Image
+                                    src={adv.icon}
+                                    alt={adv.title}
+                                    width={80}
+                                    height={80}
+                                    className="mx-auto"
+                                />
+                            </div>
+
+                            {/* Title */}
+                            <h3 className="text-lg sm:text-xl font-extrabold text-white">
+                                {adv.title}
+                            </h3>
                         </div>
                     ))}
                 </div>

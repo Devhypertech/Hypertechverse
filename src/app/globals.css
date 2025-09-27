@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -22,5 +23,27 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* === Marquee utilities (no tailwind.config needed) === */
+@layer utilities {
+  @keyframes marquee-x {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* move by one image width (we render 2 images) */
+  }
+  .animate-marquee-x { animation: marquee-x 11s linear infinite; }
+}
+
+/* Pause on hover (works with the "group" wrapper) */
+.group:hover .marquee-track { animation-play-state: paused; }
+
+@layer utilities {
+  .u-starburst {
+    clip-path: polygon(
+      50% 0%, 63% 9%, 78% 6%, 73% 20%, 85% 30%, 70% 33%,
+      73% 48%, 58% 42%, 50% 56%, 42% 42%, 27% 48%, 30% 33%,
+      15% 30%, 27% 20%, 22% 6%, 37% 9%
+    );
+  }
 }

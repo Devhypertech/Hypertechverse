@@ -1,85 +1,110 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const nav = [
-    { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/about", label: "About" },
-    { href: "/portfolio", label: "Portfolio" },
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/about", label: "About" },
+  { href: "/portfolio", label: "Portfolio" },
 ];
 
 export default function Header() {
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
-    return (
-        <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0b0b0f]/70 backdrop-blur">
-            <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-                {/* Logo */}
-                <Link href="/" className="flex items-center gap-2">
-                    <span className="text-2xl font-extrabold tracking-tight text-white">HTV</span>
-                    <span className="hidden text-sm font-semibold text-white/80 sm:block">
-                        Hypertech <span className="text-white">Verse</span>
-                    </span>
-                </Link>
+  return (
+    <header className="fixed inset-x-0 top-0 z-50">
+      {/* frosted translucent bar */}
+      <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2">
+            <span className="text-3xl font-extrabold leading-none text-white">HTV</span>
+            <span className="hidden text-white/90 font-semibold sm:block">
+              Hypertech <span className="text-white">Verse</span>
+            </span>
+          </Link>
 
-                {/* Desktop nav */}
-                <nav className="hidden items-center gap-8 md:flex">
-                    {nav.map((n) => (
-                        <Link
-                            key={n.href}
-                            href={n.href}
-                            className="text-sm font-medium text-white/80 hover:text-white transition"
-                        >
-                            {n.label}
-                        </Link>
-                    ))}
+          {/* Centered nav (desktop) */}
+          <nav className="hidden md:block">
+            <ul className="flex items-center gap-10">
+              {nav.map((n) => {
+                const active = pathname === n.href || (n.href !== "/" && pathname?.startsWith(n.href));
+                return (
+                  <li key={n.href}>
                     <Link
-                        href="/contact"
-                        className="rounded-xl bg-gradient-to-br from-amber-300 to-orange-400 px-4 py-2 text-sm font-semibold text-black shadow hover:opacity-95 transition"
+                      href={n.href}
+                      className={`text-base font-extrabold tracking-tight transition ${
+                        active ? "text-white" : "text-white/90 hover:text-white"
+                      }`}
                     >
-                        Get started
+                      {n.label}
                     </Link>
-                </nav>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
 
-                {/* Mobile toggle */}
-                <button
-                    aria-label="Menu"
-                    onClick={() => setOpen(!open)}
-                    className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/15 text-white"
+          {/* CTA (desktop) */}
+          <div className="hidden md:block">
+            <Link
+              href="/contact"
+              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-gradient-to-b from-amber-300 to-yellow-400 hover:from-amber-200 hover:to-yellow-300 transition"
+            >
+              Get started
+            </Link>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            aria-label="Menu"
+            onClick={() => setOpen((s) => !s)}
+            className="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/20 text-white"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile sheet */}
+      {open && (
+        <div className="md:hidden bg-black/90 backdrop-blur-xl border-t border-white/10">
+          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
+            <ul className="flex flex-col gap-4">
+              {nav.map((n) => {
+                const active = pathname === n.href || (n.href !== "/" && pathname?.startsWith(n.href));
+                return (
+                  <li key={n.href}>
+                    <Link
+                      href={n.href}
+                      onClick={() => setOpen(false)}
+                      className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
+                        active ? "text-white" : "text-white/90 hover:text-white"
+                      }`}
+                    >
+                      {n.label}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li>
+                <Link
+                  href="/contact"
+                  onClick={() => setOpen(false)}
+                  className="mt-1 block rounded-xl bg-gradient-to-b from-amber-300 to-yellow-400 px-4 py-2 text-center font-semibold text-black shadow"
                 >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" />
-                    </svg>
-                </button>
-            </div>
-
-            {/* Mobile sheet */}
-            {open && (
-                <div className="md:hidden border-t border-white/10 bg-[#0b0b0f]/95">
-                    <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-                        <div className="flex flex-col gap-4">
-                            {nav.map((n) => (
-                                <Link
-                                    key={n.href}
-                                    href={n.href}
-                                    className="text-base font-medium text-white/90"
-                                    onClick={() => setOpen(false)}
-                                >
-                                    {n.label}
-                                </Link>
-                            ))}
-                            <Link
-                                href="/contact"
-                                className="mt-1 rounded-lg bg-gradient-to-br from-amber-300 to-orange-400 px-4 py-2 text-center font-semibold text-black"
-                                onClick={() => setOpen(false)}
-                            >
-                                Get started
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            )}
-        </header>
-    );
+                  Get started
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
+    </header>
+  );
 }

@@ -1,160 +1,150 @@
 import Image from "next/image";
 import Link from "next/link";
 
-/**
- * Replace the images below with your assets in /public/hero/.
- * Example files to add:
- *  - /public/hero/main.jpg
- *  - /public/hero/appicons.jpg
- *  - /public/hero/pattern.jpg
- *  - /public/hero/mobileui.jpg
- *  - /public/hero/gallery.jpg
- */
-const imgs = {
-    main: "/hero/main.png",
-    appicons: "/hero/appicons.pmg",
-    pattern: "/hero/pattern.png",
-    mobileui: "/hero/mobileui.png",
-    gallery: "/hero/gallery.png",
-};
-
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden bg-[#0b0b0f] pt-24 text-white">
-            {/* subtle vignette */}
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_40%_at_70%_0%,rgba(255,255,255,0.12),transparent_60%)]" />
-
-            <div className="relative mx-auto max-w-7xl px-4 pb-8 sm:px-6 lg:px-8">
+        <section className="relative overflow-hidden bg-black text-white">
+            <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
                 <div className="grid items-center gap-10 lg:grid-cols-2">
                     {/* Left copy */}
                     <div>
-                        <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl">
-                            Transforming Ideas
-                            <br />
-                            Into <span className="text-pink-300">Digital Success</span>
+                        <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl" style={{ fontFamily: 'Inter, sans-serif' }}>
+                            Transforming Ideas <br />Into
+
+                            <span className="text-[#EA7BBF]"> Digital Success</span>
                         </h1>
-                        <p className="mt-5 max-w-xl text-base text-white/70 sm:text-lg">
-                            We bring one-stop solutions to your queries under one platform—your
-                            dedicated digital marketing agency. As a cohesive team, we strengthen your brand with
+                        <p className="mt-5 max-w-xl text-lg text-white/80" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            We bring one-stop solution to all your queries under one platform, serving as your
+                            sole digital marketing agency. As a cohesive team, we strengthen your brand with
                             innovation at its heart.
                         </p>
 
-                        <div className="mt-8 flex flex-wrap items-center gap-3">
+                        <div className="mt-8 flex flex-wrap items-center gap-4">
                             <Link
                                 href="/portfolio"
-                                className="rounded-xl bg-gradient-to-br from-amber-300 to-orange-400 px-5 py-3 font-semibold text-black shadow hover:opacity-95 transition"
+                                className="rounded-lg bg-[#FFD350] px-6 py-3 font-semibold text-black hover:bg-[#e6bf30] transition"
                             >
                                 See our work
                             </Link>
                             <Link
                                 href="/contact"
-                                className="rounded-xl border border-white/20 px-5 py-3 font-semibold text-white hover:bg-white/10 transition"
+                                className="rounded-lg border border-white px-6 py-3 font-semibold text-white hover:bg-white hover:text-black transition"
                             >
                                 Get started
                             </Link>
                         </div>
 
-                        <p className="mt-4 text-sm text-white/60">
+                        <p className="mt-4 text-sm text-white/60" style={{ fontFamily: 'Poppins, sans-serif' }}>
                             SEO · Branding · Web/App · Social · Content · Analytics
                         </p>
                     </div>
 
-                    {/* Right mosaic */}
+                    {/* Right image gallery - 6 images in proper layout */}
                     <div className="relative">
                         <div className="grid grid-cols-2 gap-4">
-                            {/* Tall right stack */}
-                            <div className="space-y-4">
-                                <div className="rounded-3xl bg-white/5 p-1 shadow-xl ring-1 ring-white/10">
-                                    <div className="overflow-hidden rounded-[22px]">
-                                        <Image
-                                            src={imgs.pattern}
-                                            alt="Pattern"
-                                            width={720}
-                                            height={900}
-                                            className="h-40 w-full object-cover md:h-56"
-                                            priority
-                                        />
-                                    </div>
+                            {/* Left column */}
+                            <div className="space-y-2">
+                                <div className="rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="/hero/main.png"
+                                        alt="Street scene with yellow car and neon signs"
+                                        width={300}
+                                        height={400}
+                                        className="h-48 w-full object-cover"
+                                        priority
+                                    />
                                 </div>
-                                <div className="rounded-3xl bg-white/5 p-1 shadow-xl ring-1 ring-white/10">
-                                    <div className="overflow-hidden rounded-[22px]">
-                                        <Image
-                                            src={imgs.mobileui}
-                                            alt="Mobile-first UI"
-                                            width={720}
-                                            height={900}
-                                            className="h-56 w-full object-cover md:h-72"
-                                        />
-                                    </div>
+                                <div className="rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="/hero/applications.png"
+                                        alt="App icons on sandy background"
+                                        width={300}
+                                        height={400}
+                                        className="h-48 w-full object-cover"
+                                    />
+                                </div>
+                                <div className="rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="/hero/mobileui.png"
+                                        alt="Mobile phone interface"
+                                        width={300}
+                                        height={1200}
+                                        className="h-86 w-full object-cover"
+                                    />
                                 </div>
                             </div>
 
-                            {/* Main focal + small tiles */}
-                            <div className="space-y-4">
-                                <div className="rounded-3xl bg-white/5 p-1 shadow-xl ring-1 ring-white/10">
-                                    <div className="overflow-hidden rounded-[22px]">
-                                        <Image
-                                            src={imgs.main}
-                                            alt="Case study visual"
-                                            width={900}
-                                            height={900}
-                                            className="h-56 w-full object-cover md:h-72"
-                                        />
-                                    </div>
+                            {/* Right column */}
+                            <div className="space-y-2">
+                                <div className="rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="/hero/pattern.png"
+                                        alt="Pattern background"
+                                        width={300}
+                                        height={400}
+                                        className="h-46 w-full object-cover"
+                                    />
                                 </div>
-
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div className="rounded-3xl bg-white/5 p-1 shadow-xl ring-1 ring-white/10">
-                                        <div className="overflow-hidden rounded-[22px]">
-                                            <Image
-                                                src={imgs.appicons}
-                                                alt="App icons"
-                                                width={600}
-                                                height={600}
-                                                className="h-32 w-full object-cover md:h-36"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="rounded-3xl bg-white/5 p-1 shadow-xl ring-1 ring-white/10">
-                                        <div className="overflow-hidden rounded-[22px]">
-                                            <Image
-                                                src={imgs.gallery}
-                                                alt="Gallery"
-                                                width={600}
-                                                height={600}
-                                                className="h-32 w-full object-cover md:h-36"
-                                            />
-                                        </div>
-                                    </div>
+                                <div className="rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="/hero/gallery.png"
+                                        alt="Gallery image"
+                                        width={300}
+                                        height={600}
+                                        className="h-58 w-full object-cover"
+                                    />
+                                </div>
+                                <div className="rounded-2xl overflow-hidden">
+                                    <Image
+                                        src="/hero/centermob.png"
+                                        alt="Center mobile image"
+                                        width={300}
+                                        height={700}
+                                        className="h-72 w-full object-cover"
+                                    />
                                 </div>
                             </div>
                         </div>
-
-                        {/* decorative soft squares */}
-                        <div className="pointer-events-none absolute -left-6 -bottom-6 hidden h-24 w-24 rounded-3xl bg-white/5 md:block" />
-                        <div className="pointer-events-none absolute -right-6 -top-6 hidden h-24 w-24 rounded-3xl bg-white/5 md:block" />
                     </div>
                 </div>
             </div>
 
             {/* Pink ribbon bar */}
-            <div className="bg-pink-300 text-black">
-                <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-4 text-sm sm:grid-cols-3 sm:px-6 lg:px-8">
-                    <div className="flex items-start gap-2">
-                        <span className="text-xl">😋</span>
-                        <p className="leading-snug">
+            <div className="bg-[#EA7BBF] text-black">
+                <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 py-6 text-base sm:grid-cols-3 sm:px-6 lg:px-8">
+                    <div className="flex items-start gap-3">
+                        <Image
+                            src="/icons/smie.png"
+                            alt="Smile icon"
+                            width={52}
+                            height={32}
+                            className="w-12 h-12"
+                        />
+                        <p className="leading-snug font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
                             Make your customers hungry for more with a flavour-focused brand
                         </p>
                     </div>
-                    <div className="flex items-start gap-2">
-                        <span className="text-xl">📦</span>
-                        <p className="leading-snug">
-                            Our brand packages have the recipe to get results fast
+                    <div className="flex items-start gap-3">
+                        <Image
+                            src="/icons/opros.png"
+                            alt="Opinion icon"
+                            width={52}
+                            height={32}
+                            className="w-12 h-12"
+                        />
+                        <p className="leading-snug font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            Our brand packages have the recipe to get you the results you need, fast
                         </p>
                     </div>
-                    <div className="flex items-start gap-2">
-                        <span className="text-xl">⚠️</span>
-                        <p className="leading-snug">
+                    <div className="flex items-start gap-3">
+                        <Image
+                            src="/icons/book.png"
+                            alt="Book icon"
+                            width={52}
+                            height={32}
+                            className="w-12 h-12"
+                        />
+                        <p className="leading-snug font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
                             Establish a captivating web presence and grow your audience
                         </p>
                     </div>
