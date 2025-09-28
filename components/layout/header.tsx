@@ -15,14 +15,14 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header className="fixed inset-x-0 top-0 z-50 animate-fade-in-up">
       {/* frosted translucent bar */}
-      <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
+      <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)] hover-glow">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-3xl font-extrabold leading-none text-white">HTV</span>
-            <span className="hidden text-white/90 font-semibold sm:block">
+          <Link href="/" className="flex items-center gap-2 hover-scale group">
+            <span className="text-3xl font-extrabold leading-none text-white font-recent-grotesk text-shimmer group-hover:animate-wiggle">HTV</span>
+            <span className="hidden text-white/90 font-semibold sm:block group-hover:text-white transition-colors">
               Hypertech <span className="text-white">Verse</span>
             </span>
           </Link>
@@ -30,13 +30,13 @@ export default function Header() {
           {/* Centered nav (desktop) */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-10">
-              {nav.map((n) => {
+              {nav.map((n, index) => {
                 const active = pathname === n.href || (n.href !== "/" && pathname?.startsWith(n.href));
                 return (
-                  <li key={n.href}>
+                  <li key={n.href} className={`animate-fade-in-up stagger-${index + 1}`}>
                     <Link
                       href={n.href}
-                      className={`text-base font-extrabold tracking-tight transition ${
+                      className={`text-base font-extrabold tracking-tight transition-all duration-300 hover-scale hover-glow ${
                         active ? "text-white" : "text-white/90 hover:text-white"
                       }`}
                     >
@@ -49,10 +49,10 @@ export default function Header() {
           </nav>
 
           {/* CTA (desktop) */}
-          <div className="hidden md:block">
+          <div className="hidden md:block animate-fade-in-right">
             <Link
               href="/contact"
-              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-gradient-to-b from-amber-300 to-yellow-400 hover:from-amber-200 hover:to-yellow-300 transition"
+              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake"
             >
               Get started
             </Link>
