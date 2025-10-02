@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 animate-fade-in-up">
       {/* frosted translucent bar */}
-      <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)] hover-glow">
+      <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 hover-scale group">
@@ -36,9 +36,8 @@ export default function Header() {
                   <li key={n.href} className={`animate-fade-in-up stagger-${index + 1}`}>
                     <Link
                       href={n.href}
-                      className={`text-base font-extrabold tracking-tight transition-all duration-300 hover-scale hover-glow ${
-                        active ? "text-white" : "text-white/90 hover:text-white"
-                      }`}
+                      className={`text-base font-extrabold tracking-tight transition-all duration-300 hover-scale hover-glow ${active ? "text-white" : "text-white/90 hover:text-white"
+                        }`}
                     >
                       {n.label}
                     </Link>
@@ -52,7 +51,7 @@ export default function Header() {
           <div className="hidden md:block animate-fade-in-right">
             <Link
               href="/contact"
-              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake"
+              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300 hover-scale hover-lift hover-shake"
             >
               Get started
             </Link>
@@ -83,9 +82,8 @@ export default function Header() {
                     <Link
                       href={n.href}
                       onClick={() => setOpen(false)}
-                      className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
-                        active ? "text-white" : "text-white/90 hover:text-white"
-                      }`}
+                      className={`block rounded-md px-1 py-1 text-base font-semibold transition ${active ? "text-white" : "text-white/90 hover:text-white"
+                        }`}
                     >
                       {n.label}
                     </Link>

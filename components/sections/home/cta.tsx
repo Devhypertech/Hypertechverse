@@ -95,7 +95,7 @@ export default function BrandPackages() {
                     {packages.map((pkg, i) => (
                         <article
                             key={i}
-                            className={`relative overflow-hidden rounded-xl border border-black bg-white shadow-[0_6px_0_rgba(0,0,0,0.3)] hover-lift hover-glow animate-fade-in-up stagger-${i + 3} group`}
+                            className={`relative overflow-hidden rounded-xl border border-black bg-white shadow-[0_6px_0_rgba(0,0,0,0.3)] hover-lift hover-glow animate-fade-in-up stagger-${i + 3} group flex flex-col h-full`}
                         >
                             {/* Artwork + starburst badge */}
                             <div className="relative flex h-48 w-full items-center justify-center p-6 group-hover:animate-float">
@@ -127,8 +127,8 @@ export default function BrandPackages() {
                                 <div className="mb-4 h-[4px] rounded-full bg-black group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300"></div>
                             </div>
 
-                            {/* Features */}
-                            <ul className="space-y-2 px-8 pb-6 text-sm text-black/90">
+                            {/* Features - flex-grow to push button to bottom */}
+                            <ul className="space-y-2 px-8 pb-6 text-sm text-black/90 flex-grow">
                                 {pkg.features.map((f, idx) => (
                                     <li key={idx} className="flex items-center group-hover:translate-x-2 transition-transform duration-300" style={{ transitionDelay: `${idx * 50}ms` }}>
                                         <svg className="mr-3 h-4 w-4 flex-shrink-0 text-black group-hover:text-green-500 group-hover:animate-bounce-slow transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">
@@ -139,8 +139,8 @@ export default function BrandPackages() {
                                 ))}
                             </ul>
 
-                            {/* Footer */}
-                            <div className="border-t border-black/10 bg-white p-4">
+                            {/* Footer - pushed to bottom */}
+                            <div className="border-t border-black/10 bg-white p-4 mt-auto">
                                 <button className="w-full rounded-md bg-white border border-black py-3 text-sm font-semibold text-black transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600 hover-shake">
                                     Buy Now
                                 </button>
