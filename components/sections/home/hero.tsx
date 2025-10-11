@@ -79,7 +79,7 @@ export default function Hero() {
                                                 alt="Mobile phone interface"
                                                 width={300}
                                                 height={1200}
-                                                className="h-86 w-full object-cover"
+                                                className="h-80 w-full object-cover"
                                             />
                                         </div>
                                     </ScrollAnimation>
@@ -94,21 +94,22 @@ export default function Hero() {
                                                 alt="Pattern background"
                                                 width={300}
                                                 height={400}
-                                                className="h-46 w-full object-cover"
+                                                className="h-44 w-full object-cover"
                                             />
                                         </div>
                                     </ScrollAnimation>
-                                    <ScrollAnimation animation="fadeInUp" delay={900}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/gallery.png"
-                                                alt="Gallery image"
-                                                width={300}
-                                                height={600}
-                                                className="h-58 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/galleryy.png"
+                                            alt="Gallery image"
+                                            width={300}
+                                            height={600}
+                                            className="h-56 w-full object-cover"
+                                            style={{ minHeight: '14rem' }}
+                                            onError={(e) => console.error('Gallery image failed to load:', e)}
+                                            onLoad={() => console.log('Gallery image loaded successfully')}
+                                        />
+                                    </div>
                                     <ScrollAnimation animation="fadeInUp" delay={1100}>
                                         <div className="rounded-2xl overflow-hidden">
                                             <Image
@@ -116,7 +117,7 @@ export default function Hero() {
                                                 alt="Center mobile image"
                                                 width={300}
                                                 height={700}
-                                                className="h-72 w-full object-cover"
+                                                className="h-64 w-full object-cover"
                                             />
                                         </div>
                                     </ScrollAnimation>

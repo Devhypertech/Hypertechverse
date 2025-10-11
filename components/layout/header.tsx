@@ -4,7 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const nav = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Work" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/portfolio", label: "Portfolio" },
@@ -15,14 +15,14 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 animate-fade-in-up">
+    <header className="fixed inset-x-0 top-0 z-50">
       {/* frosted translucent bar */}
       <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 hover-scale group">
-            <span className="text-3xl font-extrabold leading-none text-white font-recent-grotesk text-shimmer group-hover:animate-wiggle">HTV</span>
-            <span className="hidden text-white/90 font-semibold sm:block group-hover:text-white transition-colors">
+          <Link href="/" className="flex items-center gap-2">
+            <span className="text-3xl font-extrabold leading-none text-white">HTV</span>
+            <span className="hidden text-white/90 font-semibold sm:block">
               Hypertech <span className="text-white">Verse</span>
             </span>
           </Link>
@@ -30,14 +30,15 @@ export default function Header() {
           {/* Centered nav (desktop) */}
           <nav className="hidden md:block">
             <ul className="flex items-center gap-10">
-              {nav.map((n, index) => {
+              {nav.map((n) => {
                 const active = pathname === n.href || (n.href !== "/" && pathname?.startsWith(n.href));
                 return (
-                  <li key={n.href} className={`animate-fade-in-up stagger-${index + 1}`}>
+                  <li key={n.href}>
                     <Link
                       href={n.href}
-                      className={`text-base font-extrabold tracking-tight transition-all duration-300 hover-scale hover-glow ${active ? "text-white" : "text-white/90 hover:text-white"
-                        }`}
+                      className={`text-base font-extrabold tracking-tight transition-all duration-300 ${
+                        active ? "text-white" : "text-white/90 hover:text-white"
+                      }`}
                     >
                       {n.label}
                     </Link>
@@ -48,10 +49,10 @@ export default function Header() {
           </nav>
 
           {/* CTA (desktop) */}
-          <div className="hidden md:block animate-fade-in-right">
+          <div className="hidden md:block">
             <Link
               href="/contact"
-              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300 hover-scale hover-lift hover-shake"
+              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300"
             >
               Get started
             </Link>
@@ -82,8 +83,9 @@ export default function Header() {
                     <Link
                       href={n.href}
                       onClick={() => setOpen(false)}
-                      className={`block rounded-md px-1 py-1 text-base font-semibold transition ${active ? "text-white" : "text-white/90 hover:text-white"
-                        }`}
+                      className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
+                        active ? "text-white" : "text-white/90 hover:text-white"
+                      }`}
                     >
                       {n.label}
                     </Link>
