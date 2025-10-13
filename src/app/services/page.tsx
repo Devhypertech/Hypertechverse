@@ -1,7 +1,8 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 import ServiceHero from "../../../components/sections/services/service-hero";
 import ServicesCTA from "../../../components/sections/services/services-cta";
 import WhyChooseUs from "../../../components/sections/services/why-choose-us";
@@ -56,7 +57,7 @@ const ITEMS = [
 
 
 
-function ServiceCard({ item, idx }: { item: any; idx: number }) {
+function ServiceCard({ item, idx }: { item: { title: string; color: string; icon: string; text: string }; idx: number }) {
     return (
         <div className={`card ${idx === 0 ? 'one' : idx === 1 ? 'two' : idx === 2 ? 'three' : idx === 3 ? 'four' : idx === 4 ? 'five' : idx === 5 ? 'six' : 'seven'}`}>
             <div className="step-box">
@@ -71,11 +72,13 @@ function ServiceCard({ item, idx }: { item: any; idx: number }) {
                         </p>
                     </div>
                     <div className="step-image">
-                        <img
+                        <Image
                             src={item.icon}
                             alt={item.title}
+                            width={200}
+                            height={200}
                             className="w-full h-auto object-contain"
-                            loading={idx < 2 ? "eager" : "lazy"}
+                            priority={idx < 2}
                         />
                             </div>
                         </div>
@@ -85,15 +88,16 @@ function ServiceCard({ item, idx }: { item: any; idx: number }) {
 }
 
 export default function ServicesPage() {
-    const scrollerRef = useRef<HTMLDivElement | null>(null);
-
     useEffect(() => {
+        // Only run GSAP animations on the client side
+        if (typeof window === 'undefined') return;
+
         // Clean up any existing ScrollTriggers
         ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 
         const cards = gsap.utils.toArray<HTMLElement>('.card');
 
-        cards.forEach((card, i) => {
+        cards.forEach((card) => {
             // Set initial state for each card
             gsap.set(card, {
                 scale: 0.8,

@@ -70,7 +70,7 @@ export default function ServicesCTA() {
                             </p>
                             <p className="text-lg leading-relaxed">
                                 Recent surveys indicate that a significant online presence is crucial for businesses to reach 
-                                a wider audience and maintain relevance in today's digital marketplace.
+                                a wider audience and maintain relevance in today&apos;s digital marketplace.
                             </p>
                         </div>
                     </div>

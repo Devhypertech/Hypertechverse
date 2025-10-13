@@ -37,7 +37,7 @@ export default function NewsletterSignup() {
                   Join the grub
                 </h2>
                 <p className="text-lg md:text-xl text-black/90 leading-relaxed max-w-lg">
-                  Sign up for our newsletter and we'll send you neat and useful design tips to help you improve your brand from time to time.
+                  Sign up for our newsletter and we&apos;ll send you neat and useful design tips to help you improve your brand from time to time.
                 </p>
               </div>
 
