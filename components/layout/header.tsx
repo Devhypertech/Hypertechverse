@@ -5,13 +5,27 @@ import { usePathname } from "next/navigation";
 
 const nav = [
   { href: "/", label: "Work" },
-  { href: "/services", label: "Services" },
+  { 
+    href: "/services", 
+    label: "Services",
+    dropdown: [
+      { href: "/services/web-development", label: "Web Development" },
+      { href: "/services/app-development", label: "App Development" },
+      { href: "/services/logo-design", label: "Logo Design" },
+      { href: "/services/branding", label: "Branding" },
+      { href: "/services/seo", label: "SEO" },
+      { href: "/services/social-media-management", label: "Social Media" },
+      { href: "/services/video-animation", label: "Video Animation" },
+      { href: "/services/software-development", label: "Software Development" },
+    ]
+  },
   { href: "/about", label: "About" },
   { href: "/portfolio", label: "Portfolio" },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const pathname = usePathname();
 
   return (
@@ -33,15 +47,50 @@ export default function Header() {
               {nav.map((n) => {
                 const active = pathname === n.href || (n.href !== "/" && pathname?.startsWith(n.href));
                 return (
-                  <li key={n.href}>
-                    <Link
-                      href={n.href}
-                      className={`text-base font-extrabold tracking-tight transition-all duration-300 ${
-                        active ? "text-white" : "text-white/90 hover:text-white"
-                      }`}
-                    >
-                      {n.label}
-                    </Link>
+                  <li key={n.href} className="relative">
+                    {n.dropdown ? (
+                      <div className="relative">
+                        <button
+                          onClick={() => setServicesOpen(!servicesOpen)}
+                          className={`text-base font-extrabold tracking-tight transition-all duration-300 flex items-center gap-1 ${
+                            active ? "text-white" : "text-white/90 hover:text-white"
+                          }`}
+                        >
+                          {n.label}
+                          <svg 
+                            className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                        {servicesOpen && (
+                          <div className="absolute top-full left-0 mt-2 w-64 bg-black/90 backdrop-blur-xl rounded-lg shadow-xl border border-white/10 py-2">
+                            {n.dropdown.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="block px-4 py-2 text-sm text-white/90 hover:text-white hover:bg-white/10 transition-colors duration-200"
+                                onClick={() => setServicesOpen(false)}
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <Link
+                        href={n.href}
+                        className={`text-base font-extrabold tracking-tight transition-all duration-300 ${
+                          active ? "text-white" : "text-white/90 hover:text-white"
+                        }`}
+                      >
+                        {n.label}
+                      </Link>
+                    )}
                   </li>
                 );
               })}
@@ -80,15 +129,53 @@ export default function Header() {
                 const active = pathname === n.href || (n.href !== "/" && pathname?.startsWith(n.href));
                 return (
                   <li key={n.href}>
-                    <Link
-                      href={n.href}
-                      onClick={() => setOpen(false)}
-                      className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
-                        active ? "text-white" : "text-white/90 hover:text-white"
-                      }`}
-                    >
-                      {n.label}
-                    </Link>
+                    {n.dropdown ? (
+                      <div>
+                        <button
+                          onClick={() => setServicesOpen(!servicesOpen)}
+                          className={`block rounded-md px-1 py-1 text-base font-semibold transition flex items-center gap-2 ${
+                            active ? "text-white" : "text-white/90 hover:text-white"
+                          }`}
+                        >
+                          {n.label}
+                          <svg 
+                            className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                          >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                          </svg>
+                        </button>
+                        {servicesOpen && (
+                          <div className="ml-4 mt-2 space-y-2">
+                            {n.dropdown.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                onClick={() => {
+                                  setOpen(false);
+                                  setServicesOpen(false);
+                                }}
+                                className="block rounded-md px-1 py-1 text-sm text-white/80 hover:text-white transition"
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    ) : (
+                      <Link
+                        href={n.href}
+                        onClick={() => setOpen(false)}
+                        className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
+                          active ? "text-white" : "text-white/90 hover:text-white"
+                        }`}
+                      >
+                        {n.label}
+                      </Link>
+                    )}
                   </li>
                 );
               })}

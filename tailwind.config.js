@@ -9,14 +9,26 @@ module.exports = {
             fontFamily: {
                 'recent-grotesk': ['Recursive', 'Recent Grotesk', 'Arial', 'Helvetica', 'sans-serif'],
             },
-            // keyframes: {
-            //     marquee: {
-            //         "0%": { transform: "translateX(0)" },
-            //         "100%": { transform: "translateX(-50%)" }, // move by one image width
-            //     },
-            // },
             animation: {
-                marquee: "marquee 2s linear infinite",
+                'marquee-x': 'marquee-x 20s linear infinite',
+                'marquee-x-reverse': 'marquee-x-reverse 20s linear infinite',
+                'marquee-x-fast': 'marquee-x 10s linear infinite',
+                'marquee-x-reverse-fast': 'marquee-x-reverse 10s linear infinite',
+                'text-bounce': 'text-bounce 3s ease-in-out infinite',
+            },
+            keyframes: {
+                'marquee-x': {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                },
+                'marquee-x-reverse': {
+                    '0%': { transform: 'translateX(-100%)' },
+                    '100%': { transform: 'translateX(100%)' },
+                },
+                'text-bounce': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-8px)' },
+                },
             },
         },
     },

@@ -348,7 +348,14 @@ h1, h2, h3, h4, h5, h6 {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); } /* move by one image width (we render 2 images) */
   }
-  .animate-marquee-x { animation: marquee-x 11s linear infinite; }
+  
+  @keyframes marquee-x-reverse {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animate-marquee-x { animation: marquee-x 15s linear infinite; }
+  .animate-marquee-x-reverse { animation: marquee-x-reverse 15s linear infinite; }
 }
 
 /* Pause on hover (works with the "group" wrapper) */
@@ -544,3 +551,67 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(135deg, #FFD350, #e6bf30);
   border-color: #FFD350;
 }
+
+/* Text marquee animations for ribbon section */
+@keyframes text-marquee-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes text-marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.text-marquee-left {
+  animation: text-marquee-left 8s linear infinite;
+}
+
+.text-marquee-right {
+  animation: text-marquee-right 8s linear infinite;
+}
+
+/* Pan animations for logo slides */
+@keyframes pan-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}
+
+@keyframes pan-right {
+  0% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-pan-left {
+  animation: pan-left 12s linear infinite;
+}
+
+.animate-pan-right {
+  animation: pan-right 12s linear infinite;
+}
+
+/* Diagonal clip paths for split sections */
+.clip-path-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%);
+}
+
+.clip-path-diagonal-inverse {
+  clip-path: polygon(0 60%, 100% 100%, 100% 0, 0 0);
+}
+
