@@ -56,7 +56,7 @@ export default function LogoDesignPage() {
                     className="inline-block -rotate-6 rounded-lg bg-[#FFD700] px-8 py-4 text-lg font-extrabold text-black shadow-[0_8px_0_rgba(0,0,0,0.25)] transition hover:-rotate-3"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
-                    LET'S GET STARTED
+                    LET&apos;S GET STARTED
                   </Link>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function LogoDesignPage() {
       </section>
 
       {/* Logo Design Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-black text-white"> 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Image */}
@@ -260,7 +260,7 @@ export default function LogoDesignPage() {
             className="mt-3 text-sm sm:text-base/7 text-white/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            Designing your brand logo has become easy and pleasant. You'll have a pleasant and
+            Designing your brand logo has become easy and pleasant. You&apos;ll have a pleasant and
             customized experience with us, from discovery to concepting and creating your
             logo design experience. We define your visual identity, plan the concept, and craft a
             scalable logo that speaks your brand—then deliver the brand toolkit you need.
@@ -433,17 +433,3 @@ function RibbonText() {
   );
 }
 
-/** Ribbon image component for marquee */
-function RibbonImage({ src, alt }: { src: string; alt: string }) {
-  return (
-    <div className="flex-shrink-0 mx-4">
-      <Image
-        src={src}
-        alt={alt}
-        width={400}
-        height={128}
-        className="h-full w-auto object-contain"
-      />
-    </div>
-  );
-}
