@@ -49,23 +49,30 @@ export default function Header() {
                 return (
                   <li key={n.href} className="relative">
                     {n.dropdown ? (
-                      <div className="relative">
-                        <button
-                          onClick={() => setServicesOpen(!servicesOpen)}
-                          className={`text-base font-extrabold tracking-tight transition-all duration-300 flex items-center gap-1 ${
-                            active ? "text-white" : "text-white/90 hover:text-white"
-                          }`}
-                        >
-                          {n.label}
-                          <svg 
-                            className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
+                      <div className="relative group">
+                        <div className="flex items-center">
+                          <Link
+                            href={n.href}
+                            className={`text-base font-extrabold tracking-tight transition-all duration-300 ${
+                              active ? "text-white" : "text-white/90 hover:text-white"
+                            }`}
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </button>
+                            {n.label}
+                          </Link>
+                          <button
+                            onClick={() => setServicesOpen(!servicesOpen)}
+                            className="ml-1 p-1 hover:bg-white/10 rounded transition-colors duration-200"
+                          >
+                            <svg 
+                              className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
+                              fill="none" 
+                              stroke="currentColor" 
+                              viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </button>
+                        </div>
                         {servicesOpen && (
                           <div className="absolute top-full left-0 mt-2 w-64 bg-black/90 backdrop-blur-xl rounded-lg shadow-xl border border-white/10 py-2">
                             {n.dropdown.map((item) => (
@@ -131,22 +138,30 @@ export default function Header() {
                   <li key={n.href}>
                     {n.dropdown ? (
                       <div>
-                        <button
-                          onClick={() => setServicesOpen(!servicesOpen)}
-                          className={`block rounded-md px-1 py-1 text-base font-semibold transition flex items-center gap-2 ${
-                            active ? "text-white" : "text-white/90 hover:text-white"
-                          }`}
-                        >
-                          {n.label}
-                          <svg 
-                            className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
-                            fill="none" 
-                            stroke="currentColor" 
-                            viewBox="0 0 24 24"
+                        <div className="flex items-center gap-2">
+                          <Link
+                            href={n.href}
+                            onClick={() => setOpen(false)}
+                            className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
+                              active ? "text-white" : "text-white/90 hover:text-white"
+                            }`}
                           >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                          </svg>
-                        </button>
+                            {n.label}
+                          </Link>
+                          <button
+                            onClick={() => setServicesOpen(!servicesOpen)}
+                            className="p-1 hover:bg-white/10 rounded transition-colors duration-200"
+                          >
+                            <svg 
+                              className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
+                              fill="none" 
+                              stroke="currentColor" 
+                              viewBox="0 0 24 24"
+                            >
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                            </svg>
+                          </button>
+                        </div>
                         {servicesOpen && (
                           <div className="ml-4 mt-2 space-y-2">
                             {n.dropdown.map((item) => (

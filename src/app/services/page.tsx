@@ -59,19 +59,29 @@ const ITEMS = [
 
 function ServiceCard({ item, idx }: { item: { title: string; color: string; icon: string; text: string }; idx: number }) {
     return (
-        <div className={`card ${idx === 0 ? 'one' : idx === 1 ? 'two' : idx === 2 ? 'three' : idx === 3 ? 'four' : idx === 4 ? 'five' : idx === 5 ? 'six' : 'seven'}`}>
-            <div className="step-box">
-                <div className="step-content">
-                    <div className="step-text">
+        <div 
+            className={`card group cursor-pointer transition-all duration-500 ease-out overflow-hidden ${idx === 0 ? 'one' : idx === 1 ? 'two' : idx === 2 ? 'three' : idx === 3 ? 'four' : idx === 4 ? 'five' : idx === 5 ? 'six' : 'seven'}`}
+            style={{
+                width: '100%',
+                minHeight: '300px',
+                zIndex: ITEMS.length - idx,
+                position: 'relative'
+            }}
+        >
+            <div className="step-box h-full">
+                <div className="step-content h-full flex" style={{ paddingTop: '180px', paddingBottom: '180px' }}>
+                    <div className="step-text flex-1 transition-all duration-500 ease-out">
                         <span className="step-label">Service {idx + 1}</span>
                         <h2 className="font-heading" style={{ fontFamily: "MD NICHROME TEST, sans-serif" }}>
                             {item.title}
                         </h2>
-                        <p style={{ fontFamily: "MD NICHROME TEST, sans-serif" }}>
-                            {item.text}
-                        </p>
+                        <div className="paragraph-container overflow-hidden transition-all duration-500 ease-out" style={{ maxHeight: '0', opacity: '0' }}>
+                            <p style={{ fontFamily: "MD NICHROME TEST, sans-serif" }}>
+                                {item.text}
+                            </p>
+                        </div>
                     </div>
-                    <div className="step-image">
+                    <div className="step-image flex-shrink-0">
                         <Image
                             src={item.icon}
                             alt={item.title}
@@ -80,10 +90,10 @@ function ServiceCard({ item, idx }: { item: { title: string; color: string; icon
                             className="w-full h-auto object-contain"
                             priority={idx < 2}
                         />
-                            </div>
-                        </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 
@@ -97,50 +107,56 @@ export default function ServicesPage() {
 
         const cards = gsap.utils.toArray<HTMLElement>('.card');
 
-        cards.forEach((card) => {
-            // Set initial state for each card
+        cards.forEach((card, index) => {
+            // Set initial state for each card (visible from start)
             gsap.set(card, {
-                scale: 0.8,
-                y: 100,
-                opacity: 0,
-                rotationX: 15,
-                width: "100%",
-                maxWidth: "1200px",
-            });
-
-            // Create scroll-triggered animation
-            gsap.to(card, {
                 scale: 1,
                 y: 0,
                 opacity: 1,
                 rotationX: 0,
                 width: "100%",
-                maxWidth: "1200px",
-                duration: 1,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: card,
-                    start: "top center+=100",
-                    end: "bottom center-=100",
-                    scrub: 1,
-                    toggleActions: "play none none reverse",
+            });
+
+            // Add hover effect to expand card to 100% width and reveal paragraph
+            card.addEventListener('mouseenter', () => {
+                gsap.to(card, {
+                    width: "100%",
+                    duration: 0.5,
+                    ease: "power2.out",
+                    zIndex: 1000
+                });
+                
+                // Reveal the paragraph
+                const paragraphContainer = card.querySelector('.paragraph-container');
+                if (paragraphContainer) {
+                    gsap.to(paragraphContainer, {
+                        maxHeight: "200px",
+                        opacity: 1,
+                        duration: 0.5,
+                        ease: "power2.out"
+                    });
                 }
             });
 
-            // Add parallax effect to images
-            const image = card.querySelector('.step-image');
-            if (image) {
-                gsap.to(image, {
-                    y: -30,
-                    ease: "none",
-                    scrollTrigger: {
-                        trigger: card,
-                        start: "top bottom",
-                        end: "bottom top",
-                        scrub: 1,
-                    }
+            card.addEventListener('mouseleave', () => {
+                gsap.to(card, {
+                    width: "100%",
+                    duration: 0.5,
+                    ease: "power2.out",
+                    zIndex: ITEMS.length - index
                 });
-            }
+                
+                // Hide the paragraph
+                const paragraphContainer = card.querySelector('.paragraph-container');
+                if (paragraphContainer) {
+                    gsap.to(paragraphContainer, {
+                        maxHeight: "0",
+                        opacity: 0,
+                        duration: 0.5,
+                        ease: "power2.out"
+                    });
+                }
+            });
         });
 
         ScrollTrigger.refresh();
@@ -156,7 +172,7 @@ export default function ServicesPage() {
             <section className="bg-black">
                 <div className="w-full py-16 sm:py-24 lg:py-36">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12">
-                        <div className="space-y-0">
+                        <div className="relative" style={{ height: 'auto', minHeight: '600px' }}>
                             {ITEMS.map((item, i) => (
                                 <ServiceCard key={i} item={item} idx={i} />
                             ))}
