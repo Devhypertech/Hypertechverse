@@ -9,8 +9,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  experimental: {
-    esmExternals: false,
+  // Turbopack configuration
+  turbopack: {
+    root: process.cwd(),
   },
 };
 
