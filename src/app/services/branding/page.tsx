@@ -9,8 +9,8 @@ export default function BrandingPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      {/* Hero Section — Yellow background with white text */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-white">
+      {/* Hero Section — Yellow background with black text */}
+      <section className="relative overflow-hidden bg-[#FFD350] text-black">
         {/* Right half image (fills exactly 50% of the viewport width) */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -310,7 +310,7 @@ export default function BrandingPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="relative">
                 <Image
-                  src="/services/branding/devs.png"
+                  src="/services/branding/gd.png"
                   alt="Elite Branding Team Collaboration"
                   width={600}
                   height={600}
@@ -340,7 +340,7 @@ function BrandingProcessTabs() {
       title: "Discover & Define",
       desc:
         "Your business goals are analyzed, your target audience is identified, and your brand strategy is refined. We understand what your brand needs to achieve, who it serves, and the brand experience to deliver—all distilled into a clear branding roadmap.",
-      logo: "/services/branding/taba.png"
+      logo: "/services/branding/tab.png"
     },
     { 
       title: "Design & Prototype",
@@ -390,14 +390,14 @@ function BrandingProcessTabs() {
         />
       </div>
 
-      {/* Middle: active step title with pink circle + arrow and paragraph */}
+      {/* Middle: active step title with yellow circle + arrow and paragraph */}
       <div className="max-w-xl">
         <h3
           className="inline-flex items-center gap-3 text-xl sm:text-2xl font-extrabold text-black"
           style={{ fontFamily: 'Recursive, sans-serif' }}
         >
-          {/* pink circle with arrow */}
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+          {/* yellow circle with arrow */}
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_4px_0_rgba(0,0,0,0.25)]">
             <svg width="18" height="18" viewBox="0 0 24 24" className="-translate-x-[1px]">
               <path d="M6 18L18 6M18 6H9M18 6V15"
                 fill="none" stroke="currentColor" strokeWidth="2"
@@ -436,7 +436,7 @@ function BrandingProcessTabs() {
                     <span
                       className={[
                         "h-2.5 w-2.5 rounded-full transition",
-                        isActive ? "bg-[#EA7BBF]" : "bg-black/50 group-hover:bg-[#EA7BBF]"
+                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
