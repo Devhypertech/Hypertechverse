@@ -289,8 +289,7 @@ export default function BrandingPage() {
                 {/* Description */}
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 Create a powerful brand identity that resonates with your audience. We specialize in crafting
-                memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.       
- 
+                memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.        
                   </p>
 
                 {/* CTA Button */}
@@ -450,7 +449,6 @@ function BrandingProcessTabs() {
     </div>
   );
 }
-
 
 /** Single pass of scrolling text for the ribbon */
 function RibbonText() {

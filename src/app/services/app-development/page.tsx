@@ -26,7 +26,7 @@ export default function AppDevelopmentPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
             {/* Left copy */}
-            <div className="py-16 md:py-0">
+            <div className="py-12 md:py-0">
               <div className="max-w-2xl">
                 {/* Headline */}
                 <div className="relative inline-block">
@@ -79,7 +79,7 @@ export default function AppDevelopmentPage() {
             <div className="md:hidden mt-8">
               <div className="relative h-[260px] sm:h-[320px] w-full">
                 <Image
-                  src="/services/app/hero.png"
+                  src="/services/app/support.png"
                   alt="App development illustration"
                   fill
                   className="object-contain object-center"
@@ -195,17 +195,17 @@ export default function AppDevelopmentPage() {
             }}
           />
 
-          <div className="h-[2.5vh]" />
+          <div className="h-[3.5vh]" />
 
           {/* ============ ROW 2 (opposite pan, lighter tilt) ============ */}
           <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
-            <div className="relative h-[140vh] sm:h-[140vh] lg:h-[140vh] overflow-hidden rounded-2xl">
+            <div className="relative h-[120vh] sm:h-[120vh] lg:h-[120vh] overflow-hidden rounded-2xl">
               <Image
                 src="/services/app/work.png"
                 alt="App Development Portfolio"
-                width={1000}
-                height={1200}
-                sizes="140vw"
+                width={800}
+                height={800}
+                sizes="100vw"
                 className="h-full w-[140vw] max-w-none object-cover animate-pan-right"
               />
             </div>
@@ -273,7 +273,7 @@ export default function AppDevelopmentPage() {
       </section>
 
       {/* Elite App Development Agency Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-10 bg-black text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Section: Elite App Development Agency */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
@@ -309,7 +309,7 @@ export default function AppDevelopmentPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="relative">
                 <Image
-                  src="/services/app/devs.png"
+                  src="/services/app/support.png"
                   alt="Elite App Development Team Collaboration"
                   width={600}
                   height={600}
@@ -318,39 +318,14 @@ export default function AppDevelopmentPage() {
               </div>
             </ScrollAnimation>
           </div>
-
-          {/* Bottom Section: Native App Development */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Image */}
-            <ScrollAnimation animation="fadeInLeft" delay={150}>
-              <div className="relative">
-                <Image
-                  src="/services/app/manworking.png"
-                  alt="Native App Development Professional"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </ScrollAnimation>
-
-            {/* Right side - Content */}
-            <ScrollAnimation animation="fadeInRight" delay={250}>
-              <div className="space-y-6">
-                {/* Main headline */}
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  NATIVE APP DEVELOPMENT FOR A SEAMLESS EXPERIENCE
-                </h2>
-
-                {/* Description */}
-                <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  HYPERTECH VERSE CRAFTS NATIVE APPLICATIONS THAT DELIVER OPTIMAL PERFORMANCE, SEAMLESS USER EXPERIENCES, AND CROSS-PLATFORM INTEGRATION. OUR DESIGNS FOCUS ON SPEED, INTUITIVE NAVIGATION, AND MOBILE OPTIMIZATION TO KEEP USERS ENGAGED AND DRIVE CONVERSIONS. WE PRIORITIZE PERFORMANCE BY ALIGNING WITH INDUSTRY BEST PRACTICES, IMPROVING LOAD TIMES, APP RANKINGS, AND OVERALL FUNCTIONALITY. ENHANCE YOUR DIGITAL PRESENCE WITH A CONVENIENT AND USER-FRIENDLY APP. LET'S CREATE SOMETHING EXCEPTIONAL TOGETHER!
-                </p>
-              </div>
-            </ScrollAnimation>
-          </div>
       </div>
       </section>
+
+      <section className="relative bg-black py-6 sm:py-6">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <AppSuccessCarousel />
+  </div>
+</section>
 
       {/* Second Card Reviews Section */}
       <TestimonialsMasonry />
@@ -487,6 +462,164 @@ function RibbonText() {
         height={68}
         className="h-full w-auto object-contain" 
       />
+    </div>
+  );
+}
+function AppSuccessCarousel() {
+  const slides = [
+    {
+      img: "/services/app/cone.png", // change to your image path
+      headlineLeft: "PRIORITIZING CLIENTS AND PARTNERS:",
+      headlineRight: "DEDICATED TO YOUR SUCCESS AT EVERY STEP",
+      sub:
+        "OUR APP DESIGN STRATEGY ENSURES SEAMLESS MOBILE APP DESIGN SERVICES FROM IDEA TO DEPLOYMENT, WITH CLOSE COLLABORATION RESULTING IN REFINED DETAILS. OUR FOCUS IS ON PRODUCING BEAUTIFUL, FULFILLING MOBILE APPS.",
+      cta: { label: "GET STARTED", href: "/contact" },
+    },
+    {
+      img: "/services/app/work.png",
+      headlineLeft: "DELIVERING VALUE:",
+      headlineRight: "FAST ITERATIONS • CLEAR RESULTS",
+      sub:
+        "WE BUILD IN TIGHT LOOPS, TEST ON REAL DEVICES, AND SHIP SMALL WINS FREQUENTLY—SO YOU SEE MOMENTUM AND MEASURABLE PROGRESS.",
+      cta: { label: "LET'S TALK", href: "/contact" },
+    },
+    {
+      img: "/services/app/support.png",
+      headlineLeft: "END-TO-END SUPPORT:",
+      headlineRight: "STRATEGY • DESIGN • BUILD • GROW",
+      sub:
+        "FROM DISCOVERY TO LAUNCH AND BEYOND—WE HANDLE UX, UI, PERFORMANCE, STORE SUBMISSIONS, AND ONGOING IMPROVEMENTS.",
+      cta: { label: "BOOK A CALL", href: "/contact" },
+    },
+  ];
+
+  const [i, setI] = React.useState(0);
+  const len = slides.length;
+
+  // autoplay (pause on hover)
+  const [paused, setPaused] = React.useState(false);
+  React.useEffect(() => {
+    if (paused) return;
+    const t = setInterval(() => setI((p) => (p + 1) % len), 4000);
+    return () => clearInterval(t);
+  }, [paused, len]);
+
+  // keyboard
+  React.useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") setI((p) => (p + 1) % len);
+      if (e.key === "ArrowLeft") setI((p) => (p - 1 + len) % len);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [len]);
+
+  // swipe
+  const startX = React.useRef<number | null>(null);
+  const onTouchStart = (e: React.TouchEvent) => {
+    startX.current = e.touches[0].clientX;
+  };
+  const onTouchEnd = (e: React.TouchEvent) => {
+    if (startX.current === null) return;
+    const dx = e.changedTouches[0].clientX - startX.current;
+    if (Math.abs(dx) > 40) {
+      setI((p) => (dx < 0 ? (p + 1) % len : (p - 1 + len) % len));
+    }
+    startX.current = null;
+  };
+
+  const go = (n: number) => setI(((n % len) + len) % len);
+
+  return (
+    <div
+      className="relative select-none"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      {/* dots */}
+      <div className="flex justify-center gap-2 pb-3">
+        {slides.map((_, idx) => (
+          <button
+            key={idx}
+            aria-label={`Go to slide ${idx + 1}`}
+            onClick={() => go(idx)}
+            className={[
+              "h-2.5 w-2.5 rounded-full transition",
+              idx === i ? "bg-[#FFD350]" : "bg-white/30 hover:bg-white/60",
+            ].join(" ")}
+          />
+        ))}
+      </div>
+
+      {/* stage */}
+      <div
+        className="relative rounded-3xl bg-[#000000] p-3 sm:p-4"
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
+        {/* image frame */}
+        <div className="relative mx-auto aspect-[16/8.8] w-full overflow-hidden rounded-3xl bg-[#000000]">
+          {/* simple fade */}
+          {slides.map((s, idx) => (
+            <Image
+              key={idx}
+              src={s.img}
+              alt=""
+              fill
+              priority={idx === i}
+              className={[
+                "object-contain transition-opacity duration-500",
+                idx === i ? "opacity-100" : "opacity-0",
+              ].join(" ")}
+            />
+          ))}
+        </div>
+
+        {/* arrows */}
+        <button
+          aria-label="Previous"
+          onClick={() => go(i - 1)}
+          className="absolute left-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition"
+        >
+          <svg width="26" height="26" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+          </svg>
+        </button>
+        <button
+          aria-label="Next"
+          onClick={() => go(i + 1)}
+          className="absolute right-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition"
+        >
+          <svg width="26" height="26" viewBox="0 0 24 24">
+            <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+          </svg>
+        </button>
+
+        {/* captions + CTA */}
+        <div className="px-2 pb-6 pt-5 text-center">
+          <h3
+            className="text-[18px] sm:text-[20px] md:text-[22px] font-extrabold uppercase tracking-wide"
+            style={{ fontFamily: "Recursive, sans-serif" }}
+          >
+            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
+            <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
+          </h3>
+          <p
+            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            {slides[i].sub}
+          </p>
+
+          <Link
+            href={slides[i].cta.href}
+            className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 text-black font-extrabold rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            {slides[i].cta.label}
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
