@@ -268,64 +268,148 @@ export default function SEOPage() {
             </svg>
           </div>
         </div>
-
-   
       </section>
 
-      {/* Elite SEO Agency Section */}
-      <section className="py-10 bg-black text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Top Section: Elite SEO Agency */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-            {/* Left side - Content */}
-            <ScrollAnimation animation="fadeInLeft" delay={150}>
-              <div className="space-y-6">
-                {/* Main headline */}
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                SEO
-                <span className="text-[#EA7BBF]">SEARCH RANKING</span>
-                </h2>
+{/* ===== Unfair Advantages section (place before <TestimonialsMasonry />) ===== */}
+<section className="relative bg-black text-white py-16 sm:py-20">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    {/* Title */}
+    <h2
+      className="text-center text-xl sm:text-2xl font-extrabold uppercase tracking-wide mb-12"
+      style={{ fontFamily: "Recursive, sans-serif" }}
+    >
+      Unfair{" "}
+      <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#EA7BBF] to-[#FFD350]">
+        Advantages
+      </span>{" "}
+      You Will Gain from Us
+    </h2>
 
-                {/* Description */}
-                <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Boost your search engine rankings and drive organic traffic to your website. We specialize in crafting
-                strategic SEO campaigns that improve visibility, increase rankings, and deliver measurable business results through data-driven optimization.        
-                  </p>
-
-                {/* CTA Button */}
-                <div className="pt-4">
-                  <Link
-                    href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#d068a5] transition-colors transform -rotate-3"
-                    style={{ fontFamily: 'Poppins, sans-serif' }}
-                  >
-                    GET STARTED
-                  </Link>
-                </div>
-              </div>
-            </ScrollAnimation>
-
-            {/* Right side - Image */}
-            <ScrollAnimation animation="fadeInRight" delay={250}>
-              <div className="relative">
-                <Image
-                  src="/services/seo/seoguys.png"
-                  alt="Elite SEO Team Collaboration"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </ScrollAnimation>
-          </div>
+    {/* Top row: copy + art + side arrows */}
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      {/* Left: copy */}
+      <div>
+        <h3
+          className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
+          style={{ fontFamily: "Recursive, sans-serif" }}
+        >
+          Multi-Platform SEO Optimization
+        </h3>
+        <p
+          className="mt-3 text-sm text-white/80 max-w-md"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          We combine technical SEO, on-page refinement, content strategy, and
+          authority building to lift your rankings across Google, Bing, and
+          more. Our team maps intent, clusters keywords, and optimizes site
+          speed, Core Web Vitals, internal linking, and schema for durable wins.
+        </p>
       </div>
-      </section>
 
-      <section className="relative bg-black py-6 sm:py-6">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <SEOSuccessCarousel />
+      {/* Right: illustration with pink circle arrows */}
+      <div className="relative">
+        {/* left arrow */}
+        <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+          <svg width="18" height="18" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+          </svg>
+        </span>
+
+        <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl">
+          {/* use your existing asset */}
+          <Image
+            src="/services/seo/cone.png"
+            alt="SEO multi-platform illustration"
+            fill
+            className="object-contain"
+            priority
+          />
         </div>
-      </section>
+
+        {/* right arrow */}
+        <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+          <svg width="18" height="18" viewBox="0 0 24 24">
+            <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+          </svg>
+        </span>
+      </div>
+    </div>
+
+    {/* Six step pills */}
+    <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {[
+        "Audit & Analysis",
+        "Keyword Strategy",
+        "On-Page Optimization",
+        "Technical SEO",
+        "Link Building",
+        "Monitoring & Growth",
+      ].map((label, idx) => (
+        <div
+          key={label}
+          className="flex items-center gap-3 rounded-full bg-[#FFD350] px-4 py-3 text-black"
+        >
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+            {idx + 1}
+          </span>
+          <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
+            {label}
+          </span>
+        </div>
+      ))}
+    </div>
+
+    {/* Sub-heading + CTA */}
+    <div className="text-center mt-6">
+      <p
+        className="text-[16px] sm:text-[18px] tracking-wide uppercase text-white/70"
+        style={{ fontFamily: "Recursive, sans-serif", fontWeight: "bold" }}
+      >
+        Our Seamless 6-step process for efficient and effective Results.
+      </p>
+      <Link
+        href="/contact"
+        className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+        GET STARTED
+      </Link>
+    </div>
+
+    {/* Bottom split: art left, copy right */}
+    <div className="mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+      {/* Left art */}
+      <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl ">
+        <Image
+          src="/services/seo/seoguys.png"
+          alt="SEO team working"
+          fill
+          className="object-contain"
+        />
+      </div>
+
+      {/* Right copy */}
+      <div>
+        <h3
+          className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
+          style={{ fontFamily: "Recursive, sans-serif" }}
+        >
+          Why SEO is important for your business?
+        </h3>
+        <p
+          className="mt-3 text-sm text-white/80"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          SEO compounds. It drives qualified traffic, reduces CAC, and boosts
+          credibility by placing your brand where buyers search. With strong
+          technical foundations, high-intent content, and healthy backlinks,
+          your website turns into a 24/7 acquisition engine that keeps growing
+          even when ads pause.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Second Card Reviews Section */}
       <TestimonialsMasonry />
@@ -461,165 +545,6 @@ function RibbonText() {
         height={68}
         className="h-full w-auto object-contain" 
       />
-    </div>
-  );
-}
-
-function SEOSuccessCarousel() {
-  const slides = [
-    {
-      img: "/services/seo/cone.png",
-      headlineLeft: "PRIORITIZING CLIENTS AND PARTNERS:",
-      headlineRight: "DEDICATED TO YOUR SUCCESS AT EVERY STEP",
-      sub:
-        "OUR SEO STRATEGY ENSURES SEAMLESS SEARCH ENGINE OPTIMIZATION FROM IDEA TO DEPLOYMENT, WITH CLOSE COLLABORATION RESULTING IN REFINED DETAILS. OUR FOCUS IS ON PRODUCING BEAUTIFUL, FULFILLING SEO CAMPAIGNS.",
-      cta: { label: "GET STARTED", href: "/contact" },
-    },
-    {
-      img: "/services/seo/taba.png",
-      headlineLeft: "DELIVERING VALUE:",
-      headlineRight: "FAST ITERATIONS • CLEAR RESULTS",
-      sub:
-        "WE BUILD IN TIGHT LOOPS, TEST ON REAL SEARCH ENGINES, AND SHIP SMALL WINS FREQUENTLY—SO YOU SEE MOMENTUM AND MEASURABLE PROGRESS.",
-      cta: { label: "LET'S TALK", href: "/contact" },
-    },
-    {
-      img: "/services/seo/work.png",
-      headlineLeft: "END-TO-END SUPPORT:",
-      headlineRight: "STRATEGY • CONTENT • OPTIMIZATION • GROW",
-      sub:
-        "FROM DISCOVERY TO LAUNCH AND BEYOND—WE HANDLE SEO STRATEGY, CONTENT, PERFORMANCE, ANALYTICS, AND ONGOING IMPROVEMENTS.",
-      cta: { label: "BOOK A CALL", href: "/contact" },
-    },
-  ];
-
-  const [i, setI] = React.useState(0);
-  const len = slides.length;
-
-  // autoplay (pause on hover)
-  const [paused, setPaused] = React.useState(false);
-  React.useEffect(() => {
-    if (paused) return;
-    const t = setInterval(() => setI((p) => (p + 1) % len), 4000);
-    return () => clearInterval(t);
-  }, [paused, len]);
-
-  // keyboard
-  React.useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight") setI((p) => (p + 1) % len);
-      if (e.key === "ArrowLeft") setI((p) => (p - 1 + len) % len);
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [len]);
-
-  // swipe
-  const startX = React.useRef<number | null>(null);
-  const onTouchStart = (e: React.TouchEvent) => {
-    startX.current = e.touches[0].clientX;
-  };
-  const onTouchEnd = (e: React.TouchEvent) => {
-    if (startX.current === null) return;
-    const dx = e.changedTouches[0].clientX - startX.current;
-    if (Math.abs(dx) > 40) {
-      setI((p) => (dx < 0 ? (p + 1) % len : (p - 1 + len) % len));
-    }
-    startX.current = null;
-  };
-
-  const go = (n: number) => setI(((n % len) + len) % len);
-
-  return (
-    <div
-      className="relative select-none"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-    >
-      {/* dots */}
-      <div className="flex justify-center gap-2 pb-3">
-        {slides.map((_, idx) => (
-          <button
-            key={idx}
-            aria-label={`Go to slide ${idx + 1}`}
-            onClick={() => go(idx)}
-            className={[
-              "h-2.5 w-2.5 rounded-full transition",
-              idx === i ? "bg-[#EA7BBF]" : "bg-white/30 hover:bg-white/60",
-            ].join(" ")}
-          />
-        ))}
-      </div>
-
-      {/* stage */}
-      <div
-        className="relative rounded-3xl bg-[#000000] p-3 sm:p-4"
-        onTouchStart={onTouchStart}
-        onTouchEnd={onTouchEnd}
-      >
-        {/* image frame */}
-        <div className="relative mx-auto aspect-[16/8.8] w-full overflow-hidden rounded-3xl bg-[#000000]">
-          {/* simple fade */}
-          {slides.map((s, idx) => (
-            <Image
-              key={idx}
-              src={s.img}
-              alt=""
-              fill
-              priority={idx === i}
-              className={[
-                "object-contain transition-opacity duration-500",
-                idx === i ? "opacity-100" : "opacity-0",
-              ].join(" ")}
-            />
-          ))}
-        </div>
-
-        {/* arrows */}
-        <button
-          aria-label="Previous"
-          onClick={() => go(i - 1)}
-          className="absolute left-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-md hover:scale-105 transition"
-        >
-          <svg width="26" height="26" viewBox="0 0 24 24">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-          </svg>
-        </button>
-        <button
-          aria-label="Next"
-          onClick={() => go(i + 1)}
-          className="absolute right-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-md hover:scale-105 transition"
-        >
-          <svg width="26" height="26" viewBox="0 0 24 24">
-            <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-          </svg>
-        </button>
-
-        {/* captions + CTA */}
-        <div className="px-2 pb-6 pt-5 text-center">
-          <h3
-            className="text-[18px] sm:text-[20px] md:text-[22px] font-extrabold uppercase tracking-wide"
-            style={{ fontFamily: "Recursive, sans-serif" }}
-          >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
-            <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
-          </h3>
-          <p
-            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
-            {slides[i].sub}
-          </p>
-
-          <Link
-            href={slides[i].cta.href}
-            className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 text-white font-extrabold rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
-            style={{ fontFamily: "Poppins, sans-serif" }}
-          >
-            {slides[i].cta.label}
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }
