@@ -94,6 +94,21 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
           </div>
         </div>
+
+        {/* Icons strip directly after marquee */}
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+            <div className="relative w-full aspect-[16/2.8] overflow-hidden">
+              <Image
+                src="/services/softwaredev/icons.png"
+                alt="Tech stack icons"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+        </div>
       </section>
       
 
