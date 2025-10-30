@@ -29,13 +29,13 @@ export default function AnimationPage() {
               <div className="max-w-2xl">
                 <div className="relative inline-block">
                   <h1
-                    className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[56px]"
+                    className="leading-[.95] font-black uppercase text-[18px] sm:text-[30px] lg:text-[38px]"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    ANIMATION
+                 Best Animation Studio in the
                     <br />
-                    <span className="text-[56px] sm:text-[72px] lg:text-[88px] block">
-                      BRING STORIES TO LIFE
+                    <span className="text-[36px] sm:text-[52px] lg:text-[68px] block">
+                    United States
                     </span>
                   </h1>
 
@@ -54,7 +54,7 @@ export default function AnimationPage() {
                   className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  We craft animated videos, explainers, and motion graphics that clarify ideas and elevate brands. From storyboard to final render, our team handles the entire pipeline.
+                 We deliver breathtaking 2D & 3D animation services, offering customized packages to bring your stories to life with stunning visuals.
                 </p>
 
                 <div className="mt-8">
@@ -94,20 +94,6 @@ export default function AnimationPage() {
           </div>
         </div>
 
-        {/* Icons strip directly after marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
-            <div className="relative w-full aspect-[16/2.8] overflow-hidden">
-              <Image
-                src="/services/animation/icons.png"
-                alt="Animation tools"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* About Section */}
@@ -117,7 +103,7 @@ export default function AnimationPage() {
             <ScrollAnimation animation="fadeInLeft" delay={150}>
               <div className="relative">
                 <Image
-                  src="/services/animation/about.png"
+                  src="/services/animation/car.png"
                   alt="Animation studio"
                   width={600}
                   height={600}
@@ -128,14 +114,14 @@ export default function AnimationPage() {
 
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  Motion that <span className="text-[#EA7BBF]">moves people</span>
+                <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                Add a Spark of Animation to Your World
                 </h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse delivers impact
+                Hypertech Verse blends innovation
                 </h3>
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Explainers, product demos, logo animations, and social reels—built with crisp pacing, clear story, and standout visuals tailored to your brand.
+                We specialize in turning people’s imagination into visual reality. We focus on serving brands by providing high-quality animated video production services to effectively communicate, engage their audiences, and share compelling stories. Be it a startup or a mature enterprise, our dedicated video animation services are well-designed to boost your brand credibility and charm your viewers.
                 </p>
                 <div className="pt-4">
                   <Link href="/contact" className="inline-block bg-[#FFD350] text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#FFC107] transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -190,7 +176,7 @@ export default function AnimationPage() {
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image src="/services/logo/bg.png" alt="" fill priority className="absolute inset-0 -z-10 object-cover object-center pointer-events-none select-none" />
 
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
+        {/* <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white" style={{ fontFamily: 'Recursive, sans-serif' }}>
             The Signature Flow that Brings<br className="hidden sm:block" />
             Your Animation to Life
@@ -198,7 +184,7 @@ export default function AnimationPage() {
           <p className="mt-3 text-sm sm:text-base/7 text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
             From concept to final render, our process keeps quality high and timelines predictable.
           </p>
-        </div>
+        </div> */}
 
         <AnimationProcessTabs />
       </section>
@@ -214,56 +200,163 @@ export default function AnimationPage() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="relative bg-black text-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10" style={{ fontFamily: "Recursive, sans-serif" }}>
-            Benefits of Professional Animation
-          </h2>
+{/* ================== Animation Value + 6-Step Process (matches reference) ================== */}
+<section className="bg-black text-white py-14 sm:py-16">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-10">
-            <div>
-              <h3 className="text-base sm:text-lg font-extrabold uppercase tracking-wide" style={{ fontFamily: "Recursive, sans-serif" }}>
-                Explain Complex Ideas Clearly
-              </h3>
-              <p className="mt-3 text-sm text-white/80 max-w-md" style={{ fontFamily: "Poppins, sans-serif" }}>
-                Animation makes abstract or technical topics easy to grasp, increasing retention and conversions.
-              </p>
-            </div>
-            <div className="relative">
-              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-                <svg width="18" height="18" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/></svg>
-              </span>
-              <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl ">
-                <Image src="/services/animation/cone.png" alt="Animation concepts" fill className="object-contain" priority />
-              </div>
-              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-                <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/></svg>
-              </span>
-            </div>
-          </div>
+    {/* Top: Why animation matters */}
+    <div className="text-center">
+      <h2
+        className="text-2xl sm:text-3xl font-extrabold"
+        style={{ fontFamily: "Recursive, sans-serif" }}
+      >
+        How Animation Can Make a Difference?
+      </h2>
+      <p
+        className="mt-3 text-[11px] sm:text-xs leading-relaxed text-white/80 max-w-3xl mx-auto"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+    Animation can revolutionize our methods of interaction, where an attractive visual can create a lasting impact on the viewer, making it more comprehensive. Through animation, every subject becomes more accessible, transforming advanced material into visible and memorable content that appeals to viewers. Animation is a powerful resource because it quickly engages viewers, effortlessly expresses emotions, and creates enduring effects, on which multiple groups, such as brands and creative professionals, rely.
+      </p>
+      <p
+        className="mt-2 text-[11px] sm:text-xs leading-relaxed text-white/80 max-w-3xl mx-auto"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+     Animation allows people to engage passionately with its content. The medium unites linguistic variations and cultural traits, so content becomes accessible to everybody and sticks in their minds. Animation converts regular messages into extraordinary journeys, which boost conversions through explainer videos and stir emotions through storytelling. The medium goes beyond narration to present visual stories that use movement combined with vibrant hues and creativity.
+      </p>
+    </div>
 
-          <div className="text-center mt-2">
-            <Link href="/contact" className="inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-black rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition" style={{ fontFamily: "Poppins, sans-serif" }}>
-              GET STARTED
-            </Link>
-          </div>
+    {/* Rounded showcase frame + CTA (center, like screenshot) */}
+    <div className="mt-6 sm:mt-8 relative mx-auto max-w-4xl">
+      <div className="relative w-full aspect-[16/8.5] overflow-hidden rounded-[28px] ">
+        <Image
+          src="/services/animation/cone.png" // replace with your composite frame (e.g. toy+aladdin)
+          alt="Animation scenes"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-            <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl">
-              <Image src="/services/animation/clock.png" alt="Efficient delivery" fill className="object-contain" />
-            </div>
-            <div>
-              <h3 className="text-base sm:text-lg font-extrabold uppercase tracking-wide" style={{ fontFamily: "Recursive, sans-serif" }}>
-                Fast Iterations, On-Time Delivery
-              </h3>
-              <p className="mt-3 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
-                Tight feedback loops, clear stages, and robust tooling keep projects moving smoothly.
-              </p>
-            </div>
-          </div>
+      <div className="absolute left-1/2 -translate-x-1/2 -bottom-3">
+        <Link
+          href="/contact"
+          className="inline-block -rotate-6 bg-[#EA7BBF] px-5 py-2 text-black rounded-md font-extrabold shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-3 transition"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          GET STARTED
+        </Link>
+      </div>
+    </div>
+
+    {/* Mid title */}
+    <div className="mt-12 text-center">
+      <h3
+        className="text-xl sm:text-2xl font-extrabold"
+        style={{ fontFamily: "Recursive, sans-serif" }}
+      >
+        Unfair <span className="text-[#EA7BBF]">Advantage</span> You Will Gain from Us
+      </h3>
+    </div>
+
+    {/* Fast Turnarounds row (left text, right astronaut art with small arrows) */}
+    <div className="mt-8 grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+      <div>
+        <h4
+          className="text-lg sm:text-xl font-extrabold uppercase"
+          style={{ fontFamily: "Recursive, sans-serif" }}
+        >
+          Fast Turnarounds Without Compromise
+        </h4>
+        <p
+          className="mt-2 text-[12px] sm:text-sm leading-relaxed text-white/80"
+          style={{ fontFamily: "Poppins, sans-serif" }}
+        >
+          Tight timelines? No problem. Our pipeline is built for speed—clear briefs, rapid style frames,
+          and parallelized production—so you get cinematic quality, delivered faster.
+        </p>
+      </div>
+
+      <div className="relative">
+        {/* optional side arrows like reference */}
+        <button
+          aria-label="Previous"
+          className="absolute -left-4 top-1/2 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full bg-[#EA7BBF] text-black"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/></svg>
+        </button>
+
+        <div className="relative aspect-[16/11] w-full overflow-hidden rounded-3x1">
+          <Image
+            src="/services/animation/rocketman.png" // replace with your running astronaut artwork
+            alt="Fast animation delivery"
+            fill
+            className="object-contain"
+          />
         </div>
-      </section>
+
+        <button
+          aria-label="Next"
+          className="absolute -right-4 top-1/2 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full bg-[#EA7BBF] text-black"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    {/* 6 yellow numbered chips (two rows of three, like screenshot) */}
+    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {[
+        "Discovery & Briefing",
+        "Scriptwriting & Storyboarding",
+        "Visual Design & Style Frames",
+        "Voiceover & Audio Selection",
+        "Animation & Motion Editing",
+        "Final Review & Delivery",
+      ].map((t, idx) => (
+        <div
+          key={t}
+          className="flex items-center gap-3 rounded-full bg-[#FFD350] px-4 py-3 text-black"
+        >
+          <span className="grid h-8 w-8 place-items-center bg-[#EA7BBF] rounded-full text-white font-bold">
+            {idx + 1}
+          </span>
+          <span
+            className="font-bold text-[13px] uppercase"
+            style={{ fontFamily: "Recursive, sans-serif" }}
+          >
+            {t}
+          </span>
+        </div>
+      ))}
+    </div>
+
+    {/* Bottom microcopy + CTA */}
+    <div className="mt-6 text-center">
+    <h4
+          className="text-lg sm:text-xl font-extrabold uppercase"
+          style={{ fontFamily: "Recursive, sans-serif" }}
+        >
+          Our Smooth Process
+        </h4>
+      <p
+        className="text-[11px] sm:text-xs text-white/70"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+      Starting with the simplest act of making something beautifully smooth and collaborative, we believe great animation begins with a great workflow. Our production process is designed for clarity, creation, and consistency. Yet, it involves the way you are from the first concept to the final delivery—it’s just as much fun going as the result.
+      </p>
+      <Link
+        href="/contact"
+        className="mt-3 inline-block -rotate-6 bg-[#EA7BBF] text-black px-6 py-3 rounded-md font-extrabold shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+        GET STARTED
+      </Link>
+    </div>
+
+  </div>
+</section>
+
 
       <TestimonialsMasonry />
     </main>
@@ -272,12 +365,11 @@ export default function AnimationPage() {
 
 function AnimationProcessTabs() {
   const steps = [
-    { title: "Concept & Script", desc: "Clarify message and outline the story.", logo: "/services/animation/phone.png" },
-    { title: "Storyboard", desc: "Plan scenes, transitions, and pacing.", logo: "/services/logo/logoc.png" },
-    { title: "Design", desc: "Craft characters, scenes, and style frames.", logo: "/services/logo/logod.png" },
-    { title: "Animation", desc: "Bring visuals to life with motion and timing.", logo: "/services/logo/logoe.png" },
-    { title: "Sound & Mix", desc: "Voiceover, music, and sound design.", logo: "/services/logo/logof.png" },
-    { title: "Render & Deliver", desc: "Export formats and finalize for platforms.", logo: "/services/animation/target.png" },
+    { title: "2D ANIMATION", desc: "Our animation services are a dynamite but affordable way to narrate your story clearly and creatively. We are a 2D animation company with extensive experience creating explainer videos, product showcases, infographics, and social media content that relates to viewers via clean visuals and interesting motion. The chief use of this service is launching a new product or reducing a complicated idea to a simple message.", 
+        logo: "/services/animation/tabo.png" },
+    { title: "3D ANIMATION", desc: "Plan scenes, transitions, and pacing.", logo: "/services/logo/logoc.png" },
+    { title: "EXPLAINER VIDEO PRODUCTON", desc: "Craft characters, scenes, and style frames.", logo: "/services/logo/logod.png" },
+    { title: "TRAINING VIDEO ANIMATION", desc: "Bring visuals to life with motion and timing.", logo: "/services/logo/logoe.png" },
   ];
 
   const [active, setActive] = React.useState(0);

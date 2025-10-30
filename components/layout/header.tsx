@@ -4,7 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const nav = [
-  { href: "/", label: "Work" },
+  { href: "/portfolio", label: "Portfolio" },
   { 
     href: "/services", 
     label: "Services",
@@ -23,7 +23,6 @@ const nav = [
     ]
   },
   { href: "/about", label: "About" },
-  { href: "/portfolio", label: "Portfolio" },
 ];
 
 export default function Header() {
