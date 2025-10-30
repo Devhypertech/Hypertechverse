@@ -120,7 +120,7 @@ export default function CustomSoftwareDevelopmentPage() {
             <ScrollAnimation animation="fadeInLeft" delay={150}>
               <div className="relative">
                 <Image
-                  src="/services/smm/about.png"
+                  src="/services/softwaredev/about.png"
                   alt="Custom software engineering"
                   width={600}
                   height={600}
@@ -202,7 +202,7 @@ export default function CustomSoftwareDevelopmentPage() {
           <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
             <div className="relative h-[120vh] sm:h-[120vh] lg:h-[120vh] overflow-hidden rounded-2xl">
               <Image
-                src="/services/smm/work.png"
+                src="/services/softwaredev/work.png"
                 alt="Software project showcase"
                 width={800}
                 height={800}
@@ -227,14 +227,15 @@ export default function CustomSoftwareDevelopmentPage() {
 
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-black"
+            className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
-            The Signature Flow that Brings<br className="hidden sm:block" />
-            Your Software to Life
+            Limitless Possibilities with our Custom
+            <br className="hidden sm:block" />
+            Software Development Services
           </h2>
           <p
-            className="mt-3 text-sm sm:text-base/7 text-black/90"
+            className="mt-3 text-sm sm:text-base/7 text-white/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             From discovery to deployment, we build maintainable, scalable products with a strong delivery cadence and transparent communication.
@@ -297,7 +298,7 @@ export default function CustomSoftwareDevelopmentPage() {
               </span>
               <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl ">
                 <Image
-                  src="/services/smm/caone.png"
+                  src="/services/softwaredev/cone.png"
                   alt="Engineering illustration"
                   fill
                   className="object-contain"
@@ -312,16 +313,6 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
           </div>
 
-          <div className="relative py-10 mx-auto max-w-4xl">
-            <div className="relative aspect-[16/8] w-full overflow-hidden rounded-2xl">
-              <Image
-                src="/services/smm/icons.png"
-                alt="Tech stack icons"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
 
           <div className="text-center mt-2">
             <Link
@@ -336,7 +327,7 @@ export default function CustomSoftwareDevelopmentPage() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
             <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl">
               <Image
-                src="/services/smm/target.png"
+                src="/services/softwaredev/clock.png"
                 alt="Scalable architecture"
                 fill
                 className="object-contain"
@@ -357,33 +348,52 @@ export default function CustomSoftwareDevelopmentPage() {
               </p>
             </div>
           </div>
+          <h2
+            className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10"
+            style={{ fontFamily: "Recursive, sans-serif" }}
+          >
+            Benefits of Custom Software Development
+          </h2>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-            <div className="order-2 md:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-10">
+            <div>
               <h3
                 className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
                 style={{ fontFamily: "Recursive, sans-serif" }}
               >
-                Why Custom Software?
+                Built for Your Business
               </h3>
               <p
-                className="mt-3 text-sm text-white/80"
+                className="mt-3 text-sm text-white/80 max-w-md"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
-                Own your roadmap, avoid vendor lock‑in, and differentiate faster. Tailored products let teams move with clarity and confidence.
+                Align software with workflows, integrate with existing systems, and unlock efficiencies impossible with off‑the‑shelf tools.
               </p>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl ">
+
+            <div className="relative">
+              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+              </span>
+              <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl ">
                 <Image
-                  src="/services/smm/annoucement.png"
-                  alt="Roadmap announcement"
+                  src="/services/softwaredev/Datasecurity.png"
+                  alt="Engineering illustration"
                   fill
                   className="object-contain"
+                  priority
                 />
               </div>
+              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+              </span>
             </div>
           </div>
+      
         </div>
       </section>
 
@@ -399,7 +409,7 @@ function SoftwareProcessTabs() {
       title: "Discovery & Planning",
       desc:
         "We clarify goals, map requirements, and define architecture and scope to de‑risk delivery.",
-      logo: "/services/smm/rocket.png",
+      logo: "/services/softwaredev/phone.png",
     },
     {
       title: "UI/UX Design",

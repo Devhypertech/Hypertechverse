@@ -15,6 +15,7 @@ const nav = [
       { href: "/services/branding", label: "Branding" },
       { href: "/services/seo", label: "SEO" },
       { href: "/services/social-media-management", label: "Social Media" },
+      { href: "/services/paid-advertising", label: "Paid Advertising" },
       { href: "/services/video-animation", label: "Video Animation" },
       { href: "/services/custom-software-development", label: "Custom Software" },
       { href: "/services/software-development", label: "Software Development" },
