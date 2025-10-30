@@ -106,8 +106,8 @@ export default function PaidAdvertisingPage() {
                 <Image
                   src="/services/paidadversting/about.png"
                   alt="Paid advertising expert"
-                  width={600}
-                  height={600}
+                  width={500}
+                  height={500}
                   className="w-full h-auto object-contain"
                 />
               </div>
@@ -131,10 +131,10 @@ export default function PaidAdvertisingPage() {
                 <div className="pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#d068a5] transition-colors"
+                    className="inline-block bg-[#FFD350] text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
-                    start your free consultation today!
+                   start your free consultation today!
                   </Link>
                 </div>
               </div>
@@ -168,35 +168,6 @@ export default function PaidAdvertisingPage() {
         </div>
       </section>
       
-      {/* Tilted Slides */}
-      <section className="relative bg-black overflow-hidden">
-        <div className="mx-auto w-full max-w-[2000px] py-4 sm:py-6 lg:py-8">
-          <div
-            className="pointer-events-none absolute inset-0 z-[1]"
-            style={{
-              WebkitMaskImage:
-                "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
-              maskImage:
-                "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
-            }}
-          />
-
-          <div className="h-[3.5vh]" />
-
-          <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
-            <div className="relative h-[80vh] sm:h-[80vh] lg:h-[80vh] overflow-hidden rounded-2xl">
-              <Image
-                src="/services/paidadversting/work.png"
-                alt="Paid advertising portfolio"
-                width={800}
-                height={800}
-                sizes="100vw"
-                className="h-full w-[140vw] max-w-none object-cover animate-pan-right"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Yellow Process (bg.png + vertical tabs) */}
       <section className="relative overflow-hidden py-16 sm:py-20 text-white">
@@ -246,83 +217,179 @@ export default function PaidAdvertisingPage() {
           </div>
         </div>
       </section>
+      {/* ==== Why Paid Ads Work section (matches reference) ==== */}
+<section className="bg-black text-white py-14 sm:py-16">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-      {/* Advantages section (mirrors SEO) */}
-      <section className="relative bg-black text-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2
-            className="text-center text-xl sm:text-2xl font-extrabold uppercase tracking-wide mb-12"
-            style={{ fontFamily: "Recursive, sans-serif" }}
-          >
-            Unfair <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#EA7BBF] to-[#FFD350]">Advantages</span> You Will Gain from Us
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-            <div>
-              <h3 className="text-base sm:text-lg font-extrabold uppercase tracking-wide" style={{ fontFamily: "Recursive, sans-serif" }}>
-                Multi-Platform Ad Strategy
-              </h3>
-              <p className="mt-3 text-sm text-white/80 max-w-md" style={{ fontFamily: "Poppins, sans-serif" }}>
-                We combine search, social, and display with precise targeting, creative iteration, and budget control to maximize ROAS.
-              </p>
-            </div>
-
-            <div className="relative">
-              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-                <svg width="18" height="18" viewBox="0 0 24 24">
-                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-                </svg>
-              </span>
-              <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl">
-                <Image
-                  src="/services/paidadversting/cone.png"
-                  alt="Paid ads platforms"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-                <svg width="18" height="18" viewBox="0 0 24 24">
-                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-                </svg>
-              </span>
-            </div>
-          </div>
-
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-            {["Research & Targeting","Creative Testing","Budget & Bidding","Funnel Alignment","Landing Pages","Monitoring & Scale"].map((label, idx) => (
-              <div key={label} className="flex items-center gap-3 rounded-full bg-[#FFD350] px-4 py-3 text-black">
-                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">{idx + 1}</span>
-                <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>{label}</span>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-6">
-            <p className="text-[16px] sm:text-[18px] tracking-wide uppercase text-white/70" style={{ fontFamily: "Recursive, sans-serif", fontWeight: "bold" }}>
-              Our Seamless 6-step process for efficient and effective Results.
-            </p>
-            <Link href="/contact" className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition" style={{ fontFamily: "Poppins, sans-serif" }}>
-              GET STARTED
-            </Link>
-          </div>
-
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-            <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl ">
-              <Image src="/services/paidadversting/seoguys.png" alt="Campaign team working" fill className="object-contain" />
-            </div>
-            <div>
-              <h3 className="text-base sm:text-lg font-extrabold uppercase tracking-wide" style={{ fontFamily: "Recursive, sans-serif" }}>
-                Why Paid Advertising matters for your business?
-              </h3>
-              <p className="mt-3 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
-                Paid ads provide immediate reach and measurable impact. With tight feedback loops, you can test offers, validate markets, and scale winners fast.
-              </p>
-            </div>
-          </div>
+    {/* 6-step chips */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {[
+        "Let’s plan goals",
+        "Know your customer",
+        "Plan the strategy",
+        "Craft great creatives",
+        "Launch & test",
+        "Track & scale",
+      ].map((t, i) => (
+        <div
+          key={t}
+          className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
+        >
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+            {i + 1}
+          </span>
+          <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
+            {t}
+          </span>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* strap + CTA */}
+    <div className="mt-5 text-center">
+      <p
+        className="text-[11px] sm:text-xs tracking-wide uppercase text-white/70"
+        style={{ fontFamily: "Recursive, sans-serif" }}
+      >
+        A clear, reliable strategy → test → learn → scale
+      </p>
+      <Link
+        href="/contact"
+        className="mt-3 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+        GET STARTED
+      </Link>
+    </div>
+
+    {/* Section heading */}
+    <div className="mt-10 text-center">
+      <h2
+        className="text-xl sm:text-2xl font-extrabold uppercase"
+        style={{ fontFamily: "Recursive, sans-serif" }}
+      >
+        Why Paid Ads Work?
+      </h2>
+      <p
+        className="mt-2 text-xs sm:text-sm text-white/80"
+        style={{ fontFamily: "Poppins, sans-serif" }}
+      >
+        A balanced media plan that delivers fast, measurable growth
+      </p>
+    </div>
+
+    {/* Alternating rows */}
+    <div className="mt-10 space-y-12">
+
+      {/* Row 1 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div>
+          <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
+            Measurable Results
+          </h3>
+          <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+            Track every click, view, and conversion. We wire analytics and
+            attribution so budgets move to what works—and away from what
+            doesn’t.
+          </p>
+        </div>
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl ">
+          <Image
+            src="/services/paidadversting/Measurable.png" // replace with your asset
+            alt="Measurable results"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Row 2 (reversed) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:[&>*:first-child]:order-2">
+        <div>
+          <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
+            What is PPC?
+          </h3>
+          <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+            Pay-Per-Click puts you in front of high-intent audiences at the top
+            of search and across social. You pay only when users engage.
+          </p>
+        </div>
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/services/paidadversting/ppc.png" // replace with your asset
+            alt="What is PPC"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Row 3 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div>
+          <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
+            Why PPC Ads Are Game-Changers
+          </h3>
+          <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+            Rapid testing, precise targeting, and immediate feedback loops let
+            us find winning angles fast and scale them profitably.
+          </p>
+        </div>
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/services/paidadversting/Illustration.png" // replace with your asset
+            alt="Game changer"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Row 4 (reversed) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:[&>*:first-child]:order-2">
+        <div>
+          <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
+            What Is Search Engine Marketing?
+          </h3>
+          <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+            SEM blends paid search with landing-page optimization and
+            conversion strategy to own the SERP and turn clicks into revenue.
+          </p>
+        </div>
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/services/paidadversting/semgraphic.png" // replace with your asset
+            alt="SEM"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+      {/* Row 5 */}
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div>
+          <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
+            Discover the Potential of Retargeting
+          </h3>
+          <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+            Stay top-of-mind with warm audiences. Smart sequences recover
+            abandoned carts, re-engage visitors, and lift overall ROAS.
+          </p>
+        </div>
+        <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
+          <Image
+            src="/services/paidadversting/sem.png" // replace with your asset
+            alt="Retargeting"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>  
+</section>
 
       <TestimonialsMasonry />
     </main>
@@ -331,7 +398,7 @@ export default function PaidAdvertisingPage() {
 
 function PAProcessTabs() {
   const steps = [
-    { title: "Discover & Define", desc: "Clarify goals, audiences, and channels; design an ads roadmap.", logo: "/services/paidadversting/taba.png" },
+    { title: "Discover & Define", desc: "Clarify goals, audiences, and channels; design an ads roadmap.", logo: "/services/paidadversting/googleadd.png" },
     { title: "Audit & Analysis", desc: "Account, pixel, and funnel audit to identify optimization opportunities.", logo: "/services/logo/logoc.png" },
     { title: "Targeting & Creative", desc: "Audience hypotheses, creative angles, and messaging frameworks.", logo: "/services/logo/logod.png" },
     { title: "Launch & Optimize", desc: "Deploy campaigns with structured tests and rapid iteration.", logo: "/services/logo/logoe.png" },
