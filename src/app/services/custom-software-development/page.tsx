@@ -13,7 +13,7 @@ export default function CustomSoftwareDevelopmentPage() {
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
-            src="/services/smm/hero.png"
+            src="/services/softwaredev/hero.png"
             alt="Custom software development illustration"
             fill
             priority
@@ -23,7 +23,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="min-h[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
+          <div className="min-h-[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
             {/* Left copy */}
             <div className="py-12 md:py-0">
               <div className="max-w-2xl">
@@ -54,7 +54,7 @@ export default function CustomSoftwareDevelopmentPage() {
                   className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  We design and build secure, scalable, and high‑performance software tailored to your business. From discovery and architecture to deployment and support, we deliver reliable systems that grow with you.
+                  We design and build secure, scalable, and high performance software tailored to your business. From discovery and architecture to deployment and support, we deliver reliable systems that grow with you.
                 </p>
 
                 <div className="mt-8">
@@ -83,9 +83,10 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
           </div>
         </div>
+        
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -94,6 +95,7 @@ export default function CustomSoftwareDevelopmentPage() {
           </div>
         </div>
       </section>
+      
 
       {/* About Section (keeps layout/colors) */}
       <section className="py-20 bg-black text-white"> 
@@ -229,7 +231,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
       {/* Wavy Bottom Separator (kept) */}
       <section className="relative overflow-hidden">
-        <div className="relative bg[#EA7BBF] h-32 sm:h-40 lg:h-48">
+        <div className="relative bg-[#EA7BBF] h-32 sm:h-40 lg:h-48">
           <div className="absolute bottom-0 left-0 w-full h-20">
             <svg
               viewBox="0 0 1200 100"
