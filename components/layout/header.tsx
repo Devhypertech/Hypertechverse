@@ -14,6 +14,7 @@ const servicesList = [
   { href: "/services/video-animation", label: "Video Animation" },
   { href: "/services/animation", label: "Animation" },
   { href: "/services/custom-software-development", label: "Custom Software" },
+  { href: "/services/software-development", label: "Software Development" },
 ];
 
 const nav = [
