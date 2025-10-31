@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: process.cwd(),
   },
+  experimental: {
+    // Prevent resolving modules from parent/sibling directories to avoid
+    // mixed path casing loading duplicate module instances on Windows.
+    externalDir: false,
+  },
 };
 
 export default nextConfig;
