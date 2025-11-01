@@ -44,7 +44,7 @@ export default function UltimateAgency() {
                                 </h2>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={800}>
-                                <h2 className="text-2xl sm:text-3xl font-extrabold leading-tight mb-6 font-recent-grotesk">
+                                <h2 className="text-[16.8px] sm:text-[21px] font-extrabold leading-tight mb-6 font-recent-grotesk">
                                     <span className="text-[#ffffff]"> Hypertech Verse blends innovation</span>
                                 </h2>
                             </ScrollAnimation>

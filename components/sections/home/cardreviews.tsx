@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 type Tone = "cream" | "pink" | "white";
@@ -83,20 +84,75 @@ function toneClasses(tone: Tone) {
     return `${base} bg-white text-black`;
 }
 
+const videoTestimonials = [
+    { src: "/reviewone.mp4", title: "Review One" },
+    { src: "/reviewtwo.mp4", title: "Review Two" },
+    { src: "/reviewthree.mp4", title: "Review Three" },
+];
+
 export default function TestimonialsMasonry() {
+    const [playingVideo, setPlayingVideo] = useState<string | null>(null);
+
+    const handleVideoClick = (src: string) => {
+        if (playingVideo === src) {
+            setPlayingVideo(null);
+        } else {
+            setPlayingVideo(src);
+        }
+    };
+
     return (
         <section className="bg-black py-20 md:py-20">
             <div className="mx-auto max-w-7xl mb-16 px-4 sm:px-6 lg:px-8">
                 {/* Centered heading */}
                 <ScrollAnimation animation="fadeInUp" delay={200}>
                     <div className="relative mx-auto mb-10 md:mb-14 max-w-3xl text-center">
-                        <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow">
-                            LOOK, NOW!
+                        <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow border border-white">
+                            LOOK, MOM!
                         </span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white">
                             <span className="block">Nice things</span>
                             <span className="block text-[#FFD350] italic">People Said</span>
                         </h2>
+                    </div>
+                </ScrollAnimation>
+
+                {/* Video Testimonials Section */}
+                <ScrollAnimation animation="fadeInUp" delay={300}>
+                    <div className="mb-12 md:mb-16">
+                        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+                            {videoTestimonials.map((video, index) => (
+                                <div
+                                    key={index}
+                                    className="relative w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:bg-gray-500 transition-colors duration-300"
+                                    onClick={() => handleVideoClick(video.src)}
+                                >
+                                    {playingVideo === video.src ? (
+                                        <video
+                                            src={video.src}
+                                            controls
+                                            autoPlay
+                                            className="w-full h-full object-cover"
+                                            onEnded={() => setPlayingVideo(null)}
+                                        />
+                                    ) : (
+                                        <>
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                                    <svg
+                                                        className="w-8 h-8 text-white ml-1"
+                                                        fill="currentColor"
+                                                        viewBox="0 0 24 24"
+                                                    >
+                                                        <path d="M8 5v14l11-7z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </ScrollAnimation>
 

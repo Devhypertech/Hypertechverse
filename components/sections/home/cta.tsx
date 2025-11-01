@@ -83,7 +83,7 @@ export default function BrandPackages() {
             <div className="mx-auto max-w-7xl px-4 relative z-10">
                 {/* Header */}
                 <div className="mb-12 text-center">
-                    <span className="inline-block rounded-full bg-white/70 px-4 py-1 text-xs font-bold text-black animate-fade-in-up hover-scale">
+                    <span className="inline-block rounded-full bg-white/70 px-4 py-1 text-base md:text-lg font-bold text-black animate-fade-in-up hover-scale">
                         How we do things
                     </span>
                     <h2 className="mt-4 text-4xl font-extrabold text-white font-recent-grotesk animate-fade-in-up stagger-1 text-shimmer">Brand Packages</h2>

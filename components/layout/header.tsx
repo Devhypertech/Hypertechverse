@@ -1,20 +1,73 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const servicesList = [
-  { href: "/services/web-development", label: "Web Development" },
-  { href: "/services/app-development", label: "App Development" },
-  { href: "/services/logo-design", label: "Logo Design" },
-  { href: "/services/branding", label: "Branding" },
-  { href: "/services/seo", label: "SEO" },
-  { href: "/services/social-media-management", label: "Social Media" },
-  { href: "/services/paid-advertising", label: "Paid Advertising" },
-  { href: "/services/video-animation", label: "Video Animation" },
-  { href: "/services/animation", label: "Animation" },
-  { href: "/services/custom-software-development", label: "Custom Software" },
-  { href: "/services/software-development", label: "Software Development" },
+  { 
+    href: "/services/web-development", 
+    label: "Web Development",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#EA7BBF]",
+    description: "Build your dream website with modern technologies."
+  },
+  { 
+    href: "/services/app-development", 
+    label: "App Development",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#FFD350]",
+    description: "Mobile apps that engage and convert users."
+  },
+  { 
+    href: "/services/logo-design", 
+    label: "Logo Design",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#EA7BBF]",
+    description: "Create memorable brand identities."
+  },
+  { 
+    href: "/services/branding", 
+    label: "Branding",
+    icon: "/icons/businessgrowth.png",
+    iconBg: "bg-[#FFD350]",
+    description: "Complete brand identity solutions."
+  },
+  { 
+    href: "/services/seo", 
+    label: "SEO",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#EA7BBF]",
+    description: "Boost your search engine visibility."
+  },
+  { 
+    href: "/services/social-media-management", 
+    label: "Social Media",
+    icon: "/icons/smie.png",
+    iconBg: "bg-[#FFD350]",
+    description: "Grow your presence on social platforms."
+  },
+  { 
+    href: "/services/paid-advertising", 
+    label: "Paid Advertising",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#EA7BBF]",
+    description: "Drive results with targeted ad campaigns."
+  },
+  { 
+    href: "/services/animation", 
+    label: "Animation",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#FFD350]",
+    description: "Engaging animated content for your brand."
+  },
+  { 
+    href: "/services/custom-software-development", 
+    label: "Custom Software",
+    icon: "/icons/expert.png",
+    iconBg: "bg-[#EA7BBF]",
+    description: "Tailored software solutions for your business."
+  },
 ];
 
 const nav = [
@@ -27,6 +80,7 @@ const nav = [
   },
   { href: "/pricing", label: "Pricing" },
   { href: "/portfolio", label: "Case Studies" },
+  { href: "/blogs", label: "Blogs" },
 ];
 
 export default function Header() {
@@ -84,62 +138,55 @@ export default function Header() {
                             </svg>
                           </div>
                           {/* Desktop Mega Menu - Hover Triggered */}
-                          <div className="absolute top-full right-0 mt-2 w-[calc(100vw-2rem)] max-w-[900px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform translate-y-2 group-hover:translate-y-0 z-50 pointer-events-none group-hover:pointer-events-auto">
-                            <div className="bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden">
-                              <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-0">
-                                {/* Left Side - Services Grid */}
-                                <div className="p-8">
-                                  <h3 className="text-xl font-bold text-gray-900 mb-6">Our Services</h3>
-                                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                                    {n.dropdown.map((item: any) => (
-                                      <Link
-                                        key={item.href}
-                                        href={item.href}
-                                        className="block px-4 py-3 rounded-lg hover:bg-gray-50 transition-all duration-200 group/item hover:scale-[1.02] transform origin-left"
-                                      >
-                                        <span className="text-sm font-semibold text-gray-800 group-hover/item:text-[#ff5a1f] transition-colors duration-200">
-                                          {item.label}
-                                        </span>
-                                      </Link>
-                                    ))}
-                                  </div>
-                                </div>
-
-                                {/* Right Side - Promo Box */}
-                                <div className="bg-gradient-to-br from-gray-50 to-white border-l border-gray-100 p-8 lg:rounded-tr-xl">
-                                  <div className="space-y-6">
-                                    <div>
-                                      <h4 className="text-xl font-bold text-gray-900 mb-3">
-                                        Experience Real Results
+                          <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-screen max-w-7xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out transform translate-y-2 group-hover:translate-y-0 z-50 pointer-events-none group-hover:pointer-events-auto">
+                            <div className="bg-white shadow-xl border-t border-gray-100 overflow-hidden rounded-xl">
+                              <div className="mx-auto px-8 py-8">
+                                <h3 className="text-xl font-bold text-gray-900 mb-6">Our Services</h3>
+                                <div className="grid grid-cols-5 gap-6">
+                                  {n.dropdown.map((item: any, index: number) => (
+                                    <Link
+                                      key={item.href}
+                                      href={item.href}
+                                      className="group/item flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-50 transition-all duration-200 hover:scale-105"
+                                    >
+                                      {/* Icon Circle */}
+                                      <div className={`w-16 h-16 rounded-full ${item.iconBg || 'bg-[#EA7BBF]'} flex items-center justify-center mb-3 group-hover/item:scale-110 transition-transform duration-200`}>
+                                        {item.icon ? (
+                                          <Image
+                                            src={item.icon}
+                                            alt={item.label}
+                                            width={32}
+                                            height={32}
+                                            className="w-8 h-8 object-contain filter brightness-0 invert"
+                                          />
+                                        ) : (
+                                          <div className="w-8 h-8 bg-white rounded-full"></div>
+                                        )}
+                                      </div>
+                                      {/* Title */}
+                                      <h4 className="text-sm font-bold text-gray-900 mb-1 group-hover/item:text-[#EA7BBF] transition-colors duration-200">
+                                        {item.label}
                                       </h4>
-                                      <p className="text-sm text-gray-600 leading-relaxed">
-                                        Partner with Hypertech Verse and scale your business.
+                                      {/* Description */}
+                                      <p className="text-xs text-gray-600 leading-snug">
+                                        {item.description}
                                       </p>
+                                    </Link>
+                                  ))}
+                                  {/* View All Services Button */}
+                                  <Link
+                                    href="/services"
+                                    className="group/item flex flex-col items-center justify-center p-4 rounded-lg bg-[#FFD350]/20 hover:bg-[#FFD350]/30 transition-all duration-200 hover:scale-105"
+                                  >
+                                    <div className="w-16 h-16 rounded-full bg-[#FFD350] flex items-center justify-center mb-3 group-hover/item:scale-110 transition-transform duration-200">
+                                      <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                      </svg>
                                     </div>
-                                    
-                                    <form onSubmit={handleSubscribe} className="space-y-4">
-                                      <input
-                                        type="email"
-                                        value={email}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        placeholder="Enter your email"
-                                        required
-                                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#ff5a1f] focus:border-transparent text-sm"
-                                      />
-                                      <button
-                                        type="submit"
-                                        className="w-full bg-[#ff5a1f] hover:bg-[#e04a16] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-                                      >
-                                        Subscribe
-                                      </button>
-                                    </form>
-                                    
-                                    <div className="pt-4 border-t border-gray-200">
-                                      <p className="text-base font-bold text-gray-900">
-                                        GET 10% OFF
-                                      </p>
-                                    </div>
-                                  </div>
+                                    <span className="text-sm font-bold text-gray-900">
+                                      View all services
+                                    </span>
+                                  </Link>
                                 </div>
                               </div>
                             </div>

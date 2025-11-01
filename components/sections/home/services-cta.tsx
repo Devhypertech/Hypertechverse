@@ -120,7 +120,7 @@ export default function SmartSolutions() {
                             <span className="inline-block mt-1">that Drive Success</span>
                         </h2>
 
-                        <p className="mt-4 text-[12px] md:text-sm font-extrabold tracking-wide uppercase text-[#1D1D1D] max-w-3xl mx-auto">
+                        <p className="mt-4 text-[16px] md:text-[18px] font-extrabold tracking-wide capitalize text-[#1D1D1D] max-w-3xl mx-auto">
                             Increase your sales and separate yourself from the competition by working with a design
                             studio that specializes in the food &amp; beverage world
                         </p>

@@ -1,9 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function PortfolioPage() {
+  const [activeTab, setActiveTab] = useState("web");
+
+  // Filter studies based on active tab
+  const filteredStudies = studies.filter(study => {
+    const categoryMap: { [key: string]: string[] } = {
+      "web": ["Web"],
+      "logo": ["Brand", "Logo"],
+      "branding": ["Brand", "Branding"],
+      "video": ["Video", "Animation"],
+      "mobile": ["App", "iOS/Android", "Mobile"],
+    };
+    const tags = categoryMap[activeTab] || [];
+    return study.tags.some(tag => tags.some(cat => tag.toLowerCase().includes(cat.toLowerCase())));
+  });
   return (
     <main className="min-h-screen">
       {/* Hero Section (duplicated from SEO, with headings adjusted) */}
@@ -75,6 +89,64 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* Category Tabs */}
+      <section className="bg-black py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <button
+              onClick={() => setActiveTab("web")}
+              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+                activeTab === "web"
+                  ? "bg-[#FFD350] text-black shadow-lg"
+                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+              }`}
+            >
+              WEB DESIGNS
+            </button>
+            <button
+              onClick={() => setActiveTab("logo")}
+              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+                activeTab === "logo"
+                  ? "bg-[#FFD350] text-black shadow-lg"
+                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+              }`}
+            >
+              LOGO DESIGNS
+            </button>
+            <button
+              onClick={() => setActiveTab("branding")}
+              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+                activeTab === "branding"
+                  ? "bg-[#FFD350] text-black shadow-lg"
+                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+              }`}
+            >
+              BRANDING
+            </button>
+            <button
+              onClick={() => setActiveTab("video")}
+              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+                activeTab === "video"
+                  ? "bg-[#FFD350] text-black shadow-lg"
+                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+              }`}
+            >
+              VIDEO ANIMATION
+            </button>
+            <button
+              onClick={() => setActiveTab("mobile")}
+              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+                activeTab === "mobile"
+                  ? "bg-[#FFD350] text-black shadow-lg"
+                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+              }`}
+            >
+              MOBILE APPLICATIONS
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* ====== Case Studies ====== */}
 <section className="bg-black text-white py-16">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -103,7 +175,7 @@ export default function PortfolioPage() {
     </header>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
-      {studies.map((s) => (
+      {filteredStudies.map((s) => (
         <article
           key={s.slug}
           className="group relative overflow-hidden rounded-2xl bg-[#0E0E10] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)]"

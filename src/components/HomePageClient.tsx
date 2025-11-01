@@ -5,6 +5,7 @@ import SmartSolutions from "../../components/sections/home/services-cta";
 import UnfairAdvantage from "../../components/sections/home/process";
 import FeaturedWork from "../../components/sections/home/testimonials";
 import Testimonial from "../../components/sections/home/cardreviews";
+import OurPartners from "../../components/sections/home/partners";
 import BrandPackages from "../../components/sections/home/cta";
 import GetInTouch from "../../components/sections/home/get-in-touch";
 
@@ -17,6 +18,7 @@ export default function HomePageClient() {
       <UnfairAdvantage />
       <FeaturedWork />
       <Testimonial />
+      <OurPartners />
       <BrandPackages />
       <GetInTouch />
     </main>

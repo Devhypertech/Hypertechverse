@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function GetInTouch() {
@@ -31,20 +32,35 @@ export default function GetInTouch() {
                     {/* Content */}
                     <ScrollAnimation animation="fadeInUp" delay={400}>
                         <div className="space-y-4">
-                            <h2 className="text-7xl font-extrabold text-pink-200 font-recent-grotesk text-shimmer">
-                                Get In Touch
+                            <h2 className="text-7xl font-extrabold text-white font-recent-grotesk">
+                                Get in touch
                             </h2>
-                            <p className="text-lg font-extrabold text-pink-300">
-                                We&apos;ll get back to you within 24 hrs
+                            <p className="text-lg font-semibold text-[#EA7BBF]">
+                                I&apos;ll get back to you within 24hrs
                             </p>
-                            {/* <div className="pt-4">
+                            {/* Get Started Button */}
+                            <div className="pt-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-block bg-white text-black px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-300 font-semibold hover-scale hover-lift hover-shake"
+                                    className="inline-block bg-white text-black px-8 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 font-bold hover-scale hover-lift"
                                 >
-                                    Get started
+                                    Get Started
                                 </Link>
-                            </div> */}
+                            </div>
+                        </div>
+                    </ScrollAnimation>
+
+                    {/* Platforms Image */}
+                    <ScrollAnimation animation="fadeInUp" delay={600}>
+                        <div className="mt-8">
+                            <Image
+                                src="/platforms.png"
+                                alt="Platforms and partnerships"
+                                width={800}
+                                height={100}
+                                className="h-auto w-full max-w-5xl object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                                unoptimized
+                            />
                         </div>
                     </ScrollAnimation>
                 </div>
