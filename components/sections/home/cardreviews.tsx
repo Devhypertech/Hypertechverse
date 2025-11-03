@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 type Tone = "cream" | "pink" | "white";
@@ -85,9 +86,9 @@ function toneClasses(tone: Tone) {
 }
 
 const videoTestimonials = [
-    { src: "/reviewone.mp4", title: "Review One" },
-    { src: "/reviewtwo.mp4", title: "Review Two" },
-    { src: "/reviewthree.mp4", title: "Review Three" },
+    { src: "/reviewone.mp4", thumbnail: "/thumbnailone.jpg", title: "Review One" },
+    { src: "/reviewtwo.mp4", thumbnail: "/thumbnailtwo.jpg", title: "Review Two" },
+    { src: "/reviewthree.mp4", thumbnail: "/thumbnailthree.jpg", title: "Review Three" },
 ];
 
 export default function TestimonialsMasonry() {
@@ -124,7 +125,7 @@ export default function TestimonialsMasonry() {
                             {videoTestimonials.map((video, index) => (
                                 <div
                                     key={index}
-                                    className="relative w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:bg-gray-500 transition-colors duration-300"
+                                    className="relative w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:opacity-90 transition-opacity duration-300"
                                     onClick={() => handleVideoClick(video.src)}
                                 >
                                     {playingVideo === video.src ? (
@@ -137,10 +138,17 @@ export default function TestimonialsMasonry() {
                                         />
                                     ) : (
                                         <>
-                                            <div className="absolute inset-0 flex items-center justify-center">
-                                                <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                            <Image
+                                                src={video.thumbnail}
+                                                alt={video.title}
+                                                fill
+                                                className="object-cover"
+                                                unoptimized
+                                            />
+                                            <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors duration-300">
+                                                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                                     <svg
-                                                        className="w-8 h-8 text-white ml-1"
+                                                        className="w-8 h-8 text-black ml-1"
                                                         fill="currentColor"
                                                         viewBox="0 0 24 24"
                                                     >
