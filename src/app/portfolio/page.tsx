@@ -44,9 +44,9 @@ export default function PortfolioPage() {
                     className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px]"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-               Our
+               Case
                <br />
-               Portfolio
+               Studies
                <br />
                   </h1>
 

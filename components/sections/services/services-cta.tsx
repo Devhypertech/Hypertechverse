@@ -9,8 +9,8 @@ export default function ServicesCTA() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {/* Top Left Section */}
                     <div className="space-y-6">
-                        <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight" style={{ fontFamily: 'Inter, sans-serif' }}>
-                            THE LEADING DIGITAL MARKETING AGENCY FOR UNMATCHED SUCCESS
+                        <h2 className="text-4xl lg:text-4xl font-bold text-white leading-tight" style={{ fontFamily: 'Inter, sans-serif' }}>
+                        DIGITAL MARKETING AGENCY FOR UNMATCHED SUCCESS
                         </h2>
                         <p className="text-lg text-white/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>
                             We provide comprehensive SEO, social media marketing, web and app development services. 

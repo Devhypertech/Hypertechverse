@@ -32,10 +32,10 @@ export default function CustomSoftwareDevelopmentPage() {
                     className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[56px]"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    CUSTOM SOFTWARE DEVELOPMENT
+                   Scalable & User
                     <br />
                     <span className="text-[56px] sm:text-[72px] lg:text-[88px] block">
-                      BUILD SCALABLE SOLUTIONS
+                    Friendly Apps for All Platforms
                     </span>
                   </h1>
 
@@ -54,7 +54,7 @@ export default function CustomSoftwareDevelopmentPage() {
                   className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  We design and build secure, scalable, and high performance software tailored to your business. From discovery and architecture to deployment and support, we deliver reliable systems that grow with you.
+               Keep in touch with your clients by using intelligent, approachable applications that are compatible with all devices. Make purchasing simpler and the competitors obsolete.
                 </p>
 
                 <div className="mt-8">
@@ -132,16 +132,16 @@ export default function CustomSoftwareDevelopmentPage() {
             {/* Right side - Content */}
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  Software built to <span className="text-[#EA7BBF]">accelerate growth</span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                Machine Learning <span className="text-[#EA7BBF]">Services</span>
                 </h2>
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse delivers reliability
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Transforming data into business intelligence
                 </h3>
 
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  We craft web, mobile, and platform applications with clean architecture, robust security, and exceptional UX. Whether modernizing legacy systems or building from scratch, our teams ship fast, iterate safely, and focus on measurable outcomes.
+                Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
                 </p>
 
                 <div className="pt-4">
@@ -238,7 +238,7 @@ export default function CustomSoftwareDevelopmentPage() {
             className="mt-3 text-sm sm:text-base/7 text-white/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            From discovery to deployment, we build maintainable, scalable products with a strong delivery cadence and transparent communication.
+           With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
           </p>
         </div>
 
@@ -406,39 +406,39 @@ export default function CustomSoftwareDevelopmentPage() {
 function SoftwareProcessTabs() {
   const steps = [
     {
-      title: "Discovery & Planning",
+      title: "Mobile App & Web Development",
       desc:
-        "We clarify goals, map requirements, and define architecture and scope to de‑risk delivery.",
+        "With our Mobile App Development services, we create unique, brief yet effective apps for our users on Android and iOS platforms. Our goal is seamless performance from launch to concept, which means forming an app that is suitable for all smartphone devices and delivers on its promise of an engaging and exceptional user experience. Hypertech Verse has expert web developers who provide stunning looks and flawless performance. Whether you have an e-commerce platform or a corporate site, our websites are responsive, high-performing, and captivate your visitors to drive conversions. You cannot have an online presence that stands out with your brand.",
       logo: "/services/softwaredev/phone.png",
     },
     {
-      title: "UI/UX Design",
+      title: "Machine Learning & Artificial Intelligence",
       desc:
-        "Design systems and user flows that are intuitive, accessible, and aligned with your brand.",
+        "Utilize the power of Machine Learning to learn things and get the best out of business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions. Empower your organization with intelligent automation that enhances efficiency, accuracy, and long-term growth. Use the grip of Artificial Intelligence to make better decisions and increase process optimization. Our AI solutions are made to serve automation, data insight, and a better user experience for your business. Change technology that scales with your needs by taking a step into the future with cutting-edge AI technology.",
       logo: "/services/logo/logoc.png",
     },
     {
-      title: "Development",
+      title: "Product Design with Quality Assurance",
       desc:
-        "Clean, testable code with CI/CD, code reviews, and high standards for reliability and security.",
+        "Great design starts with great products. Given that we are focused on creating intuitive, functional, visually stunning designs that resonate with your Users, we have come to understand that our Product Design services are as much of a need for your product as your actual product itself. Blending creativity and strategy together, deriving products that would look good and work even better. The quality assurance service assured us that the software was bug-free and ready for production. To that end, we relentlessly test your product thoroughly and carefully, identifying and resolving any possible problems to ensure it meets the best performance and security standards. Our quality is guaranteed.",
       logo: "/services/logo/logod.png",
     },
     {
-      title: "Testing & QA",
+      title: "AR & VR Software Development",
       desc:
-        "Automated and manual testing to ensure performance, correctness, and a smooth user experience.",
+        "Get started with the development of an Augmented Reality (AR) app. We bring life into immersive experiences, making them interactive so users are intrigued and inspired to learn differently. Use AR technology to change how your customers relate to your products and services. Elevate your brand with innovative AR solutions that blend creativity and technology for unmatched engagement. Virtual Reality Software Development will help you take your business to the next level. With us, we build fully immersive virtual environments aiming to engage and educate users across the gaming, education, and training industries. Get inside a new reality through the cutting-edge VR solutions.",
       logo: "/services/logo/logoe.png",
     },
     {
-      title: "Deployment",
+      title: "SaaS & Custom CRM",
       desc:
-        "Cloud‑ready releases with infrastructure as code, monitoring, and rollback strategies.",
+        "Our SaaS Development service can build cloud-based solutions, giving you flexible, scalable, and accessible software for your customers. We create and develop secure platforms that allow your business and please your customers. Turn your idea into a reliable service on the cloud. Empower your operations with seamless integrations, automated updates, and performance-driven architecture that ensures consistent growth and reliability. Through our CRM service, you will achieve more efficient customer organization and automation capabilities that drive increased sales performance. Our service platform provides practical tools that enable relationship management and personalized communication to enhance satisfaction while boosting business growth at speed.",
       logo: "/services/logo/logof.png",
     },
     {
-      title: "Maintenance & Support",
+      title: "Cloud & Blockchain Development",
       desc:
-        "Ongoing improvements, observability, and support so your product keeps delivering value.",
+        "Cloud Services from our team deliver easy, secure, and scalable cloud solutions for your organization. We offer flexible services, from infrastructure management to cloud storage, to meet the demands of your developing business. Enable cloud computing and take your business to success. Experience unmatched efficiency and agility with cloud solutions designed to grow with your business. Blockchain Development will transform your business. Trust is essential; hence, we create secure, transparent, and decentralized blockchain solutions that allow you to build it and streamline your operations. Blockchain technology allows us to present innovative blockchain solutions. Empower your enterprise with cutting-edge blockchain systems that enhance security, traceability, and business integrity.",
       logo: "/services/smm/target.png",
     },
   ];

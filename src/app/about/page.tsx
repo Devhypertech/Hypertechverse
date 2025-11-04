@@ -23,11 +23,11 @@ export default function AboutPage() {
               {/* BOY — now attached to bottom edge to remove empty space */}
               <div className="pointer-events-none absolute left-[min(3vw,24px)] bottom-[32px] hidden md:block">
                 <Image
-                  src="/about/boy.png"
+                  src="/about/designing.png"
                   alt="Boy character"
-                  width={300}
-                  height={300}
-                  className="h-auto w-[210px] lg:w-[260px] select-none"
+                  width={550}
+                  height={550}
+                  className="h-auto w-[350px] lg:w-[400px] select-none"
                   priority
                 />
               </div>
@@ -35,7 +35,7 @@ export default function AboutPage() {
               {/* GIRL on right */}
               <div className="pointer-events-none absolute right-[min(3vw,24px)] bottom-0 hidden md:block">
                 <Image
-                  src="/about/girl.png"
+                  src="/about/coding.png"
                   alt="Girl character"
                   width={300}
                   height={300}
@@ -59,7 +59,7 @@ export default function AboutPage() {
                   {/* WORKER inline between words */}
                   <span className="inline-block align-middle pb-2 sm:pb-2">
                     <Image
-                      src="/about/worker.png"
+                      src="/about/annright.png"
                       alt="Worker character"
                       width={280}
                       height={260}
@@ -108,25 +108,15 @@ export default function AboutPage() {
           </h2>
 
           {/* Text now centered for all three columns */}
-          <div className="mt-10 grid gap-8 text-sm sm:text-[15px] leading-relaxed text-white/90 md:grid-cols-3 text-center">
+          <div className="mt-10 grid gap-8 text-sm sm:text-[15px] font-bold leading-relaxed text-white/90 md:grid-cols-3 text-center">
             <p>
-              We take the lead in the digital revolution instead of merely
-              accepting its trends. We operate as a leading digital marketing
-              agency that provides comprehensive services, from design and
-              development to digital marketing, and leading technology to new
-              frontiers.
+            We take the lead in the digital revolution instead of merely accepting its trends. We operate as a leading digital marketing agency that provides comprehensive services, from design and development to new frontiers.
             </p>
             <p>
-              Our team of forward-thinkers and tech experts thrives on challenges
-              and successfully converts them into reality. Our approach combines
-              innovative design techniques and technical accuracy to deliver
-              exceptional digital solutions for any project.
+            Our team of forward-thinkers and tech experts thrives on challenges and successfully converts them into reality. Our approach combines innovative design techniques and technical accuracy to deliver exceptional digital solutions for any project.
             </p>
             <p>
-              What drives us? Excellence, innovation, and your success. We focus
-              on achieving results that deliver lasting impacts through our
-              services. Your vision deserves perfection beyond all expectations,
-              so we construct solutions with extraordinary outcomes.
+            What drives us? Excellence, innovation, and your success. We focus on achieving results that deliver lasting impacts through our services. Your vision deserves perfection beyond all expectations, so we construct solutions with extraordinary outcomes. 
             </p>
           </div>
         </div>
@@ -137,7 +127,7 @@ export default function AboutPage() {
           {/* Designer */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <Image
-              src="/about/boy.png"
+              src="/about/designing.png"
               alt="Designer"
               width={250}
               height={250}
@@ -176,7 +166,7 @@ export default function AboutPage() {
               </button>
             </div>
             <Image
-              src="/about/girl.png"
+              src="/about/annleft.png"
               alt="Marketing"
               width={250}
               height={250}
@@ -187,7 +177,7 @@ export default function AboutPage() {
           {/* Developer */}
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <Image
-              src="/about/worker.png"
+              src="/about/coding.png"
               alt="Developer"
               width={250}
               height={250}

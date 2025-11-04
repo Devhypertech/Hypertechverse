@@ -100,6 +100,21 @@ export default function WebDevelopmentPage() {
       </div>
     </div>
   </div>
+  
+  {/* Logos image after ribbon */}
+  <div className="relative w-full bg-black py-8">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
+      <div className="flex justify-center">
+        <Image
+          src="/services/logos.png"
+          alt="Company Logos"
+          width={1200}
+          height={200}
+          className="w-full h-auto max-w-6xl object-contain"
+        />
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -124,18 +139,18 @@ export default function WebDevelopmentPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
                 {/* Main headline */}
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  Websites that define your <span className="text-[#EA7BBF]">Digital Future</span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                Transforming Your Vision into a Powerful <span className="text-[#EA7BBF]">Brand Identity</span>
                 </h2>
 
                 {/* Sub headline */}
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse blends innovation
+                <h3 className="text-xl sm:text-1xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                We design with purpose. We build with passion.
                 </h3>
 
                 {/* Description */}
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  What makes us the best web development company? Hypertech Verse brings your digital vision to life with cutting-edge websites that represent your brand. Our expert developers work with you to understand your business goals and create a powerful online presence that connects with your target audience. From responsive design to e-commerce solutions, our web development services provide you with modern, scalable, and high-performance websites that help your business thrive online.
+                Our web design strategy ensures seamless web app development services from idea to deployment, with close collaboration resulting in refined details. Our focus is on producing beautiful, fulfilling websites.
                 </p>
 
                 {/* CTA Button */}
@@ -271,10 +286,7 @@ export default function WebDevelopmentPage() {
             className="mt-3 text-sm sm:text-base/7 text-white/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            Building your website has become easy and pleasant. You&apos;ll have a pleasant and
-            customized experience with us, from discovery to planning and creating your
-            web development experience. We define your digital strategy, plan the architecture, and craft a
-            scalable website that speaks your brand—then deliver the complete solution you need.
+           Hypertech Verse offers more than just website creation. We build digital platforms that attract users and drive successful outcomes. As the top web development company in the USA, we deliver digital excellence tailored to your goals. A dedicated Project Manager guides each project, ensuring optimal design and development aligned with your business vision. 
           </p>
         </div>
 
@@ -371,12 +383,13 @@ export default function WebDevelopmentPage() {
               <div className="space-y-6">
                 {/* Main headline */}
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  RESPONSIVE WEB DESIGN FOR A SEAMLESS EXPERIENCE
+                RESPONSIVE WEB DESIGN FOR A SMOOTH EXPERIENCE
+
                 </h2>
 
                 {/* Description */}
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  HYPERTECH VERSE CRAFTS RESPONSIVE WEBSITES THAT ADAPT SEAMLESSLY TO ANY SCREEN, ENSURING A SMOOTH AND ENGAGING USER EXPERIENCE. OUR DESIGNS FOCUS ON SPEED, INTUITIVE NAVIGATION, AND MOBILE OPTIMIZATION TO KEEP VISITORS ENGAGED AND DRIVE CONVERSIONS. WE PRIORITIZE PERFORMANCE BY ALIGNING WITH GOOGLE'S CORE WEB VITALS, IMPROVING LOAD TIMES, SEO RANKINGS, AND OVERALL FUNCTIONALITY. ENHANCE YOUR ONLINE PRESENCE WITH A CONVENIENT AND USER-FRIENDLY DESIGN. LET'S CREATE SOMETHING EXCEPTIONAL TOGETHER!
+                We craft responsive websites that adapt seamlessly to any screen, ensuring a smooth and engaging user experience. Our designs focus on speed and mobile optimization to keep visitors engaged. We prioritize performance by aligning with Google's core web vitals, improving load times and SEO rankings. Enhance your online presence with a convenient and user-friendly design. Let's create something exceptional together!
                 </p>
               </div>
             </ScrollAnimation>

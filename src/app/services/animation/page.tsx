@@ -114,11 +114,11 @@ export default function AnimationPage() {
 
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
-                <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                <h2 className="text-3xl sm:text-3xl lg:text-4xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Recursive, sans-serif' }}>
                 Add a Spark of Animation to Your World
                 </h2>
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Hypertech Verse blends innovation
+                <h3 className="text-xl sm:text-1xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Transforming ideas into visually captivating experiences.
                 </h3>
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 We specialize in turning people’s imagination into visual reality. We focus on serving brands by providing high-quality animated video production services to effectively communicate, engage their audiences, and share compelling stories. Be it a startup or a mature enterprise, our dedicated video animation services are well-designed to boost your brand credibility and charm your viewers.
@@ -216,13 +216,15 @@ export default function AnimationPage() {
         className="mt-3 text-[11px] sm:text-xs leading-relaxed text-white/80 max-w-3xl mx-auto"
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
-    Animation can revolutionize our methods of interaction, where an attractive visual can create a lasting impact on the viewer, making it more comprehensive. Through animation, every subject becomes more accessible, transforming advanced material into visible and memorable content that appeals to viewers. Animation is a powerful resource because it quickly engages viewers, effortlessly expresses emotions, and creates enduring effects, on which multiple groups, such as brands and creative professionals, rely.
+   Animation can revolutionize our methods of interaction, where an attractive visual can create a lasting impact on the viewer, making it more comprehensive. Through animation, every subject becomes more accessible, transforming advanced material into visible and memorable content that appeals to viewers.
+
       </p>
       <p
         className="mt-2 text-[11px] sm:text-xs leading-relaxed text-white/80 max-w-3xl mx-auto"
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
-     Animation allows people to engage passionately with its content. The medium unites linguistic variations and cultural traits, so content becomes accessible to everybody and sticks in their minds. Animation converts regular messages into extraordinary journeys, which boost conversions through explainer videos and stir emotions through storytelling. The medium goes beyond narration to present visual stories that use movement combined with vibrant hues and creativity.
+  Animation allows people to engage passionately with its content. The medium unites linguistic variations and cultural traits, so the content becomes accessible to everybody and sticks in their minds. The medium goes beyond narration to present visual stories that use movement combined with vibrant hues and creativity
+
       </p>
     </div>
 
@@ -266,14 +268,13 @@ export default function AnimationPage() {
           className="text-lg sm:text-xl font-extrabold uppercase"
           style={{ fontFamily: "Recursive, sans-serif" }}
         >
-          Fast Turnarounds Without Compromise
+          Custom Animation Solutions
         </h4>
         <p
           className="mt-2 text-[12px] sm:text-sm leading-relaxed text-white/80"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
-          Tight timelines? No problem. Our pipeline is built for speed—clear briefs, rapid style frames,
-          and parallelized production—so you get cinematic quality, delivered faster.
+        Some of our animations are as different as every brand. We don’t believe in one-size-fits-all. What you want to say and who you aim to tell it to guide our process in building the pieces of your brand and the pre-designed frame of your website is just one example of that uniqueness. We always deliver results that match the vision perfectly, whether it is 2D or 3D animation services or a blend of both.
         </p>
       </div>
 
@@ -332,18 +333,18 @@ export default function AnimationPage() {
     </div>
 
     {/* Bottom microcopy + CTA */}
-    <div className="mt-6 text-center">
+    <div className="mt-16 text-center">
     <h4
           className="text-lg sm:text-xl font-extrabold uppercase"
           style={{ fontFamily: "Recursive, sans-serif" }}
         >
-          Our Smooth Process
+         24/7 Support & Collaboration
         </h4>
       <p
-        className="text-[11px] sm:text-xs text-white/70"
+        className="text-[11px] sm:text-xs text-white/70 max-w-3xl mx-auto"
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
-      Starting with the simplest act of making something beautifully smooth and collaborative, we believe great animation begins with a great workflow. Our production process is designed for clarity, creation, and consistency. Yet, it involves the way you are from the first concept to the final delivery—it’s just as much fun going as the result.
+     Our creative team works with you from the first brainstorming session until the final delivery. Every project is treated as a partnership, and you are heard, supported, and 100% satisfied with the final product.
       </p>
       <Link
         href="/contact"
@@ -365,11 +366,12 @@ export default function AnimationPage() {
 
 function AnimationProcessTabs() {
   const steps = [
-    { title: "2D ANIMATION", desc: "Our animation services are a dynamite but affordable way to narrate your story clearly and creatively. We are a 2D animation company with extensive experience creating explainer videos, product showcases, infographics, and social media content that relates to viewers via clean visuals and interesting motion. The chief use of this service is launching a new product or reducing a complicated idea to a simple message.", 
-        logo: "/services/animation/tabo.png" },
-    { title: "3D ANIMATION", desc: "Plan scenes, transitions, and pacing.", logo: "/services/logo/logoc.png" },
-    { title: "EXPLAINER VIDEO PRODUCTON", desc: "Craft characters, scenes, and style frames.", logo: "/services/logo/logod.png" },
-    { title: "TRAINING VIDEO ANIMATION", desc: "Bring visuals to life with motion and timing.", logo: "/services/logo/logoe.png" },
+    { title: "2D ANIMATION", desc: "Our animation services are a dynamite but affordable way to narrate your story clearly and creatively. We are a 2D animation company with extensive experience creating explainer videos, product showcases, infographics, and social media content that relates to viewers via clean visuals and interesting motion. The chief use of this service is launching a new product or reducing a complicated idea to a simple message. Hypertech Verse has an in-house 2D animation studio that breathes life into ideas with smooth flowing movements, bright ideas, and conniving stories. Still debating 2D vs 3D animation? Our team will also guide you through the process to ensure that you get the creative decision most effectively to let your brand message come through. Stunning 2D visuals: Choose our video company that moves viewers and drives results.",  logo: "/services/animation/tabo.png" },
+    { title: "3D ANIMATION", desc: "If you are looking for high-end 3D animation services, you are in the right place. As the world’s leading 3D animation company, we create top-quality 3D animation that delivers depth, realism, and detail. This allows for accurate, lifelike product visualizations, virtual tours, medical animations, and tech explainers that grab the user’s attention in a way that no other form of communication can. We take an artistic vision paired with state-of-the-art technology in our offering of professional animated video production services. Our video animation service guarantees you the best modeling and rendering services as an expert in the media. Stay tuned and allow our animation company to provide world-class 3D content.", logo: "/services/logo/logod.png" },
+    { title: "EXPLAINER VIDEO PRODUCTON", desc: "Our explainer video services make your message easy and captivate your audience. With extensive experience in creating concise, compelling animations that educate your business, product, or service in under two minutes, we’re a trusted, top-rated video animation company. Explainer videos are a proven means of raising engagement and increasing conversions. Animated video production serves as our strategic storytelling, and our professionals produce informative and entertaining explainer videos. We do 2D and 3D animation based on the brand style and the message's complexity. An explainer video is not just a video but an innovative communication way developed by an expert team from the fields of animation and brand messaging.", logo: "/services/logo/logod.png" },
+    { title: "TRAINING VIDEO ANIMATION", desc: "Get our animated training video solutions to increase employee onboarding, eLearning, automate corporate compliance, and more. We produce video animation services to eliminate complexity, simplify our audience’s understanding of it & in a meaningful way. Our training videos make dry content dynamic by bringing in product tutorials as well as safety protocols. Whether you prefer simple 2D or complex 3D animation services for immersive learning environments. As an experienced animation company, we produce personalized training content that fits your goals and company culture. If you are looking to build a smarter and more interactive training ecosystem, then work with us, the best video animation company partner. ", logo: "/services/logo/logoe.png" },
+ 
+    
   ];
 
   const [active, setActive] = React.useState(0);

@@ -89,6 +89,21 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </div>
+            
+            {/* Logos image after ribbon */}
+            <div className="relative w-full bg-black py-8">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
+                    <div className="flex justify-center">
+                        <Image
+                            src="/services/logos.png"
+                            alt="Company Logos"
+                            width={1200}
+                            height={200}
+                            className="w-full h-auto max-w-6xl object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
         </section>
     );
 }

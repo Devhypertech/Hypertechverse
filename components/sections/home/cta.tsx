@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const packages = [
     {
@@ -141,9 +142,9 @@ export default function BrandPackages() {
 
                             {/* Footer - pushed to bottom */}
                             <div className="border-t border-black/10 bg-white p-4 mt-auto">
-                                <button className="w-full rounded-md bg-white border border-black py-3 text-sm font-semibold text-black transition-all duration-300 hover:bg-gray-50 hover:scale-105 hover:shadow-lg hover:border-blue-500 hover:text-blue-600 hover-shake">
+                                <Link href="/contact" className="block w-full rounded-md bg-white border border-black py-3 text-sm font-semibold text-black transition-all duration-300 hover:bg-[#FFD350] hover:scale-105 hover:shadow-lg hover:border-black hover:text-black hover-shake text-center">
                                     Buy Now
-                                </button>
+                                </Link>
                             </div>
                         </article>
                     ))}
@@ -161,10 +162,10 @@ export default function BrandPackages() {
 
                 {/* Bottom CTA */}
                 <div className="mt-8 text-center">
-                    <button className="rounded-lg bg-black px-8 py-3 text-sm font-semibold text-white transition hover:brightness-110">
+                    <Link href="/contact" className="inline-block rounded-lg bg-black px-8 py-3 text-sm font-semibold text-white transition hover:brightness-110">
                         Get started
-                    </button>
-                    <p className="mt-4 text-sm text-white/70">
+                    </Link>
+                    <p className="mt-4 text-sm font-semibold text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }} >
                         Not seeing what you need? No problem! Reach out and I&apos;ll send you a free quote for your own custom project.
                     </p>
                 </div>

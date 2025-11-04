@@ -21,7 +21,7 @@ export default function UnfairAdvantage() {
                         <h2 className="text-white font-extrabold leading-[0.95] text-[52px] sm:text-[72px] lg:text-[96px]">
                             Your <br />
                             Unfair <br />
-                            Advantage
+                            Advantages
                         </h2>
                         <p className="mt-6 text-white font-semibold max-w-md text-base sm:text-lg">
                             Working with Hypertech Verse is easy. Here&apos;s what you can expect

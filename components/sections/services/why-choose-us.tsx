@@ -42,19 +42,19 @@ export default function WhyChooseUs() {
 
               <p
                 className="
-                  text-white uppercase font-extrabold
-                  text-[12px] md:text-[13.5px] leading-[1.35]
-                  mt-4 max-w-[62ch]
+                  text-white/90 capitalize
+                  text-lg leading-relaxed
+                  mt-4 max-w-[66ch]
                 "
-                style={{ fontFamily: "Poppins, sans-serif" }}
+                style={{ fontFamily: 'Poppins, sans-serif' }}
               >
-                HYPERTECH VERSE OFFERS COMPREHENSIVE DIGITAL MARKETING SERVICES
-                TO CLIENTS, COMBINING INNOVATIVE EXPERTS WITH MODERN TECHNOLOGY
-                AND CREATIVE DEVELOPMENT TO ENHANCE BRAND VISIBILITY ONLINE.
-                USING DATA-DRIVEN METHODOLOGIES, THEY DELIVER BRANDING SERVICES,
-                WEB AND APP DEVELOPMENT, SOCIAL MEDIA MARKETING, AND SEO TO
-                BUILD A ROBUST SYSTEM FOR GROWTH ENHANCEMENT. CLIENTS RECEIVE
-                PERSONAL ASSISTANCE THROUGHOUT THE PROJECT STAGE.
+                Hypertech verse offers comprehensive digital marketing services
+                to clients, combining innovative experts with modern technology
+                and creative development to enhance brand visibility online.
+                using data-driven methodologies, they deliver branding services,
+                web and app development, social media marketing, and seo to
+                build a robust system for growth enhancement. clients receive
+                personal assistance throughout the project stage.
               </p>
 
               {/* Skewed CTA */}

@@ -34,10 +34,10 @@ export default function SEOPage() {
                     className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[56px]"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    SEO
+                    Best SEO Agency
                     <br />
                     <span className="text-[56px] sm:text-[72px] lg:text-[88px] block">
-                      SEARCH RANKING
+                    In United States.
                     </span>
                   </h1>
 
@@ -58,8 +58,7 @@ export default function SEOPage() {
                   className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  Boost your search engine rankings and drive organic traffic to your website. We specialize in crafting
-                  strategic SEO campaigns that improve visibility, increase rankings, and deliver measurable business results through data-driven optimization and proven tactics.
+              We contribute to SEO services, offering a variety of packages for all kinds of tools and strategies to rank your website
                 </p>
 
                 {/* CTA */}
@@ -99,6 +98,21 @@ export default function SEOPage() {
             </div>
           </div>
         </div>
+        
+        {/* Logos image after ribbon */}
+        <div className="relative w-full bg-black py-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
+            <div className="flex justify-center">
+              <Image
+                src="/services/seo/seologos.png"
+                alt="Company Logos"
+                width={1200}
+                height={200}
+                className="w-full h-auto max-w-6xl object-contain"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* SEO Section */}
@@ -122,18 +136,18 @@ export default function SEOPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
                 {/* Main headline */}
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  SEO that drives your <span className="text-[#EA7BBF]">Search Success</span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                Comprehensive SEO <span className="text-[#EA7BBF]">Services</span>
                 </h2>
 
                 {/* Sub headline */}
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse delivers results
+                <h3 className="text-xl sm:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Driven by research, powered by results.
                 </h3>
 
                 {/* Description */}
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  What makes us the best SEO company? Hypertech Verse transforms your search presence into powerful SEO campaigns that connect with your audience. Our expert team creates strategic content, optimizes your site, and delivers results that grow your brand across all search engines. From strategy to execution, we build SEO that drives engagement and delivers results.
+                Hypertech Verse is a leading organic SEO agency in the USA that boosts brand online visibility, leading to enduring business growth. It operates as a reliable and affordable SEO services provider, delivering enterprise SEO solutions. Our agency avoids obsolete guessing methods using research-based data strategies and established methodologies for every project. Team members use detailed evaluations of business facts to generate specialized approaches that produce quantitative outcomes.
                 </p>
 
                 {/* CTA Button */}
@@ -231,17 +245,14 @@ export default function SEOPage() {
             className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-black"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
-            The Signature Flow that Brings<br className="hidden sm:block" />
-            Your SEO to Life
+            Our In-Depth-Services to <br className="hidden sm:block" />
+            Rank Your Website
           </h2>
           <p
             className="mt-3 text-sm sm:text-base/7 text-black/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            Building your SEO has become easy and pleasant. You&apos;ll have a pleasant and
-            customized experience with us, from discovery to planning and creating your
-            SEO strategy. We define your SEO strategy, plan the optimization, and craft a
-            scalable SEO presence that speaks your brand—then deliver the complete solution you need.
+          Our SEO services are designed to boost your online visibility, drive organic traffic, and position your business at the top of search engine results. We use data-driven strategies, keyword research, and on-page optimization to ensure your website ranks. Our SEO experts help you grow sustainably by attracting the right traffic and turning visitors into loyal customers.
           </p>
         </div>
 
@@ -420,39 +431,63 @@ export default function SEOPage() {
 function SEOProcessTabs() {
   const steps = [
     {
-      title: "Discover & Define",
+      title: "Shopify SEO",
       desc:
-        "Your business goals are analyzed, your target keywords are identified, and your SEO strategy is refined. We understand what your SEO needs to achieve, who it serves, and the search experience to deliver—all distilled into a clear SEO roadmap.",
+        "Hypertech Verse dedicates its services to enhance Shopify stores. Our Shopify SEO agency works on product titles and descriptions, and Meta tag optimization to enable search engine content discovery and page ranking. The implementation of structured data, combined with increased site speed fulfillment and mobile compatibility improvement, results in an optimized user experience. Hypertech provides on-page SEO services where our team works on strengthening site structure by improving the internal linking system, fixing broken links, and optimizing URLs. Our small businesses' SEO services guarantee that new and existing Shopify stores secure a relentless sales performance while maintaining an industry leadership position.",
       logo: "/services/seo/taba.png"
     },
     { 
-      title: "Audit & Analysis",
+      title: "Ecommerce SEO",
       desc:
-        "Technical SEO audit and content analysis to identify optimization opportunities. We analyze your site structure, identify issues, and design SEO plans that increase rankings.",
+        "Traditional SEO practices do not suffice for Ecommerce since optimizing product pages and checking out processes and category structures leads to better conversion rates. The SEO agency at Hypertech Verse delivers personalized eCommerce SEO solutions for different platforms, including Shopify, Magento, WooCommerce, and BigCommerce.  Our production of schema markup enables search engines to enhance their ability to show your products. We provide content optimization through our on-page SEO services, together with backlink creation as a part of our off-page SEO services, to increase your store's authority standing. Our work on your eCommerce site SEO will draw additional customers while generating maximum profitable results.",
       logo: "/services/logo/logoc.png"
     },
     { 
-      title: "Keyword Strategy",
+      title: "AI SEO",
       desc:
-        "Keyword research and content strategy. We choose the right keywords, topics, and content angles to rank effectively and drive qualified traffic.",
+        "Modern SEO implementation adopts new ways through artificial intelligence technology. Our company's AI SEO services combine automation with machine learning technologies to operate websites more efficiently. The use of AI-generated keyword research applications, predictive analytics, and natural language processing (NLP) enables us to develop content that is both strongly relevant and highly appealing to readers.   The AI-powered SEO portfolio we offer automatically produces content and optimizes metadata dynamically while employing AI to develop link-building methods. The personalization enabled by artificial intelligence allows you to achieve exact targeting with SEO tools that adapt well to constantly evolving search engine rules.",
       logo: "/services/logo/logod.png"
     },
     { 
-      title: "Content & Optimization",
+      title: "Local SEO",
       desc:
-        "On-page optimization, content creation, and technical improvements. We build SEO-friendly content with clean, optimized HTML that search engines love.",
+        "Local SEO is the best SEO service for small businesses to generate customer engagement in their target geographic market area. Our local search engine optimization service's prices help your business appear in Google Local Pack, Google Maps, and chosen local search result pages. Our service optimizes your Google My Business (GMB) profile, which includes detailed business information verification with well-written descriptions and eye-catching images.  Our team dedicates efforts to establish local citations, obtains favorable customer evaluations, and deploys location-specific search word approaches. Our B2B SEO service for small businesses helps any establishment with physical or service-based operations to effectively attract and maintain a local customer base through appropriate location strategies.",
       logo: "/services/logo/logoe.png"
     },
     { 
-      title: "Testing & Monitoring",
+      title: "Amazon SEO",
       desc:
-        "Performance tracking, ranking monitoring, and analytics analysis. We ensure your SEO works flawlessly across all search engines and platforms.",
+        "Amazon sells more than product listings because sellers must invest in Amazon SEO services to achieve market leadership in the competitive arena. Hypertech Verse dedicates its expertise to optimizing product titles and bullet points together with descriptions and backend search terms so Amazon's search algorithm can discover your products more easily.  Hypertech Verse optimizes conversion rates through CRO methods involving A+ content, improved product images, and compelling calls to action for better click-through rates and improved sales results. We provide optimization for your Amazon Seller Central. Our SEO audit solution enables businesses to locate their Amazon listing weaknesses while deploying data-based solutions.",
       logo: "/services/logo/logof.png"
     },
     { 
-      title: "Launch & Support",
+      title: "Enterprise SEO",
       desc:
-        "SEO implementation, reporting delivery, and ongoing optimization. We provide comprehensive support to keep your SEO performing smoothly.",
+        "Major corporations need customized enterprise SEO services for their extensive websites containing numerous pages. The enterprise SEO agency at our firm designs unique SEO approaches for companies running multiple franchises with multiple locations. Enterprise SEO services from our agency include complete website audits alongside fixing search indexing and crawling problems. The services include AI-driven keyword analysis, automation tools, and advanced schema markup. We provide content writing solutions and SEO copywriting services that develop compelling material that connects with your current marketplace. We deploy long-term growth schemes through enterprise SEO that help your company establish lasting expansion and industry leadership status.",
+      logo: "/services/seo/cone.png"
+    },
+    { 
+      title: "Link Building",
+      desc:
+        "Your website’s authority depends heavily on backlinks, as search engines use them to rank your website. The links you acquire from reliable websites are recommendations to search engines that your content is valuable and trustworthy. The white-label SEO services from our company apply ethical link-building approaches that construct domain authority while stimulating organic website traffic. Our team builds authoritative backlinks through successful guest blogging initiatives, niche edits, and planned outreach methods towards relevant websites with high positions. We deliver sustainable long-term search engine success and lasting online growth by implementing complete off-page SEO approaches that establish your site with strong natural backlink networks.",
+      logo: "/services/seo/cone.png"
+    },
+    { 
+      title: "Conversion Rate Optimization (CRO)",
+      desc:
+        "Through search engine optimization, businesses achieve more than top rankings by enabling genuine business success through visitor transformation into customers. Our company's Conversion Rate Optimization (CRO) services work to improve website elements for better user experience and conversion results.  We improve every piece of content and optimize landing pages together with site speed to create a smooth journey that leads visitors towards taking desired actions. In our practice, we unite SEO and CRO efforts to bring in targeted visitors who successfully convert into customers. Data-driven analytics enable your digital marketing strategy to produce quantifiable business expansion, yielding superior results in an online market competition.",
+      logo: "/services/seo/cone.png"
+    },
+    { 
+      title: "Technical SEO",
+      desc:
+        "Our technical SEO services implement strategies for website speed optimization, mobile responsiveness, and structured data implementation while fixing all indexing errors. Our work on these core elements produces better website performance and usage experience with improved search engine discoverability.   Our detailed SEO audit lets us locate and solve ranking obstacles caused by technical problems. Our optimization work addresses all types of website optimization, including duplicate content elimination, site structure development, and Core Web Vitals enhancement to provide a full search engine and user-friendly configuration. Our expert implementation of technical SEO approaches enhances users' search rankings, keeping your site in optimal condition for smooth experiences.",
+      logo: "/services/seo/cone.png"
+    },
+    { 
+      title: "Content Writing",
+      desc:
+        "The foundation of SEO achieves success through content, while our SEO content writing services produce high-quality text that optimizes keywords for better search engine positioning. Our company's WordPress SEO service optimization involves enhancement of content readability through internal link insertion and structural SEO optimization. Our company provides two different services for search engine optimization, including on-page SEO services and SEO copywriting services. Hypertech Verse is an international SEO agency that delivers effective solutions to enhance your online reach. The platform Hypertech Verse provides SEO services, content optimization, and technical SEO solutions to boost brand visibility and increase website traffic, leads, and conversion rates.",
       logo: "/services/seo/cone.png"
     },
   ];

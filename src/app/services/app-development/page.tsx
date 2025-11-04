@@ -31,13 +31,13 @@ export default function AppDevelopmentPage() {
                 {/* Headline */}
                 <div className="relative inline-block">
                   <h1
-                    className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[56px]"
+                    className="leading-[.99] font-black uppercase text-[16px] sm:text-[28px] lg:text-[32px]"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    APP DEVELOPMENT
+                    Mobile Application Development 
                     <br />
                     <span className="text-[56px] sm:text-[72px] lg:text-[88px] block">
-                      MOBILE FIRST
+                    for Android & IOS.
                     </span>
                   </h1>
 
@@ -58,8 +58,8 @@ export default function AppDevelopmentPage() {
                   className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  Transform your ideas into powerful mobile and web applications. We specialize in creating
-                  innovative apps that engage users, drive business growth, and deliver exceptional digital experiences across all platforms.
+                  Hypertech Verse specializes in business-centric application development. It utilizes expert developers to create 
+                  high-performance mobile and web applications for various businesses, including yours.
                 </p>
 
                 {/* CTA */}
@@ -99,6 +99,21 @@ export default function AppDevelopmentPage() {
             </div>
           </div>
         </div>
+        
+        {/* Logos image after ribbon */}
+        <div className="relative w-full bg-black py-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
+            <div className="flex justify-center">
+              <Image
+                src="/services/app/applogos.png"
+                alt="Company Logos"
+                width={1200}
+                height={200}
+                className="w-full h-auto max-w-6xl object-contain"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* App Development Section */}
@@ -128,7 +143,7 @@ export default function AppDevelopmentPage() {
 
                 {/* Sub headline */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse blends innovation
+                Designing the apps that define tomorrow.
                 </h3>
 
                 {/* Description */}
@@ -238,10 +253,7 @@ export default function AppDevelopmentPage() {
             className="mt-3 text-sm sm:text-base/7 text-black/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            Building your app has become easy and pleasant. You&apos;ll have a pleasant and
-            customized experience with us, from discovery to planning and creating your
-            app development experience. We define your digital strategy, plan the architecture, and craft a
-            scalable app that speaks your brand—then deliver the complete solution you need.
+           We provide businesses with full-fledged Custom app development solutions that match individual business specifications. We provide top-notch designs that prioritize quality that ultimately produce high-performance, user-friendly solutions. Our team builds innovative apps with the current technology landscape, through which we develop website applications and robust cross-platform mobile applications that improve user experience while boosting business accomplishment.
           </p>
         </div>
 
@@ -336,39 +348,39 @@ export default function AppDevelopmentPage() {
 function AppProcessTabs() {
   const steps = [
     {
-      title: "Discover & Define",
+      title: "UI/UX Design",
       desc:
-        "Your business goals are analyzed, your target audience is identified, and your app strategy is refined. We understand what your app needs to achieve, who it serves, and the user experience to deliver—all distilled into a clear development roadmap.",
+        " The user engagement and retention levels strongly depend on having an intuitive and visually appealing design structure, which our team understands entirely. The user interface and user experience design solutions we provide are dedicated to developing smooth interactive systems that improve system usability while enhancing functionality.  We design mobile application development interfaces to give users an attractive interface with easy navigation paths. Our design approach delivers responsive interfaces, accessible solutions, and optimized performance to companies developing web and mobile applications across multiple platforms. ",
       logo: "/services/app/taba.png"
     },
     { 
-      title: "Design & Prototype",
+      title: "Software Quality Testing",
       desc:
-        "User experience design and visual mockups to create intuitive interfaces and engaging layouts. We design user flows that feel natural and conversion-focused.",
+        "Any app requires optimal performance to succeed in the market. Through its testing services, we provide guaranteed optimal user service by finding and solving issues before deployment. Recent research confirms that subpar user experiences send many users away, so our company carries out extensive review frameworks to boost mobile application development and web application development practice success.  Our company's testing process incorporates functional testing, performance testing, usability checking, and security verification to guarantee consistent operation between all platforms. Companies gain assurance through our expertise to produce high-quality applications that combine reliability with security and scalability features, which increase customer satisfaction and retention.",
       logo: "/services/logo/logoc.png"
     },
     { 
-      title: "Architecture Planning",
+      title: "Hybrid App Development",
       desc:
-        "Technical architecture and technology stack selection. We choose the right frameworks, databases, and infrastructure solutions for optimal performance and scalability.",
+        "Business organizations seeking maximum market penetration should consider hybrid application development, combining cost-effectiveness with operational effectiveness. Hypertech Verse builds platforms for developing mobile applications that deliver flawless operation between iOS and Android systems. Our company's hybrid app solutions use React Native and Flutter frameworks to enable quick development cycles, reduced costs, and a uniform user experience. Our team uses web technology to optimize custom application performance while preserving a native smartphone user experience for our apps. From startups to enterprises, our agency helps you get hybrid apps that meet performance needs while offering a captivating, scalable solution.",
       logo: "/services/logo/logod.png"
     },
     { 
-      title: "Development & Build",
+      title: "iOS App Development",
       desc:
-        "Native and cross-platform development, API integration, and backend setup. We build responsive, fast-loading apps with clean, maintainable code.",
+        "Hypertech Verse is a leading iPhone app development company that produces superior quality, performance-oriented applications for different business markets. The expert developers at our company create feature-rich applications that develop scalability while maximizing performance for Apple’s native environment. Clients can rely on our custom web application development services because we guarantee security, responsiveness, and complete adherence to Apple's specifications. We emphasize delivering motionless user experiences from application conceptualization through deployment, leading to improved customer interaction. We assist businesses in succeeding in the iOS market competition through our complete mobile application development support for advanced features implementation and the App Store approval process.",
       logo: "/services/logo/logoe.png"
     },
     { 
-      title: "Testing & Optimization",
+      title: "Android App Development",
       desc:
-        "Quality assurance, performance optimization, and cross-device testing. We ensure your app works flawlessly across all devices and platforms.",
+        "A business requires a practical Android application to succeed because Android maintains over 3 billion global users. We develop Android applications through our operations to strengthen scalability alongside total security and application performance. Our expert engineers create complete application features that suit your company's requirements while maintaining compatibility across different devices and resolutions.  Our experts transform application development projects and enterprise website applications for maximum speed performance and optimal user experience. Our team integrates components from all stages of development to construct Android applications that maintain user engagement throughout, resulting in increased business expansion. ",
       logo: "/services/logo/logof.png"
     },
     { 
-      title: "Launch & Support",
+      title: "Progressive Web App Development",
       desc:
-        "App store deployment, backend setup, and ongoing maintenance. We provide comprehensive support to keep your app running smoothly.",
+        "PWAs function as platforms that unite web applications with mobile applications to provide users with swift, dependable, and interactive encounters. Progressive Web Apps (PWAs) form the core service of our company, allowing businesses to develop web applications with download-free app-like features.  Our web application development services guarantee that your PWA functions appropriately and provides both security features and optimal performance. Implementing modern technologies through our company helps businesses create seamless experiences between all devices. We work to achieve top standards in web application development projects, regardless of your goal to enhance or develop new web solutions.",
       logo: "/services/app/webscale.png"
     },
   ];
@@ -472,7 +484,7 @@ function AppSuccessCarousel() {
       headlineLeft: "PRIORITIZING CLIENTS AND PARTNERS:",
       headlineRight: "DEDICATED TO YOUR SUCCESS AT EVERY STEP",
       sub:
-        "OUR APP DESIGN STRATEGY ENSURES SEAMLESS MOBILE APP DESIGN SERVICES FROM IDEA TO DEPLOYMENT, WITH CLOSE COLLABORATION RESULTING IN REFINED DETAILS. OUR FOCUS IS ON PRODUCING BEAUTIFUL, FULFILLING MOBILE APPS.",
+        "Our App Design Strategy Ensures Seamless Mobile App Design Services From Idea To Deployment, With Close Collaboration Resulting In Refined Details. Our Focus Is On Producing Beautiful, Fulfilling Mobile Apps.",
       cta: { label: "GET STARTED", href: "/contact" },
     },
     {
@@ -480,7 +492,7 @@ function AppSuccessCarousel() {
       headlineLeft: "DELIVERING VALUE:",
       headlineRight: "FAST ITERATIONS • CLEAR RESULTS",
       sub:
-        "WE BUILD IN TIGHT LOOPS, TEST ON REAL DEVICES, AND SHIP SMALL WINS FREQUENTLY—SO YOU SEE MOMENTUM AND MEASURABLE PROGRESS.",
+        "We Build In Tight Loops, Test On Real Devices, And Ship Small Wins Frequently—So You See Momentum And Measurable Progress.",
       cta: { label: "LET'S TALK", href: "/contact" },
     },
     {
@@ -488,7 +500,7 @@ function AppSuccessCarousel() {
       headlineLeft: "END-TO-END SUPPORT:",
       headlineRight: "STRATEGY • DESIGN • BUILD • GROW",
       sub:
-        "FROM DISCOVERY TO LAUNCH AND BEYOND—WE HANDLE UX, UI, PERFORMANCE, STORE SUBMISSIONS, AND ONGOING IMPROVEMENTS.",
+        "From Discovery To Launch And Beyond—We Handle UX, UI, Performance, Store Submissions, And Ongoing Improvements.",
       cta: { label: "BOOK A CALL", href: "/contact" },
     },
   ];
@@ -598,14 +610,14 @@ function AppSuccessCarousel() {
         {/* captions + CTA */}
         <div className="px-2 pb-6 pt-5 text-center">
           <h3
-            className="text-[18px] sm:text-[20px] md:text-[22px] font-extrabold uppercase tracking-wide"
+            className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight uppercase tracking-wide"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
+            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>  
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight"
+            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight capitalize"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}

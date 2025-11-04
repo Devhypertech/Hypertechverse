@@ -34,10 +34,10 @@ export default function SocialMediaManagementPage() {
                     className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[56px]"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    SOCIAL MEDIA MANAGEMENT
+                  Crush the Algorithm with 
                     <br />
-                    <span className="text-[56px] sm:text-[72px] lg:text-[88px] block">
-                      GROW YOUR PRESENCE
+                    <span className="text-[36px] sm:text-[52px] lg:text-[68px] block">
+                    Social Media Marketing
                     </span>
                   </h1>
 
@@ -58,8 +58,7 @@ export default function SocialMediaManagementPage() {
                   className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  Transform your social media presence with strategic content and engagement. We specialize in creating
-                  dynamic social media campaigns that build your brand, drive traffic, and connect you with your audience across all platforms.
+                Want to turn followers into customers? We offer comprehensive social media marketing services to enhance online presence and convert attention into measurable results.
                 </p>
 
                 {/* CTA */}
@@ -122,18 +121,18 @@ export default function SocialMediaManagementPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
                 {/* Main headline */}
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                  Social media that drives <span className="text-[#EA7BBF]">Your Success</span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#FBEAE2] font-bold" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                Social Media Strategy <span className="text-[#EA7BBF]">Basics</span>
                 </h2>
 
                 {/* Sub headline */}
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse delivers engagement
+                <h3 className="text-xl sm:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Your audience. Perfectly aligned.
                 </h3>
 
                 {/* Description */}
                 <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  What makes us the best social media management company? Hypertech Verse transforms your digital presence into powerful social media campaigns that connect with your audience. Our expert team creates engaging content, manages your accounts, and delivers results that grow your brand across all platforms. From strategy to execution, we build social media that drives engagement and delivers results.
+                Naturally, a brand’s growth, community engagement, and audience recognition hinge on the existence and application of a solid social media strategy. A solid social media marketing agency serving small companies takes competitor evaluation into account, buyer behaviors, and predictions on trends. Since so much content is produced, content planning decides what, when, and how to post and build long-term relationships with your fans.
                 </p>
 
                 {/* CTA Button */}
@@ -238,10 +237,7 @@ export default function SocialMediaManagementPage() {
             className="mt-3 text-sm sm:text-base/7 text-black/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            Building your social media presence has become easy and pleasant. You&apos;ll have a pleasant and
-            customized experience with us, from discovery to planning and creating your
-            social media strategy. We define your digital strategy, plan the content, and craft a
-            scalable social media presence that speaks your brand—then deliver the complete solution you need.
+           Hypertech Verse is a social media marketing agency that assists small businesses in expanding their businesses with the help of content planning, audience targeting, and campaigns based on data. We develop tailor-made marketing plans that improve the engagement, brand awareness, and competitiveness of the businesses in the rapidly changing online world.
           </p>
         </div>
 
@@ -425,39 +421,39 @@ export default function SocialMediaManagementPage() {
 function SocialMediaProcessTabs() {
   const steps = [
     {
-      title: "Strategy & Planning",
+      title: "Social Media Strategy",
       desc:
-        "Your business goals are analyzed, your target audience is identified, and your social media strategy is refined. We understand what your social media needs to achieve, who it serves, and the engagement experience to deliver—all distilled into a clear content roadmap.",
+        "B2B social media marketing is based on the strategy that forms the basis of your online presence. Hypertech verse studies the business problem in detail, your target audience, how you fit into the market space, and builds a unique and customized business strategy. Whether it's helping you define your brand voice, which platforms you should be on, or creating a content calendar for people actually wanting to engage with you while receiving tangible results, it's our job. As we continue to improve with time and monitor your social media game, we ensure you never catch up and achieve the maximum output out of the curve.",
       logo: "/services/smm/rocket.png"
     },
     { 
-      title: "Content Creation",
+      title: "Social Media Management",
       desc:
-        "Creative content design and visual content to create engaging posts and viral layouts. We design social media content that feels natural and conversion-focused.",
+        "Social media management can be a time sucking process and we take care of it all with our Hypertech Verse’s expert social media management services. We work with content creation and creating content on a daily basis, monitoring engagement, and answering messages so that your brand is active and consistent every day. Hence, your social media comes off your brand’s voice, adding value to your social media and feeding a nicely grown network of people. We aim to create a well-balanced and appropriate combination of promotional, informative, and engaging content to encourage your followers and establish a long-lasting relationship with them.",
       logo: "/services/logo/logoc.png"
     },
     { 
-      title: "Platform Optimization",
+      title: "Influencer Marketing",
       desc:
-        "Platform-specific optimization and content scheduling. We choose the right content format, posting times, and engagement strategies for optimal reach and engagement.",
+        "Influencer marketing is the best way to make your brand’s reach and credibility far more prominent. At Hypertech Verse, we find the right influencers who your target audience is interested in; we aim to become a medium for you to connect with real people, whether micro influencers or industry leaders; connecting with them is the only way to push out your products or services authentically. From campaign strategies to influencer selection, content creation, and tracking ROI, we handle all facets of influencer marketing so that every partnership proves helpful in building the brand's trust and reach.",
       logo: "/services/logo/logod.png"
+    },
+    { 
+      title: "Paid Social Media Advertising",
+      desc:
+        "To get visibility quickly and boost conversions, there is no such thing as paid social media advertising. The company is about crafting and managing high-performing paid campaigns across platforms such as Facebook, Instagram, and LinkedIn. First, we will understand your target audience and goals. Secondly, we will create insightful ad creatives and adapt your budgeting to get your best outcome. We watch your campaigns, constantly analyzing and adjusting to help you achieve the best performance and actual business benefits from every social ad dollar spent.",
+      logo: "/services/logo/logoe.png"
     },
     { 
       title: "Community Management",
       desc:
-        "Real-time engagement, comment responses, and community building. We build responsive, engaged communities with authentic interactions that grow your presence.",
-      logo: "/services/logo/logoe.png"
-    },
-    { 
-      title: "Analytics & Reporting",
-      desc:
-        "Performance tracking, engagement analysis, and ROI measurement. We ensure your social media delivers measurable results and continuous improvement.",
+        "Creating an online community that lasts is a key element to long-term sustenance. Community management with Hypertech Verse means that meaningful interaction and building strong relationships with your audience are our goals. We interact with your followers, supervise comments, solve customer queries, and overall create a good brand experience. While we keep our community active, informed, and engaged, we develop brand loyalty and convert casual followers into serious advocates. Your brand is presented as approachable, responsive, and as engaged as possible with customer satisfaction in our community management efforts.",
       logo: "/services/logo/logof.png"
     },
     { 
-      title: "Growth & Optimization",
+      title: "Platform Shop Creation & Product Tagging",
       desc:
-        "Campaign scaling, A/B testing, and ongoing optimization. We provide comprehensive support to keep your social media growing steadily.",
+        "Let’s turn our platforms into a direct sales channel by creating a platform shop and tagging the products. It helps you to set up the shops on Instagram, Facebook & other platforms to enable you to present your products seamlessly and make them shoppable. We will also optimize the product tagging so that each post or story can have the ability to convert followers into customers. If we assist in integrating e-commerce features into your social media account and make it easier for your audience to find and re-purchase your products from your feed, your sales and brand exposure will increase.",
       logo: "/services/smm/target.png"
     },
   ];

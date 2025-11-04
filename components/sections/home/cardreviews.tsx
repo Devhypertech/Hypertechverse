@@ -109,7 +109,7 @@ export default function TestimonialsMasonry() {
                 <ScrollAnimation animation="fadeInUp" delay={200}>
                     <div className="relative mx-auto mb-10 md:mb-14 max-w-3xl text-center">
                         <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow border border-white">
-                            LOOK, MOM!
+                        Now Look At!
                         </span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white">
                             <span className="block">Nice things</span>

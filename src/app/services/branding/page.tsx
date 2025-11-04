@@ -122,13 +122,13 @@ export default function BrandingPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-6">
                 {/* Main headline */}
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight whitespace-nowrap" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Recursive, sans-serif' }}>
                   Brands that define your <span className="text-[#EA7BBF]">Digital Presence</span>
                 </h2>
 
                 {/* Sub headline */}
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                  Hypertech Verse blends innovation
+                <h3 className="text-xl sm:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Where strategy meets creative excellence.
                 </h3>
 
                 {/* Description */}
@@ -238,10 +238,7 @@ export default function BrandingPage() {
             className="mt-3 text-sm sm:text-base/7 text-black/90"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-            Building your brand has become easy and pleasant. You&apos;ll have a pleasant and
-            customized experience with us, from discovery to planning and creating your
-            branding experience. We define your brand strategy, plan the identity, and craft a
-            cohesive brand that speaks your story—then deliver the complete solution you need.
+         Hypertech Verse is a major creative branding and designing firm, which focuses on developing strong and memorable brands that are notable among competitive markets. We provide a full range of services, including brand strategy, logo design, brand naming, package design, rebranding, and the creation of custom collateral. We are a professional graphic design firm that assists companies to get success over the long term.
           </p>
         </div>
 
@@ -336,39 +333,39 @@ export default function BrandingPage() {
 function BrandingProcessTabs() {
   const steps = [
     {
-      title: "Discover & Define",
+      title: "Brand Strategy Services",
       desc:
-        "Your business goals are analyzed, your target audience is identified, and your brand strategy is refined. We understand what your brand needs to achieve, who it serves, and the brand experience to deliver—all distilled into a clear branding roadmap.",
+        "Hypertech Verse provides strategic brand services that help businesses achieve their maximum results. The beginning of your brand development involves market research, audience analytics, and competitor analysis to establish current market conditions. We develop long-term strategic planning, establishing your brand's position in the market. Through this approach, your business will excel in competitive markets. We build consistent growth strategies through our team, which helps startups as well as established enterprises build strong customer relations and achieve lasting growth. We work together with our graphic design and branding services to develop enduring, recognizable identities that will leave a lasting impact.",
       logo: "/services/branding/tab.png"
     },
     { 
-      title: "Design & Prototype",
+      title: "Logo Design & Style Guiding",
       desc:
-        "Visual identity design and brand elements to create memorable logos, color palettes, and typography. We design brand systems that feel authentic and brand-focused.",
+        "Your brand relies on its logo to represent it; therefore, we approach logo development with dignity. Our creative graphic design agency builds visual logo concepts that both showcase branding alignment as well as attractive aesthetics. Creating your logo follows a method that starts with extensive discovery meetings and continues through multiple design adaptations. Our service extends past logo development since we provide complete style direction. We provide rules for color selection, typestyle standards, graphical symbols, and their application within both digital and physical platforms. We will deliver assets that deliver appealing aesthetics and operational functionality through our position as a prominent graphic design company. ",
       logo: "/services/logo/logoc.png"
     },
     { 
-      title: "Brand Architecture",
+      title: "Brand Naming",
       desc:
-        "Brand positioning and messaging strategy. We choose the right tone, voice, and messaging to communicate your brand effectively across all touchpoints.",
+        "In brand development, selecting a suitable name is a vital aspect that many fail to consider appropriately. Brand naming services form a part of our complete branding service portfolio, which we provide to our clients. Our research measures both linguistic patterns along with cultural relevance to domain availability and trademark conflicts in order to confirm the name's complete viability. Our professional branding agency recognizes how an effective name creates specific perceptions while building strong connections between people and brands. Our affordable graphic design services expand your brand visibility through influential logos and branding elements to create an industry-leading position.",
       logo: "/services/logo/logod.png"
     },
     { 
-      title: "Application & Build",
+      title: "Brand Package Designs",
       desc:
-        "Brand guidelines and asset creation for all platforms. We build comprehensive brand systems with clean, consistent applications across digital and print.",
+        "The first impression creates an essential impact that specifically affects retail stores, together with digital marketplaces. Our brand package design services dedicate themselves to elements beyond typical visual attractiveness. We operate as one of the most significant graphic design companies that develop both practical packaging utilities and engaging visual storytelling.  Through our position as a leading graphic designing company, we deliver packages that use your brand language through every design element, including fonts and colors. We customize every package according to your branding targets. Brands who want wholesale value with authentic professional graphic design solutions should turn to these solutions.",
       logo: "/services/logo/logoe.png"
     },
     { 
-      title: "Testing & Refinement",
+      title: "Professional Rebranding Service",
       desc:
-        "Brand consistency audit, feedback integration, and brand alignment. We ensure your brand works flawlessly across all platforms and media.",
+        "Hypertech Verse provides professional rebranding services as a comprehensive strategic transformation that helps businesses find new growth through relevant market positioning. I guide branding agencies through a custom approach to refine their brand voice, messaging, and visual identity based on present market demands. Our professional team uses brand identity services and professional graphic design services to simplify complex rebranding projects and achieve measurable outcomes. Our graphic design company guarantees that all elements. During the design process for your brand refreshment. The services provided by our company help businesses receive long-term value through improved brand perception and strengthened audience relationships.",
       logo: "/services/logo/logof.png"
     },
     { 
-      title: "Launch & Support",
+      title: "Custom Collateral Design Service",
       desc:
-        "Brand rollout, guidelines delivery, and ongoing brand management. We provide comprehensive support to keep your brand running smoothly.",
+        "Branded collateral is more than marketing material—it’s an extension of your brand identity. Our custom collateral design service incorporates complete products such as brochures, digital templates, presentation decks, together with flyers, business cards. The full-service aspect of our graphic design agency guarantees that every piece of collateral both captures your brand standard. Our professional experience in graphic design and branding services lets us create assets that fulfill business targets and resonate with specific audience needs. The company delivers motion graphics design services to enable your brand to achieve engaging visual movement during storytelling. As a graphic design agency, we provide cost-effective benefits to our clients.",
       logo: "/services/branding/webscale.png"
     },
   ];
@@ -472,7 +469,7 @@ function BrandingSuccessCarousel() {
       headlineLeft: "PRIORITIZING CLIENTS AND PARTNERS:",
       headlineRight: "DEDICATED TO YOUR SUCCESS AT EVERY STEP",
       sub:
-        "OUR BRANDING STRATEGY ENSURES SEAMLESS BRAND IDENTITY DESIGN SERVICES FROM IDEA TO DEPLOYMENT, WITH CLOSE COLLABORATION RESULTING IN REFINED DETAILS. OUR FOCUS IS ON PRODUCING BEAUTIFUL, FULFILLING BRAND IDENTITIES.",
+        "Our Branding Strategy Ensures Seamless Brand Identity Design Services From Idea To Deployment, With Close Collaboration Resulting In Refined Details. Our Focus Is On Producing Beautiful, Fulfilling Brand Identities.",
       cta: { label: "GET STARTED", href: "/contact" },
     },
     {
@@ -480,7 +477,7 @@ function BrandingSuccessCarousel() {
       headlineLeft: "DELIVERING VALUE:",
       headlineRight: "FAST ITERATIONS • CLEAR RESULTS",
       sub:
-        "WE BUILD IN TIGHT LOOPS, TEST ON REAL AUDIENCES, AND SHIP SMALL WINS FREQUENTLY—SO YOU SEE MOMENTUM AND MEASURABLE PROGRESS.",
+        "We Build In Tight Loops, Test On Real Audiences, And Ship Small Wins Frequently—So You See Momentum And Measurable Progress.",
       cta: { label: "LET'S TALK", href: "/contact" },
     },
     {
@@ -488,7 +485,7 @@ function BrandingSuccessCarousel() {
       headlineLeft: "END-TO-END SUPPORT:",
       headlineRight: "STRATEGY • DESIGN • BUILD • GROW",
       sub:
-        "FROM DISCOVERY TO LAUNCH AND BEYOND—WE HANDLE BRAND STRATEGY, VISUAL IDENTITY, PERFORMANCE, APPLICATIONS, AND ONGOING IMPROVEMENTS.",
+        "From Discovery To Launch And Beyond—We Handle Brand Strategy, Visual Identity, Performance, Applications, And Ongoing Improvements.",
       cta: { label: "BOOK A CALL", href: "/contact" },
     },
   ];
@@ -598,14 +595,14 @@ function BrandingSuccessCarousel() {
         {/* captions + CTA */}
         <div className="px-2 pb-6 pt-5 text-center">
           <h3
-            className="text-[18px] sm:text-[20px] md:text-[22px] font-extrabold uppercase tracking-wide"
+            className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight uppercase tracking-wide"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
             <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight"
+            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight capitalize"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}
