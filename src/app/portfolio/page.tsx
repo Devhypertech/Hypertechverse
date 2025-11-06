@@ -35,13 +35,13 @@ export default function PortfolioPage() {
 
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="min-h-[60vh] lg:min-h-[70vh] grid md:grid-cols-2 items-center">
+          <div className="min-h-[50vh] sm:min-h-[60vh] lg:min-h-[70vh] grid md:grid-cols-2 items-center">
             {/* Left copy */}
-            <div className="py-12 md:py-0">
+            <div className="py-10 sm:py-12 md:py-0">
               <div className="max-w-2xl">
                 <div className="relative inline-block">
                   <h1
-                    className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px]"
+                    className="leading-[.95] font-black uppercase text-3xl sm:text-4xl md:text-[48px] lg:text-[66px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                Case
@@ -53,9 +53,9 @@ export default function PortfolioPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-12 sm:-right-16 top-1/2 -translate-y-1/2 grid h-14 w-14 sm:h-16 sm:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
-                    <svg width="24" height="24" viewBox="0 0 24 24" className="translate-x-[1px]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
@@ -64,8 +64,8 @@ export default function PortfolioPage() {
             </div>
 
             {/* Right visual for mobile */}
-            <div className="md:hidden mt-8">
-              <div className="relative h-[260px] sm:h-[320px] w-full">
+            <div className="md:hidden mt-6 sm:mt-8">
+              <div className="relative h-[200px] xs:h-[240px] sm:h-[280px] md:h-[320px] w-full">
                 <Image
                   src="/portfolio/bar.png"
                   alt="Portfolio illustration"
@@ -80,7 +80,7 @@ export default function PortfolioPage() {
 
         {/* Bottom marquee (duplicated from SEO) */}
         <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
-          <div className="relative h-[56px] sm:h-[88px] overflow-hidden">
+          <div className="relative h-[48px] sm:h-[56px] md:h-[68px] lg:h-[88px] overflow-hidden">
             <div className="absolute inset-0 flex items-center ">
               <RibbonText />
               <RibbonText />
@@ -90,12 +90,12 @@ export default function PortfolioPage() {
       </section>
 
       {/* Category Tabs */}
-      <section className="bg-black py-8">
+      <section className="bg-black py-6 sm:py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4">
             <button
               onClick={() => setActiveTab("web")}
-              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
                 activeTab === "web"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
@@ -105,7 +105,7 @@ export default function PortfolioPage() {
             </button>
             <button
               onClick={() => setActiveTab("logo")}
-              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
                 activeTab === "logo"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
@@ -115,7 +115,7 @@ export default function PortfolioPage() {
             </button>
             <button
               onClick={() => setActiveTab("branding")}
-              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
                 activeTab === "branding"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
@@ -125,7 +125,7 @@ export default function PortfolioPage() {
             </button>
             <button
               onClick={() => setActiveTab("video")}
-              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
                 activeTab === "video"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
@@ -135,7 +135,7 @@ export default function PortfolioPage() {
             </button>
             <button
               onClick={() => setActiveTab("mobile")}
-              className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
                 activeTab === "mobile"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
@@ -148,18 +148,18 @@ export default function PortfolioPage() {
       </section>
 
       {/* ====== Case Studies ====== */}
-<section className="bg-black text-white py-16">
+<section className="bg-black text-white py-12 sm:py-16 md:py-20">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <header className="mb-8 sm:mb-12 flex items-end justify-between gap-4">
+    <header className="mb-6 sm:mb-8 md:mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
       <div>
         <h2
-          className="text-2xl sm:text-3xl font-extrabold"
+          className="text-xl sm:text-2xl md:text-3xl font-extrabold"
           style={{ fontFamily: "Recursive, sans-serif" }}
         >
           Recent Case Studies
         </h2>
         <p
-          className="mt-1 text-sm text-white/70"
+          className="mt-1 text-xs sm:text-sm text-white/70"
           style={{ fontFamily: "Poppins, sans-serif" }}
         >
           A curated selection of product, brand, and commerce builds.
@@ -174,41 +174,41 @@ export default function PortfolioPage() {
       </div> */}
     </header>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-7">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7">
       {filteredStudies.map((s) => (
         <article
           key={s.slug}
-          className="group relative overflow-hidden rounded-2xl bg-[#0E0E10] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)]"
+          className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#0E0E10] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)]"
         >
           {/* Media */}
-          <div className="p-3">
-            <div className="relative overflow-hidden rounded-xl">
+          <div className="p-2 sm:p-3">
+            <div className="relative overflow-hidden rounded-lg sm:rounded-xl">
               <Image
                 src={s.image}
                 alt={s.title}
                 width={640}
                 height={400}
-                className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                className="h-32 sm:h-36 md:h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                 priority
               />
               {s.badge && (
-                <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[11px] font-bold px-2 py-0.5">
+                <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
                   {s.badge}
                 </span>
               )}
               {/* subtle vignette */}
-              <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10" />
+              <div className="pointer-events-none absolute inset-0 rounded-lg sm:rounded-xl ring-1 ring-inset ring-white/10" />
             </div>
           </div>
 
           {/* Body */}
-          <div className="px-4 pb-4 pt-0">
+          <div className="px-3 sm:px-4 pb-3 sm:pb-4 pt-0">
             {/* tags */}
-            <div className="mb-2 flex flex-wrap gap-2">
+            <div className="mb-2 flex flex-wrap gap-1.5 sm:gap-2">
               {s.tags.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full bg-white/5 text-white/70 text-[11px] px-2 py-1 border border-white/10"
+                  className="rounded-full bg-white/5 text-white/70 text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 sm:py-1 border border-white/10"
                 >
                   {t}
                 </span>
@@ -216,28 +216,28 @@ export default function PortfolioPage() {
             </div>
 
             <h3
-              className="text-[15px] font-extrabold"
+              className="text-sm sm:text-[15px] font-extrabold leading-tight"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
               {s.title}
             </h3>
 
             <p
-              className="mt-1 text-[12px] leading-snug text-white/70 line-clamp-3"
+              className="mt-1 text-[11px] sm:text-[12px] leading-snug text-white/70 line-clamp-3"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               {s.blurb}
             </p>
 
-            <div className="mt-3 flex items-center justify-between">
+            <div className="mt-2 sm:mt-3 flex items-center justify-between">
               <Link
                 href={s.href}
-                className="text-[12px] font-semibold text-white/90 hover:text-white"
+                className="text-[11px] sm:text-[12px] font-semibold text-white/90 hover:text-white transition-colors"
               >
                 See full case →
               </Link>
               {s.meta && (
-                <span className="text-[11px] text-white/50">{s.meta}</span>
+                <span className="text-[10px] sm:text-[11px] text-white/50">{s.meta}</span>
               )}
             </div>
           </div>

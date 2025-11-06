@@ -23,18 +23,18 @@ export default function CustomSoftwareDevelopmentPage() {
 
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="min-h-[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
+          <div className="min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
             {/* Left copy */}
-            <div className="py-12 md:py-0">
+            <div className="py-12 sm:py-16 md:py-0">
               <div className="max-w-2xl">
                 <div className="relative inline-block">
                   <h1
-                    className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[56px]"
+                    className="leading-[.95] font-black uppercase text-2xl sm:text-3xl md:text-[36px] lg:text-[48px] xl:text-[56px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                    Scalable & User
                     <br />
-                    <span className="text-[56px] sm:text-[72px] lg:text-[88px] block">
+                    <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
                     Friendly Apps for All Platforms
                     </span>
                   </h1>
@@ -42,25 +42,25 @@ export default function CustomSoftwareDevelopmentPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-12 sm:-right-16 top-1/2 -translate-y-1/2 grid h-14 w-14 sm:h-16 sm:w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
-                    <svg width="24" height="24" viewBox="0 0 24 24" className="translate-x-[1px]">
+                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
                 </div>
 
                 <p
-                  className="mt-6 max-w-xl text-sm sm:text-base leading-relaxed font-medium"
+                  className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
                Keep in touch with your clients by using intelligent, approachable applications that are compatible with all devices. Make purchasing simpler and the competitors obsolete.
                 </p>
 
-                <div className="mt-8">
+                <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-7 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-extrabold text-black shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-black shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -70,8 +70,8 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
 
             {/* Right visual for mobile */}
-            <div className="md:hidden mt-8">
-              <div className="relative h-[260px] sm:h-[320px] w-full">
+            <div className="md:hidden mt-6 sm:mt-8">
+              <div className="relative h-[200px] xs:h-[240px] sm:h-[280px] md:h-[320px] w-full">
                 <Image
                   src="/services/smm/icons.png"
                   alt="Software development illustration"
@@ -113,9 +113,9 @@ export default function CustomSoftwareDevelopmentPage() {
       
 
       {/* About Section (keeps layout/colors) */}
-      <section className="py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
             <ScrollAnimation animation="fadeInLeft" delay={150}>
               <div className="relative">
@@ -131,23 +131,23 @@ export default function CustomSoftwareDevelopmentPage() {
 
             {/* Right side - Content */}
             <ScrollAnimation animation="fadeInRight" delay={250}>
-              <div className="space-y-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Recursive, sans-serif' }}>
+              <div className="space-y-4 sm:space-y-5 md:space-y-6">
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
                 Machine Learning <span className="text-[#EA7BBF]">Services</span>
                 </h2>
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 Transforming data into business intelligence
                 </h3>
 
-                <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                 Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
                 </p>
 
-                <div className="pt-4">
+                <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#FFD350] text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#FFC107] transition-colors"
+                    className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -160,22 +160,22 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-16">
-        <div className="relative w-full h-36">
-          <div className="absolute top-0 left-0 w-full h-102">
-            <div className="w-full bg-[#FFD350] transform -rotate-4 px-36 py-4 overflow-hidden">
+      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+        <div className="relative w-full h-24 sm:h-28 md:h-36">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Engineering Excellence | HYPERTECH VERSE
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="absolute top-0 left-0 w-full h-52 z-10 pb-20 ">
-            <div className="w-full bg-[#EA7BBF] transform rotate-4 px-8 py-4 overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full z-10">
+            <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Engineering Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -186,7 +186,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
       {/* Tilted Showcase (reuse layout/images for now) */}
       <section className="relative bg-black overflow-hidden">
-        <div className="mx-auto w-full max-w-[2000px] py-4 sm:py-6 lg:py-8">
+        <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
           <div
             className="pointer-events-none absolute inset-0 z-[1]"
             style={{
@@ -197,10 +197,10 @@ export default function CustomSoftwareDevelopmentPage() {
             }}
           />
 
-          <div className="h-[3.5vh]" />
+          <div className="h-[1vh] sm:h-[1.5vh] md:h-[2vh] lg:h-[3.5vh]" />
 
           <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
-            <div className="relative h-[120vh] sm:h-[120vh] lg:h-[120vh] overflow-hidden rounded-2xl">
+            <div className="relative h-[80vh] sm:h-[100vh] md:h-[110vh] lg:h-[120vh] overflow-hidden rounded-xl sm:rounded-2xl">
               <Image
                 src="/services/softwaredev/work.png"
                 alt="Software project showcase"
@@ -215,7 +215,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Process Tabs (renamed for software lifecycle) */}
-      <section className="relative overflow-hidden py-16 sm:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
           src="/services/logo/bg.png"
@@ -227,7 +227,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
             Limitless Possibilities with our Custom
@@ -235,7 +235,7 @@ export default function CustomSoftwareDevelopmentPage() {
             Software Development Services
           </h2>
           <p
-            className="mt-3 text-sm sm:text-base/7 text-white/90"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-white/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
            With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
@@ -247,8 +247,8 @@ export default function CustomSoftwareDevelopmentPage() {
 
       {/* Wavy Bottom Separator (kept) */}
       <section className="relative overflow-hidden">
-        <div className="relative bg-[#EA7BBF] h-32 sm:h-40 lg:h-48">
-          <div className="absolute bottom-0 left-0 w-full h-20">
+        <div className="relative bg-[#EA7BBF] h-24 sm:h-32 md:h-40 lg:h-48">
+          <div className="absolute bottom-0 left-0 w-full h-16 sm:h-20">
             <svg
               viewBox="0 0 1200 100"
               preserveAspectRatio="none"
@@ -446,9 +446,9 @@ function SoftwareProcessTabs() {
   const [active, setActive] = React.useState(0);
 
   return (
-    <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 gap-10 px-4 sm:px-6 lg:mt-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_320px] lg:items-start">
+    <div className="mx-auto mt-8 sm:mt-10 md:mt-12 grid max-w-7xl grid-cols-1 gap-8 sm:gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_320px] lg:items-start">
       {/* Left: active tab logo image */}
-      <div className="relative mx-auto w-full max-w-[520px]">
+      <div className="relative mx-auto w-full max-w-[400px] sm:max-w-[450px] md:max-w-[520px]">
         <Image
           src={steps[active].logo}
           alt={`Process for ${steps[active].title}`}
@@ -460,20 +460,20 @@ function SoftwareProcessTabs() {
       </div>
 
       {/* Middle: active step title + paragraph */}
-      <div className="max-w-xl">
+      <div className="max-w-xl text-center lg:text-left">
         <h3
-          className="inline-flex items-center gap-3 text-xl sm:text-2xl font-extrabold text-black"
+          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start"
           style={{ fontFamily: 'Recursive, sans-serif' }}
         >
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_4px_0_rgba(0,0,0,0.25)]">
-            <svg width="18" height="18" viewBox="0 0 24 24" className="-translate-x-[1px]">
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]">
               <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-sm sm:text-base text-black/90" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -482,7 +482,7 @@ function SoftwareProcessTabs() {
 
       {/* Right: vertical tabs */}
       <nav aria-label="Process steps" className="lg:pl-4">
-        <ul className="space-y-3">
+        <ul className="space-y-2 sm:space-y-3">
           {steps.map((s, i) => {
             const isActive = i === active;
             return (
@@ -493,15 +493,16 @@ function SoftwareProcessTabs() {
                   onClick={() => setActive(i)}
                   className={[
                     "group w-full text-left uppercase font-extrabold tracking-wide",
-                    "transition rounded-xl px-4 py-2",
+                    "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
+                    "text-sm sm:text-base",
                     isActive ? "text-black" : "text-black/75 hover:text-black",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
-                  <span className="inline-flex items-center gap-3">
+                  <span className="inline-flex items-center gap-2 sm:gap-3">
                     <span
                       className={[
-                        "h-2.5 w-2.5 rounded-full transition",
+                        "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
                         isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
