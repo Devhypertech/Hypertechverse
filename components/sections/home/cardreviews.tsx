@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
@@ -89,16 +89,94 @@ const videoTestimonials = [
     { src: "/reviewone.mp4", thumbnail: "/thumbnailone.jpg", title: "Review One" },
     { src: "/reviewtwo.mp4", thumbnail: "/thumbnailtwo.jpg", title: "Review Two" },
     { src: "/reviewthree.mp4", thumbnail: "/thumbnailthree.jpg", title: "Review Three" },
+    { src: "/reviewfour.mp4", thumbnail: "/thumbnailfour.jpg", title: "Review Four" },
 ];
 
 export default function TestimonialsMasonry() {
     const [playingVideo, setPlayingVideo] = useState<string | null>(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [paused, setPaused] = useState(false);
+    const startX = useRef<number | null>(null);
+    const startY = useRef<number | null>(null);
+
+    // Calculate how many videos to show per slide based on screen size
+    const getVideosPerSlide = () => {
+        if (typeof window === 'undefined') return 3;
+        if (window.innerWidth >= 1024) return 3; // Desktop: 3 videos
+        if (window.innerWidth >= 640) return 2;  // Tablet: 2 videos
+        return 1; // Mobile: 1 video
+    };
+
+    const [videosPerSlide, setVideosPerSlide] = useState(getVideosPerSlide());
+
+    useEffect(() => {
+        const handleResize = () => {
+            setVideosPerSlide(getVideosPerSlide());
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    const maxIndex = Math.max(0, videoTestimonials.length - videosPerSlide);
+
+    // Autoplay carousel (pause when video is playing or when paused)
+    useEffect(() => {
+        if (paused || playingVideo) return;
+        const timer = setInterval(() => {
+            setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [paused, playingVideo, maxIndex]);
+
+    // Keyboard navigation
+    useEffect(() => {
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key === "ArrowRight") goToNext();
+            if (e.key === "ArrowLeft") goToPrev();
+        };
+        window.addEventListener("keydown", onKey);
+        return () => window.removeEventListener("keydown", onKey);
+    }, [currentIndex, maxIndex]);
+
+    const goToNext = () => {
+        setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    };
+
+    const goToPrev = () => {
+        setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+    };
+
+    // Touch/swipe handlers
+    const onTouchStart = (e: React.TouchEvent) => {
+        startX.current = e.touches[0].clientX;
+        startY.current = e.touches[0].clientY;
+    };
+
+    const onTouchEnd = (e: React.TouchEvent) => {
+        if (!startX.current || !startY.current) return;
+        const endX = e.changedTouches[0].clientX;
+        const endY = e.changedTouches[0].clientY;
+        const diffX = startX.current - endX;
+        const diffY = startY.current - endY;
+
+        // Only swipe if horizontal movement is greater than vertical
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+            if (diffX > 0) {
+                goToNext();
+            } else {
+                goToPrev();
+            }
+        }
+        startX.current = null;
+        startY.current = null;
+    };
 
     const handleVideoClick = (src: string) => {
         if (playingVideo === src) {
             setPlayingVideo(null);
         } else {
             setPlayingVideo(src);
+            setPaused(true); // Pause carousel when video is playing
         }
     };
 
@@ -118,49 +196,107 @@ export default function TestimonialsMasonry() {
                     </div>
                 </ScrollAnimation>
 
-                {/* Video Testimonials Section */}
+                {/* Video Testimonials Carousel */}
                 <ScrollAnimation animation="fadeInUp" delay={300}>
-                    <div className="mb-12 md:mb-16">
-                        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-                            {videoTestimonials.map((video, index) => (
-                                <div
-                                    key={index}
-                                    className="relative w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:opacity-90 transition-opacity duration-300"
-                                    onClick={() => handleVideoClick(video.src)}
-                                >
-                                    {playingVideo === video.src ? (
-                                        <video
-                                            src={video.src}
-                                            controls
-                                            autoPlay
-                                            className="w-full h-full object-cover"
-                                            onEnded={() => setPlayingVideo(null)}
-                                        />
-                                    ) : (
-                                        <>
-                                            <Image
-                                                src={video.thumbnail}
-                                                alt={video.title}
-                                                fill
-                                                className="object-cover"
-                                                unoptimized
+                    <div 
+                        className="mb-12 md:mb-16 relative"
+                        onMouseEnter={() => setPaused(true)}
+                        onMouseLeave={() => setPaused(false)}
+                        onTouchStart={onTouchStart}
+                        onTouchEnd={onTouchEnd}
+                    >
+                        {/* Carousel Container */}
+                        <div className="relative overflow-hidden rounded-lg">
+                            <div 
+                                className="flex transition-transform duration-500 ease-in-out gap-4 md:gap-6"
+                                style={{ 
+                                    transform: `translateX(calc(-${currentIndex} * (100% / ${videosPerSlide} + 16px)))`
+                                }}
+                            >
+                                {videoTestimonials.map((video, index) => (
+                                    <div
+                                        key={index}
+                                        className="relative flex-shrink-0 aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:opacity-90 transition-opacity duration-300"
+                                        style={{ width: `calc((100% - ${(videosPerSlide - 1) * 16}px) / ${videosPerSlide})` }}
+                                        onClick={() => handleVideoClick(video.src)}
+                                    >
+                                        {playingVideo === video.src ? (
+                                            <video
+                                                src={video.src}
+                                                controls
+                                                autoPlay
+                                                className="w-full h-full object-cover rounded-lg"
+                                                onEnded={() => {
+                                                    setPlayingVideo(null);
+                                                    setPaused(false);
+                                                }}
                                             />
-                                            <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors duration-300">
-                                                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                                                    <svg
-                                                        className="w-8 h-8 text-black ml-1"
-                                                        fill="currentColor"
-                                                        viewBox="0 0 24 24"
-                                                    >
-                                                        <path d="M8 5v14l11-7z" />
-                                                    </svg>
+                                        ) : (
+                                            <>
+                                                <Image
+                                                    src={video.thumbnail}
+                                                    alt={video.title}
+                                                    fill
+                                                    className="object-cover rounded-lg"
+                                                    unoptimized
+                                                />
+                                                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors duration-300 rounded-lg">
+                                                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                                        <svg
+                                                            className="w-8 h-8 text-black ml-1"
+                                                            fill="currentColor"
+                                                            viewBox="0 0 24 24"
+                                                        >
+                                                            <path d="M8 5v14l11-7z" />
+                                                        </svg>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </>
-                                    )}
-                                </div>
-                            ))}
+                                            </>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
+
+                        {/* Navigation Arrows */}
+                        {videoTestimonials.length > videosPerSlide && (
+                            <>
+                                <button
+                                    aria-label="Previous"
+                                    onClick={goToPrev}
+                                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition z-10"
+                                >
+                                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6">
+                                        <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                                    </svg>
+                                </button>
+                                <button
+                                    aria-label="Next"
+                                    onClick={goToNext}
+                                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition z-10"
+                                >
+                                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6">
+                                        <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                                    </svg>
+                                </button>
+                            </>
+                        )}
+
+                        {/* Carousel Indicators */}
+                        {videoTestimonials.length > videosPerSlide && (
+                            <div className="flex justify-center gap-2 mt-6">
+                                {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+                                    <button
+                                        key={idx}
+                                        onClick={() => setCurrentIndex(idx)}
+                                        className={`h-2 rounded-full transition-all ${
+                                            idx === currentIndex ? 'w-8 bg-[#EA7BBF]' : 'w-2 bg-white/30'
+                                        }`}
+                                        aria-label={`Go to slide ${idx + 1}`}
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </ScrollAnimation>
 
