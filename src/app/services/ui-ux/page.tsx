@@ -1,0 +1,399 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import ScrollAnimation from "../../../components/ScrollAnimationSimple";
+import TestimonialsMasonry from "../../../../components/sections/home/cardreviews";
+
+export default function UIUXPage() {
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section — Yellow background with black text (same as SEO) */}
+      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+        {/* Right half image */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
+          <Image
+            src="/services/uiux/hero.png"
+            alt="UI/UX design illustration"
+            fill
+            priority
+            className="object-contain object-right drop-shadow-[0_30px_60px_rgba(0,0,0,.25)]"
+          />
+        </div>
+
+        {/* Content container */}
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
+            {/* Left copy */}
+            <div className="py-12 sm:py-16 md:py-0">
+              <div className="max-w-2xl">
+                <div className="relative inline-block">
+                  <h1
+                    className="leading-[.95] font-black uppercase text-1xl sm:text-2xl md:text-[24px] lg:text-[32px] xl:text-[42px] px-2"
+                    style={{ fontFamily: "Recursive, sans-serif" }}
+                  >
+                   Curiosity Captured in
+                    <br />
+                    <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
+                    Flow
+                    </span>
+                  </h1>
+
+                  {/* Pink round arrow badge */}
+                  <Link
+                    href="/contact"
+                    aria-label="Start a project"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
+                      <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </Link>
+                </div>
+
+                <p
+                  className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                 Our UI/UX design service combines aesthetics & high-converting digital experience. Being the top UI/UX design company, we convert user curiosity into effective interaction.
+                </p>
+
+                <div className="mt-6 sm:mt-8 px-2">
+                  <Link
+                    href="/contact"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                  >
+                    LET&apos;S GET STARTED
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Right visual for mobile */}
+            <div className="md:hidden mt-6 sm:mt-8">
+              <div className="relative h-[200px] xs:h-[240px] sm:h-[280px] md:h-[320px] w-full">
+                <Image
+                  src="/services/payperclick/hero.png"
+                  alt="UI/UX design illustration"
+                  fill
+                  className="object-contain object-center"
+                  priority
+                />
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        {/* Bottom marquee */}
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+          <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
+            <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
+              <RibbonText />
+              <RibbonText />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
+            {/* Left side - Image */}
+            <ScrollAnimation animation="fadeInLeft" delay={150}>
+              <div className="relative">
+                <Image
+                  src="/services/uiux/about.png"
+                  alt="UI/UX design expert"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </ScrollAnimation>
+
+            {/* Right side - Content */}
+            <ScrollAnimation animation="fadeInRight" delay={250}>
+              <div className="space-y-4 sm:space-y-5 md:space-y-6">
+                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
+                Behind Every Seamless<span className="text-[#EA7BBF]">Experience</span>
+                </h2>
+
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                Awesome digital experiences do not occur without a planned approach to design strategy and UI and UX design services. The foundation of the UI/UX design is the comprehension of the users: their needs, behaviors, and expectations. Good UX UI design services are not just pretty to the eye; they are functional, easy to access, and consistent across all devices. 
+                </p>
+
+                <div className="pt-2 sm:pt-4">
+                  <Link
+                    href="/contact"
+                    className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
+                    style={{ fontFamily: 'Poppins, sans-serif' }}
+                  >
+                   start your free consultation today!
+                  </Link>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Ribbon Section */}
+      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+        <div className="relative w-full h-24 sm:h-28 md:h-36">
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
+              <div className="text-marquee-left">
+                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                  Our Collection of Paid Advertising Excellence | HYPERTECH VERSE
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute top-0 left-0 w-full h-full z-10">
+            <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
+              <div className="text-marquee-right">
+                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                  Our Collection of Paid Advertising Excellence | HYPERTECH VERSE
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-black overflow-hidden">
+        {/* total canvas height: ~65–72vh depending on breakpoint */}
+        <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
+
+          {/* mask/fade at the sides so edges feel cropped */}
+          <div
+            className="pointer-events-none absolute inset-0 z-[1]"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
+            }}
+          />
+
+          <div className="h-[1vh] sm:h-[1.5vh] md:h-[2vh] lg:h-[3.5vh]" />
+
+          {/* ============ ROW 2 (opposite pan, lighter tilt) ============ */}
+          <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
+            <div className="relative h-[80vh] sm:h-[100vh] md:h-[110vh] lg:h-[120vh] overflow-hidden rounded-xl sm:rounded-2xl">
+              <Image
+                src="/services/uiux/portfolio.png"
+                alt="UI/UX Portfolio"
+                width={800}
+                height={800}
+                sizes="100vw"
+                className="h-full w-[140vw] max-w-none object-cover animate-pan-right"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Yellow Process (bg.png + vertical tabs) */}
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+        <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
+        <Image
+          src="/services/logo/bg.png"
+          alt=""
+          fill
+          priority
+          className="absolute inset-0 -z-10 object-cover object-center pointer-events-none select-none"
+        />
+
+        <UIUXProcessTabs />
+      </section>
+
+      {/* Wavy Bottom Section */}
+      <section className="relative overflow-hidden">
+        <div className="relative bg-[#EA7BBF] h-24 sm:h-32 md:h-40 lg:h-48">
+          <div className="absolute bottom-0 left-0 w-full h-16 sm:h-20">
+            <svg
+              viewBox="0 0 1200 100"
+              preserveAspectRatio="none"
+              className="w-full h-full"
+            >
+              <path
+                d="M0,60 Q150,20 300,60 T600,60 T900,60 T1200,60 L1200,100 L0,100 Z"
+                fill="#000000"
+                className="w-full h-full"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      {/* ==== Why Paid Ads Work section (matches reference) ==== */}
+<section className="bg-black text-white py-14 sm:py-16">
+  <div className="mx-auto max-w-6xl px-4 sm:px-6">
+
+    {/* 6-step chips */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      {[
+        "Strategy-Driven Design",
+        "Faster Launch Cycles",
+        "Cross-Platform Consistency",
+        "User-Centered Thinking",
+        "Conversion-Focused UX",
+        "Scalable Design Systems",
+      ].map((t, i) => (
+        <div
+          key={t}
+          className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
+        >
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+            {i + 1}
+          </span>
+          <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
+            {t}
+          </span>
+        </div>
+      ))}
+    </div>
+
+    {/* FAQs Section */}
+    <div className="mt-10 sm:mt-12 md:mt-16">
+      <h2
+        className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-center mb-8 sm:mb-10 md:mb-12"
+        style={{ fontFamily: "Recursive, sans-serif" }}
+      >
+        FAQs
+      </h2>
+      
+      <div className="space-y-4 sm:space-y-5">
+        <FAQItem 
+          question="What’s the difference between UI and UX design?"
+          answer="User interface (UI) design encompasses the appearance, including aspects such as buttons, layout, and style. UX (User Experience) design renders the product to be viable, conducive, and relevant to the needs of the users. Our UI/UX design service at Hypertech Verse is a combination of the two features in order to deliver smooth, high-performance digital experiences."
+        />
+        <FAQItem 
+          question="How long does a typical UI/UX project take?"
+          answer="Timelines vary by the size, but the majority of the research to final interface delivery of UX/UI design services takes 2-6 weeks. Multifaceted systems might take longer to test and iterate. Being a flexible UI/UX designing company, we are able to schedule according to your product objectives."
+        />
+        <FAQItem 
+          question="Do you offer design for both mobile apps and web platforms?"
+          answer="Yes. Our responsive UI and UX designing services can be used in mobile applications, websites, and multi-platform products. We strive to guarantee consistency, usability, and performance on any screen and on any platform."
+        />
+        <FAQItem 
+          question="Can you improve the design of an existing product?"
+          answer="Absolutely. Through audits and redesigns, our UX design consultancy helps optimize existing products for better usability, flow, and visual appeal. We enhance what's already there, without rebuilding from scratch."
+        />
+      </div>
+    </div>
+  </div>  
+</section>
+
+      <TestimonialsMasonry />
+    </main>
+  );
+}
+
+function UIUXProcessTabs() {
+  const steps = [
+    { title: "Mobile App UX and UI Design Services", desc: "With the mobile-first world, a hack-free application creates user retention and engagement. Our mobile app UI/UX design services target the creation of effective, navigational, and visually alluring interfaces of both iOS and Android apps. Bringing together user experience services and advanced user interface design helps us create fluid mobile experiences that create satisfaction, loyalty, and tangible outcomes, one tap, swipe, and scroll at a time.", logo: "/services/uiux/tabone.png" },
+    { title: "Cross-Platform Experience Design", desc: "The user must trust, and consistency across devices is very important to user retention. We have experience in the design of such cross-platform journeys, which are flexible and easy to navigate across mobile, desktop, and tablet interfaces, and more. We provide trusted user interface design services, which means that on each screen, we achieve the same experience of familiarity and perceptions, which makes your product fluid, familiar, and high performing, regardless of where you deploy it.", logo: "/services/uiux/sone.png" },
+    { title: "UI and UX Consulting", desc: "Don't know whether your present-day experience is positive or negative to your development? Our UX design consultancy services allow you to assess usability and find existential friction points in your product. With rich user research and journey mapping behind us, we provide practical advice that matches your ambitions. When you need to refine an MVP or expand an enterprise product to its full potential, we provide an expert in user interface design to help realize greater engagement and results.", logo: "/services/uiux/tabone.png" },
+    { title: "Web Design Services", desc: "The talk of your brand is preceded by the talk of your website. Our UI design service aims to improve the user interface to make the websites neat, responsive, and conversion-driven by maximizing the outcome of the business. On UX-sensitive layout to considerate brand design, we mix form with operation to make an insinuation that is instructive, entertaining, and compelling. We design some of the best-looking websites that are also strategic, as a company that provides services in the UI/UX field of design.", logo: "/services/uiux/sone.png" },
+    { title: "Product Design", desc: "It is not only the look of a product that matters; it is also the functionality. UI UX development services require a variety of processes, including idea generation into a practical, user-friendly product. Our process starts with the user need identification, flows mapping, and the prototyping the key functionality. Then we design every interaction and interface with accuracy - between MVP and ready-to-launch versions. Being a full-service UI UX design agency, we make sure that your product is clear, consistent, and goal-oriented.", logo: "/services/uiux/tabone.png" },
+    { title: "Gaming UI/UX", desc: "Good games are not just about downloading graphics; gameplay is all about intuitive and rewarding adventures. User interface design and user experience design for gaming are aimed at focusing on the psychology of the player, platform behavior, and smoother interaction. Working with HUD design, in-game menus, and onboard systems, we develop interfaces that retain users and make them want to play. Regardless of being mobile, console, or PC, our user experience design services make sure that your game will have a smooth feeling, be a lot of fun, and be memorable.", logo: "/services/uiux/sone.png" },
+    { title: "Wire Framing and Prototyping", desc: "Any successful product has a clear outline. Our visual design services in wire framing and prototyping are creative tech services that produce images of layout, interaction, and flow much earlier in the development process. Our wireframes are drawn at low fidelity, and they are then transformed into prototypes, which can be clicked and virtually used in a real-world situation. In such a way, it allows rapid testing, healthier team alignment, and smarter choices, which can be backed by a trusted UI consultant to help take the idea to completion.", logo: "/services/uiux/tabone.png" },
+      ];
+
+  const [active, setActive] = React.useState(0);
+
+  return (
+    <div className="mx-auto mt-8 sm:mt-10 md:mt-12 grid max-w-7xl grid-cols-1 gap-8 sm:gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)_320px] lg:items-start">
+      <div className="relative mx-auto w-full max-w-[400px] sm:max-w-[450px] md:max-w-[520px]">
+        <Image src={steps[active].logo} alt={`Process for ${steps[active].title}`} width={400} height={400} className="w-full h-auto drop-shadow-[0_22px_40px_rgba(0,0,0,.25)]" priority />
+      </div>
+
+      <div className="max-w-xl text-center lg:text-left">
+        <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </span>
+          {steps[active].title}
+        </h3>
+        <p className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
+      </div>
+
+      <nav aria-label="Process steps" className="lg:pl-4">
+        <ul className="space-y-2 sm:space-y-3">
+          {steps.map((s, i) => {
+            const isActive = i === active;
+            return (
+              <li key={s.title}>
+                <button
+                  onMouseEnter={() => setActive(i)}
+                  onFocus={() => setActive(i)}
+                  onClick={() => setActive(i)}
+                  className={["group w-full text-left uppercase font-extrabold tracking-wide","transition rounded-xl px-3 py-2 sm:px-4 sm:py-2","text-sm sm:text-base",isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
+                  style={{ fontFamily: 'Recursive, sans-serif' }}
+                >
+                  <span className="inline-flex items-center gap-2 sm:gap-3">
+                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"].join(" ")}/>
+                    {s.title}
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </div>
+  );
+}
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="border border-white/20 rounded-lg overflow-hidden bg-black/50 backdrop-blur-sm">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+      >
+        <h3
+          className="text-base sm:text-lg md:text-xl font-bold text-white pr-4"
+          style={{ fontFamily: "Recursive, sans-serif" }}
+        >
+          {question}
+        </h3>
+        <svg
+          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#FFD350] flex-shrink-0 transition-transform duration-300 ${
+            isOpen ? "rotate-180" : ""
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {isOpen && (
+        <div className="px-4 sm:px-6 pb-4 sm:pb-5">
+          <p
+            className="text-sm sm:text-base text-white/80 leading-relaxed"
+            style={{ fontFamily: "Poppins, sans-serif" }}
+          >
+            {answer}
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function RibbonText() {
+  return (
+    <div className="flex items-center">
+      <Image src="/services/smart.png" alt="Smart Solutions That Drive Success" width={800} height={68} className="h-full w-auto object-contain" />
+    </div>
+  );
+}
+

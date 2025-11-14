@@ -55,10 +55,31 @@ const servicesList = [
     description: "Drive results with targeted ad campaigns."
   },
   { 
+    href: "/services/social-media-advertising", 
+    label: "Social Media Advertising",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#FFD350]",
+    description: "Maximize your reach with strategic social ads."
+  },
+  { 
+    href: "/services/pay-per-click", 
+    label: "Pay Per Click",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#EA7BBF]",
+    description: "Drive targeted traffic with PPC campaigns."
+  },
+  { 
+    href: "/services/ui-ux", 
+    label: "UI/UX",
+    icon: "/icons/support.png",
+    iconBg: "bg-[#FFD350]",
+    description: "Create intuitive and engaging user experiences."
+  },
+  { 
     href: "/services/animation", 
     label: "Animation",
     icon: "/icons/support.png",
-    iconBg: "bg-[#FFD350]",
+    iconBg: "bg-[#EA7BBF]",
     description: "Engaging animated content for your brand."
   },
   { 
@@ -142,7 +163,7 @@ export default function Header() {
                             <div className="bg-white shadow-xl border-t border-gray-100 overflow-hidden rounded-xl">
                               <div className="mx-auto px-8 py-8">
                                 <h3 className="text-xl font-bold text-gray-900 mb-6">Our Services</h3>
-                                <div className="grid grid-cols-5 gap-6">
+                                <div className="grid grid-cols-6 gap-6">
                                   {n.dropdown.map((item: any, index: number) => (
                                     <Link
                                       key={item.href}
@@ -173,20 +194,6 @@ export default function Header() {
                                       </p>
                                     </Link>
                                   ))}
-                                  {/* View All Services Button */}
-                                  <Link
-                                    href="/services"
-                                    className="group/item flex flex-col items-center justify-center p-4 rounded-lg bg-[#FFD350]/20 hover:bg-[#FFD350]/30 transition-all duration-200 hover:scale-105"
-                                  >
-                                    <div className="w-16 h-16 rounded-full bg-[#FFD350] flex items-center justify-center mb-3 group-hover/item:scale-110 transition-transform duration-200">
-                                      <svg className="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                      </svg>
-                                    </div>
-                                    <span className="text-sm font-bold text-gray-900">
-                                      View all services
-                                    </span>
-                                  </Link>
                                 </div>
                               </div>
                             </div>
