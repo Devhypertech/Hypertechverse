@@ -332,5 +332,49 @@ const blogs = [
     tags: ["Technology", "Tools"],
     href: "/blogs/productivity-tools",
   },
+  {
+    slug: "which-delivery-app-pays-the-most-top-paying-options-in-2025",
+    title: "Which Delivery App Pays the Most? Top Paying Options in 2025",
+    blurb:
+      "Discover the highest-paying delivery apps in 2025 and learn how drivers across America are earning smarter, not harder. A comprehensive guide to choosing the best delivery platform.",
+    image: "/blogs/delapps.jpg",
+    tags: ["Business", "Guide"],
+    href: "/blogs/which-delivery-app-pays-the-most-top-paying-options-in-2025",
+    meta: "12 min read",
+    badge: "New",
+  },
+  {
+    slug: "decoding-whatsapp-online-status-calls-typing-or-reading",
+    title: "Decoding WhatsApp Online Status: Calls, Typing, or Reading?",
+    blurb:
+      "Understand what WhatsApp's online status really means and learn how to decode when someone is calling, typing, or reading your messages. A comprehensive guide to WhatsApp privacy and communication.",
+    image: "/blogs/dwhatsapp.jpg",
+    tags: ["Technology", "Guide"],
+    href: "/blogs/decoding-whatsapp-online-status-calls-typing-or-reading",
+    meta: "8 min read",
+    badge: "New",
+  },
+  {
+    slug: "top-20-check-cashing-apps-that-dont-use-ingo-in-2025",
+    title: "Top 20 Check Cashing Apps That Don't Use Ingo in 2025",
+    blurb:
+      "Discover the best check-cashing apps that don't use Ingo in 2025. Find safe, fast, and fee-friendly alternatives for mobile check deposits without the high costs and delays of Ingo-based services.",
+    image: "/blogs/cashingapps.jpg",
+    tags: ["Business", "Finance"],
+    href: "/blogs/top-20-check-cashing-apps-that-dont-use-ingo-in-2025",
+    meta: "15 min read",
+    badge: "New",
+  },
+  {
+    slug: "best-time-to-post-on-tiktok-in-2025-research-backed-guide-for-engagement",
+    title: "Best Time to Post on TikTok in 2025: Research-Backed Optimal Times for Engagement",
+    blurb:
+      "Discover the research-backed best times to post on TikTok in 2025. Learn how to maximize engagement, reach, and conversions with data-driven posting schedules tailored to your audience.",
+    image: "/blogs/tiktok.jpg",
+    tags: ["Marketing", "Social Media"],
+    href: "/blogs/best-time-to-post-on-tiktok-in-2025-research-backed-guide-for-engagement",
+    meta: "18 min read",
+    badge: "New",
+  },
 ];
 
