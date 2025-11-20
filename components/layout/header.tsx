@@ -6,84 +6,84 @@ import { usePathname } from "next/navigation";
 
 const servicesList = [
   { 
-    href: "/services/web-development", 
+    href: "/custom-website-development-service/", 
     label: "Web Development",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Build your dream website with modern technologies."
   },
   { 
-    href: "/services/app-development", 
+    href: "/custom-app-development-service/", 
     label: "App Development",
     icon: "/icons/support.png",
     iconBg: "bg-[#FFD350]",
     description: "Mobile apps that engage and convert users."
   },
   { 
-    href: "/services/logo-design", 
+    href: "/logo-design-2/", 
     label: "Logo Design",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Create memorable brand identities."
   },
   { 
-    href: "/services/branding", 
+    href: "/branding", 
     label: "Branding",
     icon: "/icons/businessgrowth.png",
     iconBg: "bg-[#FFD350]",
     description: "Complete brand identity solutions."
   },
   { 
-    href: "/services/seo", 
+    href: "/seo", 
     label: "SEO",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Boost your search engine visibility."
   },
   { 
-    href: "/services/social-media-management", 
+    href: "/social-media-management", 
     label: "Social Media",
     icon: "/icons/smie.png",
     iconBg: "bg-[#FFD350]",
     description: "Grow your presence on social platforms."
   },
   { 
-    href: "/services/paid-advertising", 
+    href: "/paid-advertising-services/", 
     label: "Paid Advertising",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Drive results with targeted ad campaigns."
   },
   { 
-    href: "/services/social-media-advertising", 
+    href: "/social-media-advertising-services/", 
     label: "Social Media Advertising",
     icon: "/icons/support.png",
     iconBg: "bg-[#FFD350]",
     description: "Maximize your reach with strategic social ads."
   },
   { 
-    href: "/services/pay-per-click", 
+    href: "/pay-per-click", 
     label: "Pay Per Click",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Drive targeted traffic with PPC campaigns."
   },
   { 
-    href: "/services/ui-ux", 
+    href: "/ui-ux-design/", 
     label: "UI/UX",
     icon: "/icons/support.png",
     iconBg: "bg-[#FFD350]",
     description: "Create intuitive and engaging user experiences."
   },
   { 
-    href: "/services/animation", 
+    href: "/animation", 
     label: "Animation",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Engaging animated content for your brand."
   },
   { 
-    href: "/services/custom-software-development", 
+    href: "/custom-software-development", 
     label: "Custom Software",
     icon: "/icons/expert.png",
     iconBg: "bg-[#EA7BBF]",

@@ -64,7 +64,7 @@ export default function Footer() {
                         <a href="#" className="hover:text-[#FFD350] transition">
                             Terms & Conditions
                         </a>
-                        <a href="/privacy" className="hover:text-[#FFD350] transition">
+                        <a href="/privacy-policy-2/" className="hover:text-[#FFD350] transition">
                             Privacy Policy
                         </a>
                     </div>
