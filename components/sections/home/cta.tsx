@@ -150,14 +150,14 @@ export default function BrandPackages() {
                     ))}
                 </div>
 
-                {/* Add-ons */}
+                {/* Custom Packages */}
                 <div className="mt-10">
-                    <div className="flex items-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-black shadow-[0_5px_0_rgba(0,0,0,0.25)]">
-                        <span>Add-ons</span>
+                    <Link href="/pricing" className="flex items-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-black shadow-[0_5px_0_rgba(0,0,0,0.25)] hover:bg-[#FFD350] transition-colors duration-300 cursor-pointer">
+                        <span>Custom Packages</span>
                         <span className="ml-auto grid h-7 w-7 place-items-center rounded-full border border-black/20">
                             −
                         </span>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* Bottom CTA */}

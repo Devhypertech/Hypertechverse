@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 type Card = {
@@ -180,9 +181,9 @@ export default function SmartSolutions() {
                                         </div>
 
                                         {/* CTA - pushed to bottom */}
-                                        <button className="mt-6 w-full rounded-full bg-[#1D1D1D] text-white py-3 text-lg font-extrabold hover:brightness-110">
+                                        <Link href="/pricing" className="mt-6 w-full rounded-full bg-[#1D1D1D] text-white py-3 text-lg font-extrabold hover:brightness-110 text-center block">
                                             See More
-                                        </button>
+                                        </Link>
                                     </article>
                                 </ScrollAnimation>
                             ))}

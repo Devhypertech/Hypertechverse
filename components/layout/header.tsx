@@ -62,7 +62,7 @@ const servicesList = [
     description: "Maximize your reach with strategic social ads."
   },
   { 
-    href: "/pay-per-click", 
+    href: "/pay-per-click-services", 
     label: "Pay Per Click",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",

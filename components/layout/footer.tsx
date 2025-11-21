@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"; // Corrected import for Twitter (using FaTwitter)
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
     return (
@@ -7,10 +7,12 @@ export default function Footer() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 {/* Footer Menu in the Center */}
-                <div className="flex justify-center py-14 space-x-8 mb-6">
+                <div className="flex flex-wrap justify-center py-14 gap-4 sm:gap-6 md:space-x-8 mb-6">
                     <a href="/portfolio" className="text-white hover:text-[#FFD350] transition">Portfolio</a>
                     <a href="/services" className="text-white hover:text-[#FFD350] transition">Services</a>
                     <a href="/about" className="text-white hover:text-[#FFD350] transition">About</a>
+                    <a href="/blogs" className="text-white hover:text-[#FFD350] transition">Blogs</a>
+                    <a href="/pricing" className="text-white hover:text-[#FFD350] transition">Pricing</a>
                     <a href="/contact" className="text-white hover:text-[#FFD350] transition">Contact</a>
                 </div>
 
@@ -39,18 +41,24 @@ export default function Footer() {
                     </div>
 
                     {/* Right Column with Social Media Icons */}
-                    <div className="flex justify-end space-x-4">
-                        <a href="https://facebook.com" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                    <div className="flex flex-wrap justify-end gap-4">
+                        <a href="https://www.facebook.com/hypertechverse" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaFacebook size={24} />
                         </a>
-                        <a href="https://twitter.com" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                        <a href="https://x.com/hypertechverse" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaTwitter size={24} />
                         </a>
-                        <a href="https://instagram.com" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                        <a href="https://www.instagram.com/hypertechverse.llc/" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaInstagram size={24} />
                         </a>
-                        <a href="https://linkedin.com" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                        <a href="https://www.linkedin.com/company/103623473" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaLinkedin size={24} />
+                        </a>
+                        <a href="https://www.pinterest.com/hypertechverse/" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                            <FaPinterest size={24} />
+                        </a>
+                        <a href="https://www.youtube.com/@HypertechVerse" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                            <FaYoutube size={24} />
                         </a>
                     </div>
                 </div>
