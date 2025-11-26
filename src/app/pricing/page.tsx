@@ -531,7 +531,7 @@ export default function PricingPage() {
     },
     {
       title: "Elite SEO Package",
-      price: "$154900",
+      price: "$1549.00",
       description: "Suitable for potential super-startups and brand revamps for companies.",
       features: [
         "20 Keywords",
