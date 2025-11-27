@@ -379,7 +379,7 @@ export default function PricingPage() {
   const videoAnimationPackages = [
     {
       title: "Teaser Intro Video Packages",
-      price: "$149.00",
+      price: "$299.00",
       description: "Suitable for potential super-startups and brand revamps for companies.",
       features: [
         "15s Duration - HD 1080",
@@ -394,7 +394,7 @@ export default function PricingPage() {
     },
     {
       title: "Startup Video Packages",
-      price: "$199.00",
+      price: "$349.00",
       description: "Suitable for potential super-startups and brand revamps for companies.",
       features: [
         "30s Duration - HD 1080",
@@ -409,7 +409,7 @@ export default function PricingPage() {
     },
     {
       title: "Classic Video Packages",
-      price: "$399.00",
+      price: "$499.00",
       description: "Suitable for potential super-startups and brand revamps for companies.",
       features: [
         "60 Second Video - HD 1080",
@@ -427,32 +427,14 @@ export default function PricingPage() {
       price: "$699.00",
       description: "Suitable for potential super-startups and brand revamps for companies.",
       features: [
-        "5 Keywords",
-        "Guaranteed Ranking on Google",
-        "Off-site Optimization",
-        "Link Building",
-        "Social Bookmarking",
-        "Basic Analytical Report",
-        "In-depth Site Analysis",
-        "Content Duplicity Check",
-        "Initial Backlinks analysis",
-        "Google Penalty Check",
-        "Mobile Usability Check",
-        "Competition Analysis",
-        "Keyword Research",
-        "Informational Content Writing & Sharing (2 - Per Month)",
-        "Blog Writing (1 - Per Month)",
-        "Press Release Social Bookmarking (5 - Per Month)",
-        "NAP Syndication",
-        "Google My Business / Bing Local Listing",
-        "Citation Building",
-        "Classified Submissions",
-        "Google Analytics Analysis Report",
-        "SEO Reports",
-        "Search Engine Rank Report",
-        "Dedicated Accounts Manager",
-        "Monthly Action Plan",
-        "Activity Report",
+        "90 Second Video - HD 1080",
+        "Professional Script",
+        "Sample Theme",
+        "Storyboard",
+        "Animation",
+        "Voice - Over & Sound Effects",
+        "6 weeks Delivery",
+        "Unlimited Revisions",
       ],
     },
   ];
