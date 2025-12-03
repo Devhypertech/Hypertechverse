@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function UltimateAgency() {
     return (
-        <section className="bg-black text-white px-2 sm:px-3 lg:px-4 py-20 sm:py-20 relative overflow-hidden">
+        <section className="bg-[#1d1d1d] text-white px-2 sm:px-3 lg:px-4 py-20 sm:py-20 relative overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-20 left-10 w-40 h-40 bg-blue-500 rounded-full animate-float"></div>

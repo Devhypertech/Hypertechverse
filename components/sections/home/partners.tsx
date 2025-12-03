@@ -10,7 +10,7 @@ export default function OurPartners() {
   ];
 
   return (
-    <section className="bg-black text-white pb-16 md:pb-20">
+    <section className="bg-[#1d1d1d] text-white pb-16 md:pb-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-12">

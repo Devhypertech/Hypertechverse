@@ -992,7 +992,7 @@ export default function PricingPage() {
       </section>
 
       {/* Banner Section */}
-      <section className="bg-black py-8 overflow-hidden">
+      <section className="bg-[#1d1d1d] py-8 overflow-hidden">
         <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
           <div className="relative h-[80px] sm:h-[100px] overflow-hidden">
             <div className="absolute inset-0 flex items-center animate-marquee-x whitespace-nowrap">
@@ -1010,7 +1010,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Tabs */}
-      <section className="bg-black py-8">
+      <section className="bg-[#1d1d1d] py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             {[
@@ -1025,11 +1025,10 @@ export default function PricingPage() {
               <button
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
-                className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${
-                  activeTab === tab.key
+                className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === tab.key
                     ? "bg-[#FFD350] text-black shadow-lg"
                     : "bg-[#EA7BBF] text-white hover:opacity-90"
-                }`}
+                  }`}
               >
                 {tab.label}
               </button>
@@ -1039,7 +1038,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Card and Services Section */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-[#1d1d1d] text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {activeTab === "website" ? (
             // Website Packages Grid
@@ -1550,111 +1549,111 @@ export default function PricingPage() {
             </div>
           ) : (
             // Other tabs - Original layout
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Left: Pricing Card */}
-            <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl">
-              {/* Illustration */}
-              <div className="flex justify-center mb-6">
-                <div className="relative w-32 h-32">
-                  <Image
-                    src={currentPricing.art}
-                    alt={currentPricing.title}
-                    fill
-                    className="object-contain"
-                  />
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+              {/* Left: Pricing Card */}
+              <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl">
+                {/* Illustration */}
+                <div className="flex justify-center mb-6">
+                  <div className="relative w-32 h-32">
+                    <Image
+                      src={currentPricing.art}
+                      alt={currentPricing.title}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              {/* Title */}
-              <h2
-                className="text-2xl sm:text-3xl font-black uppercase text-center text-black mb-4"
-                style={{ fontFamily: "Recursive, sans-serif" }}
-              >
-                {currentPricing.title}
-              </h2>
+                {/* Title */}
+                <h2
+                  className="text-2xl sm:text-3xl font-black uppercase text-center text-black mb-4"
+                  style={{ fontFamily: "Recursive, sans-serif" }}
+                >
+                  {currentPricing.title}
+                </h2>
 
-              {/* Price */}
-              <div className="text-center mb-6">
-                <span className="text-4xl sm:text-5xl font-bold text-black">
-                  {currentPricing.price}
-                </span>
-              </div>
+                {/* Price */}
+                <div className="text-center mb-6">
+                  <span className="text-4xl sm:text-5xl font-bold text-black">
+                    {currentPricing.price}
+                  </span>
+                </div>
 
-              {/* Features List */}
-              <ul className="space-y-3 mb-8">
-                {currentPricing.features.map((feature: string, index: number) => (
-                  <li key={index} className="flex items-center text-black">
-                    <svg
-                      className="w-5 h-5 mr-3 text-[#EA7BBF] flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span className="text-sm sm:text-base">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+                {/* Features List */}
+                <ul className="space-y-3 mb-8">
+                  {currentPricing.features.map((feature: string, index: number) => (
+                    <li key={index} className="flex items-center text-black">
+                      <svg
+                        className="w-5 h-5 mr-3 text-[#EA7BBF] flex-shrink-0"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <span className="text-sm sm:text-base">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
 
-              {/* Buy Now Button */}
+                {/* Buy Now Button */}
                 <Link
                   href="/contact"
                   className="w-full bg-[#EA7BBF] text-white font-bold py-4 px-6 rounded-xl hover:bg-[#d66aa8] transition-colors duration-200 text-lg text-center block"
                 >
-                Buy Now
+                  Buy Now
                 </Link>
-            </div>
-
-            {/* Right: Services Section */}
-            <div className="flex flex-col justify-center">
-              {/* Title with Icon */}
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-8 h-8 bg-[#FFD350] rounded-full flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">•</span>
-                </div>
-                <h3
-                  className="text-2xl sm:text-3xl font-black uppercase text-white"
-                  style={{ fontFamily: "Recursive, sans-serif" }}
-                >
-                  {currentPricing.title}
-                </h3>
               </div>
 
-              {/* Description */}
-              <p
-                className="text-white/80 mb-6 leading-relaxed"
-                style={{ fontFamily: "Poppins, sans-serif" }}
-              >
-                {currentPricing.description}
-              </p>
-
-              {/* Services List */}
-              <div className="space-y-3">
-                {currentPricing.services.map((service: string, index: number) => (
-                  <div
-                    key={index}
-                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3"
-                  >
-                    <span className="text-white uppercase font-semibold text-sm sm:text-base">
-                      {service}
-                    </span>
+              {/* Right: Services Section */}
+              <div className="flex flex-col justify-center">
+                {/* Title with Icon */}
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-8 h-8 bg-[#FFD350] rounded-full flex items-center justify-center">
+                    <span className="text-black font-bold text-sm">•</span>
                   </div>
-                ))}
+                  <h3
+                    className="text-2xl sm:text-3xl font-black uppercase text-white"
+                    style={{ fontFamily: "Recursive, sans-serif" }}
+                  >
+                    {currentPricing.title}
+                  </h3>
+                </div>
+
+                {/* Description */}
+                <p
+                  className="text-white/80 mb-6 leading-relaxed"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                >
+                  {currentPricing.description}
+                </p>
+
+                {/* Services List */}
+                <div className="space-y-3">
+                  {currentPricing.services.map((service: string, index: number) => (
+                    <div
+                      key={index}
+                      className="bg-white/5 border border-white/10 rounded-lg px-4 py-3"
+                    >
+                      <span className="text-white uppercase font-semibold text-sm sm:text-base">
+                        {service}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
           )}
         </div>
       </section>
 
       {/* Our Smooth Process Section */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-[#1d1d1d] text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
           <h2
@@ -1707,7 +1706,7 @@ export default function PricingPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-[#1d1d1d] text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
             {/* Phone Illustration */}

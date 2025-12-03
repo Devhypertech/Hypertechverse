@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-[#1d1d1d] text-white">
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden">
         {/* top yellow slab */}
@@ -96,12 +96,12 @@ export default function AboutPage() {
           </div>
 
           {/* hard cut into black (like design) */}
-          <div className="h-6 sm:h-8 w-full bg-black" />
+          <div className="h-6 sm:h-8 w-full bg-[#1d1d1d]" />
         </div>
       </section>
 
       {/* ================= ABOUT US BLOCK ================= */}
-      <section className="relative bg-black py-12 sm:py-16 md:py-20 lg:py-24">
+      <section className="relative bg-[#1d1d1d] py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center font-[var(--font-recent-grotesk)] text-3xl sm:text-4xl md:text-[44px] lg:text-[56px] xl:text-[72px] font-extrabold tracking-tight text-[#EA7BBF] px-2">
             ABOUT US
@@ -110,13 +110,13 @@ export default function AboutPage() {
           {/* Text now centered for all three columns */}
           <div className="mt-8 sm:mt-10 grid gap-6 sm:gap-8 text-sm sm:text-base md:text-[15px] font-bold leading-relaxed text-white/90 md:grid-cols-3 text-center px-2">
             <p>
-            We take the lead in the digital revolution instead of merely accepting its trends. We operate as a leading digital marketing agency that provides comprehensive services, from design and development to new frontiers.
+              We take the lead in the digital revolution instead of merely accepting its trends. We operate as a leading digital marketing agency that provides comprehensive services, from design and development to new frontiers.
             </p>
             <p>
-            Our team of forward-thinkers and tech experts thrives on challenges and successfully converts them into reality. Our approach combines innovative design techniques and technical accuracy to deliver exceptional digital solutions for any project.
+              Our team of forward-thinkers and tech experts thrives on challenges and successfully converts them into reality. Our approach combines innovative design techniques and technical accuracy to deliver exceptional digital solutions for any project.
             </p>
             <p>
-            What drives us? Excellence, innovation, and your success. We focus on achieving results that deliver lasting impacts through our services. Your vision deserves perfection beyond all expectations, so we construct solutions with extraordinary outcomes. 
+              What drives us? Excellence, innovation, and your success. We focus on achieving results that deliver lasting impacts through our services. Your vision deserves perfection beyond all expectations, so we construct solutions with extraordinary outcomes.
             </p>
           </div>
         </div>

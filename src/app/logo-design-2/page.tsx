@@ -20,7 +20,7 @@ export default function LogoDesignPage() {
             className="object-cover object-right-bottom"
           />
         </div>
-        
+
         <div className="relative mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 z-10">
           <div className="grid items-center justify-center gap-6 sm:gap-8 md:gap-10 pt-12 sm:pt-16 md:pt-20 pb-4 lg:grid-cols-2 lg:pt-40 lg:pb-8">
             {/* Left copy */}
@@ -82,7 +82,7 @@ export default function LogoDesignPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -93,7 +93,7 @@ export default function LogoDesignPage() {
       </section>
 
       {/* Logo Design Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -144,7 +144,7 @@ export default function LogoDesignPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           {/* Yellow tilted box - static bar */}
           <div className="absolute top-0 left-0 w-full h-full">
@@ -169,71 +169,71 @@ export default function LogoDesignPage() {
           </div>
         </div>
       </section>
-      
-{/* Tilted Logo Slides — fits screen like reference */}
-<section className="relative bg-black overflow-hidden">
-  {/* total canvas height: ~65–72vh depending on breakpoint */}
-  <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8 xl:py-12">
 
-    {/* mask/fade at the sides so edges feel cropped */}
-    <div
-      className="pointer-events-none absolute inset-0 z-[1]"
-      style={{
-        WebkitMaskImage:
-          "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
-        maskImage:
-          "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
-      }}
-    />
+      {/* Tilted Logo Slides — fits screen like reference */}
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
+        {/* total canvas height: ~65–72vh depending on breakpoint */}
+        <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8 xl:py-12">
 
-    {/* ============ ROW 1 ============ */}
-    <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
-      <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[42vh] overflow-hidden rounded-xl sm:rounded-2xl">
-        <Image
-          src="/services/logo/slide1.png"
-          alt="Logo strip 1"
-          width={2000}
-          height={800}
-          priority
-          sizes="140vw"
-          className="h-full w-[140vw] max-w-none object-cover animate-pan-left"
-        />
-      </div>
-    </div>
+          {/* mask/fade at the sides so edges feel cropped */}
+          <div
+            className="pointer-events-none absolute inset-0 z-[1]"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to right, transparent 0, black 6%, black 94%, transparent 100%)",
+            }}
+          />
 
-    <div className="h-[1vh] sm:h-[1.5vh] md:h-[2vh] lg:h-[2.5vh]" />
+          {/* ============ ROW 1 ============ */}
+          <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
+            <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[42vh] overflow-hidden rounded-xl sm:rounded-2xl">
+              <Image
+                src="/services/logo/slide1.png"
+                alt="Logo strip 1"
+                width={2000}
+                height={800}
+                priority
+                sizes="140vw"
+                className="h-full w-[140vw] max-w-none object-cover animate-pan-left"
+              />
+            </div>
+          </div>
 
-    {/* ============ ROW 2 (opposite pan, lighter tilt) ============ */}
-    <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
-      <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[42vh] overflow-hidden rounded-xl sm:rounded-2xl">
-        <Image
-          src="/services/logo/slide2.png"
-          alt="Logo strip 2"
-          width={2000}
-          height={800}
-          sizes="140vw"
-          className="h-full w-[140vw] max-w-none object-cover animate-pan-right"
-        />
-      </div>
-    </div>
+          <div className="h-[1vh] sm:h-[1.5vh] md:h-[2vh] lg:h-[2.5vh]" />
 
-    <div className="h-[1vh] sm:h-[1.5vh] md:h-[2vh] lg:h-[2.5vh]" />
+          {/* ============ ROW 2 (opposite pan, lighter tilt) ============ */}
+          <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
+            <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[42vh] overflow-hidden rounded-xl sm:rounded-2xl">
+              <Image
+                src="/services/logo/slide2.png"
+                alt="Logo strip 2"
+                width={2000}
+                height={800}
+                sizes="140vw"
+                className="h-full w-[140vw] max-w-none object-cover animate-pan-right"
+              />
+            </div>
+          </div>
 
-    {/* ============ ROW 3 ============ */}
-    <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
-      <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[42vh] overflow-hidden rounded-xl sm:rounded-2xl">
-        <Image
-          src="/services/logo/slide3.png"
-          alt="Logo strip 3"
-          width={2000}
-          height={800}
-          sizes="140vw"
-          className="h-full w-[140vw] max-w-none object-cover animate-pan-left"
-        />
-      </div>
-    </div>  
-  </div>
-</section>
+          <div className="h-[1vh] sm:h-[1.5vh] md:h-[2vh] lg:h-[2.5vh]" />
+
+          {/* ============ ROW 3 ============ */}
+          <div className="-rotate-6 sm:-rotate-5 lg:-rotate-4">
+            <div className="relative h-[25vh] sm:h-[30vh] md:h-[35vh] lg:h-[42vh] overflow-hidden rounded-xl sm:rounded-2xl">
+              <Image
+                src="/services/logo/slide3.png"
+                alt="Logo strip 3"
+                width={2000}
+                height={800}
+                sizes="140vw"
+                className="h-full w-[140vw] max-w-none object-cover animate-pan-left"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Pink Process (bg.png + vertical tabs) */}
       <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
@@ -291,7 +291,7 @@ export default function LogoDesignPage() {
           </div>
         </div>
 
-   
+
       </section>
 
       {/* Second Card Reviews Section */}
@@ -308,31 +308,31 @@ function PinkProcessTabs() {
         "Your brand is interpreted, your logo and core values are refined. We identify what your brand stands for, who it serves, and the tone to communicate—all distilled into a clear direction before sketching.",
       logo: "/services/logo/logob.png"
     },
-    { 
+    {
       title: "Inspiration Ignition",
       desc:
         "Mood boards and theme exploration to spark styles, colors, and typography that align with the strategy. We pick visual lanes that feel uniquely you.",
       logo: "/services/logo/logoc.png"
     },
-    { 
+    {
       title: "Sketch the Spark",
       desc:
         "Low-fidelity thumbnails and quick iterations explore shapes and symbolism. We chase the strongest ideas and test readability early.",
       logo: "/services/logo/logod.png"
     },
-    { 
+    {
       title: "Design & Refine",
       desc:
         "Vectorization, spacing, weights, and color tuning. We build viable variations and stress-test across sizes and backgrounds.",
       logo: "/services/logo/logoe.png"
     },
-    { 
+    {
       title: "Collaborate & Polish",
       desc:
         "Tight feedback loops, accessibility checks, and finishing touches. When it's right, you'll feel it immediately.",
       logo: "/services/logo/logof.png"
     },
-    { 
+    {
       title: "Deliver Your Identity",
       desc:
         "Exports for every context (SVG/PNG/PDF), color specs, typography, usage notes, and a simple brand guide.",
@@ -373,7 +373,7 @@ function PinkProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-white/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-white/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -428,7 +428,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );

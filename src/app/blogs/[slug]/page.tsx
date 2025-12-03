@@ -818,7 +818,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   // If blog not found, show 404
   if (!blog) {
     return (
-      <main className="min-h-screen bg-black text-white flex items-center justify-center">
+      <main className="min-h-screen bg-[#1d1d1d] text-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Blog Post Not Found</h1>
           <Link href="/blogs" className="text-[#EA7BBF] hover:underline">
@@ -859,7 +859,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[88px] overflow-hidden">
             <div className="absolute inset-0 flex items-center">
               <RibbonText />
@@ -870,7 +870,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Blog Post Content */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-[#1d1d1d] text-white py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* Blog Title */}
           <h2

@@ -27,10 +27,10 @@ const featuredProjects = [
 
 export default function FeaturedWork() {
     return (
-        <section className="bg-black py-10 md:py-16">
+        <section className="bg-[#1d1d1d] py-10 md:py-16">
             {/* MARQUEE banner */}
             <ScrollAnimation animation="fadeInUp" delay={200}>
-                <div className="relative bg-black overflow-hidden">
+                <div className="relative bg-[#1d1d1d] overflow-hidden">
                     <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[240px]">
                         <div className="marquee-track absolute inset-0 flex animate-marquee-x">
                             <Image

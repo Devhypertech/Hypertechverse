@@ -91,7 +91,7 @@ export default function BrandingPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -102,7 +102,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Branding Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -128,7 +128,7 @@ export default function BrandingPage() {
 
                 {/* Sub headline */}
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Where strategy meets creative excellence.
+                  Where strategy meets creative excellence.
                 </h3>
 
                 {/* Description */}
@@ -153,7 +153,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           {/* Yellow tilted box - static bar */}
           <div className="absolute top-0 left-0 w-full h-full">
@@ -178,9 +178,9 @@ export default function BrandingPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Tilted Branding Slides */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         {/* total canvas height: ~65–72vh depending on breakpoint */}
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
 
@@ -238,7 +238,7 @@ export default function BrandingPage() {
             className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-         Hypertech Verse is a major creative branding and designing firm, which focuses on developing strong and memorable brands that are notable among competitive markets. We provide a full range of services, including brand strategy, logo design, brand naming, package design, rebranding, and the creation of custom collateral. We are a professional graphic design firm that assists companies to get success over the long term.
+            Hypertech Verse is a major creative branding and designing firm, which focuses on developing strong and memorable brands that are notable among competitive markets. We provide a full range of services, including brand strategy, logo design, brand naming, package design, rebranding, and the creation of custom collateral. We are a professional graphic design firm that assists companies to get success over the long term.
           </p>
         </div>
 
@@ -266,11 +266,11 @@ export default function BrandingPage() {
           </div>
         </div>
 
-   
+
       </section>
 
       {/* Elite Branding Agency Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Section: Elite Branding Agency */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
@@ -279,15 +279,15 @@ export default function BrandingPage() {
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 {/* Main headline */}
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                BRANDING
-                <span className="text-[#EA7BBF]"> IDENTITY</span>
+                  BRANDING
+                  <span className="text-[#EA7BBF]"> IDENTITY</span>
                 </h2>
 
                 {/* Description */}
                 <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Create a powerful brand identity that resonates with your audience. We specialize in crafting
-                memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.        
-                  </p>
+                  Create a powerful brand identity that resonates with your audience. We specialize in crafting
+                  memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.
+                </p>
 
                 {/* CTA Button */}
                 <div className="pt-2 sm:pt-4">
@@ -315,10 +315,10 @@ export default function BrandingPage() {
               </div>
             </ScrollAnimation>
           </div>
-      </div>
+        </div>
       </section>
 
-      <section className="relative bg-black py-6 sm:py-6">
+      <section className="relative bg-[#1d1d1d] py-6 sm:py-6">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <BrandingSuccessCarousel />
         </div>
@@ -338,31 +338,31 @@ function BrandingProcessTabs() {
         "Hypertech Verse provides strategic brand services that help businesses achieve their maximum results. The beginning of your brand development involves market research, audience analytics, and competitor analysis to establish current market conditions. We develop long-term strategic planning, establishing your brand's position in the market. Through this approach, your business will excel in competitive markets. We build consistent growth strategies through our team, which helps startups as well as established enterprises build strong customer relations and achieve lasting growth. We work together with our graphic design and branding services to develop enduring, recognizable identities that will leave a lasting impact.",
       logo: "/services/branding/tab.png"
     },
-    { 
+    {
       title: "Logo Design & Style Guiding",
       desc:
         "Your brand relies on its logo to represent it; therefore, we approach logo development with dignity. Our creative graphic design agency builds visual logo concepts that both showcase branding alignment as well as attractive aesthetics. Creating your logo follows a method that starts with extensive discovery meetings and continues through multiple design adaptations. Our service extends past logo development since we provide complete style direction. We provide rules for color selection, typestyle standards, graphical symbols, and their application within both digital and physical platforms. We will deliver assets that deliver appealing aesthetics and operational functionality through our position as a prominent graphic design company. ",
       logo: "/services/logo/logoc.png"
     },
-    { 
+    {
       title: "Brand Naming",
       desc:
         "In brand development, selecting a suitable name is a vital aspect that many fail to consider appropriately. Brand naming services form a part of our complete branding service portfolio, which we provide to our clients. Our research measures both linguistic patterns along with cultural relevance to domain availability and trademark conflicts in order to confirm the name's complete viability. Our professional branding agency recognizes how an effective name creates specific perceptions while building strong connections between people and brands. Our affordable graphic design services expand your brand visibility through influential logos and branding elements to create an industry-leading position.",
       logo: "/services/logo/logod.png"
     },
-    { 
+    {
       title: "Brand Package Designs",
       desc:
         "The first impression creates an essential impact that specifically affects retail stores, together with digital marketplaces. Our brand package design services dedicate themselves to elements beyond typical visual attractiveness. We operate as one of the most significant graphic design companies that develop both practical packaging utilities and engaging visual storytelling.  Through our position as a leading graphic designing company, we deliver packages that use your brand language through every design element, including fonts and colors. We customize every package according to your branding targets. Brands who want wholesale value with authentic professional graphic design solutions should turn to these solutions.",
       logo: "/services/logo/logoe.png"
     },
-    { 
+    {
       title: "Professional Rebranding Service",
       desc:
         "Hypertech Verse provides professional rebranding services as a comprehensive strategic transformation that helps businesses find new growth through relevant market positioning. I guide branding agencies through a custom approach to refine their brand voice, messaging, and visual identity based on present market demands. Our professional team uses brand identity services and professional graphic design services to simplify complex rebranding projects and achieve measurable outcomes. Our graphic design company guarantees that all elements. During the design process for your brand refreshment. The services provided by our company help businesses receive long-term value through improved brand perception and strengthened audience relationships.",
       logo: "/services/logo/logof.png"
     },
-    { 
+    {
       title: "Custom Collateral Design Service",
       desc:
         "Branded collateral is more than marketing material—it’s an extension of your brand identity. Our custom collateral design service incorporates complete products such as brochures, digital templates, presentation decks, together with flyers, business cards. The full-service aspect of our graphic design agency guarantees that every piece of collateral both captures your brand standard. Our professional experience in graphic design and branding services lets us create assets that fulfill business targets and resonate with specific audience needs. The company delivers motion graphics design services to enable your brand to achieve engaging visual movement during storytelling. As a graphic design agency, we provide cost-effective benefits to our clients.",
@@ -403,7 +403,7 @@ function BrandingProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -433,7 +433,7 @@ function BrandingProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -457,7 +457,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );

@@ -181,7 +181,7 @@ export default function TestimonialsMasonry() {
     };
 
     return (
-        <section className="bg-black py-20 md:py-20">
+        <section className="bg-[#1d1d1d] py-20 md:py-20">
             <div className="mx-auto max-w-7xl mb-16 px-4 sm:px-6 lg:px-8">
                 {/* Centered heading */}
                 <ScrollAnimation animation="fadeInUp" delay={200}>
@@ -267,7 +267,7 @@ export default function TestimonialsMasonry() {
                                                     className="object-cover rounded-lg"
                                                     unoptimized
                                                 />
-                                                <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors duration-300 rounded-lg">
+                                                <div className="absolute inset-0 flex items-center justify-center bg-[#1d1d1d]/30 group-hover:bg-[#1d1d1d]/20 transition-colors duration-300 rounded-lg">
                                                     <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                                         <svg
                                                             className="w-8 h-8 text-black ml-1"

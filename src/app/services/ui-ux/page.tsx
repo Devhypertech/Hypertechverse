@@ -32,10 +32,10 @@ export default function UIUXPage() {
                     className="leading-[.95] font-black uppercase text-1xl sm:text-2xl md:text-[24px] lg:text-[32px] xl:text-[42px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                   Curiosity Captured in
+                    Curiosity Captured in
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    Flow
+                      Flow
                     </span>
                   </h1>
 
@@ -55,7 +55,7 @@ export default function UIUXPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                 Our UI/UX design service combines aesthetics & high-converting digital experience. Being the top UI/UX design company, we convert user curiosity into effective interaction.
+                  Our UI/UX design service combines aesthetics & high-converting digital experience. Being the top UI/UX design company, we convert user curiosity into effective interaction.
                 </p>
 
                 <div className="mt-6 sm:mt-8 px-2">
@@ -82,11 +82,11 @@ export default function UIUXPage() {
                 />
               </div>
             </div>
-          </div>  
+          </div>
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -97,7 +97,7 @@ export default function UIUXPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -117,11 +117,11 @@ export default function UIUXPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Behind Every Seamless<span className="text-[#EA7BBF]">Experience</span>
+                  Behind Every Seamless<span className="text-[#EA7BBF]">Experience</span>
                 </h2>
 
                 <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Awesome digital experiences do not occur without a planned approach to design strategy and UI and UX design services. The foundation of the UI/UX design is the comprehension of the users: their needs, behaviors, and expectations. Good UX UI design services are not just pretty to the eye; they are functional, easy to access, and consistent across all devices. 
+                  Awesome digital experiences do not occur without a planned approach to design strategy and UI and UX design services. The foundation of the UI/UX design is the comprehension of the users: their needs, behaviors, and expectations. Good UX UI design services are not just pretty to the eye; they are functional, easy to access, and consistent across all devices.
                 </p>
 
                 <div className="pt-2 sm:pt-4">
@@ -130,7 +130,7 @@ export default function UIUXPage() {
                     className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
-                   start your free consultation today!
+                    start your free consultation today!
                   </Link>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function UIUXPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
@@ -164,7 +164,7 @@ export default function UIUXPage() {
         </div>
       </section>
 
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         {/* total canvas height: ~65–72vh depending on breakpoint */}
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
 
@@ -230,63 +230,63 @@ export default function UIUXPage() {
         </div>
       </section>
       {/* ==== Why Paid Ads Work section (matches reference) ==== */}
-<section className="bg-black text-white py-14 sm:py-16">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="bg-[#1d1d1d] text-white py-14 sm:py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-    {/* 6-step chips */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-      {[
-        "Strategy-Driven Design",
-        "Faster Launch Cycles",
-        "Cross-Platform Consistency",
-        "User-Centered Thinking",
-        "Conversion-Focused UX",
-        "Scalable Design Systems",
-      ].map((t, i) => (
-        <div
-          key={t}
-          className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
-        >
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
-            {i + 1}
-          </span>
-          <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
-            {t}
-          </span>
+          {/* 6-step chips */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              "Strategy-Driven Design",
+              "Faster Launch Cycles",
+              "Cross-Platform Consistency",
+              "User-Centered Thinking",
+              "Conversion-Focused UX",
+              "Scalable Design Systems",
+            ].map((t, i) => (
+              <div
+                key={t}
+                className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
+              >
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+                  {i + 1}
+                </span>
+                <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
+                  {t}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* FAQs Section */}
+          <div className="mt-10 sm:mt-12 md:mt-16">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-center mb-8 sm:mb-10 md:mb-12"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              FAQs
+            </h2>
+
+            <div className="space-y-4 sm:space-y-5">
+              <FAQItem
+                question="What’s the difference between UI and UX design?"
+                answer="User interface (UI) design encompasses the appearance, including aspects such as buttons, layout, and style. UX (User Experience) design renders the product to be viable, conducive, and relevant to the needs of the users. Our UI/UX design service at Hypertech Verse is a combination of the two features in order to deliver smooth, high-performance digital experiences."
+              />
+              <FAQItem
+                question="How long does a typical UI/UX project take?"
+                answer="Timelines vary by the size, but the majority of the research to final interface delivery of UX/UI design services takes 2-6 weeks. Multifaceted systems might take longer to test and iterate. Being a flexible UI/UX designing company, we are able to schedule according to your product objectives."
+              />
+              <FAQItem
+                question="Do you offer design for both mobile apps and web platforms?"
+                answer="Yes. Our responsive UI and UX designing services can be used in mobile applications, websites, and multi-platform products. We strive to guarantee consistency, usability, and performance on any screen and on any platform."
+              />
+              <FAQItem
+                question="Can you improve the design of an existing product?"
+                answer="Absolutely. Through audits and redesigns, our UX design consultancy helps optimize existing products for better usability, flow, and visual appeal. We enhance what's already there, without rebuilding from scratch."
+              />
+            </div>
+          </div>
         </div>
-      ))}
-    </div>
-
-    {/* FAQs Section */}
-    <div className="mt-10 sm:mt-12 md:mt-16">
-      <h2
-        className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-center mb-8 sm:mb-10 md:mb-12"
-        style={{ fontFamily: "Recursive, sans-serif" }}
-      >
-        FAQs
-      </h2>
-      
-      <div className="space-y-4 sm:space-y-5">
-        <FAQItem 
-          question="What’s the difference between UI and UX design?"
-          answer="User interface (UI) design encompasses the appearance, including aspects such as buttons, layout, and style. UX (User Experience) design renders the product to be viable, conducive, and relevant to the needs of the users. Our UI/UX design service at Hypertech Verse is a combination of the two features in order to deliver smooth, high-performance digital experiences."
-        />
-        <FAQItem 
-          question="How long does a typical UI/UX project take?"
-          answer="Timelines vary by the size, but the majority of the research to final interface delivery of UX/UI design services takes 2-6 weeks. Multifaceted systems might take longer to test and iterate. Being a flexible UI/UX designing company, we are able to schedule according to your product objectives."
-        />
-        <FAQItem 
-          question="Do you offer design for both mobile apps and web platforms?"
-          answer="Yes. Our responsive UI and UX designing services can be used in mobile applications, websites, and multi-platform products. We strive to guarantee consistency, usability, and performance on any screen and on any platform."
-        />
-        <FAQItem 
-          question="Can you improve the design of an existing product?"
-          answer="Absolutely. Through audits and redesigns, our UX design consultancy helps optimize existing products for better usability, flow, and visual appeal. We enhance what's already there, without rebuilding from scratch."
-        />
-      </div>
-    </div>
-  </div>  
-</section>
+      </section>
 
       <TestimonialsMasonry />
     </main>
@@ -302,7 +302,7 @@ function UIUXProcessTabs() {
     { title: "Product Design", desc: "It is not only the look of a product that matters; it is also the functionality. UI UX development services require a variety of processes, including idea generation into a practical, user-friendly product. Our process starts with the user need identification, flows mapping, and the prototyping the key functionality. Then we design every interaction and interface with accuracy - between MVP and ready-to-launch versions. Being a full-service UI UX design agency, we make sure that your product is clear, consistent, and goal-oriented.", logo: "/services/uiux/tabone.png" },
     { title: "Gaming UI/UX", desc: "Good games are not just about downloading graphics; gameplay is all about intuitive and rewarding adventures. User interface design and user experience design for gaming are aimed at focusing on the psychology of the player, platform behavior, and smoother interaction. Working with HUD design, in-game menus, and onboard systems, we develop interfaces that retain users and make them want to play. Regardless of being mobile, console, or PC, our user experience design services make sure that your game will have a smooth feeling, be a lot of fun, and be memorable.", logo: "/services/uiux/sone.png" },
     { title: "Wire Framing and Prototyping", desc: "Any successful product has a clear outline. Our visual design services in wire framing and prototyping are creative tech services that produce images of layout, interaction, and flow much earlier in the development process. Our wireframes are drawn at low fidelity, and they are then transformed into prototypes, which can be clicked and virtually used in a real-world situation. In such a way, it allows rapid testing, healthier team alignment, and smarter choices, which can be backed by a trusted UI consultant to help take the idea to completion.", logo: "/services/uiux/tabone.png" },
-      ];
+  ];
 
   const [active, setActive] = React.useState(0);
 
@@ -315,7 +315,7 @@ function UIUXProcessTabs() {
       <div className="max-w-xl text-center lg:text-left">
         <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
           <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
-            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </span>
           {steps[active].title}
         </h3>
@@ -332,11 +332,11 @@ function UIUXProcessTabs() {
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={["group w-full text-left uppercase font-extrabold tracking-wide","transition rounded-xl px-3 py-2 sm:px-4 sm:py-2","text-sm sm:text-base",isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
+                  className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
                   <span className="inline-flex items-center gap-2 sm:gap-3">
-                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"].join(" ")}/>
+                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition", isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"].join(" ")} />
                     {s.title}
                   </span>
                 </button>
@@ -353,7 +353,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div className="border border-white/20 rounded-lg overflow-hidden bg-black/50 backdrop-blur-sm">
+    <div className="border border-white/20 rounded-lg overflow-hidden bg-[#1d1d1d]/50 backdrop-blur-sm">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
@@ -365,9 +365,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           {question}
         </h3>
         <svg
-          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#FFD350] flex-shrink-0 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#FFD350] flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+            }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

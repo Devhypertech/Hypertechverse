@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-black py-10 md:py-14">
+    <section className="bg-[#1d1d1d] py-10 md:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Pink pill */}
         <div

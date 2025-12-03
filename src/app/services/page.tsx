@@ -59,7 +59,7 @@ const ITEMS = [
 
 function ServiceCard({ item, idx }: { item: { title: string; color: string; icon: string; text: string }; idx: number }) {
     return (
-        <div 
+        <div
             className={`card group cursor-pointer transition-all duration-500 ease-out overflow-hidden ${idx === 0 ? 'one' : idx === 1 ? 'two' : idx === 2 ? 'three' : idx === 3 ? 'four' : idx === 4 ? 'five' : idx === 5 ? 'six' : 'seven'}`}
             style={{
                 width: '100%',
@@ -125,7 +125,7 @@ export default function ServicesPage() {
                     ease: "power2.out",
                     zIndex: 1000
                 });
-                
+
                 // Reveal the paragraph
                 const paragraphContainer = card.querySelector('.paragraph-container');
                 if (paragraphContainer) {
@@ -145,7 +145,7 @@ export default function ServicesPage() {
                     ease: "power2.out",
                     zIndex: ITEMS.length - index
                 });
-                
+
                 // Hide the paragraph
                 const paragraphContainer = card.querySelector('.paragraph-container');
                 if (paragraphContainer) {
@@ -160,7 +160,7 @@ export default function ServicesPage() {
         });
 
         ScrollTrigger.refresh();
-        
+
         return () => {
             ScrollTrigger.getAll().forEach(t => t.kill());
         };
@@ -169,7 +169,7 @@ export default function ServicesPage() {
     return (
         <main className="min-h-screen">
             <ServiceHero />
-            <section className="bg-black">
+            <section className="bg-[#1d1d1d]">
                 <div className="w-full py-16 sm:py-24 lg:py-36">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-12">
                         <div className="relative" style={{ height: 'auto', minHeight: '600px' }}>
@@ -183,13 +183,13 @@ export default function ServicesPage() {
 
             {/* Services CTA Section */}
             <ServicesCTA />
-            
+
             {/* Why Choose Us Section */}
             <WhyChooseUs />
-            
+
             {/* Testimonials Section */}
             <Testimonial />
-            
+
             {/* Get In Touch Section */}
             <GetInTouch />
         </main>

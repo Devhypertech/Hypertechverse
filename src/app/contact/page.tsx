@@ -67,7 +67,7 @@ export default function ContactPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -78,7 +78,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Details Section */}
-      <section className="bg-black text-white py-12 sm:py-16 md:py-20">
+      <section className="bg-[#1d1d1d] text-white py-12 sm:py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
             {/* Contact Form */}
@@ -166,12 +166,12 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
                     >
-                      <option value="" className="bg-black">Select a subject</option>
-                      <option value="general" className="bg-black">General Inquiry</option>
-                      <option value="services" className="bg-black">Services</option>
-                      <option value="support" className="bg-black">Support</option>
-                      <option value="partnership" className="bg-black">Partnership</option>
-                      <option value="other" className="bg-black">Other</option>
+                      <option value="" className="bg-[#1d1d1d]">Select a subject</option>
+                      <option value="general" className="bg-[#1d1d1d]">General Inquiry</option>
+                      <option value="services" className="bg-[#1d1d1d]">Services</option>
+                      <option value="support" className="bg-[#1d1d1d]">Support</option>
+                      <option value="partnership" className="bg-[#1d1d1d]">Partnership</option>
+                      <option value="other" className="bg-[#1d1d1d]">Other</option>
                     </select>
                   </div>
 
@@ -366,7 +366,7 @@ export default function ContactPage() {
               </div>
             </ScrollAnimation>
           </div>
-      </div>
+        </div>
       </section>
     </main>
   );

@@ -35,7 +35,7 @@ export default function PayPerClickServicesPage() {
                     Maximize Your ROI with PPC
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    Driven Paid Advertising
+                      Driven Paid Advertising
                     </span>
                   </h1>
 
@@ -55,7 +55,7 @@ export default function PayPerClickServicesPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                 Our PPC campaigns are high converting as we do the right thing, at the right time and on the right platforms. Our tactics are built to win, we have lapped your niche.
+                  Our PPC campaigns are high converting as we do the right thing, at the right time and on the right platforms. Our tactics are built to win, we have lapped your niche.
                 </p>
 
                 <div className="mt-6 sm:mt-8 px-2">
@@ -82,11 +82,11 @@ export default function PayPerClickServicesPage() {
                 />
               </div>
             </div>
-          </div>  
+          </div>
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -97,7 +97,7 @@ export default function PayPerClickServicesPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -117,11 +117,11 @@ export default function PayPerClickServicesPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Reach a Wider <span className="text-[#EA7BBF]">Audience</span>
+                  Reach a Wider <span className="text-[#EA7BBF]">Audience</span>
                 </h2>
 
                 <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Our areas of expertise lie in constructing hyper-targeted ad campaigns using platforms such as Google, Facebook, and Instagram. We are more than a place to run ads at Hypertech Verse. We design smarter strategies to take your brand up another notch toward visibility and quantifiable results. With each campaign, we run on your behalf, you enjoy sustained ROI and increased growth.
+                  Our areas of expertise lie in constructing hyper-targeted ad campaigns using platforms such as Google, Facebook, and Instagram. We are more than a place to run ads at Hypertech Verse. We design smarter strategies to take your brand up another notch toward visibility and quantifiable results. With each campaign, we run on your behalf, you enjoy sustained ROI and increased growth.
                 </p>
 
                 <div className="pt-2 sm:pt-4">
@@ -130,7 +130,7 @@ export default function PayPerClickServicesPage() {
                     className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
-                   start your free consultation today!
+                    start your free consultation today!
                   </Link>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function PayPerClickServicesPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
@@ -163,7 +163,7 @@ export default function PayPerClickServicesPage() {
           </div>
         </div>
       </section>
-      
+
 
       {/* Yellow Process (bg.png + vertical tabs) */}
       <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
@@ -198,63 +198,63 @@ export default function PayPerClickServicesPage() {
         </div>
       </section>
       {/* ==== Why Paid Ads Work section (matches reference) ==== */}
-<section className="bg-black text-white py-14 sm:py-16">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="bg-[#1d1d1d] text-white py-14 sm:py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-    {/* 6-step chips */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-      {[
-        "Measurable Results",
-        "Fast and Targeted Reach",
-        "Cost Efficiency and Budget Control",
-        "Cross-Platform Visibility",
-        "Advanced Audience Insights",
-        "High Intent Traffic",
-      ].map((t, i) => (
-        <div
-          key={t}
-          className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
-        >
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
-            {i + 1}
-          </span>
-          <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
-            {t}
-          </span>
+          {/* 6-step chips */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              "Measurable Results",
+              "Fast and Targeted Reach",
+              "Cost Efficiency and Budget Control",
+              "Cross-Platform Visibility",
+              "Advanced Audience Insights",
+              "High Intent Traffic",
+            ].map((t, i) => (
+              <div
+                key={t}
+                className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
+              >
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+                  {i + 1}
+                </span>
+                <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
+                  {t}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* FAQs Section */}
+          <div className="mt-10 sm:mt-12 md:mt-16">
+            <h2
+              className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-center mb-8 sm:mb-10 md:mb-12"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              FAQs
+            </h2>
+
+            <div className="space-y-4 sm:space-y-5">
+              <FAQItem
+                question="What is PPC and how does it work?"
+                answer="PPC stands for Pay-Per-Click, an online advertising model where you pay only when someone clicks on your ad. It allows you to instantly reach potential customers on platforms like Google, Facebook, Bing, and Amazon."
+              />
+              <FAQItem
+                question="How much does PPC advertising cost?"
+                answer="PPC costs vary based on your budget, competition in your industry, and the platforms you use. You control your ad spend with daily or monthly limits, making it flexible and scalable for businesses of all sizes."
+              />
+              <FAQItem
+                question="How soon can I see results from a PPC campaign?"
+                answer="You can start seeing traffic almost immediately after your ads go live. However, optimal performance usually takes a couple of weeks of testing, learning, and refining the campaign for the best results."
+              />
+              <FAQItem
+                question="Which platforms do you manage PPC ads on?"
+                answer="We manage PPC campaigns across multiple platforms, including Google Ads, Meta (Facebook & Instagram), Bing Ads, Amazon Ads, and more, depending on where your audience spends time."
+              />
+            </div>
+          </div>
         </div>
-      ))}
-    </div>
-
-    {/* FAQs Section */}
-    <div className="mt-10 sm:mt-12 md:mt-16">
-      <h2
-        className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-center mb-8 sm:mb-10 md:mb-12"
-        style={{ fontFamily: "Recursive, sans-serif" }}
-      >
-        FAQs
-      </h2>
-      
-      <div className="space-y-4 sm:space-y-5">
-        <FAQItem 
-          question="What is PPC and how does it work?"
-          answer="PPC stands for Pay-Per-Click, an online advertising model where you pay only when someone clicks on your ad. It allows you to instantly reach potential customers on platforms like Google, Facebook, Bing, and Amazon."
-        />
-        <FAQItem 
-          question="How much does PPC advertising cost?"
-          answer="PPC costs vary based on your budget, competition in your industry, and the platforms you use. You control your ad spend with daily or monthly limits, making it flexible and scalable for businesses of all sizes."
-        />
-        <FAQItem 
-          question="How soon can I see results from a PPC campaign?"
-          answer="You can start seeing traffic almost immediately after your ads go live. However, optimal performance usually takes a couple of weeks of testing, learning, and refining the campaign for the best results."
-        />
-        <FAQItem 
-          question="Which platforms do you manage PPC ads on?"
-          answer="We manage PPC campaigns across multiple platforms, including Google Ads, Meta (Facebook & Instagram), Bing Ads, Amazon Ads, and more, depending on where your audience spends time."
-        />
-      </div>
-    </div>
-  </div>  
-</section>
+      </section>
 
       <TestimonialsMasonry />
     </main>
@@ -270,7 +270,7 @@ function PPCProcessTabs() {
     { title: "PPC Audit", desc: "You should conduct a PPC audit when you feel that your existing campaigns are under-converting or costing you too much money. It assists in pinpointing the loopholes, inefficiencies, and areas of enhancement in your current ad strategy. Hypertech Verse offers comprehensive audits that examine all aspects of the campaign, including the structure of the campaign, ad copy, the keyword strategy, landing pages, and tracking. You will get a clear report with actions that can be taken to increase ROI and reduce lost spend.", logo: "/services/payperclick/audit.png" },
     { title: "Amazon Ads", desc: "Amazon Ads provide a very efficient method of advertising products to buyers who are already actively shopping. Sellers will be able to display their ads at the top of the shopping pages for customers with high purchase intent, such as Sponsored Products and Sponsored Brands. We optimize your Amazon campaigns to maximize product visibility, keywords, and conversions. Whether it is a new launch or speeding up an existing product, we ensure your advertisements are shown to shoppers with immediate intent to purchase.", logo: "/services/payperclick/amazon.png" },
     { title: "Google Shopping", desc: "The Google Shopping Ads show the products with the visuals, price, and product description directly in the search results. The promos are an important source of traffic that results in high intent and are critical to the e-commerce brands that want to increase sales. We take care of the entire setup- this starts with setting up a clean product feed to arranging bids and campaigns. We intend to display your products to those users who are actually comparing the products and are ready to make a purchase decision.", logo: "/services/payperclick/shopping.png" },
-      ];
+  ];
 
   const [active, setActive] = React.useState(0);
 
@@ -283,7 +283,7 @@ function PPCProcessTabs() {
       <div className="max-w-xl text-center lg:text-left">
         <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
           <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
-            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </span>
           {steps[active].title}
         </h3>
@@ -300,11 +300,11 @@ function PPCProcessTabs() {
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={["group w-full text-left uppercase font-extrabold tracking-wide","transition rounded-xl px-3 py-2 sm:px-4 sm:py-2","text-sm sm:text-base",isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
+                  className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
                   <span className="inline-flex items-center gap-2 sm:gap-3">
-                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"].join(" ")}/>
+                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition", isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"].join(" ")} />
                     {s.title}
                   </span>
                 </button>
@@ -321,7 +321,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div className="border border-white/20 rounded-lg overflow-hidden bg-black/50 backdrop-blur-sm">
+    <div className="border border-white/20 rounded-lg overflow-hidden bg-[#1d1d1d]/50 backdrop-blur-sm">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
@@ -333,9 +333,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
           {question}
         </h3>
         <svg
-          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#FFD350] flex-shrink-0 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`w-5 h-5 sm:w-6 sm:h-6 text-[#FFD350] flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+            }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"

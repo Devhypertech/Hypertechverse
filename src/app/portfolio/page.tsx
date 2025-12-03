@@ -44,10 +44,10 @@ export default function PortfolioPage() {
                     className="leading-[.95] font-black uppercase text-3xl sm:text-4xl md:text-[48px] lg:text-[66px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-               Case
-               <br />
-               Studies
-               <br />
+                    Case
+                    <br />
+                    Studies
+                    <br />
                   </h1>
 
                   <Link
@@ -59,7 +59,7 @@ export default function PortfolioPage() {
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
-                </div> 
+                </div>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ export default function PortfolioPage() {
         </div>
 
         {/* Bottom marquee (duplicated from SEO) */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[48px] sm:h-[56px] md:h-[68px] lg:h-[88px] overflow-hidden">
             <div className="absolute inset-0 flex items-center ">
               <RibbonText />
@@ -90,56 +90,51 @@ export default function PortfolioPage() {
       </section>
 
       {/* Category Tabs */}
-      <section className="bg-black py-6 sm:py-8">
+      <section className="bg-[#1d1d1d] py-6 sm:py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4">
             <button
               onClick={() => setActiveTab("web")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "web"
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "web"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+                }`}
             >
               WEB DESIGNS
             </button>
             <button
               onClick={() => setActiveTab("logo")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "logo"
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "logo"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+                }`}
             >
               LOGO DESIGNS
             </button>
             <button
               onClick={() => setActiveTab("branding")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "branding"
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "branding"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+                }`}
             >
               BRANDING
             </button>
             <button
               onClick={() => setActiveTab("video")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "video"
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "video"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+                }`}
             >
               VIDEO ANIMATION
             </button>
             <button
               onClick={() => setActiveTab("mobile")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "mobile"
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "mobile"
                   ? "bg-[#FFD350] text-black shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+                }`}
             >
               MOBILE APPLICATIONS
             </button>
@@ -148,104 +143,104 @@ export default function PortfolioPage() {
       </section>
 
       {/* ====== Case Studies ====== */}
-<section className="bg-black text-white py-12 sm:py-16 md:py-20">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <header className="mb-6 sm:mb-8 md:mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-      <div>
-        <h2
-          className="text-xl sm:text-2xl md:text-3xl font-extrabold"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Recent Case Studies
-        </h2>
-        <p
-          className="mt-1 text-xs sm:text-sm text-white/70"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          A curated selection of product, brand, and commerce builds.
-        </p>
-      </div>
-      {/* optional filter stub (hide on mobile) */}
-      {/* <div className="hidden md:flex items-center gap-2 text-sm">
+      <section className="bg-[#1d1d1d] text-white py-12 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <header className="mb-6 sm:mb-8 md:mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div>
+              <h2
+                className="text-xl sm:text-2xl md:text-3xl font-extrabold"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Recent Case Studies
+              </h2>
+              <p
+                className="mt-1 text-xs sm:text-sm text-white/70"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                A curated selection of product, brand, and commerce builds.
+              </p>
+            </div>
+            {/* optional filter stub (hide on mobile) */}
+            {/* <div className="hidden md:flex items-center gap-2 text-sm">
         <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">All</button>
         <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Web</button>
         <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">App</button>
         <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Brand</button>
       </div> */}
-    </header>
+          </header>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7">
-      {filteredStudies.map((s) => (
-        <article
-          key={s.slug}
-          className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#0E0E10] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)]"
-        >
-          {/* Media */}
-          <div className="p-2 sm:p-3">
-            <div className="relative overflow-hidden rounded-lg sm:rounded-xl">
-              <Image
-                src={s.image}
-                alt={s.title}
-                width={640}
-                height={400}
-                className="h-32 sm:h-36 md:h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-                priority
-              />
-              {s.badge && (
-                <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
-                  {s.badge}
-                </span>
-              )}
-              {/* subtle vignette */}
-              <div className="pointer-events-none absolute inset-0 rounded-lg sm:rounded-xl ring-1 ring-inset ring-white/10" />
-            </div>
-          </div>
-
-          {/* Body */}
-          <div className="px-3 sm:px-4 pb-3 sm:pb-4 pt-0">
-            {/* tags */}
-            <div className="mb-2 flex flex-wrap gap-1.5 sm:gap-2">
-              {s.tags.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full bg-white/5 text-white/70 text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 sm:py-1 border border-white/10"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-
-            <h3
-              className="text-sm sm:text-[15px] font-extrabold leading-tight"
-              style={{ fontFamily: "Recursive, sans-serif" }}
-            >
-              {s.title}
-            </h3>
-
-            <p
-              className="mt-1 text-[11px] sm:text-[12px] leading-snug text-white/70 line-clamp-3"
-              style={{ fontFamily: "Poppins, sans-serif" }}
-            >
-              {s.blurb}
-            </p>
-
-            <div className="mt-2 sm:mt-3 flex items-center justify-between">
-              <Link
-                href={s.href}
-                className="text-[11px] sm:text-[12px] font-semibold text-white/90 hover:text-white transition-colors"
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7">
+            {filteredStudies.map((s) => (
+              <article
+                key={s.slug}
+                className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#0E0E10] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)]"
               >
-                See full case →
-              </Link>
-              {s.meta && (
-                <span className="text-[10px] sm:text-[11px] text-white/50">{s.meta}</span>
-              )}
-            </div>
+                {/* Media */}
+                <div className="p-2 sm:p-3">
+                  <div className="relative overflow-hidden rounded-lg sm:rounded-xl">
+                    <Image
+                      src={s.image}
+                      alt={s.title}
+                      width={640}
+                      height={400}
+                      className="h-32 sm:h-36 md:h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                      priority
+                    />
+                    {s.badge && (
+                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
+                        {s.badge}
+                      </span>
+                    )}
+                    {/* subtle vignette */}
+                    <div className="pointer-events-none absolute inset-0 rounded-lg sm:rounded-xl ring-1 ring-inset ring-white/10" />
+                  </div>
+                </div>
+
+                {/* Body */}
+                <div className="px-3 sm:px-4 pb-3 sm:pb-4 pt-0">
+                  {/* tags */}
+                  <div className="mb-2 flex flex-wrap gap-1.5 sm:gap-2">
+                    {s.tags.map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full bg-white/5 text-white/70 text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 sm:py-1 border border-white/10"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+
+                  <h3
+                    className="text-sm sm:text-[15px] font-extrabold leading-tight"
+                    style={{ fontFamily: "Recursive, sans-serif" }}
+                  >
+                    {s.title}
+                  </h3>
+
+                  <p
+                    className="mt-1 text-[11px] sm:text-[12px] leading-snug text-white/70 line-clamp-3"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
+                  >
+                    {s.blurb}
+                  </p>
+
+                  <div className="mt-2 sm:mt-3 flex items-center justify-between">
+                    <Link
+                      href={s.href}
+                      className="text-[11px] sm:text-[12px] font-semibold text-white/90 hover:text-white transition-colors"
+                    >
+                      See full case →
+                    </Link>
+                    {s.meta && (
+                      <span className="text-[10px] sm:text-[11px] text-white/50">{s.meta}</span>
+                    )}
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
-        </article>
-      ))}
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
 
     </main>
@@ -260,7 +255,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={1000}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );

@@ -4,7 +4,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function NewsletterSignup() {
   return (
-    <section className="bg-black py-16 md:py-20">
+    <section className="bg-[#1d1d1d] py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="relative rounded-3xl bg-[#EA7BBF] p-8 md:p-12">

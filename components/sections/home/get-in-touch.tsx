@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function GetInTouch() {
     return (
-        <section className="bg-black py-8 relative overflow-hidden">
+        <section className="bg-[#1d1d1d] py-8 relative overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-pink-500 rounded-full animate-float"></div>

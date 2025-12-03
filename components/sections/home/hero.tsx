@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-x-hidden bg-black text-white w-full pt-16 md:pt-0">
+        <section className="relative overflow-x-hidden bg-[#1d1d1d] text-white w-full pt-16 md:pt-0">
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-20 w-full box-border">
                 <div className="grid items-center gap-6 lg:gap-10 lg:grid-cols-2 w-full">
                     {/* Left copy */}

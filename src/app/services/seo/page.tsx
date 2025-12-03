@@ -37,7 +37,7 @@ export default function SEOPage() {
                     Best SEO Agency
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    In United States.
+                      In United States.
                     </span>
                   </h1>
 
@@ -58,7 +58,7 @@ export default function SEOPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-              We contribute to SEO services, offering a variety of packages for all kinds of tools and strategies to rank your website
+                  We contribute to SEO services, offering a variety of packages for all kinds of tools and strategies to rank your website
                 </p>
 
                 {/* CTA */}
@@ -90,7 +90,7 @@ export default function SEOPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -98,9 +98,9 @@ export default function SEOPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Logos image after ribbon */}
-        <div className="relative w-full bg-black py-8">
+        <div className="relative w-full bg-[#1d1d1d] py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
             <div className="flex justify-center">
               <Image
@@ -116,7 +116,7 @@ export default function SEOPage() {
       </section>
 
       {/* SEO Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -137,17 +137,17 @@ export default function SEOPage() {
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 {/* Main headline */}
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Comprehensive SEO <span className="text-[#EA7BBF]">Services</span>
+                  Comprehensive SEO <span className="text-[#EA7BBF]">Services</span>
                 </h2>
 
                 {/* Sub headline */}
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Driven by research, powered by results.
+                  Driven by research, powered by results.
                 </h3>
 
                 {/* Description */}
                 <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Hypertech Verse is a leading organic SEO agency in the USA that boosts brand online visibility, leading to enduring business growth. It operates as a reliable and affordable SEO services provider, delivering enterprise SEO solutions. Our agency avoids obsolete guessing methods using research-based data strategies and established methodologies for every project. Team members use detailed evaluations of business facts to generate specialized approaches that produce quantitative outcomes.
+                  Hypertech Verse is a leading organic SEO agency in the USA that boosts brand online visibility, leading to enduring business growth. It operates as a reliable and affordable SEO services provider, delivering enterprise SEO solutions. Our agency avoids obsolete guessing methods using research-based data strategies and established methodologies for every project. Team members use detailed evaluations of business facts to generate specialized approaches that produce quantitative outcomes.
                 </p>
 
                 {/* CTA Button */}
@@ -167,7 +167,7 @@ export default function SEOPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           {/* Yellow tilted box - static bar */}
           <div className="absolute top-0 left-0 w-full h-full">
@@ -192,9 +192,9 @@ export default function SEOPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Tilted SEO Slides */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         {/* total canvas height: ~65–72vh depending on breakpoint */}
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
 
@@ -252,7 +252,7 @@ export default function SEOPage() {
             className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-          Our SEO services are designed to boost your online visibility, drive organic traffic, and position your business at the top of search engine results. We use data-driven strategies, keyword research, and on-page optimization to ensure your website ranks. Our SEO experts help you grow sustainably by attracting the right traffic and turning visitors into loyal customers.
+            Our SEO services are designed to boost your online visibility, drive organic traffic, and position your business at the top of search engine results. We use data-driven strategies, keyword research, and on-page optimization to ensure your website ranks. Our SEO experts help you grow sustainably by attracting the right traffic and turning visitors into loyal customers.
           </p>
         </div>
 
@@ -281,146 +281,146 @@ export default function SEOPage() {
         </div>
       </section>
 
-{/* ===== Unfair Advantages section (place before <TestimonialsMasonry />) ===== */}
-<section className="relative bg-black text-white py-12 sm:py-16 md:py-20">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6">
-    {/* Title */}
-    <h2
-      className="text-center text-lg sm:text-xl md:text-2xl font-extrabold uppercase tracking-wide mb-8 sm:mb-10 md:mb-12 px-2"
-      style={{ fontFamily: "Recursive, sans-serif" }}
-    >
-      Unfair{" "}
-      <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#EA7BBF] to-[#FFD350]">
-        Advantages
-      </span>{" "}
-      You Will Gain from Us
-    </h2>
+      {/* ===== Unfair Advantages section (place before <TestimonialsMasonry />) ===== */}
+      <section className="relative bg-[#1d1d1d] text-white py-12 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          {/* Title */}
+          <h2
+            className="text-center text-lg sm:text-xl md:text-2xl font-extrabold uppercase tracking-wide mb-8 sm:mb-10 md:mb-12 px-2"
+            style={{ fontFamily: "Recursive, sans-serif" }}
+          >
+            Unfair{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#EA7BBF] to-[#FFD350]">
+              Advantages
+            </span>{" "}
+            You Will Gain from Us
+          </h2>
 
-    {/* Top row: copy + art + side arrows */}
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 md:gap-10">
-      {/* Left: copy */}
-      <div>
-        <h3
-          className="text-sm sm:text-base md:text-lg font-extrabold uppercase tracking-wide leading-tight"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Multi-Platform SEO Optimization
-        </h3>
-        <p
-          className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/80 max-w-md leading-relaxed"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          We combine technical SEO, on-page refinement, content strategy, and
-          authority building to lift your rankings across Google, Bing, and
-          more. Our team maps intent, clusters keywords, and optimizes site
-          speed, Core Web Vitals, internal linking, and schema for durable wins.
-        </p>
-      </div>
+          {/* Top row: copy + art + side arrows */}
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 md:gap-10">
+            {/* Left: copy */}
+            <div>
+              <h3
+                className="text-sm sm:text-base md:text-lg font-extrabold uppercase tracking-wide leading-tight"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Multi-Platform SEO Optimization
+              </h3>
+              <p
+                className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/80 max-w-md leading-relaxed"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                We combine technical SEO, on-page refinement, content strategy, and
+                authority building to lift your rankings across Google, Bing, and
+                more. Our team maps intent, clusters keywords, and optimizes site
+                speed, Core Web Vitals, internal linking, and schema for durable wins.
+              </p>
+            </div>
 
-      {/* Right: illustration with pink circle arrows */}
-      <div className="relative">
-        {/* left arrow */}
-        <span className="absolute -left-4 sm:-left-6 top-1/2 -translate-y-1/2 grid h-8 w-8 sm:h-10 sm:w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-          <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-[18px] sm:h-[18px]">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-          </svg>
-        </span>
+            {/* Right: illustration with pink circle arrows */}
+            <div className="relative">
+              {/* left arrow */}
+              <span className="absolute -left-4 sm:-left-6 top-1/2 -translate-y-1/2 grid h-8 w-8 sm:h-10 sm:w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+                <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-[18px] sm:h-[18px]">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+              </span>
 
-        <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-xl sm:rounded-2xl">
-          {/* use your existing asset */}
-          <Image
-            src="/services/seo/cone.png"
-            alt="SEO multi-platform illustration"
-            fill
-            className="object-contain"
-            priority
-          />
+              <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-xl sm:rounded-2xl">
+                {/* use your existing asset */}
+                <Image
+                  src="/services/seo/cone.png"
+                  alt="SEO multi-platform illustration"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+
+              {/* right arrow */}
+              <span className="absolute -right-4 sm:-right-6 top-1/2 -translate-y-1/2 grid h-8 w-8 sm:h-10 sm:w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+                <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-[18px] sm:h-[18px]">
+                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          {/* Six step pills */}
+          <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
+            {[
+              "Audit & Analysis",
+              "Keyword Strategy",
+              "On-Page Optimization",
+              "Technical SEO",
+              "Link Building",
+              "Monitoring & Growth",
+            ].map((label, idx) => (
+              <div
+                key={label}
+                className="flex items-center gap-2 sm:gap-3 rounded-full bg-[#FFD350] px-3 py-2 sm:px-4 sm:py-3 text-black"
+              >
+                <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold text-xs sm:text-sm">
+                  {idx + 1}
+                </span>
+                <span className="font-bold text-xs sm:text-sm uppercase leading-tight" style={{ fontFamily: "Recursive, sans-serif" }}>
+                  {label}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* Sub-heading + CTA */}
+          <div className="text-center mt-6 sm:mt-8">
+            <p
+              className="text-sm sm:text-base md:text-[16px] lg:text-[18px] tracking-wide uppercase text-white/70 px-2"
+              style={{ fontFamily: "Recursive, sans-serif", fontWeight: "bold" }}
+            >
+              Our Seamless 6-step process for efficient and effective Results.
+            </p>
+            <Link
+              href="/contact"
+              className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 font-extrabold text-sm sm:text-base text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              GET STARTED
+            </Link>
+          </div>
+
+          {/* Bottom split: art left, copy right */}
+          <div className="mt-10 sm:mt-12 md:mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 md:gap-10">
+            {/* Left art */}
+            <div className="relative aspect-[16/12] w-full overflow-hidden rounded-xl sm:rounded-2xl">
+              <Image
+                src="/services/seo/seoguys.png"
+                alt="SEO team working"
+                fill
+                className="object-contain"
+              />
+            </div>
+
+            {/* Right copy */}
+            <div>
+              <h3
+                className="text-sm sm:text-base md:text-lg font-extrabold uppercase tracking-wide leading-tight"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Why SEO is important for your business?
+              </h3>
+              <p
+                className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/80 leading-relaxed"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                SEO compounds. It drives qualified traffic, reduces CAC, and boosts
+                credibility by placing your brand where buyers search. With strong
+                technical foundations, high-intent content, and healthy backlinks,
+                your website turns into a 24/7 acquisition engine that keeps growing
+                even when ads pause.
+              </p>
+            </div>
+          </div>
         </div>
-
-        {/* right arrow */}
-        <span className="absolute -right-4 sm:-right-6 top-1/2 -translate-y-1/2 grid h-8 w-8 sm:h-10 sm:w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-          <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-[18px] sm:h-[18px]">
-            <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-          </svg>
-        </span>
-      </div>
-    </div>
-
-    {/* Six step pills */}
-    <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-      {[
-        "Audit & Analysis",
-        "Keyword Strategy",
-        "On-Page Optimization",
-        "Technical SEO",
-        "Link Building",
-        "Monitoring & Growth",
-      ].map((label, idx) => (
-        <div
-          key={label}
-          className="flex items-center gap-2 sm:gap-3 rounded-full bg-[#FFD350] px-3 py-2 sm:px-4 sm:py-3 text-black"
-        >
-          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold text-xs sm:text-sm">
-            {idx + 1}
-          </span>
-          <span className="font-bold text-xs sm:text-sm uppercase leading-tight" style={{ fontFamily: "Recursive, sans-serif" }}>
-            {label}
-          </span>
-        </div>
-      ))}
-    </div>
-
-    {/* Sub-heading + CTA */}
-    <div className="text-center mt-6 sm:mt-8">
-      <p
-        className="text-sm sm:text-base md:text-[16px] lg:text-[18px] tracking-wide uppercase text-white/70 px-2"
-        style={{ fontFamily: "Recursive, sans-serif", fontWeight: "bold" }}
-      >
-        Our Seamless 6-step process for efficient and effective Results.
-      </p>
-      <Link
-        href="/contact"
-        className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 font-extrabold text-sm sm:text-base text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
-        style={{ fontFamily: "Poppins, sans-serif" }}
-      >
-        GET STARTED
-      </Link>
-    </div>
-
-    {/* Bottom split: art left, copy right */}
-    <div className="mt-10 sm:mt-12 md:mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8 md:gap-10">
-      {/* Left art */}
-      <div className="relative aspect-[16/12] w-full overflow-hidden rounded-xl sm:rounded-2xl">
-        <Image
-          src="/services/seo/seoguys.png"
-          alt="SEO team working"
-          fill
-          className="object-contain"
-        />
-      </div>
-
-      {/* Right copy */}
-      <div>
-        <h3
-          className="text-sm sm:text-base md:text-lg font-extrabold uppercase tracking-wide leading-tight"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Why SEO is important for your business?
-        </h3>
-        <p
-          className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/80 leading-relaxed"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          SEO compounds. It drives qualified traffic, reduces CAC, and boosts
-          credibility by placing your brand where buyers search. With strong
-          technical foundations, high-intent content, and healthy backlinks,
-          your website turns into a 24/7 acquisition engine that keeps growing
-          even when ads pause.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Second Card Reviews Section */}
       <TestimonialsMasonry />
@@ -436,55 +436,55 @@ function SEOProcessTabs() {
         "Hypertech Verse dedicates its services to enhance Shopify stores. Our Shopify SEO agency works on product titles and descriptions, and Meta tag optimization to enable search engine content discovery and page ranking. The implementation of structured data, combined with increased site speed fulfillment and mobile compatibility improvement, results in an optimized user experience. Hypertech provides on-page SEO services where our team works on strengthening site structure by improving the internal linking system, fixing broken links, and optimizing URLs. Our small businesses' SEO services guarantee that new and existing Shopify stores secure a relentless sales performance while maintaining an industry leadership position.",
       logo: "/services/seo/taba.png"
     },
-    { 
+    {
       title: "Ecommerce SEO",
       desc:
         "Traditional SEO practices do not suffice for Ecommerce since optimizing product pages and checking out processes and category structures leads to better conversion rates. The SEO agency at Hypertech Verse delivers personalized eCommerce SEO solutions for different platforms, including Shopify, Magento, WooCommerce, and BigCommerce.  Our production of schema markup enables search engines to enhance their ability to show your products. We provide content optimization through our on-page SEO services, together with backlink creation as a part of our off-page SEO services, to increase your store's authority standing. Our work on your eCommerce site SEO will draw additional customers while generating maximum profitable results.",
       logo: "/services/logo/logoc.png"
     },
-    { 
+    {
       title: "AI SEO",
       desc:
         "Modern SEO implementation adopts new ways through artificial intelligence technology. Our company's AI SEO services combine automation with machine learning technologies to operate websites more efficiently. The use of AI-generated keyword research applications, predictive analytics, and natural language processing (NLP) enables us to develop content that is both strongly relevant and highly appealing to readers.   The AI-powered SEO portfolio we offer automatically produces content and optimizes metadata dynamically while employing AI to develop link-building methods. The personalization enabled by artificial intelligence allows you to achieve exact targeting with SEO tools that adapt well to constantly evolving search engine rules.",
       logo: "/services/logo/logod.png"
     },
-    { 
+    {
       title: "Local SEO",
       desc:
         "Local SEO is the best SEO service for small businesses to generate customer engagement in their target geographic market area. Our local search engine optimization service's prices help your business appear in Google Local Pack, Google Maps, and chosen local search result pages. Our service optimizes your Google My Business (GMB) profile, which includes detailed business information verification with well-written descriptions and eye-catching images.  Our team dedicates efforts to establish local citations, obtains favorable customer evaluations, and deploys location-specific search word approaches. Our B2B SEO service for small businesses helps any establishment with physical or service-based operations to effectively attract and maintain a local customer base through appropriate location strategies.",
       logo: "/services/logo/logoe.png"
     },
-    { 
+    {
       title: "Amazon SEO",
       desc:
         "Amazon sells more than product listings because sellers must invest in Amazon SEO services to achieve market leadership in the competitive arena. Hypertech Verse dedicates its expertise to optimizing product titles and bullet points together with descriptions and backend search terms so Amazon's search algorithm can discover your products more easily.  Hypertech Verse optimizes conversion rates through CRO methods involving A+ content, improved product images, and compelling calls to action for better click-through rates and improved sales results. We provide optimization for your Amazon Seller Central. Our SEO audit solution enables businesses to locate their Amazon listing weaknesses while deploying data-based solutions.",
       logo: "/services/logo/logof.png"
     },
-    { 
+    {
       title: "Enterprise SEO",
       desc:
         "Major corporations need customized enterprise SEO services for their extensive websites containing numerous pages. The enterprise SEO agency at our firm designs unique SEO approaches for companies running multiple franchises with multiple locations. Enterprise SEO services from our agency include complete website audits alongside fixing search indexing and crawling problems. The services include AI-driven keyword analysis, automation tools, and advanced schema markup. We provide content writing solutions and SEO copywriting services that develop compelling material that connects with your current marketplace. We deploy long-term growth schemes through enterprise SEO that help your company establish lasting expansion and industry leadership status.",
       logo: "/services/seo/cone.png"
     },
-    { 
+    {
       title: "Link Building",
       desc:
         "Your website’s authority depends heavily on backlinks, as search engines use them to rank your website. The links you acquire from reliable websites are recommendations to search engines that your content is valuable and trustworthy. The white-label SEO services from our company apply ethical link-building approaches that construct domain authority while stimulating organic website traffic. Our team builds authoritative backlinks through successful guest blogging initiatives, niche edits, and planned outreach methods towards relevant websites with high positions. We deliver sustainable long-term search engine success and lasting online growth by implementing complete off-page SEO approaches that establish your site with strong natural backlink networks.",
       logo: "/services/seo/cone.png"
     },
-    { 
+    {
       title: "Conversion Rate Optimization (CRO)",
       desc:
         "Through search engine optimization, businesses achieve more than top rankings by enabling genuine business success through visitor transformation into customers. Our company's Conversion Rate Optimization (CRO) services work to improve website elements for better user experience and conversion results.  We improve every piece of content and optimize landing pages together with site speed to create a smooth journey that leads visitors towards taking desired actions. In our practice, we unite SEO and CRO efforts to bring in targeted visitors who successfully convert into customers. Data-driven analytics enable your digital marketing strategy to produce quantifiable business expansion, yielding superior results in an online market competition.",
       logo: "/services/seo/cone.png"
     },
-    { 
+    {
       title: "Technical SEO",
       desc:
         "Our technical SEO services implement strategies for website speed optimization, mobile responsiveness, and structured data implementation while fixing all indexing errors. Our work on these core elements produces better website performance and usage experience with improved search engine discoverability.   Our detailed SEO audit lets us locate and solve ranking obstacles caused by technical problems. Our optimization work addresses all types of website optimization, including duplicate content elimination, site structure development, and Core Web Vitals enhancement to provide a full search engine and user-friendly configuration. Our expert implementation of technical SEO approaches enhances users' search rankings, keeping your site in optimal condition for smooth experiences.",
       logo: "/services/seo/cone.png"
     },
-    { 
+    {
       title: "Content Writing",
       desc:
         "The foundation of SEO achieves success through content, while our SEO content writing services produce high-quality text that optimizes keywords for better search engine positioning. Our company's WordPress SEO service optimization involves enhancement of content readability through internal link insertion and structural SEO optimization. Our company provides two different services for search engine optimization, including on-page SEO services and SEO copywriting services. Hypertech Verse is an international SEO agency that delivers effective solutions to enhance your online reach. The platform Hypertech Verse provides SEO services, content optimization, and technical SEO solutions to boost brand visibility and increase website traffic, leads, and conversion rates.",
@@ -525,7 +525,7 @@ function SEOProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -555,7 +555,7 @@ function SEOProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -579,7 +579,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );

@@ -120,7 +120,7 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       {/* frosted translucent bar */}
-      <div className="bg-black/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
+      <div className="bg-[#1d1d1d]/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
@@ -237,7 +237,7 @@ export default function Header() {
 
       {/* Mobile sheet */}
       {open && (
-        <div className="md:hidden bg-black/90 backdrop-blur-xl border-t border-white/10">
+        <div className="md:hidden bg-[#1d1d1d]/90 backdrop-blur-xl border-t border-white/10">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
             <ul className="flex flex-col gap-4">
               {nav.map((n) => {

@@ -124,7 +124,7 @@ export default function BrandPackages() {
                                 {/* Title + divider */}
                                 <div className="px-6">
                                     <h3 className="mb-2 text-lg font-bold text-black font-recent-grotesk group-hover:text-blue-600 transition-colors duration-300">{pkg.title}</h3>
-                                    <div className="mb-4 h-[4px] rounded-full bg-black group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300"></div>
+                                    <div className="mb-4 h-[4px] rounded-full bg-[#1d1d1d] group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300"></div>
                                 </div>
 
                                 {/* Features - flex-grow to push button to bottom */}
@@ -161,7 +161,7 @@ export default function BrandPackages() {
 
                     {/* Bottom CTA */}
                     <div className="mt-8 text-center">
-                        <Link href="/contact" className="inline-block rounded-lg bg-black px-8 py-3 text-sm font-semibold text-white transition hover:brightness-110">
+                        <Link href="/contact" className="inline-block rounded-lg bg-[#1d1d1d] px-8 py-3 text-sm font-semibold text-white transition hover:brightness-110">
                             Get started
                         </Link>
                         <p className="mt-4 text-sm font-semibold text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }} >

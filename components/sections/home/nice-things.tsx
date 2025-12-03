@@ -115,7 +115,7 @@
 
 // export default function NiceThings() {
 //     return (
-//         <section className="bg-black py-16 md:py-24">
+//         <section className="bg-[#1d1d1d] py-16 md:py-24">
 //             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 //                 {/* centered heading block */}
 //                 <div className="relative mx-auto mb-10 md:mb-14 max-w-3xl text-center">

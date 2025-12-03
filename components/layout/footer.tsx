@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaYoutube 
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white py-6">
+        <footer className="bg-[#1d1d1d] text-white py-6">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 {/* Footer Menu in the Center */}

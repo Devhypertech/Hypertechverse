@@ -81,7 +81,7 @@ export default function ServiceHero() {
             </div>
 
             {/* Bottom marquee */}
-            <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+            <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
                 <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
                     <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
                         <RibbonText />
@@ -89,9 +89,9 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </div>
-            
+
             {/* Logos image after ribbon */}
-            <div className="relative w-full bg-black py-8">
+            <div className="relative w-full bg-[#1d1d1d] py-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
                     <div className="flex justify-center">
                         <Image
@@ -117,7 +117,7 @@ function RibbonText() {
                 alt="Smart Solutions That Drive Success"
                 width={800}
                 height={68}
-                className="h-full w-auto object-contain" 
+                className="h-full w-auto object-contain"
             />
         </div>
     );

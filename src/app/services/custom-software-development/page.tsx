@@ -32,10 +32,10 @@ export default function CustomSoftwareDevelopmentPage() {
                     className="leading-[.95] font-black uppercase text-2xl sm:text-3xl md:text-[36px] lg:text-[48px] xl:text-[56px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                   Scalable & User
+                    Scalable & User
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    Friendly Apps for All Platforms
+                      Friendly Apps for All Platforms
                     </span>
                   </h1>
 
@@ -54,7 +54,7 @@ export default function CustomSoftwareDevelopmentPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-               Keep in touch with your clients by using intelligent, approachable applications that are compatible with all devices. Make purchasing simpler and the competitors obsolete.
+                  Keep in touch with your clients by using intelligent, approachable applications that are compatible with all devices. Make purchasing simpler and the competitors obsolete.
                 </p>
 
                 <div className="mt-6 sm:mt-8 px-2">
@@ -83,10 +83,10 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
           </div>
         </div>
-        
+
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -96,7 +96,7 @@ export default function CustomSoftwareDevelopmentPage() {
         </div>
 
         {/* Icons strip directly after marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
             <div className="relative w-full aspect-[16/2.8] overflow-hidden">
               <Image
@@ -110,10 +110,10 @@ export default function CustomSoftwareDevelopmentPage() {
           </div>
         </div>
       </section>
-      
+
 
       {/* About Section (keeps layout/colors) */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -133,15 +133,15 @@ export default function CustomSoftwareDevelopmentPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Machine Learning <span className="text-[#EA7BBF]">Services</span>
+                  Machine Learning <span className="text-[#EA7BBF]">Services</span>
                 </h2>
 
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Transforming data into business intelligence
+                  Transforming data into business intelligence
                 </h3>
 
                 <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
+                  Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
                 </p>
 
                 <div className="pt-2 sm:pt-4">
@@ -160,7 +160,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
@@ -185,7 +185,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Tilted Showcase (reuse layout/images for now) */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
           <div
             className="pointer-events-none absolute inset-0 z-[1]"
@@ -238,7 +238,7 @@ export default function CustomSoftwareDevelopmentPage() {
             className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-white/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-           With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
+            With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
           </p>
         </div>
 
@@ -265,7 +265,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Benefits Section (same layout/colors, software copy) */}
-      <section className="relative bg-black text-white py-16 sm:py-20">
+      <section className="relative bg-[#1d1d1d] text-white py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2
             className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10"
@@ -393,7 +393,7 @@ export default function CustomSoftwareDevelopmentPage() {
               </span>
             </div>
           </div>
-      
+
         </div>
       </section>
 
@@ -473,7 +473,7 @@ function SoftwareProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -503,7 +503,7 @@ function SoftwareProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -526,7 +526,7 @@ function RibbonText() {
         alt="Smart Software That Drives Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );
