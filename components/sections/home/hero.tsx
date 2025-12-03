@@ -5,39 +5,50 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-hidden bg-black text-white">
-            <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-                <div className="grid items-center gap-10 lg:grid-cols-2">
+        <section className="relative overflow-x-hidden bg-black text-white w-full pt-16 md:pt-0">
+            <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-20 w-full box-border">
+                <div className="grid items-center gap-6 lg:gap-10 lg:grid-cols-2 w-full">
                     {/* Left copy */}
                     <ScrollAnimation animation="fadeInLeft" delay={200}>
-                        <div>
-                            <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl" style={{ fontFamily: 'Inter, sans-serif' }}>
-                                Transforming Ideas <br />Into
-
-                                <span className="text-[#EA7BBF]"> Digital Success</span>
+                        <div className="w-full pr-2 relative z-10">
+                            <h1
+                                className="font-black leading-tight max-w-full relative z-10"
+                                style={{
+                                    fontFamily: "'Recent Grotesk', 'Recursive', sans-serif",
+                                    fontWeight: 900,
+                                    fontSize: 'clamp(1.5rem, 5vw, 3rem)',
+                                    wordWrap: 'break-word',
+                                    overflowWrap: 'anywhere',
+                                    width: '100%',
+                                    display: 'block',
+                                    visibility: 'visible'
+                                }}
+                            >
+                                Transforming Ideas Into{" "}
+                                <span className="text-[#EA7BBF]">Digital Success</span>
                             </h1>
-                            <p className="mt-5 max-w-xl text-lg text-white/80" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <p className="mt-4 text-base sm:text-lg leading-relaxed text-white/90" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif" }}>
                                 We bring one-stop solution to all your queries under one platform, serving as your
                                 sole digital marketing agency. As a cohesive team, we strengthen your brand with
                                 innovation at its heart.
                             </p>
 
-                            <div className="mt-8 flex flex-wrap items-center gap-4">
+                            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
                                 <Link
                                     href="/portfolio"
-                                    className="rounded-lg bg-[#FFD350] px-6 py-3 font-semibold text-black hover:bg-[#e6bf30] transition"
+                                    className="rounded-lg bg-[#FFD350] px-6 py-3 font-semibold text-black hover:bg-[#e6bf30] transition text-center"
                                 >
                                     See our work
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="rounded-lg border border-white px-6 py-3 font-semibold text-white hover:bg-white hover:text-black transition"
+                                    className="rounded-lg border border-white px-6 py-3 font-semibold text-white hover:bg-white hover:text-black transition text-center"
                                 >
                                     Get started
                                 </Link>
                             </div>
 
-                            <p className="mt-4 text-sm text-white/60" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <p className="mt-4 text-xs sm:text-sm text-white/60 text-center sm:text-left" style={{ fontFamily: 'Poppins, sans-serif' }}>
                                 SEO · Branding · Web/App · Social · Content · Analytics
                             </p>
                         </div>
@@ -128,23 +139,23 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Pink ribbon bar */}
-            <div className="bg-[#EA7BBF] text-black">
-                <div className="mx-auto max-w-7xl px-4 py-6 text-base sm:px-4 lg:px-4">
+            {/* Pink ribbon bar - overlapping hero images */}
+            <div className="absolute bottom-0 left-0 right-0 bg-[#EA7BBF] text-black z-10">
+                <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4 text-base sm:px-4 lg:px-4">
                     {/* Main Grid Layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
 
                         {/* Left Column */}
                         <ScrollAnimation animation="fadeInLeft" delay={200}>
-                            <div className="flex items-start gap-3">
+                            <div className="flex items-start gap-2 sm:gap-3">
                                 <Image
                                     src="/icons/smie.png"
                                     alt="Smile icon"
                                     width={52}
                                     height={32}
-                                    className="w-12 h-12"
+                                    className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
                                 />
-                                <p className="leading-snug font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                <p className="leading-snug font-bold text-sm sm:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
                                     Make your customers hungry for more with a flavour-focused brand
                                 </p>
                             </div>
@@ -152,15 +163,15 @@ export default function Hero() {
 
                         {/* Center Column (Now fixed and centered) */}
                         <ScrollAnimation animation="fadeInRight" delay={400}>
-                            <div className="flex items-start gap-3">
+                            <div className="flex items-start gap-2 sm:gap-3">
                                 <Image
                                     src="/icons/book.png"
                                     alt="Book icon"
                                     width={52}
                                     height={32}
-                                    className="w-12 h-12"
+                                    className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
                                 />
-                                <p className="leading-snug font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                <p className="leading-snug font-bold text-sm sm:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
                                     Our brand packages have the recipe to get you the results you need, fast
                                 </p>
                             </div>
@@ -168,15 +179,15 @@ export default function Hero() {
 
                         {/* Right Column */}
                         <ScrollAnimation animation="fadeInRight" delay={600}>
-                            <div className="flex items-start gap-3">
+                            <div className="flex items-start gap-2 sm:gap-3">
                                 <Image
                                     src="/icons/opros.png"
                                     alt="Book icon"
                                     width={52}
                                     height={32}
-                                    className="w-12 h-12"
+                                    className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
                                 />
-                                <p className="leading-snug font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                                <p className="leading-snug font-bold text-sm sm:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
                                     Establish a captivating web presence and grow your audience
                                 </p>
                             </div>

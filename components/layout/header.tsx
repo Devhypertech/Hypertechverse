@@ -5,85 +5,85 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const servicesList = [
-  { 
-    href: "/custom-website-development-service/", 
+  {
+    href: "/custom-website-development-service/",
     label: "Web Development",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Build your dream website with modern technologies."
   },
-  { 
-    href: "/custom-app-development-service/", 
+  {
+    href: "/custom-app-development-service/",
     label: "App Development",
     icon: "/icons/support.png",
     iconBg: "bg-[#FFD350]",
     description: "Mobile apps that engage and convert users."
   },
-  { 
-    href: "/logo-design-2/", 
+  {
+    href: "/logo-design-2/",
     label: "Logo Design",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Create memorable brand identities."
   },
-  { 
-    href: "/branding", 
+  {
+    href: "/branding",
     label: "Branding",
     icon: "/icons/businessgrowth.png",
     iconBg: "bg-[#FFD350]",
     description: "Complete brand identity solutions."
   },
-  { 
-    href: "/seo", 
+  {
+    href: "/seo",
     label: "SEO",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Boost your search engine visibility."
   },
-  { 
-    href: "/social-media-management", 
+  {
+    href: "/social-media-management",
     label: "Social Media",
     icon: "/icons/smie.png",
     iconBg: "bg-[#FFD350]",
     description: "Grow your presence on social platforms."
   },
-  { 
-    href: "/paid-advertising-services/", 
+  {
+    href: "/paid-advertising-services/",
     label: "Paid Advertising",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Drive results with targeted ad campaigns."
   },
-  { 
-    href: "/social-media-advertising-services/", 
+  {
+    href: "/social-media-advertising-services/",
     label: "Social Media Advertising",
     icon: "/icons/support.png",
     iconBg: "bg-[#FFD350]",
     description: "Maximize your reach with strategic social ads."
   },
-  { 
-    href: "/pay-per-click-services", 
+  {
+    href: "/pay-per-click-services",
     label: "Pay Per Click",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Drive targeted traffic with PPC campaigns."
   },
-  { 
-    href: "/ui-ux-design/", 
+  {
+    href: "/ui-ux-design/",
     label: "UI/UX",
     icon: "/icons/support.png",
     iconBg: "bg-[#FFD350]",
     description: "Create intuitive and engaging user experiences."
   },
-  { 
-    href: "/animation", 
+  {
+    href: "/animation",
     label: "Animation",
     icon: "/icons/support.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Engaging animated content for your brand."
   },
-  { 
-    href: "/custom-software-development", 
+  {
+    href: "/custom-software-development",
     label: "Custom Software",
     icon: "/icons/expert.png",
     iconBg: "bg-[#EA7BBF]",
@@ -94,8 +94,8 @@ const servicesList = [
 const nav = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { 
-    href: "/services", 
+  {
+    href: "/services",
     label: "Services",
     dropdown: servicesList
   },
@@ -143,16 +143,15 @@ export default function Header() {
                           <div className="flex items-center">
                             <Link
                               href={n.href}
-                              className={`text-base font-extrabold tracking-tight transition-all duration-300 ${
-                                active ? "text-white" : "text-white/90 hover:text-white"
-                              }`}
+                              className={`text-base font-extrabold tracking-tight transition-all duration-300 ${active ? "text-white" : "text-white/90 hover:text-white"
+                                }`}
                             >
                               {n.label}
                             </Link>
-                            <svg 
+                            <svg
                               className="ml-1 w-4 h-4 text-white/90 group-hover:text-white transition-all duration-200 group-hover:rotate-180"
-                              fill="none" 
-                              stroke="currentColor" 
+                              fill="none"
+                              stroke="currentColor"
                               viewBox="0 0 24 24"
                             >
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -202,9 +201,8 @@ export default function Header() {
                       ) : (
                         <Link
                           href={n.href}
-                          className={`text-base font-extrabold tracking-tight transition-all duration-300 ${
-                            active ? "text-white" : "text-white/90 hover:text-white"
-                          }`}
+                          className={`text-base font-extrabold tracking-tight transition-all duration-300 ${active ? "text-white" : "text-white/90 hover:text-white"
+                            }`}
                         >
                           {n.label}
                         </Link>
@@ -214,11 +212,11 @@ export default function Header() {
                 })}
               </ul>
             </nav>
-            
+
             {/* CTA (desktop) */}
             <Link
               href="/contact"
-              className="rounded-xl px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300"
+              className="rounded-lg px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300"
             >
               Get started
             </Link>
@@ -252,9 +250,8 @@ export default function Header() {
                           <Link
                             href={n.href}
                             onClick={() => setOpen(false)}
-                            className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
-                              active ? "text-white" : "text-white/90 hover:text-white"
-                            }`}
+                            className={`block rounded-md px-1 py-1 text-base font-semibold transition ${active ? "text-white" : "text-white/90 hover:text-white"
+                              }`}
                           >
                             {n.label}
                           </Link>
@@ -262,10 +259,10 @@ export default function Header() {
                             onClick={() => setServicesOpen(!servicesOpen)}
                             className="p-1 hover:bg-white/10 rounded transition-colors duration-200"
                           >
-                            <svg 
+                            <svg
                               className={`w-4 h-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`}
-                              fill="none" 
-                              stroke="currentColor" 
+                              fill="none"
+                              stroke="currentColor"
                               viewBox="0 0 24 24"
                             >
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -299,9 +296,8 @@ export default function Header() {
                       <Link
                         href={n.href}
                         onClick={() => setOpen(false)}
-                        className={`block rounded-md px-1 py-1 text-base font-semibold transition ${
-                          active ? "text-white" : "text-white/90 hover:text-white"
-                        }`}
+                        className={`block rounded-md px-1 py-1 text-base font-semibold transition ${active ? "text-white" : "text-white/90 hover:text-white"
+                          }`}
                       >
                         {n.label}
                       </Link>

@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function UltimateAgency() {
     return (
-        <section className="bg-black text-white py-20 relative overflow-hidden">
+        <section className="bg-black text-white px-2 sm:px-3 lg:px-4 py-20 sm:py-20 relative overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-20 left-10 w-40 h-40 bg-blue-500 rounded-full animate-float"></div>
@@ -32,31 +32,31 @@ export default function UltimateAgency() {
                     </ScrollAnimation>
 
                     {/* Right side - content */}
-                    <ScrollAnimation animation="fadeInRight" delay={400}>
-                        <div>
+                    <ScrollAnimation animation="fadeInUp" delay={400}>
+                        <div className="flex flex-col items-center justify-center text-center sm:block sm:text-left w-full px-6 sm:px-0 mx-auto">
                             <ScrollAnimation animation="fadeInUp" delay={600}>
-                                <h2 className="text-2xl sm:text-4xl font-extrabold leading-tight mb-6 text-shimmer">
+                                <h2 className="text-2xl sm:text-4xl font-black tracking-tighter leading-tight mb-6 max-w-full break-words" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>
                                     <span className="text-[#FDE8E5]">Your </span>
-                                    <span className="text-[#EA7BBF]">Ultimate</span>
+                                    <span style={{ color: '#EA7BBF' }}>Ultimate</span>
                                     <span className="text-[#FDE8E5]"> Web Design &</span>
-                                    <br />
+                                    <br className="hidden sm:block" />
                                     <span className="text-[#FDE8E5]">Marketing Agency</span>
                                 </h2>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={800}>
-                                <h2 className="text-[16.8px] sm:text-[21px] font-extrabold leading-tight mb-6 font-recent-grotesk">
+                                <h2 className="text-[16.8px] sm:text-[21px] font-extrabold leading-tight mb-6 max-w-full break-words" style={{ fontFamily: "'Poppins', sans-serif" }}>
                                     <span className="text-[#ffffff]"> Hypertech Verse blends innovation</span>
                                 </h2>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={1000}>
-                                <p className="text-base text-white/70 mb-8">
+                                <p className="text-base text-white/70 mb-8 max-w-full sm:max-w-none mx-auto sm:mx-0 break-words" style={{ fontFamily: "'Inter', sans-serif" }}>
                                     with strategy to create digital experiences that not only look amazing but drive real business results. We&apos;re not just another agency. We&apos;re your strategic partner in digital transformation, combining creativity with data-driven insights to elevate your brand and accelerate your growth.
                                 </p>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={1200}>
                                 <Link
                                     href="/contact"
-                                    className="inline-block rounded-lg bg-[#FFD350] px-8 py-4 font-semibold text-black hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake "
+                                    className="inline-block rounded-lg bg-[#FFD350] px-6 sm:px-8 py-4 font-semibold text-black hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake max-w-full text-center"
                                 >
                                     Start your free consultation today!
                                 </Link>

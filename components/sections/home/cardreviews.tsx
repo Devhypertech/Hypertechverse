@@ -186,19 +186,46 @@ export default function TestimonialsMasonry() {
                 {/* Centered heading */}
                 <ScrollAnimation animation="fadeInUp" delay={200}>
                     <div className="relative mx-auto mb-10 md:mb-14 max-w-3xl text-center">
-                        <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow border border-white">
-                        Now Look At!
-                        </span>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white">
-                            <span className="block">Nice things</span>
-                            <span className="block text-[#FFD350] italic">People Said</span>
+                        {/* <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow border border-white">
+                            Now Look At1!
+                        </span> */}
+                        <h2
+                            className="text-3xl sm:text-4xl md:text-5xl leading-tight text-white"
+                            style={{ fontFamily: "'Alkaline Caps', sans-serif", fontWeight: 900 }}
+                        >
+                            <span className="block italic"><span className="text-8xl sm:text-10xl md:text-12xl italic">N</span>ICE THINGS</span>
+                            <span className="block text-[#FFD350] italic relative ">
+                                {/* LOOK, MOM! speech bubble */}
+                                <svg
+                                    className="absolute -top-8 sm:-top-10 md:-top-12 left-2 sm:-left-4 md:left-20 w-24 sm:w-28 md:w-36 -rotate-22"
+                                    viewBox="0 0 140 50"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect x="0" y="0" width="130" height="40" rx="6" fill="#EA7BBF" />
+                                    <polygon points="100,40 110,50 115,40" fill="#EA7BBF" />
+                                    <text
+                                        x="65"
+                                        y="27"
+                                        textAnchor="middle"
+                                        fill="white"
+                                        fontSize="16"
+                                        fontWeight="900"
+                                        fontFamily="'Alkaline Caps', sans-serif"
+                                        fontStyle="italic"
+                                    >
+                                        NOW LOOK AT!
+                                    </text>
+                                </svg>
+                                <span className="text-8xl sm:text-10xl md:text-12xl">P</span>EOPLE <span className="text-8xl sm:text-10xl md:text-12xl">S</span>AID
+                            </span>
                         </h2>
                     </div>
                 </ScrollAnimation>
 
                 {/* Video Testimonials Carousel */}
                 <ScrollAnimation animation="fadeInUp" delay={300}>
-                    <div 
+                    <div
                         className="mb-12 md:mb-16 relative"
                         onMouseEnter={() => setPaused(true)}
                         onMouseLeave={() => setPaused(false)}
@@ -207,9 +234,9 @@ export default function TestimonialsMasonry() {
                     >
                         {/* Carousel Container */}
                         <div className="relative overflow-hidden rounded-lg">
-                            <div 
+                            <div
                                 className="flex transition-transform duration-500 ease-in-out gap-4 md:gap-6"
-                                style={{ 
+                                style={{
                                     transform: `translateX(calc(-${currentIndex} * (100% / ${videosPerSlide} + 16px)))`
                                 }}
                             >
@@ -258,25 +285,29 @@ export default function TestimonialsMasonry() {
                             </div>
                         </div>
 
-                        {/* Navigation Arrows */}
+                        {/* Navigation Arrows - Outside video list */}
                         {videoTestimonials.length > videosPerSlide && (
                             <>
                                 <button
                                     aria-label="Previous"
                                     onClick={goToPrev}
-                                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition z-10"
+                                    className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-12 w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-black shadow-lg hover:brightness-95"
                                 >
-                                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6">
-                                        <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                                        <polyline points="12 19 5 12 12 5"></polyline>
                                     </svg>
                                 </button>
+
+                                {/* Right arrow */}
                                 <button
                                     aria-label="Next"
                                     onClick={goToNext}
-                                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition z-10"
+                                    className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-12 w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-black shadow-lg hover:brightness-95"
                                 >
-                                    <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6">
-                                        <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
                                     </svg>
                                 </button>
                             </>
@@ -289,9 +320,8 @@ export default function TestimonialsMasonry() {
                                     <button
                                         key={idx}
                                         onClick={() => setCurrentIndex(idx)}
-                                        className={`h-2 rounded-full transition-all ${
-                                            idx === currentIndex ? 'w-8 bg-[#EA7BBF]' : 'w-2 bg-white/30'
-                                        }`}
+                                        className={`h-2 rounded-full transition-all ${idx === currentIndex ? 'w-8 bg-[#EA7BBF]' : 'w-2 bg-white/30'
+                                            }`}
                                         aria-label={`Go to slide ${idx + 1}`}
                                     />
                                 ))}
@@ -310,11 +340,11 @@ export default function TestimonialsMasonry() {
                                 delay={600 + i * 100}
                             >
                                 <article className={toneClasses(t.tone)}>
-                                    <p className="leading-relaxed text-current">
+                                    <p className="leading-relaxed text-current" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 600 }}>
                                         {t.quote}
                                         <br />
                                         <br />
-                                        <span className="font-extrabold">{t.author}</span>
+                                        <span className="font-extrabold" style={{ fontFamily: 'Inter, sans-serif', fontWeight: 900 }}>{t.author}</span>
                                         {t.company ? (
                                             <>
                                                 <br />
