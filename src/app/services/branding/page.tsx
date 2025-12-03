@@ -235,7 +235,7 @@ export default function BrandingPage() {
             Brands to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Hypertech Verse is a major creative branding and designing firm, which focuses on developing strong and memorable brands that are notable among competitive markets. We provide a full range of services, including brand strategy, logo design, brand naming, package design, rebranding, and the creation of custom collateral. We are a professional graphic design firm that assists companies to get success over the long term.
@@ -403,7 +403,7 @@ function BrandingProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed"
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -425,7 +425,7 @@ function BrandingProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-black" : "text-[#1d1d1d]/75 hover:text-black",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >

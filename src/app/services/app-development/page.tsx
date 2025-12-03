@@ -250,7 +250,7 @@ export default function AppDevelopmentPage() {
             Apps to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             We provide businesses with full-fledged Custom app development solutions that match individual business specifications. We provide top-notch designs that prioritize quality that ultimately produce high-performance, user-friendly solutions. Our team builds innovative apps with the current technology landscape, through which we develop website applications and robust cross-platform mobile applications that improve user experience while boosting business accomplishment.
@@ -418,7 +418,7 @@ function AppProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-sm sm:text-base text-black/90"
+          className="mt-3 text-sm sm:text-base text-[#1d1d1d]/90"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -439,7 +439,7 @@ function AppProcessTabs() {
                   className={[
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-4 py-2",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-black" : "text-[#1d1d1d]/75 hover:text-black",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >

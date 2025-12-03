@@ -189,7 +189,7 @@ export default function PaidAdvertisingPage() {
             Your Paid Ads to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             We offer professional advertising solutions that ensure your business reaches its target customers at the right moments. We build high-converting advertising strategies on Google Ads, along with Meta networking systems and display campaigns, to achieve maximum ROI and deliver actionable outcomes. The campaigns we develop specifically match your business targets and result in measurable ROI from every financial investment.
@@ -423,7 +423,7 @@ function PAProcessTabs() {
           </span>
           {steps[active].title}
         </h3>
-        <p className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
+        <p className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
       </div>
 
       <nav aria-label="Process steps" className="lg:pl-4">
@@ -436,7 +436,7 @@ function PAProcessTabs() {
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
+                  className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-[#1d1d1d]/75 hover:text-black"].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
                   <span className="inline-flex items-center gap-2 sm:gap-3">

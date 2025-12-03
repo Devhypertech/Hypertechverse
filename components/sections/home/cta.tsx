@@ -128,7 +128,7 @@ export default function BrandPackages() {
                                 </div>
 
                                 {/* Features - flex-grow to push button to bottom */}
-                                <ul className="space-y-2 px-8 pb-6 text-sm text-black/90 flex-grow">
+                                <ul className="space-y-2 px-8 pb-6 text-sm text-[#1d1d1d]/90 flex-grow">
                                     {pkg.features.map((f, idx) => (
                                         <li key={idx} className="flex items-center group-hover:translate-x-2 transition-transform duration-300" style={{ transitionDelay: `${idx * 50}ms` }}>
                                             <svg className="mr-3 h-4 w-4 flex-shrink-0 text-black group-hover:text-green-500 group-hover:animate-bounce-slow transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">

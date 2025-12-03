@@ -36,7 +36,7 @@ export default function NewsletterSignup() {
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-tight">
                   Join the grub
                 </h2>
-                <p className="text-lg md:text-xl text-black/90 leading-relaxed max-w-lg">
+                <p className="text-lg md:text-xl text-[#1d1d1d]/90 leading-relaxed max-w-lg">
                   Sign up for our newsletter and we&apos;ll send you neat and useful design tips to help you improve your brand from time to time.
                 </p>
               </div>

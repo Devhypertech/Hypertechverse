@@ -1026,8 +1026,8 @@ export default function PricingPage() {
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
                 className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === tab.key
-                    ? "bg-[#FFD350] text-black shadow-lg"
-                    : "bg-[#EA7BBF] text-white hover:opacity-90"
+                  ? "bg-[#FFD350] text-black shadow-lg"
+                  : "bg-[#EA7BBF] text-white hover:opacity-90"
                   }`}
               >
                 {tab.label}
@@ -1065,7 +1065,7 @@ export default function PricingPage() {
 
                   {/* Description */}
                   <p
-                    className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {pkg.description}
@@ -1130,7 +1130,7 @@ export default function PricingPage() {
 
                     {/* Description */}
                     <p
-                      className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                      className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                       style={{ fontFamily: "Poppins, sans-serif" }}
                     >
                       {pkg.description}
@@ -1193,7 +1193,7 @@ export default function PricingPage() {
 
                     {/* Description */}
                     <p
-                      className="text-black/70 text-sm lg:text-base text-center mb-6 leading-relaxed"
+                      className="text-[#1d1d1d]/70 text-sm lg:text-base text-center mb-6 leading-relaxed"
                       style={{ fontFamily: "Poppins, sans-serif" }}
                     >
                       {pkg.description}
@@ -1257,7 +1257,7 @@ export default function PricingPage() {
 
                   {/* Description */}
                   <p
-                    className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {pkg.description}
@@ -1320,7 +1320,7 @@ export default function PricingPage() {
 
                   {/* Description */}
                   <p
-                    className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {pkg.description}
@@ -1383,7 +1383,7 @@ export default function PricingPage() {
 
                   {/* Description */}
                   <p
-                    className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {pkg.description}
@@ -1446,7 +1446,7 @@ export default function PricingPage() {
 
                   {/* Description */}
                   <p
-                    className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {pkg.description}
@@ -1509,7 +1509,7 @@ export default function PricingPage() {
 
                   {/* Description */}
                   <p
-                    className="text-black/70 text-sm text-center mb-6 leading-relaxed"
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {pkg.description}

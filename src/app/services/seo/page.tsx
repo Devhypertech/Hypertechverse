@@ -249,7 +249,7 @@ export default function SEOPage() {
             Rank Your Website
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Our SEO services are designed to boost your online visibility, drive organic traffic, and position your business at the top of search engine results. We use data-driven strategies, keyword research, and on-page optimization to ensure your website ranks. Our SEO experts help you grow sustainably by attracting the right traffic and turning visitors into loyal customers.
@@ -525,7 +525,7 @@ function SEOProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed"
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -547,7 +547,7 @@ function SEOProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-black" : "text-[#1d1d1d]/75 hover:text-black",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >

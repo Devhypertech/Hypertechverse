@@ -389,7 +389,7 @@ function AnimationProcessTabs() {
           </span>
           {steps[active].title}
         </h3>
-        <p className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
+        <p className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
       </div>
 
       <nav aria-label="Process steps" className="lg:pl-4">
@@ -398,7 +398,7 @@ function AnimationProcessTabs() {
             const isActive = i === active;
             return (
               <li key={s.title}>
-                <button onMouseEnter={() => setActive(i)} onFocus={() => setActive(i)} onClick={() => setActive(i)} className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")} style={{ fontFamily: 'Recursive, sans-serif' }}>
+                <button onMouseEnter={() => setActive(i)} onFocus={() => setActive(i)} onClick={() => setActive(i)} className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-[#1d1d1d]/75 hover:text-black"].join(" ")} style={{ fontFamily: 'Recursive, sans-serif' }}>
                   <span className="inline-flex items-center gap-2 sm:gap-3">
                     <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition", isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"].join(" ")} />
                     {s.title}
