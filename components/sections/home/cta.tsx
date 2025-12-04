@@ -123,7 +123,7 @@ export default function BrandPackages() {
 
                                 {/* Title + divider */}
                                 <div className="px-6">
-                                    <h3 className="mb-2 text-lg font-bold text-black font-recent-grotesk group-hover:text-blue-600 transition-colors duration-300">{pkg.title}</h3>
+                                    <h3 className="mb-2 text-lg font-bold text-[#1d1d1d] font-recent-grotesk group-hover:text-blue-600 transition-colors duration-300">{pkg.title}</h3>
                                     <div className="mb-4 h-[4px] rounded-full bg-[#1d1d1d] group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300"></div>
                                 </div>
 
@@ -131,7 +131,7 @@ export default function BrandPackages() {
                                 <ul className="space-y-2 px-8 pb-6 text-sm text-[#1d1d1d]/90 flex-grow">
                                     {pkg.features.map((f, idx) => (
                                         <li key={idx} className="flex items-center group-hover:translate-x-2 transition-transform duration-300" style={{ transitionDelay: `${idx * 50}ms` }}>
-                                            <svg className="mr-3 h-4 w-4 flex-shrink-0 text-black group-hover:text-green-500 group-hover:animate-bounce-slow transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">
+                                            <svg className="mr-3 h-4 w-4 flex-shrink-0 text-[#1d1d1d] group-hover:text-green-500 group-hover:animate-bounce-slow transition-colors duration-300" fill="currentColor" viewBox="0 0 20 20">
                                                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                                             </svg>
                                             <span className="group-hover:text-gray-700 transition-colors duration-300">{f}</span>
@@ -141,7 +141,7 @@ export default function BrandPackages() {
 
                                 {/* Footer - pushed to bottom */}
                                 <div className="border-t border-black/10 bg-white p-4 mt-auto">
-                                    <Link href="/contact" className="block w-full rounded-md bg-white border border-black py-3 text-sm font-semibold text-black transition-all duration-300 hover:bg-[#FFD350] hover:scale-105 hover:shadow-lg hover:border-black hover:text-black hover-shake text-center">
+                                    <Link href="/contact" className="block w-full rounded-md bg-white border border-black py-3 text-sm font-semibold text-[#1d1d1d] transition-all duration-300 hover:bg-[#FFD350] hover:scale-105 hover:shadow-lg hover:border-black hover:text-[#1d1d1d] hover-shake text-center">
                                         Buy Now
                                     </Link>
                                 </div>
@@ -151,7 +151,7 @@ export default function BrandPackages() {
 
                     {/* Custom Packages */}
                     <div className="mt-10">
-                        <Link href="/pricing" className="flex items-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-black shadow-[0_5px_0_rgba(0,0,0,0.25)] hover:bg-[#FFD350] transition-colors duration-300 cursor-pointer">
+                        <Link href="/pricing" className="flex items-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-[#1d1d1d] shadow-[0_5px_0_rgba(0,0,0,0.25)] hover:bg-[#FFD350] transition-colors duration-300 cursor-pointer">
                             <span>Custom Packages</span>
                             <span className="ml-auto grid h-7 w-7 place-items-center rounded-full border border-black/20">
                                 −

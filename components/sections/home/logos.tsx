@@ -45,7 +45,7 @@ export default function UltimateAgency() {
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={800}>
                                 <h2 className="text-[16.8px] sm:text-[21px] font-extrabold leading-tight mb-6 max-w-full break-words" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                                    <span className="text-[#ffffff]"> Hypertech Verse blends innovation</span>
+                                    <span className="text-[#fff9f1]"> Hypertech Verse blends innovation</span>
                                 </h2>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={1000}>
@@ -56,7 +56,7 @@ export default function UltimateAgency() {
                             <ScrollAnimation animation="fadeInUp" delay={1200}>
                                 <Link
                                     href="/contact"
-                                    className="inline-block rounded-lg bg-[#FFD350] px-6 sm:px-8 py-4 font-semibold text-black hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake max-w-full text-center"
+                                    className="inline-block rounded-lg bg-[#FFD350] px-6 sm:px-8 py-4 font-semibold text-[#1d1d1d] hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake max-w-full text-center"
                                 >
                                     Start your free consultation today!
                                 </Link>

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
+import ScrollMarquee from "./ScrollMarquee";
 
 // --- tag → pill styles ---
 const TAG_STYLES: Record<string, string> = {
@@ -10,7 +11,7 @@ const TAG_STYLES: Record<string, string> = {
     Illustration: "bg-[#7BE4A1] text-[#0f172a]",
     "Packaging Design": "bg-[#C3B5FD] text-[#111827]",
     "Layout Design": "bg-[#F5A97F] text-[#1a1a1a]",
-    "_": "bg-white/80 text-black",
+    "_": "bg-white/80 text-[#1d1d1d]",
 };
 
 const tagClasses = (t: string) =>
@@ -32,23 +33,7 @@ export default function FeaturedWork() {
             <ScrollAnimation animation="fadeInUp" delay={200}>
                 <div className="relative bg-[#1d1d1d] overflow-hidden">
                     <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[240px]">
-                        <div className="marquee-track absolute inset-0 flex animate-marquee-x">
-                            <Image
-                                src="/portfolio/featuredwork.png"
-                                alt="Featured Work"
-                                width={2400}
-                                height={400}
-                                priority
-                                className="h-full w-auto object-cover"
-                            />
-                            <Image
-                                src="/portfolio/featuredwork.png"
-                                alt="Featured Work duplicate"
-                                width={2400}
-                                height={400}
-                                className="h-full w-auto object-cover"
-                            />
-                        </div>
+                        <ScrollMarquee />
                     </div>
                 </div>
             </ScrollAnimation>
@@ -94,7 +79,7 @@ export default function FeaturedWork() {
                         <div className="mt-20 text-center">
                             <a
                                 href="/portfolio"
-                                className="inline-block rounded-md bg-[#FDEDE8] px-8 py-3 text-sm font-semibold text-black hover:bg-[#fce0da] transition"
+                                className="inline-block rounded-md bg-[#FDEDE8] px-8 py-3 text-sm font-semibold text-[#1d1d1d] hover:bg-[#fce0da] transition"
                             >
                                 SEE ALL PROJECTS
                             </a>

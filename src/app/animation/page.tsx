@@ -42,7 +42,7 @@ export default function AnimationPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -60,7 +60,7 @@ export default function AnimationPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-black shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#1d1d1d] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -124,7 +124,7 @@ export default function AnimationPage() {
                   We specialize in turning people's imagination into visual reality. We focus on serving brands by providing high-quality animated video production services to effectively communicate, engage their audiences, and share compelling stories. Be it a startup or a mature enterprise, our dedicated video animation services are well-designed to boost your brand credibility and charm your viewers.
                 </p>
                 <div className="pt-2 sm:pt-4">
-                  <Link href="/contact" className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                  <Link href="/contact" className="inline-block bg-[#FFD350] text-[#1d1d1d] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors" style={{ fontFamily: 'Poppins, sans-serif' }}>
                     start your free consultation today!
                   </Link>
                 </div>
@@ -140,7 +140,7 @@ export default function AnimationPage() {
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#1d1d1d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Animation Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -243,7 +243,7 @@ export default function AnimationPage() {
             <div className="absolute left-1/2 -translate-x-1/2 -bottom-3">
               <Link
                 href="/contact"
-                className="inline-block -rotate-6 bg-[#EA7BBF] px-5 py-2 text-black rounded-md font-extrabold shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-3 transition"
+                className="inline-block -rotate-6 bg-[#EA7BBF] px-5 py-2 text-[#1d1d1d] rounded-md font-extrabold shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-3 transition"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 GET STARTED
@@ -282,7 +282,7 @@ export default function AnimationPage() {
               {/* optional side arrows like reference */}
               <button
                 aria-label="Previous"
-                className="absolute -left-4 top-1/2 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full bg-[#EA7BBF] text-black"
+                className="absolute -left-4 top-1/2 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" /></svg>
               </button>
@@ -298,7 +298,7 @@ export default function AnimationPage() {
 
               <button
                 aria-label="Next"
-                className="absolute -right-4 top-1/2 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full bg-[#EA7BBF] text-black"
+                className="absolute -right-4 top-1/2 -translate-y-1/2 grid h-9 w-9 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]"
               >
                 <svg width="18" height="18" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" /></svg>
               </button>
@@ -317,7 +317,7 @@ export default function AnimationPage() {
             ].map((t, idx) => (
               <div
                 key={t}
-                className="flex items-center gap-3 rounded-full bg-[#FFD350] px-4 py-3 text-black"
+                className="flex items-center gap-3 rounded-full bg-[#FFD350] px-4 py-3 text-[#1d1d1d]"
               >
                 <span className="grid h-8 w-8 place-items-center bg-[#EA7BBF] rounded-full text-white font-bold">
                   {idx + 1}
@@ -348,7 +348,7 @@ export default function AnimationPage() {
             </p>
             <Link
               href="/contact"
-              className="mt-3 inline-block -rotate-6 bg-[#EA7BBF] text-black px-6 py-3 rounded-md font-extrabold shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+              className="mt-3 inline-block -rotate-6 bg-[#EA7BBF] text-[#1d1d1d] px-6 py-3 rounded-md font-extrabold shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               GET STARTED
@@ -383,8 +383,8 @@ function AnimationProcessTabs() {
       </div>
 
       <div className="max-w-xl text-center lg:text-left">
-        <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
-          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+        <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-[#1d1d1d] justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
             <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </span>
           {steps[active].title}
@@ -398,7 +398,7 @@ function AnimationProcessTabs() {
             const isActive = i === active;
             return (
               <li key={s.title}>
-                <button onMouseEnter={() => setActive(i)} onFocus={() => setActive(i)} onClick={() => setActive(i)} className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-black" : "text-[#1d1d1d]/75 hover:text-black"].join(" ")} style={{ fontFamily: 'Recursive, sans-serif' }}>
+                <button onMouseEnter={() => setActive(i)} onFocus={() => setActive(i)} onClick={() => setActive(i)} className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-[#1d1d1d]" : "text-[#1d1d1d]/75 hover:text-[#1d1d1d]"].join(" ")} style={{ fontFamily: 'Recursive, sans-serif' }}>
                   <span className="inline-flex items-center gap-2 sm:gap-3">
                     <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition", isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"].join(" ")} />
                     {s.title}

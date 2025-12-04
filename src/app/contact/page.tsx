@@ -214,7 +214,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-lg bg-[#FFD350] text-black px-6 py-3 sm:py-4 font-bold text-base sm:text-lg shadow-[0_6px_0_rgba(0,0,0,0.25)] hover:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full rounded-lg bg-[#FFD350] text-[#1d1d1d] px-6 py-3 sm:py-4 font-bold text-base sm:text-lg shadow-[0_6px_0_rgba(0,0,0,0.25)] hover:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}

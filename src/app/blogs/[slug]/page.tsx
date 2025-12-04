@@ -837,7 +837,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[60vh] lg:min-h-[70vh] flex flex-col items-center justify-center text-center py-12 md:py-0">
@@ -948,7 +948,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                     />
                     {relatedBlog.badge && (
-                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[11px] font-bold px-2 py-0.5">
+                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-[#1d1d1d] text-[11px] font-bold px-2 py-0.5">
                         {relatedBlog.badge}
                       </span>
                     )}

@@ -1026,7 +1026,7 @@ export default function PricingPage() {
                 key={tab.key}
                 onClick={() => setActiveTab(tab.key)}
                 className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === tab.key
-                  ? "bg-[#FFD350] text-black shadow-lg"
+                  ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
                   : "bg-[#EA7BBF] text-white hover:opacity-90"
                   }`}
               >
@@ -1050,7 +1050,7 @@ export default function PricingPage() {
                 >
                   {/* Title */}
                   <h2
-                    className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                     {pkg.title}
@@ -1058,7 +1058,7 @@ export default function PricingPage() {
 
                   {/* Price */}
                   <div className="text-center mb-4">
-                    <span className="text-3xl sm:text-4xl font-bold text-black">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                       {pkg.price}
                     </span>
                   </div>
@@ -1074,7 +1074,7 @@ export default function PricingPage() {
                   {/* Features List */}
                   <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                     {pkg.features.map((feature: string, idx: number) => (
-                      <li key={idx} className="flex items-start text-black">
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
                         <svg
                           className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                           fill="none"
@@ -1115,7 +1115,7 @@ export default function PricingPage() {
                   >
                     {/* Title */}
                     <h2
-                      className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                      className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                       style={{ fontFamily: "Recursive, sans-serif" }}
                     >
                       {pkg.title}
@@ -1123,7 +1123,7 @@ export default function PricingPage() {
 
                     {/* Price */}
                     <div className="text-center mb-4">
-                      <span className="text-3xl sm:text-4xl font-bold text-black">
+                      <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                         {pkg.price}
                       </span>
                     </div>
@@ -1139,7 +1139,7 @@ export default function PricingPage() {
                     {/* Features List */}
                     <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                       {pkg.features.map((feature: string, idx: number) => (
-                        <li key={idx} className="flex items-start text-black">
+                        <li key={idx} className="flex items-start text-[#1d1d1d]">
                           <svg
                             className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                             fill="none"
@@ -1178,7 +1178,7 @@ export default function PricingPage() {
                   >
                     {/* Title */}
                     <h2
-                      className="text-xl sm:text-2xl lg:text-3xl font-black uppercase text-center text-black mb-2"
+                      className="text-xl sm:text-2xl lg:text-3xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                       style={{ fontFamily: "Recursive, sans-serif" }}
                     >
                       {pkg.title}
@@ -1186,7 +1186,7 @@ export default function PricingPage() {
 
                     {/* Price */}
                     <div className="text-center mb-4">
-                      <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black">
+                      <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1d1d1d]">
                         {pkg.price}
                       </span>
                     </div>
@@ -1202,7 +1202,7 @@ export default function PricingPage() {
                     {/* Features List - 3 columns on large screens */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-8">
                       {pkg.features.map((feature: string, idx: number) => (
-                        <div key={idx} className="flex items-start text-black">
+                        <div key={idx} className="flex items-start text-[#1d1d1d]">
                           <svg
                             className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                             fill="none"
@@ -1242,7 +1242,7 @@ export default function PricingPage() {
                 >
                   {/* Title */}
                   <h2
-                    className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                     {pkg.title}
@@ -1250,7 +1250,7 @@ export default function PricingPage() {
 
                   {/* Price */}
                   <div className="text-center mb-4">
-                    <span className="text-3xl sm:text-4xl font-bold text-black">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                       {pkg.price}
                     </span>
                   </div>
@@ -1266,7 +1266,7 @@ export default function PricingPage() {
                   {/* Features List */}
                   <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                     {pkg.features.map((feature: string, idx: number) => (
-                      <li key={idx} className="flex items-start text-black">
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
                         <svg
                           className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                           fill="none"
@@ -1305,7 +1305,7 @@ export default function PricingPage() {
                 >
                   {/* Title */}
                   <h2
-                    className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                     {pkg.title}
@@ -1313,7 +1313,7 @@ export default function PricingPage() {
 
                   {/* Price */}
                   <div className="text-center mb-4">
-                    <span className="text-3xl sm:text-4xl font-bold text-black">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                       {pkg.price}
                     </span>
                   </div>
@@ -1329,7 +1329,7 @@ export default function PricingPage() {
                   {/* Features List */}
                   <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                     {pkg.features.map((feature: string, idx: number) => (
-                      <li key={idx} className="flex items-start text-black">
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
                         <svg
                           className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                           fill="none"
@@ -1368,7 +1368,7 @@ export default function PricingPage() {
                 >
                   {/* Title */}
                   <h2
-                    className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                     {pkg.title}
@@ -1376,7 +1376,7 @@ export default function PricingPage() {
 
                   {/* Price */}
                   <div className="text-center mb-4">
-                    <span className="text-3xl sm:text-4xl font-bold text-black">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                       {pkg.price}
                     </span>
                   </div>
@@ -1392,7 +1392,7 @@ export default function PricingPage() {
                   {/* Features List */}
                   <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                     {pkg.features.map((feature: string, idx: number) => (
-                      <li key={idx} className="flex items-start text-black">
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
                         <svg
                           className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                           fill="none"
@@ -1431,7 +1431,7 @@ export default function PricingPage() {
                 >
                   {/* Title */}
                   <h2
-                    className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                     {pkg.title}
@@ -1439,7 +1439,7 @@ export default function PricingPage() {
 
                   {/* Price */}
                   <div className="text-center mb-4">
-                    <span className="text-3xl sm:text-4xl font-bold text-black">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                       {pkg.price}
                     </span>
                   </div>
@@ -1455,7 +1455,7 @@ export default function PricingPage() {
                   {/* Features List */}
                   <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                     {pkg.features.map((feature: string, idx: number) => (
-                      <li key={idx} className="flex items-start text-black">
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
                         <svg
                           className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                           fill="none"
@@ -1494,7 +1494,7 @@ export default function PricingPage() {
                 >
                   {/* Title */}
                   <h2
-                    className="text-xl sm:text-2xl font-black uppercase text-center text-black mb-2"
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
                     {pkg.title}
@@ -1502,7 +1502,7 @@ export default function PricingPage() {
 
                   {/* Price */}
                   <div className="text-center mb-4">
-                    <span className="text-3xl sm:text-4xl font-bold text-black">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
                       {pkg.price}
                     </span>
                   </div>
@@ -1518,7 +1518,7 @@ export default function PricingPage() {
                   {/* Features List */}
                   <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
                     {pkg.features.map((feature: string, idx: number) => (
-                      <li key={idx} className="flex items-start text-black">
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
                         <svg
                           className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
                           fill="none"
@@ -1566,7 +1566,7 @@ export default function PricingPage() {
 
                 {/* Title */}
                 <h2
-                  className="text-2xl sm:text-3xl font-black uppercase text-center text-black mb-4"
+                  className="text-2xl sm:text-3xl font-black uppercase text-center text-[#1d1d1d] mb-4"
                   style={{ fontFamily: "Recursive, sans-serif" }}
                 >
                   {currentPricing.title}
@@ -1574,7 +1574,7 @@ export default function PricingPage() {
 
                 {/* Price */}
                 <div className="text-center mb-6">
-                  <span className="text-4xl sm:text-5xl font-bold text-black">
+                  <span className="text-4xl sm:text-5xl font-bold text-[#1d1d1d]">
                     {currentPricing.price}
                   </span>
                 </div>
@@ -1582,7 +1582,7 @@ export default function PricingPage() {
                 {/* Features List */}
                 <ul className="space-y-3 mb-8">
                   {currentPricing.features.map((feature: string, index: number) => (
-                    <li key={index} className="flex items-center text-black">
+                    <li key={index} className="flex items-center text-[#1d1d1d]">
                       <svg
                         className="w-5 h-5 mr-3 text-[#EA7BBF] flex-shrink-0"
                         fill="none"
@@ -1615,7 +1615,7 @@ export default function PricingPage() {
                 {/* Title with Icon */}
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-8 h-8 bg-[#FFD350] rounded-full flex items-center justify-center">
-                    <span className="text-black font-bold text-sm">•</span>
+                    <span className="text-[#1d1d1d] font-bold text-sm">•</span>
                   </div>
                   <h3
                     className="text-2xl sm:text-3xl font-black uppercase text-white"
@@ -1678,7 +1678,7 @@ export default function PricingPage() {
                   </span>
                 </div>
                 {/* Step label */}
-                <span className="text-black font-black uppercase text-xs sm:text-sm lg:text-base">
+                <span className="text-[#1d1d1d] font-black uppercase text-xs sm:text-sm lg:text-base">
                   {step.label}
                 </span>
               </div>
@@ -1739,7 +1739,7 @@ export default function PricingPage() {
             {/* Get Started Button */}
             <Link
               href="/contact"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-black bg-white shadow-lg hover:bg-gray-100 transition-colors duration-200 text-base sm:text-lg"
+              className="inline-block rounded-xl px-8 py-4 font-bold text-[#1d1d1d] bg-white shadow-lg hover:bg-gray-100 transition-colors duration-200 text-base sm:text-lg"
             >
               Get Started
             </Link>

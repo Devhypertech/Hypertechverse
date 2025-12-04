@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                   className="
                     inline-block skew-x-6
                     px-7 md:px-8 py-3 md:py-3.5
-                    text-black uppercase font-extrabold
+                    text-[#1d1d1d] uppercase font-extrabold
                     text-[14px] md:text-[16px]
                   "
                   style={{ fontFamily: "Poppins, sans-serif" }}

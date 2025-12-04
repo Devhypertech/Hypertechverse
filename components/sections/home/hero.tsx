@@ -36,15 +36,29 @@ export default function Hero() {
                             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
                                 <Link
                                     href="/portfolio"
-                                    className="rounded-lg bg-[#FFD350] px-6 py-3 font-semibold text-black hover:bg-[#e6bf30] transition text-center"
+                                    className="rounded-lg bg-[#FFD350] px-8 py-4 font-semibold text-[#1d1d1d] hover:bg-[#fff9f1] transition text-center"
                                 >
-                                    See our work
+                                    <span style={{
+                                        fontSize: "24px",
+                                        fontWeight: "bold",
+
+                                    }}>
+
+                                        See our work
+                                    </span>
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="rounded-lg border border-white px-6 py-3 font-semibold text-white hover:bg-white hover:text-black transition text-center"
+                                    className="rounded-lg border border-white px-8 py-4 font-semibold text-white hover:bg-[#fff9f1] hover:text-[#1d1d1d] transition text-center"
                                 >
-                                    Get started
+                                    <span style={{
+                                        fontSize: "24px",
+                                        fontWeight: "bold",
+
+                                    }}>
+
+                                        Get started
+                                    </span>
                                 </Link>
                             </div>
 
@@ -140,7 +154,7 @@ export default function Hero() {
             </div>
 
             {/* Pink ribbon bar - overlapping hero images */}
-            <div className="absolute bottom-0 left-0 right-0 bg-[#EA7BBF] text-black z-10">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10">
                 <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4 text-base sm:px-4 lg:px-4">
                     {/* Main Grid Layout */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">

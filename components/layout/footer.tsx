@@ -23,7 +23,7 @@ export default function Footer() {
                     <div className="text-center md:text-left">
                         <a
                             href="/contact"
-                            className="inline-block bg-[#FDA5D5] text-black py-2 px-6 rounded-lg font-semibold hover:bg-[#FFD350] transition"
+                            className="inline-block bg-[#FDA5D5] text-[#1d1d1d] py-2 px-6 rounded-lg font-semibold hover:bg-[#FFD350] transition"
                         >
                             Get Started
                         </a>

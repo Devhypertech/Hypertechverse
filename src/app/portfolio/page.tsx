@@ -21,7 +21,7 @@ export default function PortfolioPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section (duplicated from SEO, with headings adjusted) */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -96,8 +96,8 @@ export default function PortfolioPage() {
             <button
               onClick={() => setActiveTab("web")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "web"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               WEB DESIGNS
@@ -105,8 +105,8 @@ export default function PortfolioPage() {
             <button
               onClick={() => setActiveTab("logo")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "logo"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               LOGO DESIGNS
@@ -114,8 +114,8 @@ export default function PortfolioPage() {
             <button
               onClick={() => setActiveTab("branding")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "branding"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               BRANDING
@@ -123,8 +123,8 @@ export default function PortfolioPage() {
             <button
               onClick={() => setActiveTab("video")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "video"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               VIDEO ANIMATION
@@ -132,8 +132,8 @@ export default function PortfolioPage() {
             <button
               onClick={() => setActiveTab("mobile")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "mobile"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               MOBILE APPLICATIONS
@@ -187,7 +187,7 @@ export default function PortfolioPage() {
                       priority
                     />
                     {s.badge && (
-                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
+                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-[#1d1d1d] text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
                         {s.badge}
                       </span>
                     )}

@@ -141,7 +141,7 @@ export default function AboutPage() {
                 agency that provides comprehensive services.
               </p>
               <button
-                className="mt-4 inline-block bg-[#FFD350] text-black font-extrabold px-4 py-2 sm:px-5 sm:py-2 text-sm sm:text-base shadow-[0_4px_0_rgba(0,0,0,0.25)]"
+                className="mt-4 inline-block bg-[#FFD350] text-[#1d1d1d] font-extrabold px-4 py-2 sm:px-5 sm:py-2 text-sm sm:text-base shadow-[0_4px_0_rgba(0,0,0,0.25)]"
                 style={{ transform: "rotate(-6deg)" }}
               >
                 SEE MORE
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 agency that provides comprehensive services.
               </p>
               <button
-                className="mt-4 inline-block bg-[#FFD350] text-black font-extrabold px-4 py-2 sm:px-5 sm:py-2 text-sm sm:text-base shadow-[0_4px_0_rgba(0,0,0,0.25)]"
+                className="mt-4 inline-block bg-[#FFD350] text-[#1d1d1d] font-extrabold px-4 py-2 sm:px-5 sm:py-2 text-sm sm:text-base shadow-[0_4px_0_rgba(0,0,0,0.25)]"
                 style={{ transform: "rotate(5deg)" }}
               >
                 SEE MORE
@@ -191,7 +191,7 @@ export default function AboutPage() {
                 agency that provides comprehensive services.
               </p>
               <button
-                className="mt-4 inline-block bg-[#FFD350] text-black font-extrabold px-4 py-2 sm:px-5 sm:py-2 text-sm sm:text-base shadow-[0_4px_0_rgba(0,0,0,0.25)]"
+                className="mt-4 inline-block bg-[#FFD350] text-[#1d1d1d] font-extrabold px-4 py-2 sm:px-5 sm:py-2 text-sm sm:text-base shadow-[0_4px_0_rgba(0,0,0,0.25)]"
                 style={{ transform: "rotate(-6deg)" }}
               >
                 SEE MORE

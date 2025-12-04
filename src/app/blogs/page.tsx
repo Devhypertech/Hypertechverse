@@ -23,7 +23,7 @@ export default function BlogsPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[60vh] lg:min-h-[70vh] flex flex-col items-center justify-center text-center py-12 md:py-0">
@@ -62,8 +62,8 @@ export default function BlogsPage() {
             <button
               onClick={() => setActiveTab("all")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "all"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               ALL
@@ -71,8 +71,8 @@ export default function BlogsPage() {
             <button
               onClick={() => setActiveTab("technology")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "technology"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               TECHNOLOGY
@@ -80,8 +80,8 @@ export default function BlogsPage() {
             <button
               onClick={() => setActiveTab("design")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "design"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               DESIGN
@@ -89,8 +89,8 @@ export default function BlogsPage() {
             <button
               onClick={() => setActiveTab("marketing")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "marketing"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               MARKETING
@@ -98,8 +98,8 @@ export default function BlogsPage() {
             <button
               onClick={() => setActiveTab("business")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "business"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
                 }`}
             >
               BUSINESS
@@ -153,7 +153,7 @@ export default function BlogsPage() {
                       priority
                     />
                     {blog.badge && (
-                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[11px] font-bold px-2 py-0.5">
+                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-[#1d1d1d] text-[11px] font-bold px-2 py-0.5">
                         {blog.badge}
                       </span>
                     )}

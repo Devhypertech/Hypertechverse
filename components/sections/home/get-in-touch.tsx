@@ -42,7 +42,7 @@ export default function GetInTouch() {
                             <div className="pt-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-block bg-white text-black px-8 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 font-bold hover-scale hover-lift"
+                                    className="inline-block bg-white text-[#1d1d1d] px-8 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 font-bold hover-scale hover-lift"
                                 >
                                     Get Started
                                 </Link>

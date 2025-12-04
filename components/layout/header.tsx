@@ -121,12 +121,12 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50">
       {/* frosted translucent bar */}
       <div className="bg-[#1d1d1d]/30 backdrop-blur-xl shadow-[0_2px_24px_rgba(0,0,0,0.35)]">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex h-24 max-w-full items-center justify-between px-4 sm:px-6 lg:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-3xl font-extrabold leading-none text-white">HTV</span>
+            <span className="text-6xl font-extrabold leading-none text-white">HTV</span>
             <span className="hidden text-white/90 font-semibold sm:block">
-              Hypertech <span className="text-white">Verse</span>
+              Hypertech <br /> <span className="text-white">Verse</span>
             </span>
           </Link>
 
@@ -216,9 +216,16 @@ export default function Header() {
             {/* CTA (desktop) */}
             <Link
               href="/contact"
-              className="rounded-lg px-5 py-2 font-semibold text-black shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300"
+              className="rounded-lg w-[auto]  px-8 py-4 font-semibold text-[#1d1d1d] shadow-lg bg-[#FFD350] hover:bg-[#EA7BBF] transition-all duration-300"
             >
-              Get started
+              <span style={{
+                fontSize: "24px",
+                fontWeight: "bold",
+
+              }}>
+
+                Get started
+              </span>
             </Link>
           </div>
 
@@ -309,7 +316,7 @@ export default function Header() {
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="mt-1 block rounded-xl bg-gradient-to-b from-amber-300 to-yellow-400 px-4 py-2 text-center font-semibold text-black shadow"
+                  className="mt-1 block rounded-xl bg-gradient-to-b from-amber-300 to-yellow-400 px-4 py-2 text-center font-semibold text-[#1d1d1d] shadow"
                 >
                   Get started
                 </Link>

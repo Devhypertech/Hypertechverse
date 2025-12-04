@@ -80,9 +80,9 @@ const items: T[] = [
 function toneClasses(tone: Tone) {
     const base =
         "rounded-xl border border-white/10 shadow-[0_6px_0_rgba(0,0,0,0.35)] p-5 md:p-6 mb-6 break-inside-avoid";
-    if (tone === "cream") return `${base} bg-[#FDEDE8] text-black`;
+    if (tone === "cream") return `${base} bg-[#FDEDE8] text-[#1d1d1d]`;
     if (tone === "pink") return `${base} bg-[#EA7BBF] text-white`;
-    return `${base} bg-white text-black`;
+    return `${base} bg-white text-[#1d1d1d]`;
 }
 
 const videoTestimonials = [
@@ -186,7 +186,7 @@ export default function TestimonialsMasonry() {
                 {/* Centered heading */}
                 <ScrollAnimation animation="fadeInUp" delay={200}>
                     <div className="relative mx-auto mb-10 md:mb-14 max-w-3xl text-center">
-                        {/* <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow border border-white">
+                        {/* <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-[#1d1d1d] shadow border border-white">
                             Now Look At1!
                         </span> */}
                         <h2
@@ -270,7 +270,7 @@ export default function TestimonialsMasonry() {
                                                 <div className="absolute inset-0 flex items-center justify-center bg-[#1d1d1d]/30 group-hover:bg-[#1d1d1d]/20 transition-colors duration-300 rounded-lg">
                                                     <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                                         <svg
-                                                            className="w-8 h-8 text-black ml-1"
+                                                            className="w-8 h-8 text-[#1d1d1d] ml-1"
                                                             fill="currentColor"
                                                             viewBox="0 0 24 24"
                                                         >
@@ -291,7 +291,7 @@ export default function TestimonialsMasonry() {
                                 <button
                                     aria-label="Previous"
                                     onClick={goToPrev}
-                                    className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-12 w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-black shadow-lg hover:brightness-95"
+                                    className="absolute -left-16 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-12 w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-lg hover:brightness-95"
                                 >
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -303,7 +303,7 @@ export default function TestimonialsMasonry() {
                                 <button
                                     aria-label="Next"
                                     onClick={goToNext}
-                                    className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-12 w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-black shadow-lg hover:brightness-95"
+                                    className="absolute -right-16 top-1/2 -translate-y-1/2 z-10 hidden sm:flex h-12 w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-lg hover:brightness-95"
                                 >
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <line x1="5" y1="12" x2="19" y2="12"></line>

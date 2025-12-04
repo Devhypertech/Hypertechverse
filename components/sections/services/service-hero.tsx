@@ -33,7 +33,7 @@ export default function ServiceHero() {
                                 <Link
                                     href="/contact"
                                     aria-label="Start a project"
-                                    className="absolute -right-10 top-1/2 -translate-y-1/2 grid h-16 w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_10px_0_rgba(0,0,0,0.25)] hover:translate-y-[-48%] transition-transform"
+                                    className="absolute -right-10 top-1/2 -translate-y-1/2 grid h-16 w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_10px_0_rgba(0,0,0,0.25)] hover:translate-y-[-48%] transition-transform"
                                 >
                                     <svg
                                         width="24"

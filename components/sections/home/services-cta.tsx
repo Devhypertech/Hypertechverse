@@ -135,7 +135,7 @@ export default function SmartSolutions() {
                         <button
                             aria-label="Previous"
                             onClick={() => manualScroll(-1)}
-                            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-black shadow-lg hover:brightness-95"
+                            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-lg hover:brightness-95"
                         >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -147,7 +147,7 @@ export default function SmartSolutions() {
                         <button
                             aria-label="Next"
                             onClick={() => manualScroll(1)}
-                            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-black shadow-lg hover:brightness-95"
+                            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-lg hover:brightness-95"
                         >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
