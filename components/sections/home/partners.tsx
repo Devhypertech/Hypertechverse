@@ -10,14 +10,14 @@ export default function OurPartners() {
   ];
 
   return (
-    <section className="bg-[#1d1d1d] text-white pb-16 md:pb-20">
+    <section className="bg-[#1d1d1d] text-[#fff9f1] pb-16 md:pb-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeInUp" delay={200}>
           <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-12">
             {/* Heading - Left Side */}
             <div className="flex-shrink-0">
               <h2
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-[#fff9f1]"
                 style={{ fontFamily: "Recursive, sans-serif" }}
               >
                 <span>Our</span> <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">Partners</span>

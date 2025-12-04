@@ -32,7 +32,7 @@ export default function GetInTouch() {
                     {/* Content */}
                     <ScrollAnimation animation="fadeInUp" delay={400}>
                         <div className="space-y-4">
-                            <h2 className="text-7xl font-extrabold text-white font-recent-grotesk">
+                            <h2 className="text-7xl font-extrabold text-[#fff9f1] font-recent-grotesk">
                                 Get in touch
                             </h2>
                             <p className="text-lg font-semibold text-[#EA7BBF]">
@@ -42,9 +42,16 @@ export default function GetInTouch() {
                             <div className="pt-4">
                                 <Link
                                     href="/contact"
-                                    className="inline-block bg-white text-[#1d1d1d] px-8 py-4 rounded-xl hover:bg-gray-100 transition-all duration-300 font-bold hover-scale hover-lift"
+                                    className="inline-block bg-[#fff9f1] text-[#1d1d1d] px-8 py-4 rounded-xl hover:bg-[#FFD350] hover:text-[#1d1d1d] transition-all duration-300 font-bold hover-scale hover-lift"
                                 >
-                                    Get Started
+                                    <span style={{
+                                        fontSize: "24px",
+                                        fontWeight: "bold",
+
+                                    }}>
+
+                                        Get Started
+                                    </span>
                                 </Link>
                             </div>
                         </div>

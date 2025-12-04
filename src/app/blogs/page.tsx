@@ -28,7 +28,7 @@ export default function BlogsPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[60vh] lg:min-h-[70vh] flex flex-col items-center justify-center text-center py-12 md:py-0">
             <h1
-              className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-white mb-8"
+              className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-[#fff9f1] mb-8"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
               Blog
@@ -37,7 +37,7 @@ export default function BlogsPage() {
             <Link
               href="/contact"
               aria-label="Get started"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-white bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
+              className="inline-block rounded-xl px-8 py-4 font-bold text-[#fff9f1] bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
             >
               Let's Get Started
             </Link>
@@ -63,7 +63,7 @@ export default function BlogsPage() {
               onClick={() => setActiveTab("all")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "all"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               ALL
@@ -72,7 +72,7 @@ export default function BlogsPage() {
               onClick={() => setActiveTab("technology")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "technology"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               TECHNOLOGY
@@ -81,7 +81,7 @@ export default function BlogsPage() {
               onClick={() => setActiveTab("design")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "design"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               DESIGN
@@ -90,7 +90,7 @@ export default function BlogsPage() {
               onClick={() => setActiveTab("marketing")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "marketing"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               MARKETING
@@ -99,7 +99,7 @@ export default function BlogsPage() {
               onClick={() => setActiveTab("business")}
               className={`px-6 py-3 rounded-lg font-bold text-sm sm:text-base transition-all duration-200 ${activeTab === "business"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               BUSINESS
@@ -109,7 +109,7 @@ export default function BlogsPage() {
       </section>
 
       {/* ====== Blog Posts ====== */}
-      <section className="bg-[#1d1d1d] text-white py-16">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <header className="mb-8 sm:mb-12 flex items-end justify-between gap-4">
             <div>
@@ -120,7 +120,7 @@ export default function BlogsPage() {
                 Recent Blog Posts
               </h2>
               <p
-                className="mt-1 text-sm text-white/70"
+                className="mt-1 text-sm text-[#fff9f1]/70"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 A curated selection of articles, insights, and tutorials.
@@ -128,10 +128,10 @@ export default function BlogsPage() {
             </div>
             {/* optional filter stub (hide on mobile) */}
             {/* <div className="hidden md:flex items-center gap-2 text-sm">
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">All</button>
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Tech</button>
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Design</button>
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Marketing</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">All</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">Tech</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">Design</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">Marketing</button>
       </div> */}
           </header>
 
@@ -153,7 +153,7 @@ export default function BlogsPage() {
                       priority
                     />
                     {blog.badge && (
-                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-[#1d1d1d] text-[11px] font-bold px-2 py-0.5">
+                      <span className="absolute right-2 top-2 rounded-full bg-[#fff9f1]/90 text-[#1d1d1d] text-[11px] font-bold px-2 py-0.5">
                         {blog.badge}
                       </span>
                     )}
@@ -169,7 +169,7 @@ export default function BlogsPage() {
                     {blog.tags.map((t) => (
                       <span
                         key={t}
-                        className="rounded-full bg-white/5 text-white/70 text-[11px] px-2 py-1 border border-white/10"
+                        className="rounded-full bg-[#fff9f1]/5 text-[#fff9f1]/70 text-[11px] px-2 py-1 border border-white/10"
                       >
                         {t}
                       </span>
@@ -184,7 +184,7 @@ export default function BlogsPage() {
                   </h3>
 
                   <p
-                    className="mt-1 text-[12px] leading-snug text-white/70 line-clamp-3"
+                    className="mt-1 text-[12px] leading-snug text-[#fff9f1]/70 line-clamp-3"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {blog.blurb}
@@ -193,12 +193,12 @@ export default function BlogsPage() {
                   <div className="mt-3 flex items-center justify-between">
                     <Link
                       href={blog.href}
-                      className="text-[12px] font-semibold text-white/90 hover:text-white"
+                      className="text-[12px] font-semibold text-[#fff9f1]/90 hover:text-[#fff9f1]"
                     >
                       Read more →
                     </Link>
                     {blog.meta && (
-                      <span className="text-[11px] text-white/50">{blog.meta}</span>
+                      <span className="text-[11px] text-[#fff9f1]/50">{blog.meta}</span>
                     )}
                   </div>
                 </div>

@@ -11,7 +11,7 @@ const TAG_STYLES: Record<string, string> = {
     Illustration: "bg-[#7BE4A1] text-[#0f172a]",
     "Packaging Design": "bg-[#C3B5FD] text-[#111827]",
     "Layout Design": "bg-[#F5A97F] text-[#1a1a1a]",
-    "_": "bg-white/80 text-[#1d1d1d]",
+    "_": "bg-[#fff9f1]/80 text-[#1d1d1d]",
 };
 
 const tagClasses = (t: string) =>
@@ -58,8 +58,8 @@ export default function FeaturedWork() {
 
                                     {/* text + tags (no background) */}
                                     <div className="pt-4">
-                                        <p className=" text-white text-2xl" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>{project.description}</p>
-                                        <h3 className="mt-1 text-lg font-semibold text-white uppercase" style={{ fontFamily: "'Inter','Recent Grotesk', sans-serif", fontWeight: 800, color: '#EA7BBF' }}>{project.title}</h3>
+                                        <p className=" text-[#fff9f1] text-2xl" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>{project.description}</p>
+                                        <h3 className="mt-1 text-lg font-semibold text-[#fff9f1] uppercase" style={{ fontFamily: "'Inter','Recent Grotesk', sans-serif", fontWeight: 800, color: '#EA7BBF' }}>{project.title}</h3>
 
                                         <div className="mt-4 flex flex-wrap gap-2">
                                             {project.tags.map((tag, i) => (

@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function UltimateAgency() {
     return (
-        <section className="bg-[#1d1d1d] text-white px-2 sm:px-3 lg:px-4 py-20 sm:py-20 relative overflow-hidden">
+        <section className="bg-[#1d1d1d] text-[#fff9f1] px-2 sm:px-3 lg:px-4 py-20 sm:py-20 relative overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute top-20 left-10 w-40 h-40 bg-blue-500 rounded-full animate-float"></div>
@@ -49,16 +49,23 @@ export default function UltimateAgency() {
                                 </h2>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={1000}>
-                                <p className="text-base text-white/70 mb-8 max-w-full sm:max-w-none mx-auto sm:mx-0 break-words" style={{ fontFamily: "'Inter', sans-serif" }}>
+                                <p className="text-base text-[#fff9f1]/70 mb-8 max-w-full sm:max-w-none mx-auto sm:mx-0 break-words" style={{ fontFamily: "'Inter', sans-serif" }}>
                                     with strategy to create digital experiences that not only look amazing but drive real business results. We&apos;re not just another agency. We&apos;re your strategic partner in digital transformation, combining creativity with data-driven insights to elevate your brand and accelerate your growth.
                                 </p>
                             </ScrollAnimation>
                             <ScrollAnimation animation="fadeInUp" delay={1200}>
                                 <Link
                                     href="/contact"
-                                    className="inline-block rounded-lg bg-[#FFD350] px-6 sm:px-8 py-4 font-semibold text-[#1d1d1d] hover:bg-[#e6bf30] transition-all duration-300 hover-scale hover-lift hover-shake max-w-full text-center"
+                                    className="inline-block rounded-lg bg-[#FFD350] px-6 sm:px-8 py-4 font-semibold text-[#1d1d1d] hover:bg-[#EA7BBF] hover:text-[#fff9f1] transition-all duration-300 hover-scale  max-w-full text-center"
                                 >
-                                    Start your free consultation today!
+                                    <span style={{
+                                        fontSize: "24px",
+                                        fontWeight: "bold",
+
+                                    }}>
+
+                                        Start your free consultation today!
+                                    </span>
                                 </Link>
                             </ScrollAnimation>
                         </div>

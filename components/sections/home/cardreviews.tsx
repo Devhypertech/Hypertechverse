@@ -81,8 +81,8 @@ function toneClasses(tone: Tone) {
     const base =
         "rounded-xl border border-white/10 shadow-[0_6px_0_rgba(0,0,0,0.35)] p-5 md:p-6 mb-6 break-inside-avoid";
     if (tone === "cream") return `${base} bg-[#FDEDE8] text-[#1d1d1d]`;
-    if (tone === "pink") return `${base} bg-[#EA7BBF] text-white`;
-    return `${base} bg-white text-[#1d1d1d]`;
+    if (tone === "pink") return `${base} bg-[#EA7BBF] text-[#fff9f1]`;
+    return `${base} bg-[#fff9f1] text-[#1d1d1d]`;
 }
 
 const videoTestimonials = [
@@ -190,7 +190,7 @@ export default function TestimonialsMasonry() {
                             Now Look At1!
                         </span> */}
                         <h2
-                            className="text-3xl sm:text-4xl md:text-5xl leading-tight text-white"
+                            className="text-3xl sm:text-4xl md:text-5xl leading-tight text-[#fff9f1]"
                             style={{ fontFamily: "'Alkaline Caps', sans-serif", fontWeight: 900 }}
                         >
                             <span className="block italic"><span className="text-8xl sm:text-10xl md:text-12xl italic">N</span>ICE THINGS</span>
@@ -268,7 +268,7 @@ export default function TestimonialsMasonry() {
                                                     unoptimized
                                                 />
                                                 <div className="absolute inset-0 flex items-center justify-center bg-[#1d1d1d]/30 group-hover:bg-[#1d1d1d]/20 transition-colors duration-300 rounded-lg">
-                                                    <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                                    <div className="w-16 h-16 bg-[#fff9f1]/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                                                         <svg
                                                             className="w-8 h-8 text-[#1d1d1d] ml-1"
                                                             fill="currentColor"
@@ -320,7 +320,7 @@ export default function TestimonialsMasonry() {
                                     <button
                                         key={idx}
                                         onClick={() => setCurrentIndex(idx)}
-                                        className={`h-2 rounded-full transition-all ${idx === currentIndex ? 'w-8 bg-[#EA7BBF]' : 'w-2 bg-white/30'
+                                        className={`h-2 rounded-full transition-all ${idx === currentIndex ? 'w-8 bg-[#EA7BBF]' : 'w-2 bg-[#fff9f1]/30'
                                             }`}
                                         aria-label={`Go to slide ${idx + 1}`}
                                     />

@@ -43,7 +43,7 @@ export default function PaidAdvertisingPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -61,7 +61,7 @@ export default function PaidAdvertisingPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -97,7 +97,7 @@ export default function PaidAdvertisingPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -124,7 +124,7 @@ export default function PaidAdvertisingPage() {
                   Turning audience insights into Customers
                 </h3>
 
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   We design and manage campaigns across search, social, and display. With data‑driven targeting, creative testing, and ongoing optimization, we lower CAC and scale profitably.
                 </p>
 
@@ -159,7 +159,7 @@ export default function PaidAdvertisingPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Paid Advertising Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -170,7 +170,7 @@ export default function PaidAdvertisingPage() {
 
 
       {/* Yellow Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
           src="/services/logo/bg.png"
@@ -218,7 +218,7 @@ export default function PaidAdvertisingPage() {
         </div>
       </section>
       {/* ==== Why Paid Ads Work section (matches reference) ==== */}
-      <section className="bg-[#1d1d1d] text-white py-14 sm:py-16">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
           {/* 6-step chips */}
@@ -235,7 +235,7 @@ export default function PaidAdvertisingPage() {
                 key={t}
                 className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-[#1d1d1d]"
               >
-                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] font-bold">
                   {i + 1}
                 </span>
                 <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
@@ -248,14 +248,14 @@ export default function PaidAdvertisingPage() {
           {/* strap + CTA */}
           <div className="mt-5 text-center">
             <p
-              className="text-[11px] sm:text-xs tracking-wide uppercase text-white/70"
+              className="text-[11px] sm:text-xs tracking-wide uppercase text-[#fff9f1]/70"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
               A clear, reliable strategy → test → learn → scale
             </p>
             <Link
               href="/contact"
-              className="mt-3 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+              className="mt-3 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-[#fff9f1] rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               GET STARTED
@@ -271,7 +271,7 @@ export default function PaidAdvertisingPage() {
               Why Paid Ads Work?
             </h2>
             <p
-              className="mt-2 text-xs sm:text-sm text-white/80"
+              className="mt-2 text-xs sm:text-sm text-[#fff9f1]/80"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               A balanced media plan that delivers fast, measurable growth
@@ -287,7 +287,7 @@ export default function PaidAdvertisingPage() {
                 <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
                   Measurable Results
                 </h3>
-                <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+                <p className="mt-2 text-sm text-[#fff9f1]/80" style={{ fontFamily: "Poppins, sans-serif" }}>
                   Track every click, view, and conversion. We wire analytics and
                   attribution so budgets move to what works—and away from what
                   doesn't.
@@ -309,7 +309,7 @@ export default function PaidAdvertisingPage() {
                 <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
                   What is PPC?
                 </h3>
-                <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+                <p className="mt-2 text-sm text-[#fff9f1]/80" style={{ fontFamily: "Poppins, sans-serif" }}>
                   Pay-Per-Click puts you in front of high-intent audiences at the top
                   of search and across social. You pay only when users engage.
                 </p>
@@ -330,7 +330,7 @@ export default function PaidAdvertisingPage() {
                 <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
                   Why PPC Ads Are Game-Changers
                 </h3>
-                <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+                <p className="mt-2 text-sm text-[#fff9f1]/80" style={{ fontFamily: "Poppins, sans-serif" }}>
                   Rapid testing, precise targeting, and immediate feedback loops let
                   us find winning angles fast and scale them profitably.
                 </p>
@@ -351,7 +351,7 @@ export default function PaidAdvertisingPage() {
                 <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
                   What Is Search Engine Marketing?
                 </h3>
-                <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+                <p className="mt-2 text-sm text-[#fff9f1]/80" style={{ fontFamily: "Poppins, sans-serif" }}>
                   SEM blends paid search with landing-page optimization and
                   conversion strategy to own the SERP and turn clicks into revenue.
                 </p>
@@ -372,7 +372,7 @@ export default function PaidAdvertisingPage() {
                 <h3 className="font-extrabold uppercase text-base sm:text-lg" style={{ fontFamily: "Recursive, sans-serif" }}>
                   Discover the Potential of Retargeting
                 </h3>
-                <p className="mt-2 text-sm text-white/80" style={{ fontFamily: "Poppins, sans-serif" }}>
+                <p className="mt-2 text-sm text-[#fff9f1]/80" style={{ fontFamily: "Poppins, sans-serif" }}>
                   Stay top-of-mind with warm audiences. Smart sequences recover
                   abandoned carts, re-engage visitors, and lift overall ROAS.
                 </p>

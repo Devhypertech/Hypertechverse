@@ -9,7 +9,7 @@ export default function CustomSoftwareDevelopmentPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section — Pink background with white text (same styling as SMM) */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -113,7 +113,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
 
       {/* About Section (keeps layout/colors) */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -140,7 +140,7 @@ export default function CustomSoftwareDevelopmentPage() {
                   Transforming data into business intelligence
                 </h3>
 
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
                 </p>
 
@@ -175,7 +175,7 @@ export default function CustomSoftwareDevelopmentPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Engineering Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -215,7 +215,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Process Tabs (renamed for software lifecycle) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
           src="/services/logo/bg.png"
@@ -227,7 +227,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#fff9f1] leading-tight"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
             Limitless Possibilities with our Custom
@@ -235,7 +235,7 @@ export default function CustomSoftwareDevelopmentPage() {
             Software Development Services
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-white/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#fff9f1]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
@@ -265,7 +265,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Benefits Section (same layout/colors, software copy) */}
-      <section className="relative bg-[#1d1d1d] text-white py-16 sm:py-20">
+      <section className="relative bg-[#1d1d1d] text-[#fff9f1] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2
             className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10"
@@ -283,7 +283,7 @@ export default function CustomSoftwareDevelopmentPage() {
                 Built for Your Business
               </h3>
               <p
-                className="mt-3 text-sm text-white/80 max-w-md"
+                className="mt-3 text-sm text-[#fff9f1]/80 max-w-md"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Align software with workflows, integrate with existing systems, and unlock efficiencies impossible with off‑the‑shelf tools.
@@ -341,7 +341,7 @@ export default function CustomSoftwareDevelopmentPage() {
                 Scale Confidently
               </h3>
               <p
-                className="mt-3 text-sm text-white/80"
+                className="mt-3 text-sm text-[#fff9f1]/80"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Modern architectures, cloud‑native patterns, and strong DevOps give your product headroom to grow without slowing down delivery.
@@ -364,7 +364,7 @@ export default function CustomSoftwareDevelopmentPage() {
                 Built for Your Business
               </h3>
               <p
-                className="mt-3 text-sm text-white/80 max-w-md"
+                className="mt-3 text-sm text-[#fff9f1]/80 max-w-md"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Align software with workflows, integrate with existing systems, and unlock efficiencies impossible with off‑the‑shelf tools.

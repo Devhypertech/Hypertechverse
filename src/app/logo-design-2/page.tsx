@@ -9,7 +9,7 @@ export default function LogoDesignPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#FF69B4] text-white">
+      <section className="relative overflow-hidden bg-[#FF69B4] text-[#fff9f1]">
         {/* Fixed blurred background image */}
         <div className="absolute bottom-0 right-0 opacity-100 z-0">
           <Image
@@ -28,7 +28,7 @@ export default function LogoDesignPage() {
               <div className="relative">
                 {/* headline + arrow badge */}
                 <div className="relative inline-block">
-                  <h1 className="leading-[0.9] font-black uppercase text-xl sm:text-2xl md:text-[32px] lg:text-[48px] xl:text-[64px] text-white px-2" style={{ fontFamily: "Recursive, sans-serif" }}>
+                  <h1 className="leading-[0.9] font-black uppercase text-xl sm:text-2xl md:text-[32px] lg:text-[48px] xl:text-[64px] text-[#fff9f1] px-2" style={{ fontFamily: "Recursive, sans-serif" }}>
                     BUILD YOUR IDENTITY WITH THE BEST LOGO DESIGN AGENCY
                   </h1>
 
@@ -45,7 +45,7 @@ export default function LogoDesignPage() {
                 </div>
 
                 {/* description */}
-                <p className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-[15px] leading-relaxed font-medium text-white px-2" style={{ fontFamily: "Poppins, sans-serif" }}>
+                <p className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-[15px] leading-relaxed font-medium text-[#fff9f1] px-2" style={{ fontFamily: "Poppins, sans-serif" }}>
                   NEED A LOGO THAT STANDS OUT? OUR EXPERT LOGO DESIGN SERVICES CREATE MEMORABLE, IMPACTFUL LOGOS THAT PERFECTLY REPRESENT YOUR BRAND.
                 </p>
 
@@ -93,7 +93,7 @@ export default function LogoDesignPage() {
       </section>
 
       {/* Logo Design Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -123,7 +123,7 @@ export default function LogoDesignPage() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   What makes us the best logo design company? Hypertech Verse brings your brand to life with attractive logos that represent it. Our expert designers work with you to grasp your business aims and goals and make a place with your target crowd. From a newly launched business to the resurgence of an old-aged brand, our logo design services give you creative, unique, and memorable solutions to help your public remember you.
                 </p>
 
@@ -161,7 +161,7 @@ export default function LogoDesignPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Branding Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -236,7 +236,7 @@ export default function LogoDesignPage() {
       </section>
 
       {/* Pink Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid pink base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#EA7BBF]" />
         <Image
@@ -257,7 +257,7 @@ export default function LogoDesignPage() {
             Brands to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-white/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#fff9f1]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Designing your brand logo has become easy and pleasant. You&apos;ll have a pleasant and
@@ -373,7 +373,7 @@ function PinkProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-white/90 leading-relaxed"
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#fff9f1]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -395,7 +395,7 @@ function PinkProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-white" : "text-white/75 hover:text-white",
+                    isActive ? "text-[#fff9f1]" : "text-[#fff9f1]/75 hover:text-[#fff9f1]",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
@@ -403,7 +403,7 @@ function PinkProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-white/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#fff9f1]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}

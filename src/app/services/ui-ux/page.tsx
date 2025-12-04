@@ -43,7 +43,7 @@ export default function UIUXPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -61,7 +61,7 @@ export default function UIUXPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -97,7 +97,7 @@ export default function UIUXPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -120,7 +120,7 @@ export default function UIUXPage() {
                   Behind Every Seamless<span className="text-[#EA7BBF]">Experience</span>
                 </h2>
 
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Awesome digital experiences do not occur without a planned approach to design strategy and UI and UX design services. The foundation of the UI/UX design is the comprehension of the users: their needs, behaviors, and expectations. Good UX UI design services are not just pretty to the eye; they are functional, easy to access, and consistent across all devices.
                 </p>
 
@@ -155,7 +155,7 @@ export default function UIUXPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Paid Advertising Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -198,7 +198,7 @@ export default function UIUXPage() {
       </section>
 
       {/* Yellow Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
           src="/services/logo/bg.png"
@@ -230,7 +230,7 @@ export default function UIUXPage() {
         </div>
       </section>
       {/* ==== Why Paid Ads Work section (matches reference) ==== */}
-      <section className="bg-[#1d1d1d] text-white py-14 sm:py-16">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
           {/* 6-step chips */}
@@ -247,7 +247,7 @@ export default function UIUXPage() {
                 key={t}
                 className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-[#1d1d1d]"
               >
-                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] font-bold">
                   {i + 1}
                 </span>
                 <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
@@ -356,10 +356,10 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     <div className="border border-white/20 rounded-lg overflow-hidden bg-[#1d1d1d]/50 backdrop-blur-sm">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+        className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left hover:bg-[#fff9f1]/5 transition-colors"
       >
         <h3
-          className="text-base sm:text-lg md:text-xl font-bold text-white pr-4"
+          className="text-base sm:text-lg md:text-xl font-bold text-[#fff9f1] pr-4"
           style={{ fontFamily: "Recursive, sans-serif" }}
         >
           {question}
@@ -377,7 +377,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       {isOpen && (
         <div className="px-4 sm:px-6 pb-4 sm:pb-5">
           <p
-            className="text-sm sm:text-base text-white/80 leading-relaxed"
+            className="text-sm sm:text-base text-[#fff9f1]/80 leading-relaxed"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {answer}

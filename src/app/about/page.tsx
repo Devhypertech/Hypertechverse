@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="bg-[#1d1d1d] text-white">
+    <main className="bg-[#1d1d1d] text-[#fff9f1]">
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden">
         {/* top yellow slab */}
@@ -51,7 +51,7 @@ export default function AboutPage() {
                   className={[
                     "mx-auto flex flex-wrap items-end justify-center gap-2 sm:gap-3 md:gap-4",
                     "font-[var(--font-recent-grotesk)] font-extrabold leading-[0.9]",
-                    "text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[86px] tracking-tight text-center",
+                    "text-[#fff9f1] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[86px] tracking-tight text-center",
                   ].join(" ")}
                 >
                   <span className="inline-block">DISCOVER</span>
@@ -75,7 +75,7 @@ export default function AboutPage() {
                 <h1
                   className={[
                     "mt-2 sm:mt-3 md:mt-4 text-center font-[var(--font-recent-grotesk)]",
-                    "text-white font-extrabold leading-[0.9]",
+                    "text-[#fff9f1] font-extrabold leading-[0.9]",
                     "text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[86px] tracking-tight px-2",
                   ].join(" ")}
                 >
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 <div className="mt-6 sm:mt-8 flex justify-center px-4">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-base sm:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] transition hover:-rotate-3"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-base sm:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] transition hover:-rotate-3"
                   >
                     GET STARTED
                   </Link>
@@ -108,7 +108,7 @@ export default function AboutPage() {
           </h2>
 
           {/* Text now centered for all three columns */}
-          <div className="mt-8 sm:mt-10 grid gap-6 sm:gap-8 text-sm sm:text-base md:text-[15px] font-bold leading-relaxed text-white/90 md:grid-cols-3 text-center px-2">
+          <div className="mt-8 sm:mt-10 grid gap-6 sm:gap-8 text-sm sm:text-base md:text-[15px] font-bold leading-relaxed text-[#fff9f1]/90 md:grid-cols-3 text-center px-2">
             <p>
               We take the lead in the digital revolution instead of merely accepting its trends. We operate as a leading digital marketing agency that provides comprehensive services, from design and development to new frontiers.
             </p>
@@ -135,7 +135,7 @@ export default function AboutPage() {
             />
             <div className="text-center md:text-left">
               <h3 className="text-[#FFD350] text-4xl sm:text-5xl md:text-6xl font-extrabold">DESIGNER</h3>
-              <p className="text-white mt-3 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-[#fff9f1] mt-3 text-sm sm:text-base md:text-lg leading-relaxed">
                 We take the lead in the digital revolution instead of merely
                 accepting its trends. We operate as a leading digital marketing
                 agency that provides comprehensive services.
@@ -153,7 +153,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 sm:gap-8">
             <div className="order-2 md:order-1 text-center md:text-left">
               <h3 className="text-[#FFD350] text-4xl sm:text-5xl md:text-6xl font-extrabold">MARKETING</h3>
-              <p className="text-white mt-3 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-[#fff9f1] mt-3 text-sm sm:text-base md:text-lg leading-relaxed">
                 We take the lead in the digital revolution instead of merely
                 accepting its trends. We operate as a leading digital marketing
                 agency that provides comprehensive services.
@@ -185,7 +185,7 @@ export default function AboutPage() {
             />
             <div className="text-center md:text-left">
               <h3 className="text-[#FFD350] text-4xl sm:text-5xl md:text-6xl font-extrabold">DEVELOPER</h3>
-              <p className="text-white mt-3 text-sm sm:text-base md:text-lg leading-relaxed">
+              <p className="text-[#fff9f1] mt-3 text-sm sm:text-base md:text-lg leading-relaxed">
                 We take the lead in the digital revolution instead of merely
                 accepting its trends. We operate as a leading digital marketing
                 agency that provides comprehensive services.

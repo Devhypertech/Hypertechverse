@@ -67,7 +67,7 @@ export default function WebDevelopmentPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -119,7 +119,7 @@ export default function WebDevelopmentPage() {
 
 
       {/* Web Development Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -149,7 +149,7 @@ export default function WebDevelopmentPage() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Our web design strategy ensures seamless web app development services from idea to deployment, with close collaboration resulting in refined details. Our focus is on producing beautiful, fulfilling websites.
                 </p>
 
@@ -187,7 +187,7 @@ export default function WebDevelopmentPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Web Development Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -262,7 +262,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* Pink Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid pink base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#EA7BBF]" />
         <Image
@@ -283,7 +283,7 @@ export default function WebDevelopmentPage() {
             Websites to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-white/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#fff9f1]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
             Hypertech Verse offers more than just website creation. We build digital platforms that attract users and drive successful outcomes. As the top web development company in the USA, we deliver digital excellence tailored to your goals. A dedicated Project Manager guides each project, ensuring optimal design and development aligned with your business vision.
@@ -318,7 +318,7 @@ export default function WebDevelopmentPage() {
       </section>
 
       {/* Elite Web Design Agency Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Section: Elite Web Design Agency */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
@@ -332,7 +332,7 @@ export default function WebDevelopmentPage() {
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   We craft beautiful websites that help customers take the desired action. Our company leads web design and development services in the USA, delivering custom digital solutions for businesses of all sizes.
                 </p>
 
@@ -388,7 +388,7 @@ export default function WebDevelopmentPage() {
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   We craft responsive websites that adapt seamlessly to any screen, ensuring a smooth and engaging user experience. Our designs focus on speed and mobile optimization to keep visitors engaged. We prioritize performance by aligning with Google's core web vitals, improving load times and SEO rankings. Enhance your online presence with a convenient and user-friendly design. Let's create something exceptional together!
                 </p>
               </div>
@@ -476,7 +476,7 @@ function PinkProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-white/90 leading-relaxed"
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#fff9f1]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -498,7 +498,7 @@ function PinkProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-white" : "text-white/75 hover:text-white",
+                    isActive ? "text-[#fff9f1]" : "text-[#fff9f1]/75 hover:text-[#fff9f1]",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
@@ -506,7 +506,7 @@ function PinkProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-white/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#fff9f1]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}

@@ -45,7 +45,7 @@ export default function SEOPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -65,7 +65,7 @@ export default function SEOPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -116,7 +116,7 @@ export default function SEOPage() {
       </section>
 
       {/* SEO Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -146,7 +146,7 @@ export default function SEOPage() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Hypertech Verse is a leading organic SEO agency in the USA that boosts brand online visibility, leading to enduring business growth. It operates as a reliable and affordable SEO services provider, delivering enterprise SEO solutions. Our agency avoids obsolete guessing methods using research-based data strategies and established methodologies for every project. Team members use detailed evaluations of business facts to generate specialized approaches that produce quantitative outcomes.
                 </p>
 
@@ -154,7 +154,7 @@ export default function SEOPage() {
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
+                    className="inline-block bg-[#EA7BBF] text-[#fff9f1] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -184,7 +184,7 @@ export default function SEOPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of SEO Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -228,7 +228,7 @@ export default function SEOPage() {
       </section>
 
       {/* Yellow Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid yellow base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
@@ -282,7 +282,7 @@ export default function SEOPage() {
       </section>
 
       {/* ===== Unfair Advantages section (place before <TestimonialsMasonry />) ===== */}
-      <section className="relative bg-[#1d1d1d] text-white py-12 sm:py-16 md:py-20">
+      <section className="relative bg-[#1d1d1d] text-[#fff9f1] py-12 sm:py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           {/* Title */}
           <h2
@@ -307,7 +307,7 @@ export default function SEOPage() {
                 Multi-Platform SEO Optimization
               </h3>
               <p
-                className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/80 max-w-md leading-relaxed"
+                className="mt-2 sm:mt-3 text-xs sm:text-sm text-[#fff9f1]/80 max-w-md leading-relaxed"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 We combine technical SEO, on-page refinement, content strategy, and
@@ -360,7 +360,7 @@ export default function SEOPage() {
                 key={label}
                 className="flex items-center gap-2 sm:gap-3 rounded-full bg-[#FFD350] px-3 py-2 sm:px-4 sm:py-3 text-[#1d1d1d]"
               >
-                <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold text-xs sm:text-sm">
+                <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] font-bold text-xs sm:text-sm">
                   {idx + 1}
                 </span>
                 <span className="font-bold text-xs sm:text-sm uppercase leading-tight" style={{ fontFamily: "Recursive, sans-serif" }}>
@@ -373,14 +373,14 @@ export default function SEOPage() {
           {/* Sub-heading + CTA */}
           <div className="text-center mt-6 sm:mt-8">
             <p
-              className="text-sm sm:text-base md:text-[16px] lg:text-[18px] tracking-wide uppercase text-white/70 px-2"
+              className="text-sm sm:text-base md:text-[16px] lg:text-[18px] tracking-wide uppercase text-[#fff9f1]/70 px-2"
               style={{ fontFamily: "Recursive, sans-serif", fontWeight: "bold" }}
             >
               Our Seamless 6-step process for efficient and effective Results.
             </p>
             <Link
               href="/contact"
-              className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 font-extrabold text-sm sm:text-base text-white rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+              className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 font-extrabold text-sm sm:text-base text-[#fff9f1] rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               GET STARTED
@@ -408,7 +408,7 @@ export default function SEOPage() {
                 Why SEO is important for your business?
               </h3>
               <p
-                className="mt-2 sm:mt-3 text-xs sm:text-sm text-white/80 leading-relaxed"
+                className="mt-2 sm:mt-3 text-xs sm:text-sm text-[#fff9f1]/80 leading-relaxed"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 SEO compounds. It drives qualified traffic, reduces CAC, and boosts

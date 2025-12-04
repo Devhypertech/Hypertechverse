@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 
 export default function Hero() {
     return (
-        <section className="relative overflow-x-hidden bg-[#1d1d1d] text-white w-full pt-16 md:pt-0">
+        <section className="relative overflow-x-hidden bg-[#1d1d1d] text-[#fff9f1] w-full pt-16 md:pt-0">
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4 pb-20 w-full box-border">
                 <div className="grid items-center gap-6 lg:gap-10 lg:grid-cols-2 w-full">
                     {/* Left copy */}
@@ -27,7 +27,7 @@ export default function Hero() {
                                 Transforming Ideas Into{" "}
                                 <span className="text-[#EA7BBF]">Digital Success</span>
                             </h1>
-                            <p className="mt-4 text-base sm:text-lg leading-relaxed text-white/90" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif" }}>
+                            <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif" }}>
                                 We bring one-stop solution to all your queries under one platform, serving as your
                                 sole digital marketing agency. As a cohesive team, we strengthen your brand with
                                 innovation at its heart.
@@ -49,7 +49,7 @@ export default function Hero() {
                                 </Link>
                                 <Link
                                     href="/contact"
-                                    className="rounded-lg border border-white px-8 py-4 font-semibold text-white hover:bg-[#fff9f1] hover:text-[#1d1d1d] transition text-center"
+                                    className="rounded-lg border border-white px-8 py-4 font-semibold text-[#fff9f1] hover:bg-[#fff9f1] hover:text-[#1d1d1d] transition text-center"
                                 >
                                     <span style={{
                                         fontSize: "24px",
@@ -62,7 +62,7 @@ export default function Hero() {
                                 </Link>
                             </div>
 
-                            <p className="mt-4 text-xs sm:text-sm text-white/60 text-center sm:text-left" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                            <p className="mt-4 text-xs sm:text-sm text-[#fff9f1]/60 text-center sm:text-left" style={{ fontFamily: 'Poppins, sans-serif' }}>
                                 SEO · Branding · Web/App · Social · Content · Analytics
                             </p>
                         </div>

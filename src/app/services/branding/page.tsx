@@ -45,7 +45,7 @@ export default function BrandingPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -66,7 +66,7 @@ export default function BrandingPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -102,7 +102,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Branding Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -132,7 +132,7 @@ export default function BrandingPage() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   What makes us the best branding company? Hypertech Verse transforms your brand vision into powerful identities that connect with your audience. Our expert designers create compelling brand experiences across all platforms, delivering cohesive solutions that grow with your business. From strategy to execution, we build brands that drive engagement and deliver results.
                 </p>
 
@@ -140,7 +140,7 @@ export default function BrandingPage() {
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
+                    className="inline-block bg-[#EA7BBF] text-[#fff9f1] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -170,7 +170,7 @@ export default function BrandingPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Branding Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -214,7 +214,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Yellow Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid yellow base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
@@ -270,7 +270,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Elite Branding Agency Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Section: Elite Branding Agency */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
@@ -284,7 +284,7 @@ export default function BrandingPage() {
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Create a powerful brand identity that resonates with your audience. We specialize in crafting
                   memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.
                 </p>
@@ -293,7 +293,7 @@ export default function BrandingPage() {
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors transform -rotate-3"
+                    className="inline-block bg-[#EA7BBF] text-[#fff9f1] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors transform -rotate-3"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     GET STARTED
@@ -543,7 +543,7 @@ function BrandingSuccessCarousel() {
             onClick={() => go(idx)}
             className={[
               "h-2.5 w-2.5 rounded-full transition",
-              idx === i ? "bg-[#EA7BBF]" : "bg-white/30 hover:bg-white/60",
+              idx === i ? "bg-[#EA7BBF]" : "bg-[#fff9f1]/30 hover:bg-[#fff9f1]/60",
             ].join(" ")}
           />
         ))}
@@ -577,7 +577,7 @@ function BrandingSuccessCarousel() {
         <button
           aria-label="Previous"
           onClick={() => go(i - 1)}
-          className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-md hover:scale-105 transition"
+          className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-md hover:scale-105 transition"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" className="sm:w-5 sm:h-5 md:w-[26px] md:h-[26px]">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -586,7 +586,7 @@ function BrandingSuccessCarousel() {
         <button
           aria-label="Next"
           onClick={() => go(i + 1)}
-          className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-md hover:scale-105 transition"
+          className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-md hover:scale-105 transition"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" className="sm:w-5 sm:h-5 md:w-[26px] md:h-[26px]">
             <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -599,11 +599,11 @@ function BrandingSuccessCarousel() {
             className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold leading-tight uppercase tracking-wide px-2"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
+            <span className="text-[#fff9f1]">{slides[i].headlineLeft}&nbsp;</span>
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[10px] sm:text-[11px] md:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight capitalize px-2"
+            className="mt-2 text-[10px] sm:text-[11px] md:text-[12px] text-[#fff9f1]/80 max-w-3xl mx-auto leading-tight capitalize px-2"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}
@@ -611,7 +611,7 @@ function BrandingSuccessCarousel() {
 
           <Link
             href={slides[i].cta.href}
-            className="mt-3 sm:mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm md:text-base text-white font-extrabold rounded-md shadow-[0_4px_0_rgba(0,0,0,.25)] sm:shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+            className="mt-3 sm:mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm md:text-base text-[#fff9f1] font-extrabold rounded-md shadow-[0_4px_0_rgba(0,0,0,.25)] sm:shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].cta.label}

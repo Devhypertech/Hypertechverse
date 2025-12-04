@@ -164,26 +164,26 @@ export default function SmartSolutions() {
                                 <ScrollAnimation key={i} animation="fadeInScale" delay={600 + (i * 100)}>
                                     <article className="snap-center shrink-0 w-[85vw] sm:w-[340px] md:w-[360px] bg-[#E6A816] rounded-2xl p-6 border-2 border-[#1D1D1D] shadow-[0_6px_0_#1D1D1D] flex flex-col h-full">
                                         {/* tablet tag */}
-                                        <div className="inline-flex items-center justify-center rounded-full bg-[#1D1D1D] text-white w-48 py-2 text-sm font-extrabold">
+                                        <div className="inline-flex items-center justify-center rounded-full bg-[#1D1D1D] text-[#fff9f1] w-48 py-2 text-sm font-extrabold">
                                             {c.tag}
                                         </div>
 
                                         {/* title */}
-                                        <div className="mt-6 text-white font-extrabold tracking-wide">{c.title}</div>
+                                        <div className="mt-6 text-[#fff9f1] font-extrabold tracking-wide">{c.title}</div>
 
                                         {/* description */}
-                                        <p className="mt-2 text-white/90 leading-snug flex-grow">{c.desc}</p>
+                                        <p className="mt-2 text-[#fff9f1]/90 leading-snug flex-grow">{c.desc}</p>
 
                                         {/* price */}
                                         <div className="mt-6">
                                             <div className="text-[#fff] font-extrabold text-2xl">Starting from</div>
-                                            <div className="text-white text-5xl md:text-6xl font-extrabold tracking-tight">
+                                            <div className="text-[#fff9f1] text-5xl md:text-6xl font-extrabold tracking-tight">
                                                 {c.price}
                                             </div>
                                         </div>
 
                                         {/* CTA - pushed to bottom */}
-                                        <Link href="/pricing" className="mt-6 w-full rounded-full bg-[#1D1D1D] text-white py-3 text-lg font-extrabold hover:brightness-110 text-center block">
+                                        <Link href="/pricing" className="mt-6 w-full rounded-full bg-[#1D1D1D] text-[#fff9f1] py-3 text-lg font-extrabold hover:brightness-110 text-center block">
                                             See More
                                         </Link>
                                     </article>

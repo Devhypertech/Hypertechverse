@@ -9,7 +9,7 @@ export default function AnimationPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section — Pink background with white text (same as CSD) */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -97,7 +97,7 @@ export default function AnimationPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             <ScrollAnimation animation="fadeInLeft" delay={150}>
@@ -120,7 +120,7 @@ export default function AnimationPage() {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Transforming ideas into visually captivating experiences.
                 </h3>
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   We specialize in turning people's imagination into visual reality. We focus on serving brands by providing high-quality animated video production services to effectively communicate, engage their audiences, and share compelling stories. Be it a startup or a mature enterprise, our dedicated video animation services are well-designed to boost your brand credibility and charm your viewers.
                 </p>
                 <div className="pt-2 sm:pt-4">
@@ -149,7 +149,7 @@ export default function AnimationPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Animation Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -172,16 +172,16 @@ export default function AnimationPage() {
       </section>
 
       {/* Process Tabs */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image src="/services/logo/bg.png" alt="" fill priority className="absolute inset-0 -z-10 object-cover object-center pointer-events-none select-none" />
 
         {/* <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white" style={{ fontFamily: 'Recursive, sans-serif' }}>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#fff9f1]" style={{ fontFamily: 'Recursive, sans-serif' }}>
             The Signature Flow that Brings<br className="hidden sm:block" />
             Your Animation to Life
           </h2>
-          <p className="mt-3 text-sm sm:text-base/7 text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+          <p className="mt-3 text-sm sm:text-base/7 text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
             From concept to final render, our process keeps quality high and timelines predictable.
           </p>
         </div> */}
@@ -201,7 +201,7 @@ export default function AnimationPage() {
       </section>
 
       {/* ================== Animation Value + 6-Step Process (matches reference) ================== */}
-      <section className="bg-[#1d1d1d] text-white py-14 sm:py-16">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-14 sm:py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
           {/* Top: Why animation matters */}
@@ -213,14 +213,14 @@ export default function AnimationPage() {
               How Animation Can Make a Difference?
             </h2>
             <p
-              className="mt-3 text-[11px] sm:text-xs leading-relaxed text-white/80 max-w-3xl mx-auto"
+              className="mt-3 text-[11px] sm:text-xs leading-relaxed text-[#fff9f1]/80 max-w-3xl mx-auto"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               Animation can revolutionize our methods of interaction, where an attractive visual can create a lasting impact on the viewer, making it more comprehensive. Through animation, every subject becomes more accessible, transforming advanced material into visible and memorable content that appeals to viewers.
 
             </p>
             <p
-              className="mt-2 text-[11px] sm:text-xs leading-relaxed text-white/80 max-w-3xl mx-auto"
+              className="mt-2 text-[11px] sm:text-xs leading-relaxed text-[#fff9f1]/80 max-w-3xl mx-auto"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               Animation allows people to engage passionately with its content. The medium unites linguistic variations and cultural traits, so the content becomes accessible to everybody and sticks in their minds. The medium goes beyond narration to present visual stories that use movement combined with vibrant hues and creativity
@@ -271,7 +271,7 @@ export default function AnimationPage() {
                 Custom Animation Solutions
               </h4>
               <p
-                className="mt-2 text-[12px] sm:text-sm leading-relaxed text-white/80"
+                className="mt-2 text-[12px] sm:text-sm leading-relaxed text-[#fff9f1]/80"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Some of our animations are as different as every brand. We don’t believe in one-size-fits-all. What you want to say and who you aim to tell it to guide our process in building the pieces of your brand and the pre-designed frame of your website is just one example of that uniqueness. We always deliver results that match the vision perfectly, whether it is 2D or 3D animation services or a blend of both.
@@ -319,7 +319,7 @@ export default function AnimationPage() {
                 key={t}
                 className="flex items-center gap-3 rounded-full bg-[#FFD350] px-4 py-3 text-[#1d1d1d]"
               >
-                <span className="grid h-8 w-8 place-items-center bg-[#EA7BBF] rounded-full text-white font-bold">
+                <span className="grid h-8 w-8 place-items-center bg-[#EA7BBF] rounded-full text-[#fff9f1] font-bold">
                   {idx + 1}
                 </span>
                 <span
@@ -341,7 +341,7 @@ export default function AnimationPage() {
               24/7 Support & Collaboration
             </h4>
             <p
-              className="text-[11px] sm:text-xs text-white/70 max-w-3xl mx-auto"
+              className="text-[11px] sm:text-xs text-[#fff9f1]/70 max-w-3xl mx-auto"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               Our creative team works with you from the first brainstorming session until the final delivery. Every project is treated as a partnership, and you are heard, supported, and 100% satisfied with the final product.

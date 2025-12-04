@@ -53,7 +53,7 @@ export default function PortfolioPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -97,7 +97,7 @@ export default function PortfolioPage() {
               onClick={() => setActiveTab("web")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "web"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               WEB DESIGNS
@@ -106,7 +106,7 @@ export default function PortfolioPage() {
               onClick={() => setActiveTab("logo")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "logo"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               LOGO DESIGNS
@@ -115,7 +115,7 @@ export default function PortfolioPage() {
               onClick={() => setActiveTab("branding")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "branding"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               BRANDING
@@ -124,7 +124,7 @@ export default function PortfolioPage() {
               onClick={() => setActiveTab("video")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "video"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               VIDEO ANIMATION
@@ -133,7 +133,7 @@ export default function PortfolioPage() {
               onClick={() => setActiveTab("mobile")}
               className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "mobile"
                 ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
-                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
                 }`}
             >
               MOBILE APPLICATIONS
@@ -143,7 +143,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* ====== Case Studies ====== */}
-      <section className="bg-[#1d1d1d] text-white py-12 sm:py-16 md:py-20">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-12 sm:py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <header className="mb-6 sm:mb-8 md:mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div>
@@ -154,7 +154,7 @@ export default function PortfolioPage() {
                 Recent Case Studies
               </h2>
               <p
-                className="mt-1 text-xs sm:text-sm text-white/70"
+                className="mt-1 text-xs sm:text-sm text-[#fff9f1]/70"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 A curated selection of product, brand, and commerce builds.
@@ -162,10 +162,10 @@ export default function PortfolioPage() {
             </div>
             {/* optional filter stub (hide on mobile) */}
             {/* <div className="hidden md:flex items-center gap-2 text-sm">
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">All</button>
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Web</button>
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">App</button>
-        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-white/5 hover:bg-white/10">Brand</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">All</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">Web</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">App</button>
+        <button className="rounded-full border border-white/15 px-3 py-1.5 bg-[#fff9f1]/5 hover:bg-[#fff9f1]/10">Brand</button>
       </div> */}
           </header>
 
@@ -187,7 +187,7 @@ export default function PortfolioPage() {
                       priority
                     />
                     {s.badge && (
-                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-[#1d1d1d] text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
+                      <span className="absolute right-2 top-2 rounded-full bg-[#fff9f1]/90 text-[#1d1d1d] text-[10px] sm:text-[11px] font-bold px-1.5 sm:px-2 py-0.5">
                         {s.badge}
                       </span>
                     )}
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
                     {s.tags.map((t) => (
                       <span
                         key={t}
-                        className="rounded-full bg-white/5 text-white/70 text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 sm:py-1 border border-white/10"
+                        className="rounded-full bg-[#fff9f1]/5 text-[#fff9f1]/70 text-[10px] sm:text-[11px] px-1.5 sm:px-2 py-0.5 sm:py-1 border border-white/10"
                       >
                         {t}
                       </span>
@@ -218,7 +218,7 @@ export default function PortfolioPage() {
                   </h3>
 
                   <p
-                    className="mt-1 text-[11px] sm:text-[12px] leading-snug text-white/70 line-clamp-3"
+                    className="mt-1 text-[11px] sm:text-[12px] leading-snug text-[#fff9f1]/70 line-clamp-3"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {s.blurb}
@@ -227,12 +227,12 @@ export default function PortfolioPage() {
                   <div className="mt-2 sm:mt-3 flex items-center justify-between">
                     <Link
                       href={s.href}
-                      className="text-[11px] sm:text-[12px] font-semibold text-white/90 hover:text-white transition-colors"
+                      className="text-[11px] sm:text-[12px] font-semibold text-[#fff9f1]/90 hover:text-[#fff9f1] transition-colors"
                     >
                       See full case →
                     </Link>
                     {s.meta && (
-                      <span className="text-[10px] sm:text-[11px] text-white/50">{s.meta}</span>
+                      <span className="text-[10px] sm:text-[11px] text-[#fff9f1]/50">{s.meta}</span>
                     )}
                   </div>
                 </div>

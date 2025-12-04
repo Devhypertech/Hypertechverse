@@ -78,7 +78,7 @@ export default function BrandPackages() {
 
                 {/* Animated background elements */}
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute top-10 left-10 w-20 h-20 bg-white rounded-full animate-float"></div>
+                    <div className="absolute top-10 left-10 w-20 h-20 bg-[#fff9f1] rounded-full animate-float"></div>
                     <div className="absolute top-20 right-20 w-16 h-16 bg-yellow-300 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
                     <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-pink-300 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
                     <div className="absolute bottom-10 right-1/3 w-14 h-14 bg-orange-300 rounded-full animate-float" style={{ animationDelay: '0.5s' }}></div>
@@ -87,11 +87,11 @@ export default function BrandPackages() {
                 <div className="mx-auto max-w-6xl px-2 sm:px-4 relative z-10">
                     {/* Header */}
                     <div className="mb-8 sm:mb-12 text-center">
-                        <span className="inline-block text-[#EA7BBF] rounded-full bg-white px-4 sm:px-6 py-1 text-sm sm:text-base md:text-lg font-bold  animate-fade-in-up hover-scale">
+                        <span className="inline-block text-[#EA7BBF] rounded-full bg-[#fff9f1] px-4 sm:px-6 py-1 text-sm sm:text-base md:text-lg font-bold  animate-fade-in-up hover-scale">
                             How we do things
                         </span>
-                        <h2 className="mt-3 sm:mt-4 text-3xl sm:text-5xl md:text-6xl lg:text-7xl  tracking-tighter leading-tight font-bold text-white font-recent-grotesk animate-fade-in-up stagger-1 text-shimmer" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>Brand Packages</h2>
-                        <p className="mt-2 text-white/90 text-lg sm:text-xl md:text-2xl  animate-fade-in-up stagger-2" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>It&apos;s time for some brand-spanking</p>
+                        <h2 className="mt-3 sm:mt-4 text-3xl sm:text-5xl md:text-6xl lg:text-7xl  tracking-tighter leading-tight font-bold text-[#fff9f1] font-recent-grotesk animate-fade-in-up stagger-1 text-shimmer" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>Brand Packages</h2>
+                        <p className="mt-2 text-[#fff9f1]/90 text-lg sm:text-xl md:text-2xl  animate-fade-in-up stagger-2" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>It&apos;s time for some brand-spanking</p>
                     </div>
 
                     {/* Cards */}
@@ -99,7 +99,7 @@ export default function BrandPackages() {
                         {packages.map((pkg, i) => (
                             <article
                                 key={i}
-                                className={`relative overflow-visible rounded-xl border border-black bg-white shadow-[0_6px_0_rgba(0,0,0,0.3)] hover-lift hover-glow animate-fade-in-up stagger-${i + 3} group flex flex-col h-full`}
+                                className={`relative overflow-visible rounded-xl border border-black bg-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.3)] hover-lift hover-glow animate-fade-in-up stagger-${i + 3} group flex flex-col h-full`}
                             >
                                 {/* Artwork + starburst badge */}
                                 <div className="relative flex h-48 w-full items-center justify-center p-6 group-hover:animate-float overflow-visible">
@@ -140,8 +140,8 @@ export default function BrandPackages() {
                                 </ul>
 
                                 {/* Footer - pushed to bottom */}
-                                <div className="border-t border-black/10 bg-white p-4 mt-auto">
-                                    <Link href="/contact" className="block w-full rounded-md bg-white border border-black py-3 text-sm font-semibold text-[#1d1d1d] transition-all duration-300 hover:bg-[#FFD350] hover:scale-105 hover:shadow-lg hover:border-black hover:text-[#1d1d1d] hover-shake text-center">
+                                <div className="border-t border-black/10 bg-[#fff9f1] p-4 mt-auto">
+                                    <Link href="/contact" className="block w-full rounded-md bg-[#fff9f1] border border-black py-3 text-sm font-semibold text-[#1d1d1d] transition-all duration-300 hover:bg-[#FFD350] hover:scale-105 hover:shadow-lg hover:border-black hover:text-[#1d1d1d] hover-shake text-center">
                                         Buy Now
                                     </Link>
                                 </div>
@@ -151,7 +151,7 @@ export default function BrandPackages() {
 
                     {/* Custom Packages */}
                     <div className="mt-10">
-                        <Link href="/pricing" className="flex items-center rounded-lg bg-white px-4 py-3 text-sm font-semibold text-[#1d1d1d] shadow-[0_5px_0_rgba(0,0,0,0.25)] hover:bg-[#FFD350] transition-colors duration-300 cursor-pointer">
+                        <Link href="/pricing" className="flex items-center rounded-lg bg-[#fff9f1] px-4 py-3 text-sm font-semibold text-[#1d1d1d] shadow-[0_5px_0_rgba(0,0,0,0.25)] hover:bg-[#FFD350] transition-colors duration-300 cursor-pointer">
                             <span>Custom Packages</span>
                             <span className="ml-auto grid h-7 w-7 place-items-center rounded-full border border-black/20">
                                 −
@@ -161,10 +161,14 @@ export default function BrandPackages() {
 
                     {/* Bottom CTA */}
                     <div className="mt-8 text-center">
-                        <Link href="/contact" className="inline-block rounded-lg bg-[#1d1d1d] px-8 py-3 text-sm font-semibold text-white transition hover:brightness-110">
-                            Get started
+                        <Link href="/contact" className="inline-block rounded-lg bg-[#1d1d1d] px-8 py-3 text-sm font-semibold text-[#fff9f1] transition hover:scale-105 hover:bg-[#FFD350] hover:text-[#1d1d1d]">
+                            <span style={{
+                                fontSize: "24px",
+                                fontWeight: "bold",
+
+                            }}> Get started</span>
                         </Link>
-                        <p className="mt-4 text-sm font-semibold text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }} >
+                        <p className="mt-4 text-sm font-semibold text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }} >
                             Not seeing what you need? No problem! Reach out and I&apos;ll send you a free quote for your own custom project.
                         </p>
                     </div>

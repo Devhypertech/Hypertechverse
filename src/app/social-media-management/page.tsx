@@ -10,7 +10,7 @@ export default function SocialMediaManagementPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       {/* Hero Section — Pink background with white text */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         {/* Right half image (fills exactly 50% of the viewport width) */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -101,7 +101,7 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Social Media Management Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -131,7 +131,7 @@ export default function SocialMediaManagementPage() {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   Naturally, a brand's growth, community engagement, and audience recognition hinge on the existence and application of a solid social media strategy. A solid social media marketing agency serving small companies takes competitor evaluation into account, buyer behaviors, and predictions on trends. Since so much content is produced, content planning decides what, when, and how to post and build long-term relationships with your fans.
                 </p>
 
@@ -169,7 +169,7 @@ export default function SocialMediaManagementPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Social Media Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -213,7 +213,7 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Pink Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid yellow base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
@@ -270,7 +270,7 @@ export default function SocialMediaManagementPage() {
 
 
       {/* Benefits of using Social Media Services */}
-      <section className="relative bg-[#1d1d1d] text-white py-16 sm:py-20">
+      <section className="relative bg-[#1d1d1d] text-[#fff9f1] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           {/* Title */}
           <h2
@@ -291,7 +291,7 @@ export default function SocialMediaManagementPage() {
                 Targeted Audience Reach
               </h3>
               <p
-                className="mt-3 text-sm text-white/80 max-w-md"
+                className="mt-3 text-sm text-[#fff9f1]/80 max-w-md"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Get in front of people who matter with hyper-focused content, smart
@@ -368,7 +368,7 @@ export default function SocialMediaManagementPage() {
                 Reach Your Target Audience
               </h3>
               <p
-                className="mt-3 text-sm text-white/80"
+                className="mt-3 text-sm text-[#fff9f1]/80"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Pinpoint the right demographics, interests, and behaviors. We use
@@ -388,7 +388,7 @@ export default function SocialMediaManagementPage() {
                 Do you really need Social Media &amp; Digital Marketing
               </h3>
               <p
-                className="mt-3 text-sm text-white/80"
+                className="mt-3 text-sm text-[#fff9f1]/80"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Absolutely. From brand trust to sales, social is the fastest path to
@@ -631,7 +631,7 @@ function SocialMediaSuccessCarousel() {
             onClick={() => go(idx)}
             className={[
               "h-2.5 w-2.5 rounded-full transition",
-              idx === i ? "bg-[#FFD350]" : "bg-white/30 hover:bg-white/60",
+              idx === i ? "bg-[#FFD350]" : "bg-[#fff9f1]/30 hover:bg-[#fff9f1]/60",
             ].join(" ")}
           />
         ))}
@@ -687,11 +687,11 @@ function SocialMediaSuccessCarousel() {
             className="text-[18px] sm:text-[20px] md:text-[22px] font-extrabold uppercase tracking-wide"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
+            <span className="text-[#fff9f1]">{slides[i].headlineLeft}&nbsp;</span>
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight"
+            className="mt-2 text-[11px] sm:text-[12px] text-[#fff9f1]/80 max-w-3xl mx-auto leading-tight"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}

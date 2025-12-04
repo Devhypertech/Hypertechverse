@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 
 export default function ServiceHero() {
     return (
-        <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+        <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
             <div className="relative mx-auto max-w-7xl w-full px-14 sm:px-6 lg:px-8">
                 <div className="grid items-center justify-center gap-10 pt-20 pb-4 lg:grid-cols-2 lg:pt-40 lg:pb-8">
 
@@ -49,7 +49,7 @@ export default function ServiceHero() {
 
                             {/* description */}
                             <p
-                                className="mt-6 max-w-xl text-sm sm:text-[15px] leading-relaxed font-medium text-white/95"
+                                className="mt-6 max-w-xl text-sm sm:text-[15px] leading-relaxed font-medium text-[#fff9f1]/95"
                                 style={{ fontFamily: "Poppins, sans-serif" }}
                             >
                                 HYPERTECH VERSE OFFERS COMPREHENSIVE DIGITAL SOLUTIONS FOR
