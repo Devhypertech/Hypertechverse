@@ -10,38 +10,43 @@ export default function OurPartners() {
   ];
 
   return (
-    <section className="bg-[#1d1d1d] text-[#fff9f1] pb-16 md:pb-20">
+    <section className="bg-[#1d1d1d] text-[#fff9f1] py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollAnimation animation="fadeInUp" delay={200}>
-          <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-12">
-            {/* Heading - Left Side */}
-            <div className="flex-shrink-0">
-              <h2
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-[#fff9f1]"
-                style={{ fontFamily: "Recursive, sans-serif" }}
-              >
-                <span>Our</span> <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl">Partners</span>
-              </h2>
-            </div>
+          {/* Section Header */}
+          <div className="text-center mb-12 md:mb-16">
+            <span className="inline-block text-[#EA7BBF] text-sm md:text-base font-semibold tracking-wider uppercase mb-3">
+              Trusted Collaborations
+            </span>
+            <h2
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase text-[#fff9f1]"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              Our Partners
+            </h2>
+            <div className="w-24 h-1 bg-[#EA7BBF] mx-auto mt-6 rounded-full"></div>
+          </div>
 
-            {/* Partner Logos - Right Side */}
-            <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 md:gap-8 lg:gap-12 flex-grow">
-              {partners.map((partner, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-300 min-h-[60px]"
-                >
+          {/* Partner Logos Grid */}
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
+            {partners.map((partner, index) => (
+              <ScrollAnimation
+                key={index}
+                animation="fadeInUp"
+                delay={300 + index * 150}
+              >
+                <div className="group relative px-6 py-4 md:px-8 md:py-6 rounded-xl bg-white/5 border border-white/10 hover:border-[#EA7BBF]/50 hover:bg-white/10 transition-all duration-500">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    width={200}
-                    height={80}
-                    className="h-auto max-h-24 w-auto object-contain"
+                    width={180}
+                    height={70}
+                    className="h-12 md:h-16 w-auto object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                     unoptimized
                   />
                 </div>
-              ))}
-            </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </ScrollAnimation>
       </div>

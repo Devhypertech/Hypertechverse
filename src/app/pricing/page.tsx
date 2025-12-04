@@ -1,821 +1,72 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import ScrollAnimation from "../../../src/components/ScrollAnimation";
+
+import {
+  websitePackages,
+  ecommercePackages,
+  brandingPackages,
+  videoAnimationPackages,
+  seoPackages,
+  smmPackages,
+  comboPackages
+} from "../../../data/packages";
 
 export default function PricingPage() {
   const [activeTab, setActiveTab] = useState("website");
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const isPausedRef = useRef(false);
 
-  // Website packages data
-  const websitePackages = [
-    {
-      title: "Startup Website Package",
-      price: "$249.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "5 Stock Photos",
-        "5 Page Website",
-        "3 Banner Design",
-        "1 jQuery Slider Banner",
-        "FREE Google Friendly Sitemap",
-        "Complete W3C Certified HTML",
-        "48 to 72 hours TAT",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-        "Mobile Responsive will be Additional $99*",
-        "CMS will be Additional $149*",
-      ],
-    },
-    {
-      title: "Professional Website Package",
-      price: "$599.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "10 Unique Pages Website",
-        "CMS / Admin Panel Support",
-        "8 Stock images",
-        "5 Banner Designs",
-        "1 jQuery Slider Banner",
-        "FREE Google Friendly Sitemap",
-        "Complete W3C Certified HTML",
-        "48 to 72 hours TAT",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "Complete Deployment",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-        "Mobile Responsive will be Additional $99*",
-      ],
-    },
-    {
-      title: "Elite Website Package",
-      price: "$999.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "Upto 15 Unique Pages Website",
-        "Conceptual and Dynamic Website",
-        "Mobile Responsive",
-        "Online Reservation/Appointment Tool (Optional)",
-        "Online Payment Integration (Optional)",
-        "Custom Forms",
-        "Lead Capturing Forms (Optional)",
-        "Striking Hover Effects",
-        "Newsletter Subscription (Optional)",
-        "Newsfeed Integration",
-        "Social Media Integration",
-        "Search Engine Submission",
-        "5 Stock Photos",
-        "3 Unique Banner Design",
-        "1 jQuery Slider Banner",
-        "Complete W3C Certified HTML",
-        "48 to 72 hours TAT",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "Complete Deployment",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Silver Website Package",
-      price: "$1599.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "15 to 20 Pages Website",
-        "Custom Made, Interactive, Dynamic & High End Design",
-        "Custom WP (or) Custom PHP Development",
-        "1 jQuery Slider Banner",
-        "Up to 10 Custom Made Banner Designs",
-        "10 Stock Images",
-        "Unlimited Revisions",
-        "Special Hoover Effects",
-        "Content Management System (CMS)",
-        "Online Appointment/Scheduling/Online Ordering Integration (Optional)",
-        "Online Payment Integration (Optional)",
-        "Multi Lingual (Optional)",
-        "Custom Dynamic Forms (Optional)",
-        "Signup Area (For Newsletters, Offers etc.)",
-        "Search Bar",
-        "Live Feeds of Social Networks integration (Optional)",
-        "Mobile Responsive",
-        "FREE 5 Years Domain Name",
-        "Free Google Friendly Sitemap",
-        "Search Engine Submission",
-        "Complete W3C Certified HTML",
-        "Industry Specified Team of Expert Designers and Developers",
-        "Complete Deployment",
-        "Dedicated Accounts Manager",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-  ];
+  // Auto-scroll functionality for desktop
+  useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
 
-  // E-Commerce packages data
-  const ecommercePackages = [
-    {
-      title: "Beginner E-Commerce Package",
-      price: "$999.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "Upto 15 Unique Pages Website",
-        "Conceptual and Dynamic Website",
-        "Content Management System (CMS)",
-        "Mobile Responsive",
-        "Easy Product Search",
-        "Product Reviews",
-        "Up To 100 Products",
-        "Up To 7 Categories",
-        "Full Shopping Cart Integration",
-        "Payment Module Integration",
-        "Sales & Inventory Management",
-        "Jquery Slider",
-        "Free Google Friendly Sitemap",
-        "FREE 1 Years Hosting",
-        "Custom Email Addresses",
-        "Complete W3C Certified HTML",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "Complete Deployment",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee",
-      ],
-    },
-    {
-      title: "Corporate E-Commerce",
-      price: "$1799.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "Unlimited Unique Pages Website",
-        "Conceptual and Dynamic Website",
-        "Content Management System (CMS)",
-        "Mobile Responsive",
-        "Easy Product Search",
-        "Product Reviews",
-        "Unlimited Products",
-        "Unlimited Categories",
-        "Full Shopping Cart Integration",
-        "Payment Module Integration",
-        "Sales & Inventory Management",
-        "Jquery Slider",
-        "Free Google Friendly Sitemap",
-        "FREE 3 Years Hosting",
-        "Custom Email Addresses",
-        "Complete W3C Certified HTML",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "Instagram Page Design",
-        "Complete Deployment",
-        "Dedicated Accounts Manager",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee",
-        "+$500 for 24 hours rush delivery",
-      ],
-    },
-    {
-      title: "Elite E-Commerce Package",
-      price: "$3694.00",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      features: [
-        "UNLIMITED Logo Design Concepts",
-        "By 6 Award Winning Designers",
-        "Icon Design",
-        "UNLIMITED Revisions",
-        "Print Media",
-        "Stationary Design (BusinessCard,Letterhead & Envelope)",
-        "Invoice Design, Email Signature",
-        "Bi-Fold Brochure (OR) 2 Sided Flyer Design",
-        "Product Catalog Design",
-        "Sign age Design (OR) Label Design",
-        "T-Shirt Design (OR) Car Wrap Design",
-        "Website",
-        "E-Commerce Store Design",
-        "Product Detail Page Design",
-        "Unique Banner Slider",
-        "Featured Products Showcase",
-        "Full Shopping Cart Integration",
-        "Unlimited Products",
-        "Unlimited Categories",
-        "Product Rating & Reviews",
-        "Easy Product Search",
-        "Payment Gateway Integration",
-        "Multi-currency Support",
-        "Content Management System",
-        "Cutomer Log-in Area",
-        "Mobile Responsive",
-        "Social Media Plugins Integration",
-        "Tell a Friend Feature",
-        "Social Media Pages",
-        "Facebook , Twitter, YouTube, Google+ & Pinterest Page Designs",
-        "Value Added Services",
-        "Dedicated Account Manager",
-        "Unlimited Revisions",
-        "All Final File Formats",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Automated/Interactive E-Commerce Package",
-      price: "$9999.99",
-      description: "Suitable for Potential super-startups and brand revamps for companies",
-      isWide: true, // Flag to make this one span 3 columns
-      features: [
-        "Unlimited Page Website",
-        "Custom Content Management System (CMS)",
-        "Unique Pages and UI Design",
-        "Complete Custom Development",
-        "Process Automation Tools",
-        "Newsfeed Integration",
-        "Social Media Plugins Integration",
-        "Upto 40 Stock images",
-        "10 Unique Banner Designs",
-        "JQuery Slider",
-        "Search Engine Submission",
-        "Free Google Friendly Sitemap",
-        "FREE 5 Years Hosting",
-        "Custom Email Addresses",
-        "Social Media Page Designs (Facebook, Twitter, Instagram)",
-        "Complete W3C Certified HTML",
-        "Complete Deployment",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "Money Back Guarantee",
-        "Automated Inventory/Shipping/Supplier Module:",
-        "Manage thousands to millions of inventory with ease and check stock levels in real-time. Receive low inventory notifications and generate purchase orders to replenish your stock.",
-        "Suppliers Integration (API NEEDED)",
-        "Shipper Integration (API NEEDED)",
-        "Order management",
-        "LOT numbers and expire date tracking",
-        "Transfer stock between warehouses (If Warehouse - API NEEDED)",
-        "Receive stock into a specific warehouse (If Warehouse - API NEEDED)",
-        "Fulfill orders from a particular warehouse (If Warehouse - API NEEDED)",
-        "Stock Management",
-        "Actionable Insights",
-        "Real- Time Visibility",
-        "Inventory Opportunities",
-        "Advanced Features: (API Needed For Suppliers/Warehouse)",
-        "Speak to suppliers during trivial conversations.",
-        "Set and send actions to suppliers regarding governance and compliance materials. Place purchasing requests.",
-        "Research and answer internal questions regarding procurement functionalities or a supplier/supplier set.",
-        "Receiving/filing/documentation of invoices and payments/order requests",
-        "Machine Learning (ML) for Supply Chain Planning (SCP)",
-        "Machine Learning for Warehouse Management",
-        "Natural Language Processing (NLP) for Data Cleansing and Building Data Robustness",
-        "Automated Invoices & Estimates",
-        "Create beautiful, professional invoices & estimates in just a few seconds and then instantly email them as PDF's directly to your customers or prospects.",
-        "Automated Split invoicing",
-        "Automated Combine invoices",
-        "Invoice templates",
-        "Automated Barcode Scanning",
-        "Scan inventory into your orders, generate barcodes for your documents, and search for inventory or documents by scanning barcodes.",
-        "Locations and Zones",
-        "Have multiple warehouses, offices, or retail stores? No problem. Easily track where all your inventory is by organizing everything into locations and zones. Organize inventory items using custom attributes such as size, color, and location. View how many you have globally or at each location.",
-        "Customer Accounts",
-        "Performance and analytics",
-        "Customization of Personal Details",
-        "Process management",
-        "Sales Automation",
-        "Team Collaboration",
-        "Marketing Automation",
-        "Security",
-        "Integrations",
-        "Mobile Notifications",
-        "Sales Reports",
-        "Trend Analytics",
-        "Forecasting",
-        "Territory Management",
-        "Account Management",
-        "Event Integration",
-        "Advanced Data Security",
-        "Purchase Orders",
-        "With integrated purchase orders, you can easily replenish your inventory levels by ordering more stock and even track when those new items will arrive.",
-        "Partial orders fulfill",
-        "Backordering",
-        "Financial Reports",
-        "Generate extremely detailed reports for your inventory, sales and services. Filter your reports by date-range and category to see what's making you the most money.",
-      ],
-    },
-  ];
+    // Check if desktop
+    const checkDesktop = () => window.innerWidth >= 1024;
+    if (!checkDesktop()) return;
 
-  // Branding packages data
-  const brandingPackages = [
-    {
-      title: "Startup Collateral Package",
-      price: "$49.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "2 Stationery Design Set",
-        "FREE Fax Template",
-        "Print Ready Formats",
-        "UNLIMITED Revisions",
-        "100% Satisfaction Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Collateral Classic Package",
-      price: "$129.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "2 Stationery Design Set",
-        "UNLIMITED Revisions",
-        "Flyer Design",
-        "Brochure Design (Bi-fold/Tri-fold)",
-        "100% Satisfaction Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Premium Collateral Package",
-      price: "$199.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "2 Stationery Design Set",
-        "Packaging Design",
-        "UNLIMITED Revisions",
-        "T-Shirt Design",
-        "100% Satisfaction Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Unlimited Collateral Package",
-      price: "$249.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "2 Stationery Design Set",
-        "Menu Card Design",
-        "T-Shirt Design",
-        "1 Banner Design",
-        "100% Satisfaction Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-  ];
+    // Small delay to ensure DOM is ready
+    const startTimeout = setTimeout(() => {
+      const scrollInterval = setInterval(() => {
+        const container = scrollContainerRef.current;
+        if (!container || isPausedRef.current) return;
 
-  // Video Animation packages data
-  const videoAnimationPackages = [
-    {
-      title: "Teaser Intro Video Packages",
-      price: "$299.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "15s Duration - HD 1080",
-        "Professional Script",
-        "Storyboard",
-        "Sample Themes",
-        "Custom Setting, Characters & Graphics",
-        "Animation Effects & Visualization",
-        "Voice - Over & Sound Effects (All accents) (M/F)",
-        "Unlimited Revisions",
-      ],
-    },
-    {
-      title: "Startup Video Packages",
-      price: "$349.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "30s Duration - HD 1080",
-        "Professional Script",
-        "Storyboard",
-        "Sample Themes",
-        "Custom Setting, Characters & Graphics",
-        "Animation Effects & Visualization",
-        "Voice - Over & Sound Effects (All accents) (M/F)",
-        "Unlimited Revisions",
-      ],
-    },
-    {
-      title: "Classic Video Packages",
-      price: "$499.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "60 Second Video - HD 1080",
-        "Professional Script",
-        "Sample Theme",
-        "Storyboard",
-        "Animation",
-        "Voice - Over & Sound Effects",
-        "5 weeks Delivery",
-        "Unlimited Revisions",
-      ],
-    },
-    {
-      title: "Premium Video Packages",
-      price: "$699.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "90 Second Video - HD 1080",
-        "Professional Script",
-        "Sample Theme",
-        "Storyboard",
-        "Animation",
-        "Voice - Over & Sound Effects",
-        "6 weeks Delivery",
-        "Unlimited Revisions",
-      ],
-    },
-  ];
+        // Only scroll on desktop
+        if (!checkDesktop()) return;
 
-  // SEO packages data
-  const seoPackages = [
-    {
-      title: "Startup SEO Package",
-      price: "$499.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "5 Keywords",
-        "Guaranteed Ranking on Google",
-        "Off-site Optimization",
-        "Link Building",
-        "Social Bookmarking",
-        "Basic Analytical Report",
-        "In-depth Site Analysis",
-        "Content Duplicity Check",
-        "Initial Backlinks analysis",
-        "Google Penalty Check",
-        "Mobile Usability Check",
-        "Competition Analysis",
-        "Keyword Research",
-        "Informational Content Writing & Sharing (2 - Per Month)",
-        "Blog Writing (1 - Per Month)",
-        "Press Release Social Bookmarking (5 - Per Month)",
-        "NAP Syndication",
-        "Google My Business / Bing Local Listing",
-        "Citation Building",
-        "Classified Submissions",
-        "Google Analytics Analysis Report",
-        "SEO Reports",
-        "Search Engine Rank Report",
-        "Dedicated Accounts Manager",
-        "Monthly Action Plan",
-        "Activity Report",
-      ],
-    },
-    {
-      title: "Identity SEO Package",
-      price: "$849.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "10 Keywords",
-        "Guaranteed Ranking on Google",
-        "Off-site Optimization",
-        "On-site Optimization",
-        "Link Building",
-        "Social Bookmarking",
-        "In-depth Site Analysis",
-        "Content Duplicity Check",
-        "Initial Backlinks analysis",
-        "Google Penalty Check",
-        "Mobile Usability Check",
-        "Competition Analysis",
-        "Keyword Research",
-        "Title & Meta Tags Optimization",
-        "Content Optimization",
-        "Page Speed Analysis & Optimization",
-        "HTML Code Cleanup & Optimization",
-        "Internal Link Structuring & Optimization",
-        "Pages H tags Optimization",
-        "Canonicalization/301 Redirect",
-        "Website Page Load Optimization",
-        "Schema Markup Implementation",
-        "Image & Hyperlink Optimization",
-        "Robots.txt Creation/Analysis",
-        "Blog Writing (2 - Per Month)",
-        "Informational Content Writing & Sharing (1 Per Month)",
-        "Press Release Writing & Distribution",
-        "Press Release Social Bookmarking",
-        "Google Webmaster Tools Setup",
-        "Google Analytics Setup & Integration",
-      ],
-    },
-    {
-      title: "Elite SEO Package",
-      price: "$1549.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "20 Keywords",
-        "Guaranteed Ranking on Google",
-        "Off-site Optimization",
-        "On-site Optimization",
-        "Link Building",
-        "Social Bookmarking",
-        "In-depth Site Analysis",
-        "Content Duplicity Check",
-        "Initial Backlinks analysis",
-        "Google Penalty Check",
-        "Mobile Usability Check",
-        "Competition Analysis",
-        "Keyword Research",
-        "Page Speed Analysis & Optimization",
-        "Title & Meta Tags Optimization",
-        "Content Optimization",
-        "HTML Code Cleanup & Optimization",
-        "Internal Link Structuring & Optimization",
-        "Pages H tags Optimization",
-        "Canonicalization/301 Redirect",
-        "Website Page Load Optimization",
-        "Robots.txt Creation/Analysis",
-        "Press Release Writing & Distribution",
-        "Schema Markup Implementation",
-        "Image & Hyperlink Optimization",
-        "Google Webmaster Tools Setup",
-        "Google Analytics Setup & Integration",
-        "Blog Writing (2 - Per Month)",
-        "Informational Content Writing & Sharing (1 Per Month)",
-        "Link Building",
-        "Social Bookmarking",
-        "In-depth Site Analysis",
-        "Content Duplicity Check",
-        "Initial Backlinks analysis",
-        "Google Penalty Check",
-        "Mobile Usability Check",
-        "Competition Analysis",
-        "Keyword Research",
-        "Page Speed Analysis & Optimization",
-        "Title & Meta Tags Optimization",
-        "Content Optimization",
-        "HTML Code Cleanup & Optimization",
-        "Internal Link Structuring & Optimization",
-        "Pages H tags Optimization",
-        "Canonicalization/301 Redirect",
-        "Website Page Load Optimization",
-        "Robots.txt Creation/Analysis",
-        "Press Release Writing & Distribution",
-        "Press Release Social Bookmarking",
-        "Schema Markup Implementation",
-        "Image & Hyperlink Optimization",
-        "Google Webmaster Tools Setup",
-        "Google Analytics Setup & Integration",
-        "Blog Writing (2 - Per Month)",
-        "Informational Content Writing & Sharing (1 Per Month)",
-      ],
-    },
-    {
-      title: "Professional SEO Package",
-      price: "$2,149.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "30 Keywords",
-        "Guaranteed Ranking on Google",
-        "Off-site Optimization",
-        "On-site Optimization",
-        "Link Building",
-        "Social Bookmarking",
-        "In-depth Site Analysis",
-        "Content Duplicity Check",
-        "Initial Backlinks analysis",
-        "Google Penalty Check",
-        "Mobile Usability Check",
-        "Competition Analysis",
-        "Keyword Research",
-        "Page Speed Analysis & Optimization",
-        "Title & Meta Tags Optimization",
-        "Content Optimization",
-        "HTML Code Cleanup & Optimization",
-        "Internal Link Structuring & Optimization",
-        "Pages H tags Optimization",
-        "Canonicalization/301 Redirect",
-        "Website Page Load Optimization",
-        "Robots.txt Creation/Analysis",
-        "Press Release Writing & Distribution",
-        "Press Release Social Bookmarking",
-        "Schema Markup Implementation",
-        "Image & Hyperlink Optimization",
-        "Google Webmaster Tools Setup",
-        "Google Analytics Setup & Integration",
-        "Blog Writing (2 - Per Month)",
-        "Informational Content Writing & Sharing (1 Per Month)",
-      ],
-    },
-  ];
+        // Check if there's content to scroll
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        if (maxScroll <= 0) return;
 
-  // SMM packages data
-  const smmPackages = [
-    {
-      title: "Basic Plan",
-      price: "$399",
-      description: "Perfect for small businesses getting started with social media.",
-      features: [
-        "Platforms: 1 Platform",
-        "Posts Per Month: 8 Custom Posts",
-        "Content Creation: Standard Graphics & Captions",
-        "Ad Campaigns: Basic Ads (platform-specific)",
-        "Engagement & Community: Community Interaction",
-        "Performance Tracking: Basic Analytics & Reporting",
-        "Support & Consultation: Email Support & Monthly Consultation",
-        "Value-Added Services:",
-        "Influencer Outreach",
-        "Crisis Management",
-        "Video Marketing",
-      ],
-    },
-    {
-      title: "Growth Plan",
-      price: "$799",
-      description: "Ideal for growing businesses looking to expand their social presence.",
-      features: [
-        "3 Platforms",
-        "12 Custom Posts",
-        "Custom Graphics, Hashtags, Stories",
-        "Facebook & Instagram Ads",
-        "Interaction & Engagement Growth",
-        "Bi-Weekly Reports",
-        "Priority Support",
-        "Value-Added Services:",
-        "Basic Collaboration",
-        "Reputation Monitoring",
-        "Short Video Clips",
-      ],
-    },
-    {
-      title: "Premium Plan",
-      price: "$999",
-      description: "Comprehensive solution for established brands with advanced needs.",
-      features: [
-        "5+ Platforms",
-        "20+ Custom Posts",
-        "Advanced Branding, Carousels, Video Content",
-        "Multi-Platform Ads (Facebook, Instagram, LinkedIn, Twitter)",
-        "Advanced Strategy (Influencers, PR)",
-        "Real-Time Insights & Strategy Adjustments",
-        "Dedicated Social Media Manager",
-        "Value-Added Services:",
-        "Full Influencer Marketing Strategy",
-        "Brand Reputation & PR Handling",
-        "Fully Custom Reels & TikTok Videos",
-      ],
-    },
-  ];
+        container.scrollLeft += 1;
 
-  // Combo Packages data
-  const comboPackages = [
-    {
-      title: "Basic Combo Package",
-      price: "$499.00",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "5 Custom Logo Design Concepts",
-        "By 2 Designers",
-        "Icon Design",
-        "Business Card, Letterhead, Envelope, Fax Template",
-        "MS Word Letterhead",
-        "5 Page Website",
-        "Mobile Responsive",
-        "Team of Expert Designers & Developers",
-        "8 Stock images",
-        "5 Banner Designs",
-        "jQuery Sliders",
-        "Free Google Friendly Sitemap",
-        "Complete W3C Certified HTML",
-        "Complete Deployment",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "All Final File Formats",
-        "Dedicated Account Manager",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Startup Combo Package",
-      price: "$999.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "Unlimited Logo Design Concepts",
-        "+ Social Media Design",
-        "Mobile Responsive",
-        "3 Dedicated Designers",
-        "Icon Design",
-        "Business Card, Letterhead, Envelope",
-        "MS Word Letterhead",
-        "UNLIMITED Pages Website",
-        "Content Management System (CMS)",
-        "5 Stock Photos + 3 Banner Designs",
-        "Complete W3C Certified HTML",
-        "Complete Deployment",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "All Final File Formats",
-        "Dedicated Account Manager",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Professional Combo Package",
-      price: "$1399.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "Unlimited Logo Concepts",
-        "8 Dedicated Designers",
-        "Icon Design",
-        "2 Free Custom Stationary Designs",
-        "MS Word Letterhead",
-        "Trifold Brochure Design",
-        "Presentation Folder Design",
-        "Conceptual and Dynamic Liquid Website",
-        "Team of Expert Designers & Developers",
-        "Mobile Responsive",
-        "Online Reservation/Appointment Tool (Optional)",
-        "Custom Forms",
-        "Lead Capturing Forms (Optional)",
-        "Newsfeed Integration",
-        "Social Media Integration",
-        "Search Engine Submission",
-        "15 Stock images",
-        "8 Unique Banner Designs",
-        "jQuery Sliders",
-        "Free Google Friendly Sitemap",
-        "Complete W3C Certified HTML",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "Google+ Page Design",
-        "All Final File Formats",
-        "Dedicated Account Manager",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-        "100% Money Back Guarantee *",
-      ],
-    },
-    {
-      title: "Corporate Combo Package",
-      price: "$1999.99",
-      description: "Suitable for potential super-startups and brand revamps for companies.",
-      features: [
-        "Unlimited Logo Concepts",
-        "8 Dedicated Designers",
-        "Icon Design",
-        "2 Free Custom Stationary Designs",
-        "MS Word Letterhead",
-        "Invoice Design",
-        "Product Catalog Design",
-        "Unlimited Pages Website",
-        "Conceptual and Dynamic Website",
-        "Content Management System (CMS)",
-        "Easy Product Search",
-        "Product Reviews",
-        "Unlimited Products",
-        "Unlimited Categories",
-        "Promotional Product Showcase",
-        "New Product Showcase",
-        "Full Shopping Cart Integration",
-        "Payment Module Integration",
-        "Sales & Inventory Management",
-        "Custom Forms",
-        "Lead Capturing Forms (Optional)",
-        "Newsfeed Integration",
-        "Social Media Integration",
-        "Search Engine Submission",
-        "Team of Dedicated Designers, Developers and Brand Experts",
-        "20 Stock images",
-        "6 Unique Banner Designs",
-        "jQuery Slider",
-        "Free Google Friendly Sitemap",
-        "Complete W3C Certified HTML",
-        "Facebook Page Design",
-        "Twitter Page Design",
-        "YouTube Page Design",
-        "Google+ Page Design",
-        "Pinterest Page Design",
-        "All Final File Formats",
-        "Dedicated Account Manager",
-        "100% Ownership Rights",
-        "100% Satisfaction Guarantee",
-        "100% Unique Design Guarantee",
-      ],
-    },
-  ];
+        // Reset to start when reaching the end
+        if (container.scrollLeft >= maxScroll - 1) {
+          container.scrollLeft = 0;
+        }
+      }, 30);
+
+      // Store interval ID for cleanup
+      (window as unknown as { scrollIntervalId?: ReturnType<typeof setInterval> }).scrollIntervalId = scrollInterval;
+    }, 500);
+
+    return () => {
+      clearTimeout(startTimeout);
+      const intervalId = (window as unknown as { scrollIntervalId?: ReturnType<typeof setInterval> }).scrollIntervalId;
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [activeTab]);
+
+  const handleMouseEnter = () => {
+    isPausedRef.current = true;
+  };
+
+  const handleMouseLeave = () => {
+    isPausedRef.current = false;
+  };
 
   // Pricing tiers data
   const pricingTiers: { [key: string]: any } = {
@@ -969,12 +220,12 @@ export default function PricingPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#EA7BBF]">
+      <section className="relative overflow-hidden pt-16 pb-8 sm:py-8 bg-[#EA7BBF]">
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[40vh] flex flex-col items-center justify-center text-center py-12 md:py-16">
             <h1
-              className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-white mb-8"
+              className="leading-[1.1] sm:leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-white mb-8"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
               Pricing
@@ -983,7 +234,7 @@ export default function PricingPage() {
             <Link
               href="/contact"
               aria-label="Get started"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-white bg-[#FFD350] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
+              className="inline-block rounded-xl px-8 py-4 font-bold text-white bg-[#FFD350] hover:bg-[#EA7BBF] hover:text-[#fff9f1] hover:border-[#fff9f1] hover:border-2 hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
             >
               Let's Get Started
             </Link>
@@ -1041,12 +292,17 @@ export default function PricingPage() {
       <section className="bg-[#1d1d1d] text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {activeTab === "website" ? (
-            // Website Packages Grid
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            // Website Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
               {websitePackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
                 >
                   {/* Title */}
                   <h2
@@ -1104,141 +360,85 @@ export default function PricingPage() {
               ))}
             </div>
           ) : activeTab === "e-commerce" ? (
-            // E-Commerce Packages Grid
-            <div className="space-y-8">
-              {/* First Row: 3 packages */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                {ecommercePackages.slice(0, 3).map((pkg, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+            // E-Commerce Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
+              {ecommercePackages.map((pkg, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
+                >
+                  {/* Title */}
+                  <h2
+                    className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
+                    style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    {/* Title */}
-                    <h2
-                      className="text-xl sm:text-2xl font-black uppercase text-center text-[#1d1d1d] mb-2"
-                      style={{ fontFamily: "Recursive, sans-serif" }}
-                    >
-                      {pkg.title}
-                    </h2>
+                    {pkg.title}
+                  </h2>
 
-                    {/* Price */}
-                    <div className="text-center mb-4">
-                      <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
-                        {pkg.price}
-                      </span>
-                    </div>
-
-                    {/* Description */}
-                    <p
-                      className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
-                      style={{ fontFamily: "Poppins, sans-serif" }}
-                    >
-                      {pkg.description}
-                    </p>
-
-                    {/* Features List */}
-                    <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
-                      {pkg.features.map((feature: string, idx: number) => (
-                        <li key={idx} className="flex items-start text-[#1d1d1d]">
-                          <svg
-                            className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-xs sm:text-sm">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Buy Now Button */}
-                    <Link
-                      href="/contact"
-                      className="w-full bg-[#EA7BBF] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#d66aa8] transition-colors duration-200 text-base mt-auto text-center block"
-                    >
-                      Buy Now
-                    </Link>
+                  {/* Price */}
+                  <div className="text-center mb-4">
+                    <span className="text-3xl sm:text-4xl font-bold text-[#1d1d1d]">
+                      {pkg.price}
+                    </span>
                   </div>
-                ))}
-              </div>
 
-              {/* Second Row: Automated/Interactive package spanning 3 columns */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-                {ecommercePackages.slice(3).map((pkg, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col lg:col-span-3"
+                  {/* Description */}
+                  <p
+                    className="text-[#1d1d1d]/70 text-sm text-center mb-6 leading-relaxed"
+                    style={{ fontFamily: "Poppins, sans-serif" }}
                   >
-                    {/* Title */}
-                    <h2
-                      className="text-xl sm:text-2xl lg:text-3xl font-black uppercase text-center text-[#1d1d1d] mb-2"
-                      style={{ fontFamily: "Recursive, sans-serif" }}
-                    >
-                      {pkg.title}
-                    </h2>
+                    {pkg.description}
+                  </p>
 
-                    {/* Price */}
-                    <div className="text-center mb-4">
-                      <span className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1d1d1d]">
-                        {pkg.price}
-                      </span>
-                    </div>
+                  {/* Features List */}
+                  <ul className="space-y-2 mb-8 flex-grow max-h-[500px] overflow-y-auto">
+                    {pkg.features.map((feature: string, idx: number) => (
+                      <li key={idx} className="flex items-start text-[#1d1d1d]">
+                        <svg
+                          className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span className="text-xs sm:text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
 
-                    {/* Description */}
-                    <p
-                      className="text-[#1d1d1d]/70 text-sm lg:text-base text-center mb-6 leading-relaxed"
-                      style={{ fontFamily: "Poppins, sans-serif" }}
-                    >
-                      {pkg.description}
-                    </p>
-
-                    {/* Features List - 3 columns on large screens */}
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-8">
-                      {pkg.features.map((feature: string, idx: number) => (
-                        <div key={idx} className="flex items-start text-[#1d1d1d]">
-                          <svg
-                            className="w-5 h-5 mr-2 text-[#EA7BBF] flex-shrink-0 mt-0.5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span className="text-xs sm:text-sm">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Buy Now Button */}
-                    <Link
-                      href="/contact"
-                      className="w-full bg-[#EA7BBF] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#d66aa8] transition-colors duration-200 text-base lg:text-lg mt-auto text-center block"
-                    >
-                      Buy Now
-                    </Link>
-                  </div>
-                ))}
-              </div>
+                  {/* Buy Now Button */}
+                  <Link
+                    href="/contact"
+                    className="w-full bg-[#EA7BBF] text-white font-bold py-3 px-6 rounded-xl hover:bg-[#d66aa8] transition-colors duration-200 text-base mt-auto text-center block"
+                  >
+                    Buy Now
+                  </Link>
+                </div>
+              ))}
             </div>
           ) : activeTab === "branding" ? (
-            // Branding Packages Grid
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            // Branding Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
               {brandingPackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
                 >
                   {/* Title */}
                   <h2
@@ -1296,12 +496,17 @@ export default function PricingPage() {
               ))}
             </div>
           ) : activeTab === "video-animation" ? (
-            // Video Animation Packages Grid
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            // Video Animation Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
               {videoAnimationPackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
                 >
                   {/* Title */}
                   <h2
@@ -1359,12 +564,17 @@ export default function PricingPage() {
               ))}
             </div>
           ) : activeTab === "seo" ? (
-            // SEO Packages Grid
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            // SEO Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
               {seoPackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
                 >
                   {/* Title */}
                   <h2
@@ -1422,12 +632,17 @@ export default function PricingPage() {
               ))}
             </div>
           ) : activeTab === "smm-package" ? (
-            // SMM Packages Grid
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            // SMM Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
               {smmPackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
                 >
                   {/* Title */}
                   <h2
@@ -1485,12 +700,17 @@ export default function PricingPage() {
               ))}
             </div>
           ) : activeTab === "combo-packages" ? (
-            // Combo Packages Grid
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            // Combo Packages - Vertical on mobile, horizontal scroll on sm+, 2 visible on lg+
+            <div
+              ref={scrollContainerRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="flex flex-col sm:flex-row sm:overflow-x-scroll gap-6 lg:gap-8 sm:pb-4 scrollbar-thin scrollbar-thumb-[#EA7BBF] scrollbar-track-[#2d2d2d]"
+            >
               {comboPackages.map((pkg, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col"
+                  className="bg-white rounded-2xl p-6 lg:p-8 shadow-xl flex flex-col w-full sm:min-w-[90%] lg:min-w-[calc(50%-16px)] lg:w-[calc(50%-16px)] sm:flex-shrink-0"
                 >
                   {/* Title */}
                   <h2
@@ -1707,42 +927,63 @@ export default function PricingPage() {
 
       {/* Contact Section */}
       <section className="bg-[#1d1d1d] text-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <div className="mx-auto max-w-7xl px-4 sm:px-4 lg:px-6 relative z-10">
           <div className="flex flex-col items-center text-center">
-            {/* Phone Illustration */}
-            <div className="mb-8">
-              <Image
-                src="/telephone.png"
-                alt="Contact us"
-                width={120}
-                height={120}
-                className="object-contain"
-              />
-            </div>
+            {/* Phone visual */}
+            <ScrollAnimation animation="fadeInUp" delay={200}>
+              <div className="mb-8 hover-scale">
+                <Image
+                  src="/telephone.png"
+                  alt="Orange retro rotary phone"
+                  width={200}
+                  height={200}
+                  className="h-100 w-auto object-contain animate-float"
+                />
+              </div>
+            </ScrollAnimation>
 
-            {/* Heading */}
-            <h2
-              className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase mb-4"
-              style={{ fontFamily: "Recursive, sans-serif" }}
-            >
-              Get in touch
-            </h2>
+            {/* Content */}
+            <ScrollAnimation animation="fadeInUp" delay={400}>
+              <div className="space-y-4">
+                <h2 className="text-7xl font-extrabold text-[#fff9f1] font-recent-grotesk">
+                  Get in touch
+                </h2>
+                <p className="text-lg font-semibold text-[#EA7BBF]">
+                  I&apos;ll get back to you within 24hrs
+                </p>
+                {/* Get Started Button */}
+                <div className="pt-4">
+                  <Link
+                    href="/contact"
+                    className="inline-block bg-[#fff9f1] text-[#1d1d1d] px-8 py-4 rounded-xl hover:bg-[#FFD350] hover:text-[#1d1d1d] transition-all duration-300 font-bold hover-scale hover-lift"
+                  >
+                    <span style={{
+                      fontSize: "24px",
+                      fontWeight: "bold",
 
-            {/* Subtext */}
-            <p
-              className="text-white/80 mb-8 text-sm sm:text-base"
-              style={{ fontFamily: "Poppins, sans-serif" }}
-            >
-              I'll get back to you within 24hrs
-            </p>
+                    }}>
 
-            {/* Get Started Button */}
-            <Link
-              href="/contact"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-[#1d1d1d] bg-white shadow-lg hover:bg-gray-100 transition-colors duration-200 text-base sm:text-lg"
-            >
-              Get Started
-            </Link>
+                      Get Started
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            {/* Platforms Image */}
+            <ScrollAnimation animation="fadeInUp" delay={600}>
+              <div className="mt-8">
+                <Image
+                  src="/platforms.png"
+                  alt="Platforms and partnerships"
+                  width={800}
+                  height={100}
+                  className="h-auto w-full max-w-5xl object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
+                  unoptimized
+                />
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
