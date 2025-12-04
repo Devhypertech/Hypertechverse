@@ -17,6 +17,15 @@ const nextConfig = {
     // mixed path casing loading duplicate module instances on Windows.
     externalDir: false,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

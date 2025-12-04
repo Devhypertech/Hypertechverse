@@ -8,84 +8,84 @@ const servicesList = [
   { 
     href: "/custom-website-development-service/", 
     label: "Web Development",
-    icon: "/icons/support.png",
+    icon: "/megamenu/webdev.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Build your dream website with modern technologies."
   },
   { 
     href: "/custom-app-development-service/", 
     label: "App Development",
-    icon: "/icons/support.png",
+    icon: "/megamenu/appdev.png",
     iconBg: "bg-[#FFD350]",
     description: "Mobile apps that engage and convert users."
   },
   { 
     href: "/logo-design-2/", 
     label: "Logo Design",
-    icon: "/icons/support.png",
+    icon: "/megamenu/logodesign.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Create memorable brand identities."
   },
   { 
     href: "/branding", 
     label: "Branding",
-    icon: "/icons/businessgrowth.png",
+    icon: "/megamenu/branding.png",
     iconBg: "bg-[#FFD350]",
     description: "Complete brand identity solutions."
   },
   { 
     href: "/seo", 
     label: "SEO",
-    icon: "/icons/support.png",
+    icon: "/megamenu/seo.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Boost your search engine visibility."
   },
   { 
     href: "/social-media-management", 
     label: "Social Media",
-    icon: "/icons/smie.png",
+    icon: "/megamenu/smm.png",
     iconBg: "bg-[#FFD350]",
     description: "Grow your presence on social platforms."
   },
   { 
     href: "/paid-advertising-services/", 
     label: "Paid Advertising",
-    icon: "/icons/support.png",
+    icon: "/megamenu/paidads.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Drive results with targeted ad campaigns."
   },
   { 
     href: "/social-media-advertising-services/", 
     label: "Social Media Advertising",
-    icon: "/icons/support.png",
+    icon: "/megamenu/sma.png",
     iconBg: "bg-[#FFD350]",
     description: "Maximize your reach with strategic social ads."
   },
   { 
     href: "/pay-per-click-services", 
     label: "Pay Per Click",
-    icon: "/icons/support.png",
+    icon: "/megamenu/ppc.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Drive targeted traffic with PPC campaigns."
   },
   { 
     href: "/ui-ux-design/", 
     label: "UI/UX",
-    icon: "/icons/support.png",
+    icon: "/megamenu/uiux.png",
     iconBg: "bg-[#FFD350]",
     description: "Create intuitive and engaging user experiences."
   },
   { 
     href: "/animation", 
     label: "Animation",
-    icon: "/icons/support.png",
+    icon: "/megamenu/animation.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Engaging animated content for your brand."
   },
   { 
     href: "/custom-software-development", 
     label: "Custom Software",
-    icon: "/icons/expert.png",
+    icon: "/megamenu/customsoftware.png",
     iconBg: "bg-[#EA7BBF]",
     description: "Tailored software solutions for your business."
   },

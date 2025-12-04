@@ -31,7 +31,7 @@ export default function BlogsPage() {
               className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-white mb-8"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              Blog
+              Blog's
             </h1>
 
             <Link
@@ -45,14 +45,14 @@ export default function BlogsPage() {
         </div>
 
         {/* Bottom marquee (duplicated from SEO) */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        {/* <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
           <div className="relative h-[56px] sm:h-[88px] overflow-hidden">
             <div className="absolute inset-0 flex items-center ">
               <RibbonText />
               <RibbonText />
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Category Tabs */}
