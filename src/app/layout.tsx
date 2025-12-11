@@ -12,6 +12,24 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload Alkaline Caps font with high priority */}
+        <link
+          rel="preconnect"
+          href="https://fonts.cdnfonts.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.cdnfonts.com/css/alkaline-caps"
+          as="style"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.cdnfonts.com/css/alkaline-caps"
+          media="all"
+        />
+      </head>
       <body className="min-h-dvh">
         <Header />
         {children}

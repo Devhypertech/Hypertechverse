@@ -818,7 +818,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   // If blog not found, show 404
   if (!blog) {
     return (
-      <main className="min-h-screen bg-black text-white flex items-center justify-center">
+      <main className="min-h-screen bg-[#1d1d1d] text-[#fff9f1] flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Blog Post Not Found</h1>
           <Link href="/blogs" className="text-[#EA7BBF] hover:underline">
@@ -837,12 +837,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Content container */}
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[60vh] lg:min-h-[70vh] flex flex-col items-center justify-center text-center py-12 md:py-0">
             <h1
-              className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-white mb-8"
+              className="leading-[.95] font-black uppercase text-[36px] sm:text-[48px] lg:text-[66px] text-[#fff9f1] mb-8"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
               Blog
@@ -851,7 +851,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <Link
               href="/contact"
               aria-label="Get started"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-white bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
+              className="inline-block rounded-xl px-8 py-4 font-bold text-[#fff9f1] bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
             >
               Let's Get Started
             </Link>
@@ -859,7 +859,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[88px] overflow-hidden">
             <div className="absolute inset-0 flex items-center">
               <RibbonText />
@@ -870,7 +870,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Blog Post Content */}
-      <section className="bg-black text-white py-16">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* Blog Title */}
           <h2
@@ -898,20 +898,20 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="space-y-6 mb-8">
             {blog.content.fullContent ? (
               <div
-                className="text-base sm:text-lg text-white/90 leading-relaxed prose prose-invert prose-headings:text-white prose-p:text-white/90 prose-strong:text-white prose-ul:text-white/90 prose-ol:text-white/90 prose-li:text-white/90 prose-a:text-[#EA7BBF] prose-a:no-underline hover:prose-a:underline max-w-none"
+                className="text-base sm:text-lg text-[#fff9f1]/90 leading-relaxed prose prose-invert prose-headings:text-[#fff9f1] prose-p:text-[#fff9f1]/90 prose-strong:text-[#fff9f1] prose-ul:text-[#fff9f1]/90 prose-ol:text-[#fff9f1]/90 prose-li:text-[#fff9f1]/90 prose-a:text-[#EA7BBF] prose-a:no-underline hover:prose-a:underline max-w-none"
                 style={{ fontFamily: "Poppins, sans-serif" }}
                 dangerouslySetInnerHTML={{ __html: blog.content.fullContent }}
               />
             ) : (
               <>
                 <p
-                  className="text-base sm:text-lg text-white/90 leading-relaxed"
+                  className="text-base sm:text-lg text-[#fff9f1]/90 leading-relaxed"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
                   {blog.content.paragraph1}
                 </p>
                 <p
-                  className="text-base sm:text-lg text-white/90 leading-relaxed"
+                  className="text-base sm:text-lg text-[#fff9f1]/90 leading-relaxed"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
                   {blog.content.paragraph2}
@@ -924,7 +924,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="text-center mb-16">
             <Link
               href="/contact"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-white bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
+              className="inline-block rounded-xl px-8 py-4 font-bold text-[#fff9f1] bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
             >
               Let's Get Started
             </Link>
@@ -948,7 +948,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                     />
                     {relatedBlog.badge && (
-                      <span className="absolute right-2 top-2 rounded-full bg-white/90 text-black text-[11px] font-bold px-2 py-0.5">
+                      <span className="absolute right-2 top-2 rounded-full bg-[#fff9f1]/90 text-[#1d1d1d] text-[11px] font-bold px-2 py-0.5">
                         {relatedBlog.badge}
                       </span>
                     )}
@@ -963,7 +963,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                     {relatedBlog.tags.map((t) => (
                       <span
                         key={t}
-                        className="rounded-full bg-white/5 text-white/70 text-[11px] px-2 py-1 border border-white/10"
+                        className="rounded-full bg-[#fff9f1]/5 text-[#fff9f1]/70 text-[11px] px-2 py-1 border border-white/10"
                       >
                         {t}
                       </span>
@@ -978,7 +978,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   </h3>
 
                   <p
-                    className="mt-1 text-[12px] leading-snug text-white/70 line-clamp-3"
+                    className="mt-1 text-[12px] leading-snug text-[#fff9f1]/70 line-clamp-3"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {relatedBlog.blurb}
@@ -987,12 +987,12 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   <div className="mt-3 flex items-center justify-between">
                     <Link
                       href={relatedBlog.href}
-                      className="text-[12px] font-semibold text-white/90 hover:text-white"
+                      className="text-[12px] font-semibold text-[#fff9f1]/90 hover:text-[#fff9f1]"
                     >
                       Read more →
                     </Link>
                     {relatedBlog.meta && (
-                      <span className="text-[11px] text-white/50">{relatedBlog.meta}</span>
+                      <span className="text-[11px] text-[#fff9f1]/50">{relatedBlog.meta}</span>
                     )}
                   </div>
                 </div>
@@ -1004,7 +1004,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <div className="text-center">
             <Link
               href="/blogs"
-              className="inline-block rounded-xl px-8 py-4 font-bold text-white bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
+              className="inline-block rounded-xl px-8 py-4 font-bold text-[#fff9f1] bg-[#EA7BBF] shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-200 text-base sm:text-lg"
             >
               See More
             </Link>

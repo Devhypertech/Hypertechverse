@@ -8,10 +8,10 @@ export default function ServicePage() {
 
 
             {/* Additional service sections can be added here */}
-            <section className="py-20 bg-white">
+            <section className="py-20 bg-[#fff9f1]">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <h2 className="text-4xl font-bold text-black mb-8"
+                        <h2 className="text-4xl font-bold text-[#1d1d1d] mb-8"
                             style={{ fontFamily: 'Recursive, sans-serif' }}>
                             Our Services
                         </h2>
@@ -23,7 +23,7 @@ export default function ServicePage() {
                 </div>
             </section>
             <ScrollServices />
-            
+
         </main>
     );
 }

@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
+import ScrollMarquee from "./ScrollMarquee";
 
 // --- tag → pill styles ---
 const TAG_STYLES: Record<string, string> = {
@@ -10,7 +11,7 @@ const TAG_STYLES: Record<string, string> = {
     Illustration: "bg-[#7BE4A1] text-[#0f172a]",
     "Packaging Design": "bg-[#C3B5FD] text-[#111827]",
     "Layout Design": "bg-[#F5A97F] text-[#1a1a1a]",
-    "_": "bg-white/80 text-black",
+    "_": "bg-[#fff9f1]/80 text-[#1d1d1d]",
 };
 
 const tagClasses = (t: string) =>
@@ -27,28 +28,12 @@ const featuredProjects = [
 
 export default function FeaturedWork() {
     return (
-        <section className="bg-black py-10 md:py-16">
+        <section className="bg-[#1d1d1d] py-10 md:py-16">
             {/* MARQUEE banner */}
             <ScrollAnimation animation="fadeInUp" delay={200}>
-                <div className="relative bg-black overflow-hidden">
+                <div className="relative bg-[#1d1d1d] overflow-hidden">
                     <div className="relative h-[120px] sm:h-[160px] md:h-[200px] lg:h-[240px]">
-                        <div className="marquee-track absolute inset-0 flex animate-marquee-x">
-                            <Image
-                                src="/portfolio/featuredwork.png"
-                                alt="Featured Work"
-                                width={2400}
-                                height={400}
-                                priority
-                                className="h-full w-auto object-cover"
-                            />
-                            <Image
-                                src="/portfolio/featuredwork.png"
-                                alt="Featured Work duplicate"
-                                width={2400}
-                                height={400}
-                                className="h-full w-auto object-cover"
-                            />
-                        </div>
+                        <ScrollMarquee />
                     </div>
                 </div>
             </ScrollAnimation>
@@ -73,8 +58,8 @@ export default function FeaturedWork() {
 
                                     {/* text + tags (no background) */}
                                     <div className="pt-4">
-                                        <p className="text-sm text-white/70">{project.description}</p>
-                                        <h3 className="mt-1 text-lg font-semibold text-white">{project.title}</h3>
+                                        <p className=" text-[#fff9f1] text-2xl" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>{project.description}</p>
+                                        <h3 className="mt-1 text-lg font-semibold text-[#fff9f1] uppercase" style={{ fontFamily: "'Inter','Recent Grotesk', sans-serif", fontWeight: 800, color: '#EA7BBF' }}>{project.title}</h3>
 
                                         <div className="mt-4 flex flex-wrap gap-2">
                                             {project.tags.map((tag, i) => (
@@ -94,7 +79,7 @@ export default function FeaturedWork() {
                         <div className="mt-20 text-center">
                             <a
                                 href="/portfolio"
-                                className="inline-block rounded-md bg-[#FDEDE8] px-8 py-3 text-sm font-semibold text-black hover:bg-[#fce0da] transition"
+                                className="inline-block rounded-md bg-[#FDEDE8] px-8 py-3 text-sm font-semibold text-[#1d1d1d] hover:bg-[#fce0da] transition"
                             >
                                 SEE ALL PROJECTS
                             </a>

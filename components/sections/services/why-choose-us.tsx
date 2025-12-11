@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-black py-10 md:py-14">
+    <section className="bg-[#1d1d1d] py-10 md:py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Pink pill */}
         <div
@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
             {/* Give the left column extra right padding so text never goes under the image */}
             <div className="px-6 sm:px-8 lg:px-10 py-8 md:py-10 pr-[260px] md:pr-[380px]">
               <h2
-                className="text-white uppercase tracking-tight leading-[1] text-[32px] md:text-[44px] font-extrabold"
+                className="text-[#fff9f1] uppercase tracking-tight leading-[1] text-[32px] md:text-[44px] font-extrabold"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 WHY CHOOSE US?
@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
 
               <p
                 className="
-                  text-white/90 capitalize
+                  text-[#fff9f1]/90 capitalize
                   text-lg leading-relaxed
                   mt-4 max-w-[66ch]
                 "
@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                   className="
                     inline-block skew-x-6
                     px-7 md:px-8 py-3 md:py-3.5
-                    text-black uppercase font-extrabold
+                    text-[#1d1d1d] uppercase font-extrabold
                     text-[14px] md:text-[16px]
                   "
                   style={{ fontFamily: "Poppins, sans-serif" }}

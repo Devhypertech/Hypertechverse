@@ -97,7 +97,7 @@ export default function PortfolioPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section (duplicated from SEO, with headings adjusted) */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -120,22 +120,22 @@ export default function PortfolioPage() {
                     className="leading-[.95] font-black uppercase text-3xl sm:text-4xl md:text-[48px] lg:text-[66px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-               Case
-               <br />
-               Studies
-               <br />
+                    Case
+                    <br />
+                    Studies
+                    <br />
                   </h1>
 
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </Link>
-                </div> 
+                </div>
               </div>
             </div>
 
@@ -155,7 +155,7 @@ export default function PortfolioPage() {
         </div>
 
         {/* Bottom marquee (duplicated from SEO) */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[48px] sm:h-[56px] md:h-[68px] lg:h-[88px] overflow-hidden">
             <div className="absolute inset-0 flex items-center ">
               <RibbonText />
@@ -166,66 +166,60 @@ export default function PortfolioPage() {
       </section>
 
       {/* Category Tabs */}
-      <section className="bg-black py-6 sm:py-8">
+      <section className="bg-[#1d1d1d] py-6 sm:py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4">
             <button
               onClick={() => setActiveTab("web")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "web"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "web"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
+                }`}
             >
               WEB DESIGNS
             </button>
             <button
               onClick={() => setActiveTab("logo")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "logo"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "logo"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
+                }`}
             >
               LOGO DESIGNS
             </button>
             <button
               onClick={() => setActiveTab("branding")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "branding"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "branding"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
+                }`}
             >
               BRANDING
             </button>
             <button
               onClick={() => setActiveTab("video")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "video"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "video"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
+                }`}
             >
               VIDEO ANIMATION
             </button>
             <button
               onClick={() => setActiveTab("mobile")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "mobile"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "mobile"
+                ? "bg-[#FFD350] text-[#1d1d1d] shadow-lg"
+                : "bg-[#EA7BBF] text-[#fff9f1] hover:opacity-90"
+                }`}
             >
               MOBILE APPLICATIONS
             </button>
             <button
               onClick={() => setActiveTab("smm")}
-              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${
-                activeTab === "smm"
-                  ? "bg-[#FFD350] text-black shadow-lg"
-                  : "bg-[#EA7BBF] text-white hover:opacity-90"
-              }`}
+              className={`px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-lg font-bold text-xs sm:text-sm md:text-base transition-all duration-200 ${activeTab === "smm"
+                ? "bg-[#FFD350] text-black shadow-lg"
+                : "bg-[#EA7BBF] text-white hover:opacity-90"
+                }`}
             >
               SOCIAL MEDIA
             </button>
@@ -234,32 +228,32 @@ export default function PortfolioPage() {
       </section>
 
       {/* ====== Portfolio Gallery ====== */}
-<section className="bg-black text-white py-12 sm:py-16 md:py-20">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <header className="mb-6 sm:mb-8 md:mb-12">
-      <div>
-        <h2
-          className="text-xl sm:text-2xl md:text-3xl font-extrabold"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Portfolio Gallery
-        </h2>
-        <p
-          className="mt-1 text-xs sm:text-sm text-white/70"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          A curated selection of our best work across different categories.
-        </p>
-      </div>
-    </header>
+      <section className="bg-[#1d1d1d] text-white py-12 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <header className="mb-6 sm:mb-8 md:mb-12">
+            <div>
+              <h2
+                className="text-xl sm:text-2xl md:text-3xl font-extrabold"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Portfolio Gallery
+              </h2>
+              <p
+                className="mt-1 text-xs sm:text-sm text-white/70"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                A curated selection of our best work across different categories.
+              </p>
+            </div>
+          </header>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7">
-      {currentImages.map((item, index) => (
-        <PortfolioCard key={`${activeTab}-${index}-${item.src}`} item={item} category={activeTab} />
-      ))}
-    </div>
-  </div>
-</section>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-7">
+            {currentImages.map((item, index) => (
+              <PortfolioCard key={`${activeTab}-${index}-${item.src}`} item={item} category={activeTab} />
+            ))}
+          </div>
+        </div>
+      </section>
 
 
     </main>
@@ -291,12 +285,12 @@ function PortfolioCard({ item, category }: { item: { src: string; title: string;
   useEffect(() => {
     // Skip scroll effect for videos
     if (hasVideo) return;
-    
+
     if (isHovered && imgWrapperRef.current && containerRef.current) {
       const imgWrapper = imgWrapperRef.current;
       const img = imgWrapper.querySelector('img');
       const container = containerRef.current;
-      
+
       if (img) {
         // Wait for image to load to get accurate dimensions
         const handleScroll = () => {
@@ -305,11 +299,11 @@ function PortfolioCard({ item, category }: { item: { src: string; title: string;
           const imgNaturalWidth = img.naturalWidth;
           const containerWidth = container.offsetWidth;
           const containerHeight = container.offsetHeight;
-          
+
           // Calculate displayed image height based on aspect ratio
           const displayedImgHeight = (imgNaturalHeight / imgNaturalWidth) * containerWidth;
           const scrollDistance = displayedImgHeight - containerHeight;
-          
+
           if (scrollDistance > 0) {
             imgWrapper.style.transition = 'transform 6s ease-in-out';
             imgWrapper.style.transform = `translateY(-${scrollDistance}px)`;
@@ -330,19 +324,17 @@ function PortfolioCard({ item, category }: { item: { src: string; title: string;
 
   return (
     <article
-      className={`group relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#0E0E10] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)] ${
-        needsEqualSize ? "flex flex-col h-full" : ""
-      }`}
+      className={`group relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#1d1d1d] border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,.35)] ${needsEqualSize ? "flex flex-col h-full" : ""
+        }`}
     >
       {/* Media with scroll on hover */}
       <div className={`p-2 sm:p-3 ${needsEqualSize ? "flex-1 flex flex-col" : ""}`}>
         <div
           ref={containerRef}
-          className={`relative overflow-hidden rounded-lg sm:rounded-xl ${
-            needsEqualSize 
-              ? "h-64 sm:h-64 md:h-72 w-full" 
-              : "h-64 sm:h-72 md:h-80"
-          } ${hasVideo ? "cursor-pointer" : ""}`}
+          className={`relative overflow-hidden rounded-lg sm:rounded-xl ${needsEqualSize
+            ? "h-64 sm:h-64 md:h-72 w-full"
+            : "h-64 sm:h-72 md:h-80"
+            } ${hasVideo ? "cursor-pointer" : ""}`}
           onMouseEnter={() => !hasVideo && setIsHovered(true)}
           onMouseLeave={() => !hasVideo && setIsHovered(false)}
           onClick={() => {
@@ -357,13 +349,12 @@ function PortfolioCard({ item, category }: { item: { src: string; title: string;
               alt={item.title}
               width={800}
               height={1200}
-              className={`${
-                isVideo 
-                  ? "object-cover h-full w-full" 
-                  : needsEqualSize 
-                    ? "object-contain h-full w-full" 
-                    : "object-cover w-full h-auto"
-              }`}
+              className={`${isVideo
+                ? "object-cover h-full w-full"
+                : needsEqualSize
+                  ? "object-contain h-full w-full"
+                  : "object-cover w-full h-auto"
+                }`}
               onError={() => {
                 if (item.fallback) {
                   setImgSrc(item.fallback);
@@ -373,11 +364,11 @@ function PortfolioCard({ item, category }: { item: { src: string; title: string;
           </div>
           {/* Video play button overlay - always show for video category */}
           {isVideo && (
-            <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-200 z-10">
+            <div className="absolute inset-0 flex items-center justify-center bg-[#1d1d1d]/20 group-hover:bg-[#1d1d1d]/30 transition-colors duration-200 z-10">
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#EA7BBF] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200">
-                <svg 
-                  className="w-8 h-8 sm:w-10 sm:h-10 text-white ml-1" 
-                  fill="currentColor" 
+                <svg
+                  className="w-8 h-8 sm:w-10 sm:h-10 text-white ml-1"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M8 5v14l11-7z" />
@@ -411,7 +402,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={1000}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );

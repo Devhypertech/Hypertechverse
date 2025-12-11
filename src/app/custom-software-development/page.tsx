@@ -9,7 +9,7 @@ export default function CustomSoftwareDevelopmentPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section — Pink background with white text (same styling as SMM) */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -32,17 +32,17 @@ export default function CustomSoftwareDevelopmentPage() {
                     className="leading-[.95] font-black uppercase text-2xl sm:text-3xl md:text-[36px] lg:text-[48px] xl:text-[56px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                   Scalable & User
+                    Scalable & User
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    Friendly Apps for All Platforms
+                      Friendly Apps for All Platforms
                     </span>
                   </h1>
 
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -54,13 +54,13 @@ export default function CustomSoftwareDevelopmentPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-               Keep in touch with your clients by using intelligent, approachable applications that are compatible with all devices. Make purchasing simpler and the competitors obsolete.
+                  Keep in touch with your clients by using intelligent, approachable applications that are compatible with all devices. Make purchasing simpler and the competitors obsolete.
                 </p>
 
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-black shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#1d1d1d] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -83,10 +83,10 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
           </div>
         </div>
-        
+
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -96,7 +96,7 @@ export default function CustomSoftwareDevelopmentPage() {
         </div>
 
         {/* Icons strip directly after marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
             <div className="relative w-full aspect-[16/2.8] overflow-hidden">
               <Image
@@ -110,10 +110,10 @@ export default function CustomSoftwareDevelopmentPage() {
           </div>
         </div>
       </section>
-      
+
 
       {/* About Section (keeps layout/colors) */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -133,21 +133,21 @@ export default function CustomSoftwareDevelopmentPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Machine Learning <span className="text-[#EA7BBF]">Services</span>
+                  Machine Learning <span className="text-[#EA7BBF]">Services</span>
                 </h2>
 
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Transforming data into business intelligence
+                  Transforming data into business intelligence
                 </h3>
 
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                  Utilize the power of Machine Learning to learn things and get the best out of Business performance. Learn from data and make predictive decisions so your business always stays ahead. Get more innovative strategies through customized machine learning solutions.
                 </p>
 
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
+                    className="inline-block bg-[#FFD350] text-[#1d1d1d] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -160,12 +160,12 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#1d1d1d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Engineering Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -175,7 +175,7 @@ export default function CustomSoftwareDevelopmentPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Engineering Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -185,7 +185,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Tilted Showcase (reuse layout/images for now) */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
           <div
             className="pointer-events-none absolute inset-0 z-[1]"
@@ -215,7 +215,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Process Tabs (renamed for software lifecycle) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
           src="/services/logo/bg.png"
@@ -227,7 +227,7 @@ export default function CustomSoftwareDevelopmentPage() {
 
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#fff9f1] leading-tight"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
             Limitless Possibilities with our Custom
@@ -235,10 +235,10 @@ export default function CustomSoftwareDevelopmentPage() {
             Software Development Services
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-white/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#fff9f1]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-           With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
+            With Custom Software Development Services, you discover the freedom to build exactly what your business needs. We create robust, scalable, and user-centric solutions that best help you achieve your goals at Hypertech Verse. Our innovative software is easy to use and adapts to your unique processes without any limitations.
           </p>
         </div>
 
@@ -265,7 +265,7 @@ export default function CustomSoftwareDevelopmentPage() {
       </section>
 
       {/* Benefits Section (same layout/colors, software copy) */}
-      <section className="relative bg-black text-white py-16 sm:py-20">
+      <section className="relative bg-[#1d1d1d] text-[#fff9f1] py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2
             className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10"
@@ -283,7 +283,7 @@ export default function CustomSoftwareDevelopmentPage() {
                 Built for Your Business
               </h3>
               <p
-                className="mt-3 text-sm text-white/80 max-w-md"
+                className="mt-3 text-sm text-[#fff9f1]/80 max-w-md"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Align software with workflows, integrate with existing systems, and unlock efficiencies impossible with off‑the‑shelf tools.
@@ -291,7 +291,7 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
 
             <div className="relative">
-              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]">
                 <svg width="18" height="18" viewBox="0 0 24 24">
                   <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
                 </svg>
@@ -305,7 +305,7 @@ export default function CustomSoftwareDevelopmentPage() {
                   priority
                 />
               </div>
-              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]">
                 <svg width="18" height="18" viewBox="0 0 24 24">
                   <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
                 </svg>
@@ -317,7 +317,7 @@ export default function CustomSoftwareDevelopmentPage() {
           <div className="text-center mt-2">
             <Link
               href="/contact"
-              className="inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-black rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+              className="inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-[#1d1d1d] rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               GET STARTED
@@ -341,7 +341,7 @@ export default function CustomSoftwareDevelopmentPage() {
                 Scale Confidently
               </h3>
               <p
-                className="mt-3 text-sm text-white/80"
+                className="mt-3 text-sm text-[#fff9f1]/80"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Modern architectures, cloud‑native patterns, and strong DevOps give your product headroom to grow without slowing down delivery.
@@ -364,7 +364,7 @@ export default function CustomSoftwareDevelopmentPage() {
                 Built for Your Business
               </h3>
               <p
-                className="mt-3 text-sm text-white/80 max-w-md"
+                className="mt-3 text-sm text-[#fff9f1]/80 max-w-md"
                 style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Align software with workflows, integrate with existing systems, and unlock efficiencies impossible with off‑the‑shelf tools.
@@ -372,7 +372,7 @@ export default function CustomSoftwareDevelopmentPage() {
             </div>
 
             <div className="relative">
-              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]">
                 <svg width="18" height="18" viewBox="0 0 24 24">
                   <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
                 </svg>
@@ -386,14 +386,14 @@ export default function CustomSoftwareDevelopmentPage() {
                   priority
                 />
               </div>
-              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
+              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]">
                 <svg width="18" height="18" viewBox="0 0 24 24">
                   <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
                 </svg>
               </span>
             </div>
           </div>
-      
+
         </div>
       </section>
 
@@ -462,10 +462,10 @@ function SoftwareProcessTabs() {
       {/* Middle: active step title + paragraph */}
       <div className="max-w-xl text-center lg:text-left">
         <h3
-          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start"
+          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-[#1d1d1d] justify-center lg:justify-start"
           style={{ fontFamily: 'Recursive, sans-serif' }}
         >
-          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
             <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]">
               <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -473,7 +473,7 @@ function SoftwareProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -495,7 +495,7 @@ function SoftwareProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-[#1d1d1d]" : "text-[#1d1d1d]/75 hover:text-[#1d1d1d]",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
@@ -503,7 +503,7 @@ function SoftwareProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -526,7 +526,7 @@ function RibbonText() {
         alt="Smart Software That Drives Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );

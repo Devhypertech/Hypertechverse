@@ -48,7 +48,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[40vh] flex flex-col items-center justify-center text-center py-12 md:py-16">
             <h1
@@ -67,7 +67,7 @@ export default function ContactPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -78,12 +78,12 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Details Section */}
-      <section className="bg-black text-white py-12 sm:py-16 md:py-20">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-12 sm:py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
             {/* Contact Form */}
             <ScrollAnimation animation="fadeInLeft" delay={150}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 border border-white/10">
+              <div className="bg-[#fff9f1]/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 border border-white/10">
                 <h2
                   className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6"
                   style={{ fontFamily: "Recursive, sans-serif" }}
@@ -106,7 +106,7 @@ export default function ContactPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
+                      className="w-full rounded-lg bg-[#fff9f1]/10 border border-white/20 px-4 py-3 text-[#fff9f1] placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
                       placeholder="Your Name"
                     />
                   </div>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
+                      className="w-full rounded-lg bg-[#fff9f1]/10 border border-white/20 px-4 py-3 text-[#fff9f1] placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
+                      className="w-full rounded-lg bg-[#fff9f1]/10 border border-white/20 px-4 py-3 text-[#fff9f1] placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
                       placeholder="(123) 456-7890"
                     />
                   </div>
@@ -164,14 +164,14 @@ export default function ContactPage() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
+                      className="w-full rounded-lg bg-[#fff9f1]/10 border border-white/20 px-4 py-3 text-[#fff9f1] focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition"
                     >
-                      <option value="" className="bg-black">Select a subject</option>
-                      <option value="general" className="bg-black">General Inquiry</option>
-                      <option value="services" className="bg-black">Services</option>
-                      <option value="support" className="bg-black">Support</option>
-                      <option value="partnership" className="bg-black">Partnership</option>
-                      <option value="other" className="bg-black">Other</option>
+                      <option value="" className="bg-[#1d1d1d]">Select a subject</option>
+                      <option value="general" className="bg-[#1d1d1d]">General Inquiry</option>
+                      <option value="services" className="bg-[#1d1d1d]">Services</option>
+                      <option value="support" className="bg-[#1d1d1d]">Support</option>
+                      <option value="partnership" className="bg-[#1d1d1d]">Partnership</option>
+                      <option value="other" className="bg-[#1d1d1d]">Other</option>
                     </select>
                   </div>
 
@@ -190,7 +190,7 @@ export default function ContactPage() {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full rounded-lg bg-white/10 border border-white/20 px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition resize-none"
+                      className="w-full rounded-lg bg-[#fff9f1]/10 border border-white/20 px-4 py-3 text-[#fff9f1] placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-[#EA7BBF] focus:border-transparent transition resize-none"
                       placeholder="Tell us about your project or inquiry..."
                     />
                   </div>
@@ -214,7 +214,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full rounded-lg bg-[#FFD350] text-black px-6 py-3 sm:py-4 font-bold text-base sm:text-lg shadow-[0_6px_0_rgba(0,0,0,0.25)] hover:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full rounded-lg bg-[#FFD350] text-[#1d1d1d] px-6 py-3 sm:py-4 font-bold text-base sm:text-lg shadow-[0_6px_0_rgba(0,0,0,0.25)] hover:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-translate-y-0.5 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
@@ -234,7 +234,7 @@ export default function ContactPage() {
                     Contact Information
                   </h2>
                   <p
-                    className="text-base sm:text-lg text-white/80 mb-8"
+                    className="text-base sm:text-lg text-[#fff9f1]/80 mb-8"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     Reach out to us through any of these channels. We&apos;re here to help!
@@ -242,7 +242,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Call Us */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+                <div className="bg-[#fff9f1]/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EA7BBF] flex items-center justify-center">
                       <svg
@@ -254,7 +254,7 @@ export default function ContactPage() {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="text-white"
+                        className="text-[#fff9f1]"
                       >
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                       </svg>
@@ -269,14 +269,14 @@ export default function ContactPage() {
                       <div className="space-y-2">
                         <a
                           href="tel:3259999372"
-                          className="block text-base sm:text-lg text-white/90 hover:text-[#FFD350] transition-colors"
+                          className="block text-base sm:text-lg text-[#fff9f1]/90 hover:text-[#FFD350] transition-colors"
                           style={{ fontFamily: "Poppins, sans-serif" }}
                         >
                           325-999-9372
                         </a>
                         <a
                           href="tel:8328104443"
-                          className="block text-base sm:text-lg text-white/90 hover:text-[#FFD350] transition-colors"
+                          className="block text-base sm:text-lg text-[#fff9f1]/90 hover:text-[#FFD350] transition-colors"
                           style={{ fontFamily: "Poppins, sans-serif" }}
                         >
                           832-810-4443
@@ -287,7 +287,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Email */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+                <div className="bg-[#fff9f1]/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EA7BBF] flex items-center justify-center">
                       <svg
@@ -299,7 +299,7 @@ export default function ContactPage() {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="text-white"
+                        className="text-[#fff9f1]"
                       >
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                         <polyline points="22,6 12,13 2,6" />
@@ -314,7 +314,7 @@ export default function ContactPage() {
                       </h3>
                       <a
                         href="mailto:info@hypertechverse.com"
-                        className="block text-base sm:text-lg text-white/90 hover:text-[#FFD350] transition-colors"
+                        className="block text-base sm:text-lg text-[#fff9f1]/90 hover:text-[#FFD350] transition-colors"
                         style={{ fontFamily: "Poppins, sans-serif" }}
                       >
                         info@hypertechverse.com
@@ -324,7 +324,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Location */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+                <div className="bg-[#fff9f1]/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#EA7BBF] flex items-center justify-center">
                       <svg
@@ -336,7 +336,7 @@ export default function ContactPage() {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        className="text-white"
+                        className="text-[#fff9f1]"
                       >
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                         <circle cx="12" cy="10" r="3" />
@@ -353,7 +353,7 @@ export default function ContactPage() {
                         href="https://maps.google.com/?q=15819+Winter+Cypress+Wy,+Cypress,+TX+77429"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block text-base sm:text-lg text-white/90 hover:text-[#FFD350] transition-colors"
+                        className="block text-base sm:text-lg text-[#fff9f1]/90 hover:text-[#FFD350] transition-colors"
                         style={{ fontFamily: "Poppins, sans-serif" }}
                       >
                         15819 Winter Cypress Wy,
@@ -366,7 +366,7 @@ export default function ContactPage() {
               </div>
             </ScrollAnimation>
           </div>
-      </div>
+        </div>
       </section>
     </main>
   );
@@ -376,7 +376,7 @@ function RibbonText() {
   return (
     <div className="flex items-center">
       <span
-        className="text-white font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider whitespace-nowrap inline-block px-8"
+        className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl uppercase tracking-wider whitespace-nowrap inline-block px-8"
         style={{ fontFamily: "Recursive, sans-serif" }}
       >
         GET IN TOUCH | HYPERTECH VERSE | CONTACT US

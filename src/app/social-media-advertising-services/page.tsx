@@ -9,7 +9,7 @@ export default function SocialMediaAdvertisingPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section — Yellow background with black text (same as SEO) */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Right half image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -32,10 +32,10 @@ export default function SocialMediaAdvertisingPage() {
                     className="leading-[.95] font-black uppercase text-2xl sm:text-3xl md:text-[36px] lg:text-[48px] xl:text-[56px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    Boost Your Brand with Targeted 
+                    Boost Your Brand with Targeted
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    Social Ads
+                      Social Ads
                     </span>
                   </h1>
 
@@ -43,7 +43,7 @@ export default function SocialMediaAdvertisingPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -61,7 +61,7 @@ export default function SocialMediaAdvertisingPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -82,11 +82,11 @@ export default function SocialMediaAdvertisingPage() {
                 />
               </div>
             </div>
-          </div>  
+          </div>
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -97,7 +97,7 @@ export default function SocialMediaAdvertisingPage() {
       </section>
 
       {/* About Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -117,20 +117,20 @@ export default function SocialMediaAdvertisingPage() {
             <ScrollAnimation animation="fadeInRight" delay={250}>
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#FBEAE2] leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Reach More of the <span className="text-[#EA7BBF]">Right People</span>
+                  Reach More of the <span className="text-[#EA7BBF]">Right People</span>
                 </h2>
 
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                As a reputable paid social agency, Hypertech Verse will build accuracy-based campaigns on major social media networks to get your brand in the news feed of the people that matter. A paid social marketing agency that is based on results, our mission is to make you more visible, get more engagement and deliver better results to your business.
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                  As a reputable paid social agency, Hypertech Verse will build accuracy-based campaigns on major social media networks to get your brand in the news feed of the people that matter. A paid social marketing agency that is based on results, our mission is to make you more visible, get more engagement and deliver better results to your business.
                 </p>
 
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
+                    className="inline-block bg-[#FFD350] text-[#1d1d1d] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
-                   start your free consultation today!
+                    start your free consultation today!
                   </Link>
                 </div>
               </div>
@@ -140,12 +140,12 @@ export default function SocialMediaAdvertisingPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#1d1d1d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Paid Advertising Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -155,7 +155,7 @@ export default function SocialMediaAdvertisingPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Paid Advertising Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -163,10 +163,10 @@ export default function SocialMediaAdvertisingPage() {
           </div>
         </div>
       </section>
-      
+
 
       {/* Yellow Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
           src="/services/logo/bg.png"
@@ -198,61 +198,61 @@ export default function SocialMediaAdvertisingPage() {
         </div>
       </section>
       {/* ==== Why Paid Ads Work section (matches reference) ==== */}
-<section className="bg-black text-white py-14 sm:py-16">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="bg-[#1d1d1d] text-[#fff9f1] py-14 sm:py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-    {/* 6-step chips */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-      {[
-        "Let's Talk Goals",
-        "Know Your Audience",
-        "Plan the Strategy",
-        "Create Your Ads",
-        "Go Live",
-        "Track & Improve",
-      ].map((t, i) => (
-        <div
-          key={t}
-          className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-black"
-        >
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-white font-bold">
-            {i + 1}
-          </span>
-          <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
-            {t}
-          </span>
+          {/* 6-step chips */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {[
+              "Let's Talk Goals",
+              "Know Your Audience",
+              "Plan the Strategy",
+              "Create Your Ads",
+              "Go Live",
+              "Track & Improve",
+            ].map((t, i) => (
+              <div
+                key={t}
+                className="flex items-center gap-3 rounded-full bg-[#FFD350] font-bold px-4 py-3 text-[#1d1d1d]"
+              >
+                <span className="grid h-8 w-8 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] font-bold">
+                  {i + 1}
+                </span>
+                <span className="font-bold text-sm uppercase" style={{ fontFamily: "Recursive, sans-serif" }}>
+                  {t}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* strap + CTA */}
+
+
+          {/* Section heading */}
+          <div className="mt-10 text-center">
+            <h2
+              className="text-xl sm:text-2xl font-extrabold uppercase"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              Our Seamless Ad Strategy
+            </h2>
+            <p
+              className="mt-2 text-xs sm:text-sm text-[#fff9f1]/80"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              At Hypertech Verse, our smooth, collaborative process is the foundation of every successful campaign. As a results-driven paid social advertising agency, we combine clarity, creativity, and consistent performance to deliver the best possible outcomes for our clients.
+            </p>
+          </div>
+
+          {/* Alternating rows */}
+          <div className="mt-10 space-y-12">
+
+
+
+
+          </div>
         </div>
-      ))}
-    </div>
-
-    {/* strap + CTA */}
-
-
-    {/* Section heading */}
-    <div className="mt-10 text-center">
-      <h2
-        className="text-xl sm:text-2xl font-extrabold uppercase"
-        style={{ fontFamily: "Recursive, sans-serif" }}
-      >
-        Our Seamless Ad Strategy
-      </h2>
-      <p
-        className="mt-2 text-xs sm:text-sm text-white/80"
-        style={{ fontFamily: "Poppins, sans-serif" }}
-      >
-       At Hypertech Verse, our smooth, collaborative process is the foundation of every successful campaign. As a results-driven paid social advertising agency, we combine clarity, creativity, and consistent performance to deliver the best possible outcomes for our clients.
-      </p>
-    </div>
-
-    {/* Alternating rows */}
-    <div className="mt-10 space-y-12">
-
-     
-
-    
-    </div>
-  </div>  
-</section>
+      </section>
 
       <TestimonialsMasonry />
     </main>
@@ -267,7 +267,7 @@ function SMAProcessTabs() {
     { title: "LinkedIn Ads", desc: "Great choice to achieve success in B2B, LinkedIn will always be a leading preference, and our paid social ad agency will create a campaign that lets you reach professionals, decision-makers, and industry leaders. We promote your brand as an expert with high quality leads being generated by selecting the right ad formats. Our social media advertisement options are Sponsored Content, Message Ads, and precise audience targeting to optimize ROI. LinkedIn is an important component in your overall programmatic advertising strategy to ensure the best exposure using multiple platforms as we are a paid social marketing agency.", logo: "/services/logo/logoe.png" },
     { title: "Twitter (X) Ads", desc: "Our Twitter (X) campaigns that will place your brand at the center of real-time discussions. Proper interest targeting, trending topics, and promoted tweets are utilized to ensure your brand is involved in whatever is trending at the time. By leveraging Twitter's dynamic platform, we help you engage with audiences in real-time, driving immediate interaction and boosting brand visibility. Our Twitter paid social media agency develops Twitter advertisement that initiates their own interaction, campaign promotion, and web traffic generation. We leverage such a programmatic advertising platform to build breakthrough responsive and conversation-based strategies that are measurable.  ", logo: "/services/logo/logof.png" },
     { title: "Threads Ads", desc: "As a rapidly growing platform, Threads offers unique opportunities to connect with engaged, niche audiences. Threads provides companies with a new, community-driven platform, and our paid social advertising agency can assist you in making an early impression. Our ad solutions are built with the priority of authenticity, yet they will move your marketing objectives. Combining thoughtful copy, impactful imagery, and the right placement, our paid social marketing agency can have your Threads ads look natural but perform well. By incorporating Threads in your programmed advertising platform strategy, you rid yourself of reaching an audience that is growing in numbers ahead of your competition.", logo: "/services/SocialmediaAdversting/taba.png" },
-      ];
+  ];
 
   const [active, setActive] = React.useState(0);
 
@@ -278,13 +278,13 @@ function SMAProcessTabs() {
       </div>
 
       <div className="max-w-xl text-center lg:text-left">
-        <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
-          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
-            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        <h3 className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-[#1d1d1d] justify-center lg:justify-start" style={{ fontFamily: 'Recursive, sans-serif' }}>
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+            <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]"><path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
           </span>
           {steps[active].title}
         </h3>
-        <p className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
+        <p className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed" style={{ fontFamily: 'Poppins, sans-serif' }}>{steps[active].desc}</p>
       </div>
 
       <nav aria-label="Process steps" className="lg:pl-4">
@@ -297,11 +297,11 @@ function SMAProcessTabs() {
                   onMouseEnter={() => setActive(i)}
                   onFocus={() => setActive(i)}
                   onClick={() => setActive(i)}
-                  className={["group w-full text-left uppercase font-extrabold tracking-wide","transition rounded-xl px-3 py-2 sm:px-4 sm:py-2","text-sm sm:text-base",isActive ? "text-black" : "text-black/75 hover:text-black"].join(" ")}
+                  className={["group w-full text-left uppercase font-extrabold tracking-wide", "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2", "text-sm sm:text-base", isActive ? "text-[#1d1d1d]" : "text-[#1d1d1d]/75 hover:text-[#1d1d1d]"].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
                   <span className="inline-flex items-center gap-2 sm:gap-3">
-                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"].join(" ")}/>
+                    <span className={["h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition", isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"].join(" ")} />
                     {s.title}
                   </span>
                 </button>

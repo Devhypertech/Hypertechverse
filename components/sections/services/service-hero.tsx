@@ -5,7 +5,7 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 
 export default function ServiceHero() {
     return (
-        <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+        <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
             <div className="relative mx-auto max-w-7xl w-full px-14 sm:px-6 lg:px-8">
                 <div className="grid items-center justify-center gap-10 pt-20 pb-4 lg:grid-cols-2 lg:pt-40 lg:pb-8">
 
@@ -33,7 +33,7 @@ export default function ServiceHero() {
                                 <Link
                                     href="/contact"
                                     aria-label="Start a project"
-                                    className="absolute -right-10 top-1/2 -translate-y-1/2 grid h-16 w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_10px_0_rgba(0,0,0,0.25)] hover:translate-y-[-48%] transition-transform"
+                                    className="absolute -right-10 top-1/2 -translate-y-1/2 grid h-16 w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_10px_0_rgba(0,0,0,0.25)] hover:translate-y-[-48%] transition-transform"
                                 >
                                     <svg
                                         width="24"
@@ -49,7 +49,7 @@ export default function ServiceHero() {
 
                             {/* description */}
                             <p
-                                className="mt-6 max-w-xl text-sm sm:text-[15px] leading-relaxed font-medium text-white/95"
+                                className="mt-6 max-w-xl text-sm sm:text-[15px] leading-relaxed font-medium text-[#fff9f1]/95"
                                 style={{ fontFamily: "Poppins, sans-serif" }}
                             >
                                 HYPERTECH VERSE OFFERS COMPREHENSIVE DIGITAL SOLUTIONS FOR
@@ -81,7 +81,7 @@ export default function ServiceHero() {
             </div>
 
             {/* Bottom marquee */}
-            <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+            <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
                 <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
                     <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
                         <RibbonText />
@@ -89,9 +89,9 @@ export default function ServiceHero() {
                     </div>
                 </div>
             </div>
-            
+
             {/* Logos image after ribbon */}
-            <div className="relative w-full bg-black py-8">
+            <div className="relative w-full bg-[#1d1d1d] py-8">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
                     <div className="flex justify-center">
                         <Image
@@ -117,7 +117,7 @@ function RibbonText() {
                 alt="Smart Solutions That Drive Success"
                 width={800}
                 height={68}
-                className="h-full w-auto object-contain" 
+                className="h-full w-auto object-contain"
             />
         </div>
     );

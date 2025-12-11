@@ -10,7 +10,7 @@ export default function SocialMediaManagementPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       {/* Hero Section — Pink background with white text */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         {/* Right half image (fills exactly 50% of the viewport width) */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -34,10 +34,10 @@ export default function SocialMediaManagementPage() {
                     className="leading-[.95] font-black uppercase text-2xl sm:text-3xl md:text-[36px] lg:text-[48px] xl:text-[56px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                  Crush the Algorithm with 
+                    Crush the Algorithm with
                     <br />
                     <span className="text-3xl sm:text-4xl md:text-[36px] lg:text-[52px] xl:text-[68px] block">
-                    Social Media Marketing
+                      Social Media Marketing
                     </span>
                   </h1>
 
@@ -45,7 +45,7 @@ export default function SocialMediaManagementPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -58,14 +58,14 @@ export default function SocialMediaManagementPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                Want to turn followers into customers? We offer comprehensive social media marketing services to enhance online presence and convert attention into measurable results.
+                  Want to turn followers into customers? We offer comprehensive social media marketing services to enhance online presence and convert attention into measurable results.
                 </p>
 
                 {/* CTA */}
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-black shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#1d1d1d] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -90,7 +90,7 @@ export default function SocialMediaManagementPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -101,7 +101,7 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Social Media Management Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -122,24 +122,24 @@ export default function SocialMediaManagementPage() {
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 {/* Main headline */}
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#FBEAE2] font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                Social Media Strategy <span className="text-[#EA7BBF]">Basics</span>
+                  Social Media Strategy <span className="text-[#EA7BBF]">Basics</span>
                 </h2>
 
                 {/* Sub headline */}
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Your audience. Perfectly aligned.
+                  Your audience. Perfectly aligned.
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Naturally, a brand's growth, community engagement, and audience recognition hinge on the existence and application of a solid social media strategy. A solid social media marketing agency serving small companies takes competitor evaluation into account, buyer behaviors, and predictions on trends. Since so much content is produced, content planning decides what, when, and how to post and build long-term relationships with your fans.
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                  Naturally, a brand's growth, community engagement, and audience recognition hinge on the existence and application of a solid social media strategy. A solid social media marketing agency serving small companies takes competitor evaluation into account, buyer behaviors, and predictions on trends. Since so much content is produced, content planning decides what, when, and how to post and build long-term relationships with your fans.
                 </p>
 
                 {/* CTA Button */}
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
+                    className="inline-block bg-[#FFD350] text-[#1d1d1d] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -152,13 +152,13 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           {/* Yellow tilted box - static bar */}
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#1d1d1d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Social Media Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -169,7 +169,7 @@ export default function SocialMediaManagementPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Social Media Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -177,9 +177,9 @@ export default function SocialMediaManagementPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Tilted Social Media Management Slides */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         {/* total canvas height: ~65–72vh depending on breakpoint */}
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
 
@@ -213,7 +213,7 @@ export default function SocialMediaManagementPage() {
       </section>
 
       {/* Pink Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid yellow base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
@@ -227,17 +227,17 @@ export default function SocialMediaManagementPage() {
         {/* heading + intro (centered like reference) */}
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-black leading-tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#1d1d1d] leading-tight"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
             The Signature Flow that Brings<br className="hidden sm:block" />
             Your Social Media to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-           Hypertech Verse is a social media marketing agency that assists small businesses in expanding their businesses with the help of content planning, audience targeting, and campaigns based on data. We develop tailor-made marketing plans that improve the engagement, brand awareness, and competitiveness of the businesses in the rapidly changing online world.
+            Hypertech Verse is a social media marketing agency that assists small businesses in expanding their businesses with the help of content planning, audience targeting, and campaigns based on data. We develop tailor-made marketing plans that improve the engagement, brand awareness, and competitiveness of the businesses in the rapidly changing online world.
           </p>
         </div>
 
@@ -265,150 +265,150 @@ export default function SocialMediaManagementPage() {
           </div>
         </div>
 
-   
+
       </section>
 
 
-{/* Benefits of using Social Media Services */}
-<section className="relative bg-black text-white py-16 sm:py-20">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6">
-    {/* Title */}
-    <h2
-      className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10"
-      style={{ fontFamily: "Recursive, sans-serif" }}
-    >
-      Benefits of using Social Media Services
-    </h2>
+      {/* Benefits of using Social Media Services */}
+      <section className="relative bg-[#1d1d1d] text-[#fff9f1] py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          {/* Title */}
+          <h2
+            className="text-center text-lg sm:text-xl font-extrabold uppercase tracking-wide mb-10"
+            style={{ fontFamily: "Recursive, sans-serif" }}
+          >
+            Benefits of using Social Media Services
+          </h2>
 
-    {/* Targeted Audience Reach + Illustration + side arrows */}
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-10">
-      {/* Left copy */}
-      <div>
-        <h3
-          className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Targeted Audience Reach
-        </h3>
-        <p
-          className="mt-3 text-sm text-white/80 max-w-md"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          Get in front of people who matter with hyper-focused content, smart
-          scheduling, and analytics-driven optimizations. Target by interests,
-          location, behavior, look-alikes, and more.
-        </p>
-      </div>
+          {/* Targeted Audience Reach + Illustration + side arrows */}
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 mb-10">
+            {/* Left copy */}
+            <div>
+              <h3
+                className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Targeted Audience Reach
+              </h3>
+              <p
+                className="mt-3 text-sm text-[#fff9f1]/80 max-w-md"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                Get in front of people who matter with hyper-focused content, smart
+                scheduling, and analytics-driven optimizations. Target by interests,
+                location, behavior, look-alikes, and more.
+              </p>
+            </div>
 
-      {/* Right art with pink circle arrows (decorative) */}
-      <div className="relative">
-        {/* left arrow */}
-        <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-          <svg width="18" height="18" viewBox="0 0 24 24">
-            <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-          </svg>
-        </span>
-        {/* image */}
-        <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl ">
-          <Image
-            src="/services/smm/caone.png"  // hero art for this block
-            alt="Targeted audience illustration"
-            fill
-            className="object-contain"
-            priority
-          />
+            {/* Right art with pink circle arrows (decorative) */}
+            <div className="relative">
+              {/* left arrow */}
+              <span className="absolute -left-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+              </span>
+              {/* image */}
+              <div className="relative mx-auto aspect-[16/10] w-full overflow-hidden rounded-2xl ">
+                <Image
+                  src="/services/smm/caone.png"  // hero art for this block
+                  alt="Targeted audience illustration"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              {/* right arrow */}
+              <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d]">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          {/* Icons grid (single image from your assets, like in ref) */}
+          <div className="relative py-10 mx-auto max-w-4xl">
+            <div className="relative aspect-[16/8] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/services/smm/icons.png"
+                alt="Social platforms"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center mt-2">
+            <Link
+              href="/contact"
+              className="inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-[#1d1d1d] rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              GET STARTED
+            </Link>
+          </div>
+
+          {/* ---- Feature row 1: Left image, right copy ---- */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+            <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl">
+              <Image
+                src="/services/smm/target.png"
+                alt="Reach your target audience"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div>
+              <h3
+                className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Reach Your Target Audience
+              </h3>
+              <p
+                className="mt-3 text-sm text-[#fff9f1]/80"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                Pinpoint the right demographics, interests, and behaviors. We use
+                audience insights, content pillars, and paid boosts to put every post
+                in front of the people who convert.
+              </p>
+            </div>
+          </div>
+
+          {/* ---- Feature row 2: Left copy, right image ---- */}
+          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+            <div className="order-2 md:order-1">
+              <h3
+                className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
+                style={{ fontFamily: "Recursive, sans-serif" }}
+              >
+                Do you really need Social Media &amp; Digital Marketing
+              </h3>
+              <p
+                className="mt-3 text-sm text-[#fff9f1]/80"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
+                Absolutely. From brand trust to sales, social is the fastest path to
+                awareness and growth. Strategy + creative + analytics = compound
+                returns across your funnel.
+              </p>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl ">
+                <Image
+                  src="/services/smm/annoucement.png"
+                  alt="Digital marketing announcement"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        {/* right arrow */}
-        <span className="absolute -right-6 top-1/2 -translate-y-1/2 grid h-10 w-10 place-items-center rounded-full bg-[#EA7BBF] text-black">
-          <svg width="18" height="18" viewBox="0 0 24 24">
-            <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
-          </svg>
-        </span>
-      </div>
-    </div>
-
-    {/* Icons grid (single image from your assets, like in ref) */}
-    <div className="relative py-10 mx-auto max-w-4xl">
-      <div className="relative aspect-[16/8] w-full overflow-hidden rounded-2xl">
-        <Image
-          src="/services/smm/icons.png"
-          alt="Social platforms"
-          fill
-          className="object-contain"
-        />
-      </div>
-    </div>
-
-    {/* CTA */}
-    <div className="text-center mt-2">
-      <Link
-        href="/contact"
-        className="inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 font-extrabold text-black rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
-        style={{ fontFamily: "Poppins, sans-serif" }}
-      >
-        GET STARTED
-      </Link>
-    </div>
-
-    {/* ---- Feature row 1: Left image, right copy ---- */}
-    <div className="mt-16 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-      <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl">
-        <Image
-          src="/services/smm/target.png"
-          alt="Reach your target audience"
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div>
-        <h3
-          className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Reach Your Target Audience
-        </h3>
-        <p
-          className="mt-3 text-sm text-white/80"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          Pinpoint the right demographics, interests, and behaviors. We use
-          audience insights, content pillars, and paid boosts to put every post
-          in front of the people who convert.
-        </p>
-      </div>
-    </div>
-
-    {/* ---- Feature row 2: Left copy, right image ---- */}
-    <div className="mt-14 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-      <div className="order-2 md:order-1">
-        <h3
-          className="text-base sm:text-lg font-extrabold uppercase tracking-wide"
-          style={{ fontFamily: "Recursive, sans-serif" }}
-        >
-          Do you really need Social Media &amp; Digital Marketing
-        </h3>
-        <p
-          className="mt-3 text-sm text-white/80"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          Absolutely. From brand trust to sales, social is the fastest path to
-          awareness and growth. Strategy + creative + analytics = compound
-          returns across your funnel.
-        </p>
-      </div>
-      <div className="order-1 md:order-2">
-        <div className="relative aspect-[16/12] w-full overflow-hidden rounded-2xl ">
-          <Image
-            src="/services/smm/annoucement.png"
-            alt="Digital marketing announcement"
-            fill
-            className="object-contain"
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
@@ -426,31 +426,31 @@ function SocialMediaProcessTabs() {
         "B2B social media marketing is based on the strategy that forms the basis of your online presence. Hypertech verse studies the business problem in detail, your target audience, how you fit into the market space, and builds a unique and customized business strategy. Whether it's helping you define your brand voice, which platforms you should be on, or creating a content calendar for people actually wanting to engage with you while receiving tangible results, it's our job. As we continue to improve with time and monitor your social media game, we ensure you never catch up and achieve the maximum output out of the curve.",
       logo: "/services/smm/rocket.png"
     },
-    { 
+    {
       title: "Social Media Management",
       desc:
         "Social media management can be a time sucking process and we take care of it all with our Hypertech Verse's expert social media management services. We work with content creation and creating content on a daily basis, monitoring engagement, and answering messages so that your brand is active and consistent every day. Hence, your social media comes off your brand's voice, adding value to your social media and feeding a nicely grown network of people. We aim to create a well-balanced and appropriate combination of promotional, informative, and engaging content to encourage your followers and establish a long-lasting relationship with them.",
       logo: "/services/logo/logoc.png"
     },
-    { 
+    {
       title: "Influencer Marketing",
       desc:
         "Influencer marketing is the best way to make your brand's reach and credibility far more prominent. At Hypertech Verse, we find the right influencers who your target audience is interested in; we aim to become a medium for you to connect with real people, whether micro influencers or industry leaders; connecting with them is the only way to push out your products or services authentically. From campaign strategies to influencer selection, content creation, and tracking ROI, we handle all facets of influencer marketing so that every partnership proves helpful in building the brand's trust and reach.",
       logo: "/services/logo/logod.png"
     },
-    { 
+    {
       title: "Paid Social Media Advertising",
       desc:
         "To get visibility quickly and boost conversions, there is no such thing as paid social media advertising. The company is about crafting and managing high-performing paid campaigns across platforms such as Facebook, Instagram, and LinkedIn. First, we will understand your target audience and goals. Secondly, we will create insightful ad creatives and adapt your budgeting to get your best outcome. We watch your campaigns, constantly analyzing and adjusting to help you achieve the best performance and actual business benefits from every social ad dollar spent.",
       logo: "/services/logo/logoe.png"
     },
-    { 
+    {
       title: "Community Management",
       desc:
         "Creating an online community that lasts is a key element to long-term sustenance. Community management with Hypertech Verse means that meaningful interaction and building strong relationships with your audience are our goals. We interact with your followers, supervise comments, solve customer queries, and overall create a good brand experience. While we keep our community active, informed, and engaged, we develop brand loyalty and convert casual followers into serious advocates. Your brand is presented as approachable, responsive, and as engaged as possible with customer satisfaction in our community management efforts.",
       logo: "/services/logo/logof.png"
     },
-    { 
+    {
       title: "Platform Shop Creation & Product Tagging",
       desc:
         "Let's turn our platforms into a direct sales channel by creating a platform shop and tagging the products. It helps you to set up the shops on Instagram, Facebook & other platforms to enable you to present your products seamlessly and make them shoppable. We will also optimize the product tagging so that each post or story can have the ability to convert followers into customers. If we assist in integrating e-commerce features into your social media account and make it easier for your audience to find and re-purchase your products from your feed, your sales and brand exposure will increase.",
@@ -477,11 +477,11 @@ function SocialMediaProcessTabs() {
       {/* Middle: active step title with yellow circle + arrow and paragraph */}
       <div className="max-w-xl text-center lg:text-left">
         <h3
-          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start"
+          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-[#1d1d1d] justify-center lg:justify-start"
           style={{ fontFamily: 'Recursive, sans-serif' }}
         >
           {/* yellow circle with arrow */}
-          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
             <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]">
               <path d="M6 18L18 6M18 6H9M18 6V15"
                 fill="none" stroke="currentColor" strokeWidth="2"
@@ -491,7 +491,7 @@ function SocialMediaProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -513,7 +513,7 @@ function SocialMediaProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-[#1d1d1d]" : "text-[#1d1d1d]/75 hover:text-[#1d1d1d]",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
@@ -521,7 +521,7 @@ function SocialMediaProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -546,7 +546,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );
@@ -631,7 +631,7 @@ function SocialMediaSuccessCarousel() {
             onClick={() => go(idx)}
             className={[
               "h-2.5 w-2.5 rounded-full transition",
-              idx === i ? "bg-[#FFD350]" : "bg-white/30 hover:bg-white/60",
+              idx === i ? "bg-[#FFD350]" : "bg-[#fff9f1]/30 hover:bg-[#fff9f1]/60",
             ].join(" ")}
           />
         ))}
@@ -665,7 +665,7 @@ function SocialMediaSuccessCarousel() {
         <button
           aria-label="Previous"
           onClick={() => go(i - 1)}
-          className="absolute left-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition"
+          className="absolute left-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-md hover:scale-105 transition"
         >
           <svg width="26" height="26" viewBox="0 0 24 24">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -674,7 +674,7 @@ function SocialMediaSuccessCarousel() {
         <button
           aria-label="Next"
           onClick={() => go(i + 1)}
-          className="absolute right-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition"
+          className="absolute right-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-md hover:scale-105 transition"
         >
           <svg width="26" height="26" viewBox="0 0 24 24">
             <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -687,11 +687,11 @@ function SocialMediaSuccessCarousel() {
             className="text-[18px] sm:text-[20px] md:text-[22px] font-extrabold uppercase tracking-wide"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
+            <span className="text-[#fff9f1]">{slides[i].headlineLeft}&nbsp;</span>
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight"
+            className="mt-2 text-[11px] sm:text-[12px] text-[#fff9f1]/80 max-w-3xl mx-auto leading-tight"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}
@@ -699,7 +699,7 @@ function SocialMediaSuccessCarousel() {
 
           <Link
             href={slides[i].cta.href}
-            className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 text-black font-extrabold rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+            className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 text-[#1d1d1d] font-extrabold rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].cta.label}

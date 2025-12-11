@@ -3,17 +3,17 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPinterest, FaYoutube 
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white py-6">
+        <footer className="bg-[#1d1d1d] text-[#fff9f1] py-6">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
                 {/* Footer Menu in the Center */}
                 <div className="flex flex-wrap justify-center py-14 gap-4 sm:gap-6 md:space-x-8 mb-6">
-                    <a href="/portfolio" className="text-white hover:text-[#FFD350] transition">Portfolio</a>
-                    <a href="/services" className="text-white hover:text-[#FFD350] transition">Services</a>
-                    <a href="/about" className="text-white hover:text-[#FFD350] transition">About</a>
-                    <a href="/blogs" className="text-white hover:text-[#FFD350] transition">Blogs</a>
-                    <a href="/pricing" className="text-white hover:text-[#FFD350] transition">Pricing</a>
-                    <a href="/contact" className="text-white hover:text-[#FFD350] transition">Contact</a>
+                    <a href="/portfolio" className="text-[#fff9f1] hover:text-[#FFD350] transition">Portfolio</a>
+                    <a href="/services" className="text-[#fff9f1] hover:text-[#FFD350] transition">Services</a>
+                    <a href="/about" className="text-[#fff9f1] hover:text-[#FFD350] transition">About</a>
+                    <a href="/blogs" className="text-[#fff9f1] hover:text-[#FFD350] transition">Blogs</a>
+                    <a href="/pricing" className="text-[#fff9f1] hover:text-[#FFD350] transition">Pricing</a>
+                    <a href="/contact" className="text-[#fff9f1] hover:text-[#FFD350] transition">Contact</a>
                 </div>
 
                 {/* Three Columns Layout */}
@@ -23,9 +23,16 @@ export default function Footer() {
                     <div className="text-center md:text-left">
                         <a
                             href="/contact"
-                            className="inline-block bg-[#FDA5D5] text-black py-2 px-6 rounded-lg font-semibold hover:bg-[#FFD350] transition"
+                            className="inline-block bg-[#FDA5D5] text-[#1d1d1d] py-4 px-8 rounded-lg font-semibold hover:bg-[#FFD350] transition"
                         >
-                            Get Started
+                            <span style={{
+                                fontSize: "24px",
+                                fontWeight: "bold",
+
+                            }}>
+
+                                Get Started
+                            </span>
                         </a>
                     </div>
 
@@ -65,7 +72,7 @@ export default function Footer() {
 
                 {/* Footer Bottom Text */}
                 <div className="flex flex-col sm:flex-row items-center justify-between mt-6 text-sm">
-                    <div className="text-white mb-4 sm:mb-0">
+                    <div className="text-[#fff9f1] mb-4 sm:mb-0">
                         @2025 Created By Hypertech Verse.
                     </div>
                     <div className="flex justify-end space-x-6">

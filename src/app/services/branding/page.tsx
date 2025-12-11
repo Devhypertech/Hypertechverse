@@ -10,7 +10,7 @@ export default function BrandingPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       {/* Hero Section — Yellow background with black text */}
-      <section className="relative overflow-hidden bg-[#FFD350] text-black">
+      <section className="relative overflow-hidden bg-[#FFD350] text-[#1d1d1d]">
         {/* Right half image (fills exactly 50% of the viewport width) */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -45,7 +45,7 @@ export default function BrandingPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -66,7 +66,7 @@ export default function BrandingPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-white shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#EA7BBF] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#fff9f1] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -91,7 +91,7 @@ export default function BrandingPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -102,7 +102,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Branding Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -128,11 +128,11 @@ export default function BrandingPage() {
 
                 {/* Sub headline */}
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#FBEAE2]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Where strategy meets creative excellence.
+                  Where strategy meets creative excellence.
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   What makes us the best branding company? Hypertech Verse transforms your brand vision into powerful identities that connect with your audience. Our expert designers create compelling brand experiences across all platforms, delivering cohesive solutions that grow with your business. From strategy to execution, we build brands that drive engagement and deliver results.
                 </p>
 
@@ -140,7 +140,7 @@ export default function BrandingPage() {
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
+                    className="inline-block bg-[#EA7BBF] text-[#fff9f1] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -153,13 +153,13 @@ export default function BrandingPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           {/* Yellow tilted box - static bar */}
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#1d1d1d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Branding Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -170,7 +170,7 @@ export default function BrandingPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of Branding Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -178,9 +178,9 @@ export default function BrandingPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Tilted Branding Slides */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         {/* total canvas height: ~65–72vh depending on breakpoint */}
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
 
@@ -214,7 +214,7 @@ export default function BrandingPage() {
       </section>
 
       {/* Yellow Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid yellow base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
@@ -228,17 +228,17 @@ export default function BrandingPage() {
         {/* heading + intro (centered like reference) */}
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-black leading-tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#1d1d1d] leading-tight"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
             The Signature Flow that Brings<br className="hidden sm:block" />
             Brands to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-         Hypertech Verse is a major creative branding and designing firm, which focuses on developing strong and memorable brands that are notable among competitive markets. We provide a full range of services, including brand strategy, logo design, brand naming, package design, rebranding, and the creation of custom collateral. We are a professional graphic design firm that assists companies to get success over the long term.
+            Hypertech Verse is a major creative branding and designing firm, which focuses on developing strong and memorable brands that are notable among competitive markets. We provide a full range of services, including brand strategy, logo design, brand naming, package design, rebranding, and the creation of custom collateral. We are a professional graphic design firm that assists companies to get success over the long term.
           </p>
         </div>
 
@@ -266,11 +266,11 @@ export default function BrandingPage() {
           </div>
         </div>
 
-   
+
       </section>
 
       {/* Elite Branding Agency Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white">
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Section: Elite Branding Agency */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
@@ -279,21 +279,21 @@ export default function BrandingPage() {
               <div className="space-y-4 sm:space-y-5 md:space-y-6">
                 {/* Main headline */}
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                BRANDING
-                <span className="text-[#EA7BBF]"> IDENTITY</span>
+                  BRANDING
+                  <span className="text-[#EA7BBF]"> IDENTITY</span>
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Create a powerful brand identity that resonates with your audience. We specialize in crafting
-                memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.        
-                  </p>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                  Create a powerful brand identity that resonates with your audience. We specialize in crafting
+                  memorable brands that tell your story, build trust, and drive business growth through strategic design and creative excellence.
+                </p>
 
                 {/* CTA Button */}
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#EA7BBF] text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors transform -rotate-3"
+                    className="inline-block bg-[#EA7BBF] text-[#fff9f1] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#d068a5] transition-colors transform -rotate-3"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     GET STARTED
@@ -315,10 +315,10 @@ export default function BrandingPage() {
               </div>
             </ScrollAnimation>
           </div>
-      </div>
+        </div>
       </section>
 
-      <section className="relative bg-black py-6 sm:py-6">
+      <section className="relative bg-[#1d1d1d] py-6 sm:py-6">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <BrandingSuccessCarousel />
         </div>
@@ -338,31 +338,31 @@ function BrandingProcessTabs() {
         "Hypertech Verse provides strategic brand services that help businesses achieve their maximum results. The beginning of your brand development involves market research, audience analytics, and competitor analysis to establish current market conditions. We develop long-term strategic planning, establishing your brand's position in the market. Through this approach, your business will excel in competitive markets. We build consistent growth strategies through our team, which helps startups as well as established enterprises build strong customer relations and achieve lasting growth. We work together with our graphic design and branding services to develop enduring, recognizable identities that will leave a lasting impact.",
       logo: "/services/branding/tab.png"
     },
-    { 
+    {
       title: "Logo Design & Style Guiding",
       desc:
         "Your brand relies on its logo to represent it; therefore, we approach logo development with dignity. Our creative graphic design agency builds visual logo concepts that both showcase branding alignment as well as attractive aesthetics. Creating your logo follows a method that starts with extensive discovery meetings and continues through multiple design adaptations. Our service extends past logo development since we provide complete style direction. We provide rules for color selection, typestyle standards, graphical symbols, and their application within both digital and physical platforms. We will deliver assets that deliver appealing aesthetics and operational functionality through our position as a prominent graphic design company. ",
       logo: "/services/logo/logoc.png"
     },
-    { 
+    {
       title: "Brand Naming",
       desc:
         "In brand development, selecting a suitable name is a vital aspect that many fail to consider appropriately. Brand naming services form a part of our complete branding service portfolio, which we provide to our clients. Our research measures both linguistic patterns along with cultural relevance to domain availability and trademark conflicts in order to confirm the name's complete viability. Our professional branding agency recognizes how an effective name creates specific perceptions while building strong connections between people and brands. Our affordable graphic design services expand your brand visibility through influential logos and branding elements to create an industry-leading position.",
       logo: "/services/logo/logod.png"
     },
-    { 
+    {
       title: "Brand Package Designs",
       desc:
         "The first impression creates an essential impact that specifically affects retail stores, together with digital marketplaces. Our brand package design services dedicate themselves to elements beyond typical visual attractiveness. We operate as one of the most significant graphic design companies that develop both practical packaging utilities and engaging visual storytelling.  Through our position as a leading graphic designing company, we deliver packages that use your brand language through every design element, including fonts and colors. We customize every package according to your branding targets. Brands who want wholesale value with authentic professional graphic design solutions should turn to these solutions.",
       logo: "/services/logo/logoe.png"
     },
-    { 
+    {
       title: "Professional Rebranding Service",
       desc:
         "Hypertech Verse provides professional rebranding services as a comprehensive strategic transformation that helps businesses find new growth through relevant market positioning. I guide branding agencies through a custom approach to refine their brand voice, messaging, and visual identity based on present market demands. Our professional team uses brand identity services and professional graphic design services to simplify complex rebranding projects and achieve measurable outcomes. Our graphic design company guarantees that all elements. During the design process for your brand refreshment. The services provided by our company help businesses receive long-term value through improved brand perception and strengthened audience relationships.",
       logo: "/services/logo/logof.png"
     },
-    { 
+    {
       title: "Custom Collateral Design Service",
       desc:
         "Branded collateral is more than marketing material—it’s an extension of your brand identity. Our custom collateral design service incorporates complete products such as brochures, digital templates, presentation decks, together with flyers, business cards. The full-service aspect of our graphic design agency guarantees that every piece of collateral both captures your brand standard. Our professional experience in graphic design and branding services lets us create assets that fulfill business targets and resonate with specific audience needs. The company delivers motion graphics design services to enable your brand to achieve engaging visual movement during storytelling. As a graphic design agency, we provide cost-effective benefits to our clients.",
@@ -389,11 +389,11 @@ function BrandingProcessTabs() {
       {/* Middle: active step title with yellow circle + arrow and paragraph */}
       <div className="max-w-xl text-center lg:text-left">
         <h3
-          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-black justify-center lg:justify-start"
+          className="inline-flex items-center gap-2 sm:gap-3 text-lg sm:text-xl md:text-2xl font-extrabold text-[#1d1d1d] justify-center lg:justify-start"
           style={{ fontFamily: 'Recursive, sans-serif' }}
         >
           {/* yellow circle with arrow */}
-          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+          <span className="grid h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_3px_0_rgba(0,0,0,0.25)] sm:shadow-[0_4px_0_rgba(0,0,0,0.25)]">
             <svg width="14" height="14" viewBox="0 0 24 24" className="sm:w-4 sm:h-4 md:w-[18px] md:h-[18px] -translate-x-[1px]">
               <path d="M6 18L18 6M18 6H9M18 6V15"
                 fill="none" stroke="currentColor" strokeWidth="2"
@@ -403,7 +403,7 @@ function BrandingProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-xs sm:text-sm md:text-base text-black/90 leading-relaxed" 
+          className="mt-3 text-xs sm:text-sm md:text-base text-[#1d1d1d]/90 leading-relaxed"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -425,7 +425,7 @@ function BrandingProcessTabs() {
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-3 py-2 sm:px-4 sm:py-2",
                     "text-sm sm:text-base",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-[#1d1d1d]" : "text-[#1d1d1d]/75 hover:text-[#1d1d1d]",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
@@ -433,7 +433,7 @@ function BrandingProcessTabs() {
                     <span
                       className={[
                         "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -457,7 +457,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );
@@ -543,7 +543,7 @@ function BrandingSuccessCarousel() {
             onClick={() => go(idx)}
             className={[
               "h-2.5 w-2.5 rounded-full transition",
-              idx === i ? "bg-[#EA7BBF]" : "bg-white/30 hover:bg-white/60",
+              idx === i ? "bg-[#EA7BBF]" : "bg-[#fff9f1]/30 hover:bg-[#fff9f1]/60",
             ].join(" ")}
           />
         ))}
@@ -577,7 +577,7 @@ function BrandingSuccessCarousel() {
         <button
           aria-label="Previous"
           onClick={() => go(i - 1)}
-          className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-md hover:scale-105 transition"
+          className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-md hover:scale-105 transition"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" className="sm:w-5 sm:h-5 md:w-[26px] md:h-[26px]">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -586,7 +586,7 @@ function BrandingSuccessCarousel() {
         <button
           aria-label="Next"
           onClick={() => go(i + 1)}
-          className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-white shadow-md hover:scale-105 transition"
+          className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 grid h-10 w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#fff9f1] shadow-md hover:scale-105 transition"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" className="sm:w-5 sm:h-5 md:w-[26px] md:h-[26px]">
             <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -599,11 +599,11 @@ function BrandingSuccessCarousel() {
             className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold leading-tight uppercase tracking-wide px-2"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>
+            <span className="text-[#fff9f1]">{slides[i].headlineLeft}&nbsp;</span>
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[10px] sm:text-[11px] md:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight capitalize px-2"
+            className="mt-2 text-[10px] sm:text-[11px] md:text-[12px] text-[#fff9f1]/80 max-w-3xl mx-auto leading-tight capitalize px-2"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}
@@ -611,7 +611,7 @@ function BrandingSuccessCarousel() {
 
           <Link
             href={slides[i].cta.href}
-            className="mt-3 sm:mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm md:text-base text-white font-extrabold rounded-md shadow-[0_4px_0_rgba(0,0,0,.25)] sm:shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+            className="mt-3 sm:mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 text-xs sm:text-sm md:text-base text-[#fff9f1] font-extrabold rounded-md shadow-[0_4px_0_rgba(0,0,0,.25)] sm:shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].cta.label}

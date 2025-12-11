@@ -102,9 +102,9 @@
 // function toneClasses(tone: Tone) {
 //     const base =
 //         "rounded-xl border border-white/10 shadow-[0_6px_0_rgba(0,0,0,0.35)] p-5 md:p-6";
-//     if (tone === "cream") return `${base} bg-[#FDEDE8] text-black`;
-//     if (tone === "pink") return `${base} bg-[#EA7BBF] text-white`;
-//     return `${base} bg-white text-black`;
+//     if (tone === "cream") return `${base} bg-[#FDEDE8] text-[#1d1d1d]`;
+//     if (tone === "pink") return `${base} bg-[#EA7BBF] text-[#fff9f1]`;
+//     return `${base} bg-[#fff9f1] text-[#1d1d1d]`;
 // }
 // function sizeClasses(size: Size) {
 //     // fixed min-heights to create the staggered masonry feel
@@ -115,14 +115,14 @@
 
 // export default function NiceThings() {
 //     return (
-//         <section className="bg-black py-16 md:py-24">
+//         <section className="bg-[#1d1d1d] py-16 md:py-24">
 //             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 //                 {/* centered heading block */}
 //                 <div className="relative mx-auto mb-10 md:mb-14 max-w-3xl text-center">
-//                     <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-black shadow">
+//                     <span className="absolute -top-6 left-1/2 -translate-x-1/2 -rotate-12 rounded-md bg-[#EA7BBF] px-3 py-1 text-xs font-extrabold text-[#1d1d1d] shadow">
 //                         LOOK, MOM!
 //                     </span>
-//                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white">
+//                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-[#fff9f1]">
 //                         <span className="block">Nice things</span>
 //                         <span className="block text-[#FFD350] italic">People Said</span>
 //                     </h2>

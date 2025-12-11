@@ -10,7 +10,7 @@ export default function AppDevelopmentPage() {
     <main className="min-h-screen">
       {/* Hero Section */}
       {/* Hero Section — Pink background with white text */}
-      <section className="relative overflow-hidden bg-[#EA7BBF] text-white">
+      <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
         {/* Right half image (fills exactly 50% of the viewport width) */}
         <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 hidden md:block">
           <Image
@@ -34,10 +34,10 @@ export default function AppDevelopmentPage() {
                     className="leading-[.99] font-black uppercase text-xs sm:text-sm md:text-[16px] lg:text-[28px] xl:text-[32px] px-2"
                     style={{ fontFamily: "Recursive, sans-serif" }}
                   >
-                    Mobile Application Development 
+                    Mobile Application Development
                     <br />
                     <span className="text-4xl sm:text-5xl md:text-[56px] lg:text-[72px] xl:text-[88px] block">
-                    for Android & IOS.
+                      for Android & IOS.
                     </span>
                   </h1>
 
@@ -45,7 +45,7 @@ export default function AppDevelopmentPage() {
                   <Link
                     href="/contact"
                     aria-label="Start a project"
-                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
+                    className="absolute -right-8 sm:-right-12 md:-right-16 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_8px_0_rgba(0,0,0,0.2)] sm:shadow-[0_10px_0_rgba(0,0,0,0.2)] hover:scale-105 transition"
                   >
                     <svg width="20" height="20" viewBox="0 0 24 24" className="sm:w-6 sm:h-6 translate-x-[1px]">
                       <path d="M6 18L18 6M18 6H9M18 6V15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -58,7 +58,7 @@ export default function AppDevelopmentPage() {
                   className="mt-4 sm:mt-6 max-w-xl text-xs sm:text-sm md:text-base leading-relaxed font-medium px-2"
                   style={{ fontFamily: "Poppins, sans-serif" }}
                 >
-                  Hypertech Verse specializes in business-centric application development. It utilizes expert developers to create 
+                  Hypertech Verse specializes in business-centric application development. It utilizes expert developers to create
                   high-performance mobile and web applications for various businesses, including yours.
                 </p>
 
@@ -66,7 +66,7 @@ export default function AppDevelopmentPage() {
                 <div className="mt-6 sm:mt-8 px-2">
                   <Link
                     href="/contact"
-                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-black shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
+                    className="inline-block -rotate-6 rounded-lg bg-[#FFD350] px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-extrabold text-[#1d1d1d] shadow-[0_6px_0_rgba(0,0,0,0.25)] sm:shadow-[0_8px_0_rgba(0,0,0,0.25)] hover:-rotate-3 transition"
                     style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     LET&apos;S GET STARTED
@@ -91,7 +91,7 @@ export default function AppDevelopmentPage() {
         </div>
 
         {/* Bottom marquee */}
-        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-black">
+        <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw] bg-[#1d1d1d]">
           <div className="relative h-[56px] sm:h-[68px] overflow-hidden">
             <div className="absolute inset-0 flex items-center whitespace-nowrap animate-marquee-x">
               <RibbonText />
@@ -99,9 +99,9 @@ export default function AppDevelopmentPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Logos image after ribbon */}
-        <div className="relative w-full bg-black py-8">
+        <div className="relative w-full bg-[#1d1d1d] py-8">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-6">
             <div className="flex justify-center">
               <Image
@@ -117,7 +117,7 @@ export default function AppDevelopmentPage() {
       </section>
 
       {/* App Development Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-black text-white"> 
+      <section className="py-12 sm:py-16 md:py-20 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
             {/* Left side - Image */}
@@ -143,11 +143,11 @@ export default function AppDevelopmentPage() {
 
                 {/* Sub headline */}
                 <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-[#FFD350]" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Designing the apps that define tomorrow.
+                  Designing the apps that define tomorrow.
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
                   What makes us the best app development company? Hypertech Verse transforms your digital vision into powerful mobile and web applications that connect with your audience. Our expert developers create seamless user experiences across iOS, Android, and web platforms, delivering scalable solutions that grow with your business. From concept to deployment, we build apps that drive engagement and deliver results.
                 </p>
 
@@ -155,7 +155,7 @@ export default function AppDevelopmentPage() {
                 <div className="pt-2 sm:pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#FFD350] text-black px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
+                    className="inline-block bg-[#FFD350] text-[#1d1d1d] px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-[#FFC107] transition-colors"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     start your free consultation today!
@@ -168,13 +168,13 @@ export default function AppDevelopmentPage() {
       </section>
 
       {/* Ribbon Section */}
-      <section className="relative bg-black overflow-hidden py-12 sm:py-14 md:py-16">
+      <section className="relative bg-[#1d1d1d] overflow-hidden py-12 sm:py-14 md:py-16">
         <div className="relative w-full h-24 sm:h-28 md:h-36">
           {/* Yellow tilted box - static bar */}
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="w-full bg-[#FFD350] transform -rotate-4 px-4 sm:px-8 md:px-16 lg:px-36 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-left">
-                <span className="text-black font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#1d1d1d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of App Development Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -185,7 +185,7 @@ export default function AppDevelopmentPage() {
           <div className="absolute top-0 left-0 w-full h-full z-10">
             <div className="w-full bg-[#EA7BBF] transform rotate-4 px-4 sm:px-6 md:px-8 py-3 sm:py-4 overflow-hidden">
               <div className="text-marquee-right">
-                <span className="text-white font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
+                <span className="text-[#fff9f1] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase tracking-wider whitespace-nowrap inline-block">
                   Our Collection of App Development Excellence | HYPERTECH VERSE
                 </span>
               </div>
@@ -193,9 +193,9 @@ export default function AppDevelopmentPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Tilted App Development Slides */}
-      <section className="relative bg-black overflow-hidden">
+      <section className="relative bg-[#1d1d1d] overflow-hidden">
         {/* total canvas height: ~65–72vh depending on breakpoint */}
         <div className="mx-auto w-full max-w-[2000px] py-3 sm:py-4 md:py-6 lg:py-8">
 
@@ -229,7 +229,7 @@ export default function AppDevelopmentPage() {
       </section>
 
       {/* Pink Process (bg.png + vertical tabs) */}
-      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-white">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-20 text-[#fff9f1]">
         {/* solid yellow base + decorative shape */}
         <div className="absolute inset-0 -z-20 bg-[#FFD350]" />
         <Image
@@ -243,17 +243,17 @@ export default function AppDevelopmentPage() {
         {/* heading + intro (centered like reference) */}
         <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
           <h2
-            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-black leading-tight"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#1d1d1d] leading-tight"
             style={{ fontFamily: 'Recursive, sans-serif' }}
           >
             The Signature Flow that Brings<br className="hidden sm:block" />
             Apps to Life
           </h2>
           <p
-            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-black/90 px-2"
+            className="mt-3 text-xs sm:text-sm md:text-base leading-relaxed text-[#1d1d1d]/90 px-2"
             style={{ fontFamily: 'Poppins, sans-serif' }}
           >
-           We provide businesses with full-fledged Custom app development solutions that match individual business specifications. We provide top-notch designs that prioritize quality that ultimately produce high-performance, user-friendly solutions. Our team builds innovative apps with the current technology landscape, through which we develop website applications and robust cross-platform mobile applications that improve user experience while boosting business accomplishment.
+            We provide businesses with full-fledged Custom app development solutions that match individual business specifications. We provide top-notch designs that prioritize quality that ultimately produce high-performance, user-friendly solutions. Our team builds innovative apps with the current technology landscape, through which we develop website applications and robust cross-platform mobile applications that improve user experience while boosting business accomplishment.
           </p>
         </div>
 
@@ -281,11 +281,11 @@ export default function AppDevelopmentPage() {
           </div>
         </div>
 
-   
+
       </section>
 
       {/* Elite App Development Agency Section */}
-      <section className="py-10 bg-black text-white">
+      <section className="py-10 bg-[#1d1d1d] text-[#fff9f1]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Top Section: Elite App Development Agency */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
@@ -294,21 +294,21 @@ export default function AppDevelopmentPage() {
               <div className="space-y-6">
                 {/* Main headline */}
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight" style={{ fontFamily: 'Recursive, sans-serif' }}>
-                APP DEVELOPMENT
-                <span className="text-[#EA7BBF]">MOBILE FIRST</span>
+                  APP DEVELOPMENT
+                  <span className="text-[#EA7BBF]">MOBILE FIRST</span>
                 </h2>
 
                 {/* Description */}
-                <p className="text-lg leading-relaxed text-white/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Transform your ideas into powerful mobile and web applications. We specialize in creating
-                innovative apps that engage users, drive business growth, and deliver exceptional digital experiences across all platforms.       
-                  </p>
+                <p className="text-lg leading-relaxed text-[#fff9f1]/90" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                  Transform your ideas into powerful mobile and web applications. We specialize in creating
+                  innovative apps that engage users, drive business growth, and deliver exceptional digital experiences across all platforms.
+                </p>
 
                 {/* CTA Button */}
                 <div className="pt-4">
                   <Link
                     href="/contact"
-                    className="inline-block bg-[#FFD350] text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#FFC107] transition-colors transform -rotate-3"
+                    className="inline-block bg-[#FFD350] text-[#1d1d1d] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#FFC107] transition-colors transform -rotate-3"
                     style={{ fontFamily: 'Poppins, sans-serif' }}
                   >
                     GET STARTED
@@ -330,14 +330,14 @@ export default function AppDevelopmentPage() {
               </div>
             </ScrollAnimation>
           </div>
-      </div>
+        </div>
       </section>
 
-      <section className="relative bg-black py-6 sm:py-6">
-  <div className="mx-auto max-w-6xl px-4 sm:px-6">
-    <AppSuccessCarousel />
-  </div>
-</section>
+      <section className="relative bg-[#1d1d1d] py-6 sm:py-6">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <AppSuccessCarousel />
+        </div>
+      </section>
 
       {/* Second Card Reviews Section */}
       <TestimonialsMasonry />
@@ -353,31 +353,31 @@ function AppProcessTabs() {
         " The user engagement and retention levels strongly depend on having an intuitive and visually appealing design structure, which our team understands entirely. The user interface and user experience design solutions we provide are dedicated to developing smooth interactive systems that improve system usability while enhancing functionality.  We design mobile application development interfaces to give users an attractive interface with easy navigation paths. Our design approach delivers responsive interfaces, accessible solutions, and optimized performance to companies developing web and mobile applications across multiple platforms. ",
       logo: "/services/app/taba.png"
     },
-    { 
+    {
       title: "Software Quality Testing",
       desc:
         "Any app requires optimal performance to succeed in the market. Through its testing services, we provide guaranteed optimal user service by finding and solving issues before deployment. Recent research confirms that subpar user experiences send many users away, so our company carries out extensive review frameworks to boost mobile application development and web application development practice success.  Our company's testing process incorporates functional testing, performance testing, usability checking, and security verification to guarantee consistent operation between all platforms. Companies gain assurance through our expertise to produce high-quality applications that combine reliability with security and scalability features, which increase customer satisfaction and retention.",
       logo: "/services/logo/logoc.png"
     },
-    { 
+    {
       title: "Hybrid App Development",
       desc:
         "Business organizations seeking maximum market penetration should consider hybrid application development, combining cost-effectiveness with operational effectiveness. Hypertech Verse builds platforms for developing mobile applications that deliver flawless operation between iOS and Android systems. Our company's hybrid app solutions use React Native and Flutter frameworks to enable quick development cycles, reduced costs, and a uniform user experience. Our team uses web technology to optimize custom application performance while preserving a native smartphone user experience for our apps. From startups to enterprises, our agency helps you get hybrid apps that meet performance needs while offering a captivating, scalable solution.",
       logo: "/services/logo/logod.png"
     },
-    { 
+    {
       title: "iOS App Development",
       desc:
         "Hypertech Verse is a leading iPhone app development company that produces superior quality, performance-oriented applications for different business markets. The expert developers at our company create feature-rich applications that develop scalability while maximizing performance for Apple's native environment. Clients can rely on our custom web application development services because we guarantee security, responsiveness, and complete adherence to Apple's specifications. We emphasize delivering motionless user experiences from application conceptualization through deployment, leading to improved customer interaction. We assist businesses in succeeding in the iOS market competition through our complete mobile application development support for advanced features implementation and the App Store approval process.",
       logo: "/services/logo/logoe.png"
     },
-    { 
+    {
       title: "Android App Development",
       desc:
         "A business requires a practical Android application to succeed because Android maintains over 3 billion global users. We develop Android applications through our operations to strengthen scalability alongside total security and application performance. Our expert engineers create complete application features that suit your company's requirements while maintaining compatibility across different devices and resolutions.  Our experts transform application development projects and enterprise website applications for maximum speed performance and optimal user experience. Our team integrates components from all stages of development to construct Android applications that maintain user engagement throughout, resulting in increased business expansion. ",
       logo: "/services/logo/logof.png"
     },
-    { 
+    {
       title: "Progressive Web App Development",
       desc:
         "PWAs function as platforms that unite web applications with mobile applications to provide users with swift, dependable, and interactive encounters. Progressive Web Apps (PWAs) form the core service of our company, allowing businesses to develop web applications with download-free app-like features.  Our web application development services guarantee that your PWA functions appropriately and provides both security features and optimal performance. Implementing modern technologies through our company helps businesses create seamless experiences between all devices. We work to achieve top standards in web application development projects, regardless of your goal to enhance or develop new web solutions.",
@@ -404,11 +404,11 @@ function AppProcessTabs() {
       {/* Middle: active step title with yellow circle + arrow and paragraph */}
       <div className="max-w-xl">
         <h3
-          className="inline-flex items-center gap-3 text-xl sm:text-2xl font-extrabold text-black"
+          className="inline-flex items-center gap-3 text-xl sm:text-2xl font-extrabold text-[#1d1d1d]"
           style={{ fontFamily: 'Recursive, sans-serif' }}
         >
           {/* yellow circle with arrow */}
-          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#FFD350] text-black shadow-[0_4px_0_rgba(0,0,0,0.25)]">
+          <span className="grid h-8 w-8 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_4px_0_rgba(0,0,0,0.25)]">
             <svg width="18" height="18" viewBox="0 0 24 24" className="-translate-x-[1px]">
               <path d="M6 18L18 6M18 6H9M18 6V15"
                 fill="none" stroke="currentColor" strokeWidth="2"
@@ -418,7 +418,7 @@ function AppProcessTabs() {
           {steps[active].title}
         </h3>
         <p
-          className="mt-3 text-sm sm:text-base text-black/90" 
+          className="mt-3 text-sm sm:text-base text-[#1d1d1d]/90"
           style={{ fontFamily: 'Poppins, sans-serif' }}
         >
           {steps[active].desc}
@@ -439,7 +439,7 @@ function AppProcessTabs() {
                   className={[
                     "group w-full text-left uppercase font-extrabold tracking-wide",
                     "transition rounded-xl px-4 py-2",
-                    isActive ? "text-black" : "text-black/75 hover:text-black",
+                    isActive ? "text-[#1d1d1d]" : "text-[#1d1d1d]/75 hover:text-[#1d1d1d]",
                   ].join(" ")}
                   style={{ fontFamily: 'Recursive, sans-serif' }}
                 >
@@ -447,7 +447,7 @@ function AppProcessTabs() {
                     <span
                       className={[
                         "h-2.5 w-2.5 rounded-full transition",
-                        isActive ? "bg-[#FFD350]" : "bg-black/50 group-hover:bg-[#FFD350]"
+                        isActive ? "bg-[#FFD350]" : "bg-[#1d1d1d]/50 group-hover:bg-[#FFD350]"
                       ].join(" ")}
                     />
                     {s.title}
@@ -472,7 +472,7 @@ function RibbonText() {
         alt="Smart Solutions That Drive Success"
         width={800}
         height={68}
-        className="h-full w-auto object-contain" 
+        className="h-full w-auto object-contain"
       />
     </div>
   );
@@ -557,7 +557,7 @@ function AppSuccessCarousel() {
             onClick={() => go(idx)}
             className={[
               "h-2.5 w-2.5 rounded-full transition",
-              idx === i ? "bg-[#FFD350]" : "bg-white/30 hover:bg-white/60",
+              idx === i ? "bg-[#FFD350]" : "bg-[#fff9f1]/30 hover:bg-[#fff9f1]/60",
             ].join(" ")}
           />
         ))}
@@ -591,7 +591,7 @@ function AppSuccessCarousel() {
         <button
           aria-label="Previous"
           onClick={() => go(i - 1)}
-          className="absolute left-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition"
+          className="absolute left-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-md hover:scale-105 transition"
         >
           <svg width="26" height="26" viewBox="0 0 24 24">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -600,7 +600,7 @@ function AppSuccessCarousel() {
         <button
           aria-label="Next"
           onClick={() => go(i + 1)}
-          className="absolute right-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-black shadow-md hover:scale-105 transition"
+          className="absolute right-2 top-1/2 -translate-y-1/2 grid h-14 w-14 place-items-center rounded-full bg-[#EA7BBF] text-[#1d1d1d] shadow-md hover:scale-105 transition"
         >
           <svg width="26" height="26" viewBox="0 0 24 24">
             <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
@@ -613,11 +613,11 @@ function AppSuccessCarousel() {
             className="text-lg sm:text-xl lg:text-2xl font-bold leading-tight uppercase tracking-wide"
             style={{ fontFamily: "Recursive, sans-serif" }}
           >
-            <span className="text-white">{slides[i].headlineLeft}&nbsp;</span>  
+            <span className="text-[#fff9f1]">{slides[i].headlineLeft}&nbsp;</span>
             <span className="text-[#EA7BBF]">{slides[i].headlineRight}</span>
           </h3>
           <p
-            className="mt-2 text-[11px] sm:text-[12px] text-white/80 max-w-3xl mx-auto leading-tight capitalize"
+            className="mt-2 text-[11px] sm:text-[12px] text-[#fff9f1]/80 max-w-3xl mx-auto leading-tight capitalize"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].sub}
@@ -625,7 +625,7 @@ function AppSuccessCarousel() {
 
           <Link
             href={slides[i].cta.href}
-            className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 text-black font-extrabold rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
+            className="mt-4 inline-block -rotate-3 bg-[#EA7BBF] px-6 py-3 text-[#1d1d1d] font-extrabold rounded-md shadow-[0_6px_0_rgba(0,0,0,.25)] hover:-rotate-1 transition"
             style={{ fontFamily: "Poppins, sans-serif" }}
           >
             {slides[i].cta.label}
