@@ -7,6 +7,15 @@ import Footer from "../../components/layout/footer";
 export const metadata: Metadata = {
   title: { default: "Hypertech Verse", template: "%s | Hypertech Verse" },
   description: "Digital marketing website for Hypertech Verse.",
+  icons: {
+    icon: [
+      { url: "/fav_iconhtv.png?v=2", type: "image/png" },
+      { url: "/fav_iconhtv.png?v=2", type: "image/png", sizes: "32x32" },
+      { url: "/fav_iconhtv.png?v=2", type: "image/png", sizes: "16x16" },
+    ],
+    shortcut: "/fav_iconhtv.png?v=2",
+    apple: "/fav_iconhtv.png?v=2",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

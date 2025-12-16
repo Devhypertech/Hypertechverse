@@ -1,168 +1,130 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import ScrollAnimation from "../../../src/components/ScrollAnimation";
 
 export default function UnfairAdvantage() {
+    const features = [
+        {
+            title: "Industry Experts",
+            description: "150+ brands transformed. Average 300% increase in engagement. 4.9/5 rating across 75+ reviews. We have receipts.",
+            icon: "/experts.png",
+        },
+        {
+            title: "Timely Delivery",
+            description: "3-week turnaround on branding. 6-week delivery on websites. We move fast because we know what we're doing.",
+            icon: "/del.png",
+        },
+        {
+            title: "Increase in ROI",
+            description: "Our clients see an average 47% revenue increase within 90 days of launch. Your investment pays for itself fast.",
+            icon: "/roi.png",
+        },
+        {
+            title: "Dedicated Support",
+            description: "Unlimited revisions until you're thrilled. Post-launch support included. We're in this for the long haul.",
+            icon: "/support.png",
+        },
+        {
+            title: "Protective measures",
+            description: "We treat every project like our brand depends on it, because it does. Your win is our win.",
+            icon: "/protective.png",
+        },
+    ];
+
     return (
-        <section className="bg-[#EA7BBF] py-16 md:py-20 lg:py-24 overflow-hidden">
-            <div className="mx-auto max-w-7xl px-[20px]">
-                {/* Main Grid: Left text column + Right cards */}
-                {/* Main Grid: Left text column + Right cards */}
-                <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-0 items-start">
+        <section className="bg-[#FBEAE2] py-16 md:py-20 lg:py-24 overflow-hidden">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                {/* Top Section: Heading and Paragraph */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
+                    {/* Left: Heading */}
+                    <ScrollAnimation animation="fadeInLeft" delay={200}>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="w-3 h-3 rounded-full bg-black"></div>
+                            <span className="text-black font-black text-sm md:text-base uppercase tracking-wide" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                            Let's Build Your Brand
+                            </span>
+                        </div>
+                        <h2 className="text-[#EA7BBF] text-[40px] leading-[1.05] font-black tracking-tighter md:text-6xl lg:text-7xl" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>
+                        What Makes Us Different? Results. 
+                        </h2>
+                    </ScrollAnimation>
 
-                    {/* MOBILE VIEW ONLY - Simple Stacked Layout */}
-                    <div className="block sm:hidden w-full">
-                        <ScrollAnimation animation="fadeInUp" delay={200}>
-                            <div className="flex flex-col items-center text-center mb-8">
-                                <h2 className="text-[#fff9f1] leading-[0.9] tracking-[-0.03em] text-[50px] font-black" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                    Your<br />Unfair<br />Advantage
-                                </h2>
-                                <p className="mt-4 text-[#fff9f1] text-sm leading-snug italic max-w-xs mx-auto" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                    Working with Hypertech Verse is easy. Here&apos;s what you can expect from a typical branding project
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col gap-6 w-full px-4">
-                                {/* Card 1: Industry Experts */}
-                                <div className="bg-[#EFB300] rounded-xl flex flex-col items-center text-center p-6 w-full">
-                                    <div className="bg-[#fff9f1] rounded-lg p-3 flex items-center justify-center mb-3 w-24 h-24">
-                                        <Image src="/icons/expert.png" alt="Industry Experts" width={100} height={100} className="object-contain w-full h-full" />
-                                    </div>
-                                    <h3 className="text-xl text-[#fff9f1] leading-tight tracking-tight italic font-black" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                        Industry<br />Experts
-                                    </h3>
-                                </div>
-
-                                {/* Card 2: Timely Delivery */}
-                                <div className="bg-[#EFB300] rounded-xl flex flex-col items-center text-center p-6 w-full">
-                                    <div className="bg-[#fff9f1] rounded-lg p-3 flex items-center justify-center mb-3 w-24 h-24">
-                                        <Image src="/icons/deliverytruck.png" alt="Timely Delivery" width={100} height={100} className="object-contain w-full h-full" />
-                                    </div>
-                                    <h3 className="text-xl text-[#fff9f1] leading-tight tracking-tight italic font-black" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                        Timely<br />Delivery
-                                    </h3>
-                                </div>
-
-                                {/* Card 3: Dedicated Support */}
-                                <div className="bg-[#EFB300] rounded-xl flex flex-col items-center text-center p-6 w-full">
-                                    <div className="bg-[#fff9f1] rounded-lg p-3 flex items-center justify-center mb-3 w-24 h-24">
-                                        <Image src="/icons/support.png" alt="Dedicated Support" width={100} height={100} className="object-contain w-full h-full" />
-                                    </div>
-                                    <h3 className="text-xl text-[#fff9f1] leading-tight tracking-tight italic font-black" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                        Dedicated<br />Support
-                                    </h3>
-                                </div>
-
-                                {/* Card 4: Increase in ROI */}
-                                <div className="bg-[#EFB300] rounded-xl flex flex-col items-center text-center p-6 w-full">
-                                    <div className="bg-[#fff9f1] rounded-lg p-3 flex items-center justify-center mb-3 w-24 h-24">
-                                        <Image src="/icons/businessgrowth.png" alt="Increase in ROI" width={100} height={100} className="object-contain w-full h-full" />
-                                    </div>
-                                    <h3 className="text-xl text-[#fff9f1] leading-tight tracking-tight italic font-black" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                        Increase<br />in ROI
-                                    </h3>
-                                </div>
-
-                                {/* Card 5: Protective Measures */}
-                                <div className="bg-[#EFB300] rounded-xl flex flex-col items-center text-center p-6 w-full">
-                                    <div className="bg-[#fff9f1] rounded-lg p-3 flex items-center justify-center mb-3 w-24 h-24">
-                                        <Image src="/icons/scale.png" alt="Protective measures" width={100} height={100} className="object-contain w-full h-full" />
-                                    </div>
-                                    <h3 className="text-xl text-[#fff9f1] leading-tight tracking-tight italic font-black" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                        Protective<br />measures
-                                    </h3>
-                                </div>
-                            </div>
-                        </ScrollAnimation>
-                    </div>
-
-                    {/* DESKTOP VIEW ONLY - Original Layout */}
-                    <div className="hidden sm:block w-full">
-                        <ScrollAnimation animation="fadeInRight" delay={400}>
-                            <div className="grid grid-cols-4 gap-3 lg:gap-5 -ml-4 lg:-ml-20 xl:-ml-28" style={{ gridTemplateRows: 'auto auto' }}>
-                                <div className="col-start-1 row-span-2 flex flex-col justify-start items-stretch pr-4 lg:pr-12 text-left">
-                                    <div className="flex-1 flex flex-col justify-end">
-                                        <h2 className="text-[#fff9f1] leading-[0.82] tracking-[-0.03em] text-[60px] md:text-[80px] lg:text-[140px] xl:text-[140px]" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Your
-                                        </h2>
-                                        <h2 className="text-[#fff9f1] leading-[0.82] tracking-[-0.03em] text-[60px] md:text-[80px] lg:text-[140px] xl:text-[140px]" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Unfair
-                                        </h2>
-                                    </div>
-                                    <div className="flex-1 max-w-full">
-                                        <h2 className="text-[#fff9f1] leading-[0.82] tracking-[-0.03em] text-[50px] md:text-[70px] lg:text-[110px] xl:text-[130px]" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Advantage
-                                        </h2>
-                                        <p className="mt-4 lg:mt-6 text-[#fff9f1] max-w-full text-xs md:text-sm lg:text-base leading-snug italic" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Working with Hypertech Verse is easy. Here&apos;s what you can expect from a typical branding project
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* Card 1: Industry Experts */}
-                                <div className="bg-[#EFB300] col-start-2 row-start-1 rounded-xl lg:rounded-2xl flex flex-col items-center text-center p-2 lg:p-4 ml-4 lg:ml-12">
-                                    <div className="bg-[#fff9f1] rounded-lg lg:rounded-xl p-2 lg:p-3 flex items-center justify-center mb-2 w-full aspect-square">
-                                        <Image src="/icons/expert.png" alt="Industry Experts" width={100} height={100} className="object-contain w-full h-full" />
-                                    </div>
-                                    <h3 className="text-sm md:text-base lg:text-2xl text-[#fff9f1] leading-[0.9] tracking-tight italic" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                        Industry<br />Experts
-                                    </h3>
-                                </div>
-
-                                {/* Column 2 */}
-                                <div className="col-start-3 row-span-2 aspect-square flex flex-col gap-2 lg:gap-4">
-                                    <div className="bg-[#EFB300] rounded-xl lg:rounded-2xl flex flex-col items-center text-center p-2 lg:p-4 flex-[6]">
-                                        <div className="bg-[#fff9f1] rounded-lg lg:rounded-xl p-2 lg:p-3 flex items-center justify-center mb-2 w-full flex-1">
-                                            <Image src="/icons/deliverytruck.png" alt="Timely Delivery" width={120} height={120} className="object-contain w-[95%] h-[95%]" />
-                                        </div>
-                                        <h3 className="text-sm md:text-base lg:text-2xl text-[#fff9f1] leading-[0.9] tracking-tight italic" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Timely<br />Delivery
-                                        </h3>
-                                    </div>
-                                    <div className="bg-[#EFB300] rounded-xl lg:rounded-2xl flex flex-col items-center text-center p-2 lg:p-4 flex-[4]">
-                                        <div className="bg-[#fff9f1] rounded-lg lg:rounded-xl p-2 lg:p-3 flex items-center justify-center mb-2 w-full flex-1">
-                                            <Image src="/icons/support.png" alt="Dedicated Support" width={80} height={80} className="object-contain w-[85%] h-[85%]" />
-                                        </div>
-                                        <h3 className="text-sm md:text-base lg:text-2xl text-[#fff9f1] leading-[0.9] tracking-tight italic" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Dedicated<br />Support
-                                        </h3>
-                                    </div>
-                                </div>
-
-                                {/* Column 3 */}
-                                <div className="col-start-4 row-span-2 aspect-square flex flex-col gap-2 lg:gap-4">
-                                    <div className="bg-[#EFB300] rounded-xl lg:rounded-2xl flex flex-col items-center text-center p-2 lg:p-4 flex-[4]">
-                                        <div className="bg-[#fff9f1] rounded-lg lg:rounded-xl p-2 lg:p-3 flex items-center justify-center mb-2 w-full flex-1">
-                                            <Image src="/icons/businessgrowth.png" alt="Increase in ROI" width={80} height={80} className="object-contain w-[85%] h-[85%]" />
-                                        </div>
-                                        <h3 className="text-sm md:text-base lg:text-2xl text-[#fff9f1] leading-[0.9] tracking-tight italic" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Increase<br />in ROI
-                                        </h3>
-                                    </div>
-                                    <div className="bg-[#EFB300] rounded-xl lg:rounded-2xl flex flex-col items-center text-center p-2 lg:p-4 flex-[6]">
-                                        <div className="bg-[#fff9f1] rounded-lg lg:rounded-xl p-2 lg:p-3 flex items-center justify-center mb-2 w-full flex-1">
-                                            <Image src="/icons/scale.png" alt="Protective measures" width={80} height={120} className="object-contain w-[55%] h-[55%]" />
-                                        </div>
-                                        <h3 className="text-sm md:text-base lg:text-2xl text-[#fff9f1] leading-[0.9] tracking-tight italic" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>
-                                            Protective<br />measures
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </ScrollAnimation>
-                    </div>
+                    {/* Right: Paragraph and Button */}
+                    <ScrollAnimation animation="fadeInRight" delay={300}>
+                        <div className="flex flex-col justify-center">
+                            <p className="text-black text-base md:text-lg leading-relaxed mb-6" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                            We're not just another design agency. We're the team that makes your phone ring with customers, your inbox flood, and your revenue grow.
+                            </p>
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-black text-sm md:text-base hover:bg-[#1d1d1d] transition-colors w-fit"
+                                style={{ fontFamily: "'Recent Grotesk', sans-serif" }}
+                            >
+                                Get Started Now
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </Link>
+                        </div>
+                    </ScrollAnimation>
                 </div>
 
-                {/* Description paragraph below the grid */}
-                {/* <ScrollAnimation animation="fadeInUp" delay={400}>
-                    <p
-                        className="mt-6 text-[#fff9f1] text-sm sm:text-base max-w-[320px] leading-snug italic"
-                        style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}
-                    >
-                        Working with Hypertech Verse is easy. Here&apos;s what you can expect
-                        from a typical branding project
-                    </p>
-                </ScrollAnimation> */}
+                {/* Features Grid */}
+                <div className="space-y-6 md:space-y-8">
+                    {/* First Row: 3 cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                        {features.slice(0, 3).map((feature, index) => (
+                            <ScrollAnimation key={index} animation="fadeInUp" delay={400 + index * 100}>
+                                <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow">
+                                    <div className="mb-4">
+                                        <Image
+                                            src={feature.icon}
+                                            alt={feature.title}
+                                            width={80}
+                                            height={80}
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                    <h3 className="text-black text-xl md:text-2xl font-black mb-3" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                                        {feature.title}
+                                    </h3>
+                                    <p className="text-black/70 text-sm md:text-base leading-relaxed" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                                        {feature.description}
+                                    </p>
+                                </div>
+                            </ScrollAnimation>
+                        ))}
+                    </div>
+
+                    {/* Second Row: 2 cards centered */}
+                    <div className="flex justify-center">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 max-w-4xl">
+                            {features.slice(3).map((feature, index) => (
+                                <ScrollAnimation key={index + 3} animation="fadeInUp" delay={700 + index * 100}>
+                                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow">
+                                        <div className="mb-4">
+                                            <Image
+                                                src={feature.icon}
+                                                alt={feature.title}
+                                                width={80}
+                                                height={80}
+                                                className="object-contain"
+                                            />
+                                        </div>
+                                        <h3 className="text-black text-xl md:text-2xl font-black mb-3" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                                            {feature.title}
+                                        </h3>
+                                        <p className="text-black/70 text-sm md:text-base leading-relaxed" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                                            {feature.description}
+                                        </p>
+                                    </div>
+                                </ScrollAnimation>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
