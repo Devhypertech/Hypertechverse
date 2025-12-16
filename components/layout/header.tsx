@@ -100,7 +100,7 @@ const nav = [
     dropdown: servicesList
   },
   { href: "/pricing", label: "Pricing" },
-  { href: "/portfolio", label: "Case Studies" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/blogs", label: "Blogs" },
 ];
 

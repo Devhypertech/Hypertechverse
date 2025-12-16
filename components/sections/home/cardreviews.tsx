@@ -16,65 +16,54 @@ const items: T[] = [
     {
         tone: "cream",
         quote:
-            "As per usual you have knocked it out of the park! We love your ideas and are excited to see how this project turns out!",
-        author: "Sarah S.",
-        company: "Street Invaders",
+            "Great experience with the Hypertechverse team! Huge thanks to Nick especially—he was incredibly nice, professional, and helpful throughout the whole process. Highly recommend! Guillain Koko",
+        author: "Guillain Koko",
+        company: "Great experience with Hypertech Verse!",
     },
     {
         tone: "pink",
         quote:
-            "I have had the pleasure of working with Steve on several occasions. All the projects we worked on turned out amazing and I have received nothing but compliments. He accommodated my picky requests and endless questions patiently with a depth of knowledge that made him an undeniable asset to my success. I will be working with Steve on all of my future graphic design and website needs. Don’t hesitate to work with Steve, he’s fantastic!",
-        author: "Andrea S.",
-        company: "Earl & Violet",
+            "Johnny and the team at hypertechverse.com did a great job on my website. Johnny is not only excellent at what he does but also a very professional and humble project manger who always provides wise business advice with 100% transparency. Their work goes beyond just building websites and also handled our social media marketing, and the results have been amazing. Couldn't ask for any better. 10/10",
+        author: "Mark Madden",
+        company: "Johnny and the team at…",
     },
     {
         tone: "white",
         quote:
-            "Absolute superstar! Couldn’t have picked a better individual to work with. The quality of work is outstanding and is done with such minimal supervision and back and forth. Steve has an amazing eye for creativity and design and really understands what his clients require. He is our go-to for all graphics needs from here on. 5 stars.",
-        author: "Sana S.",
-        company: "The Health Boutique",
+            "Working with Chris on my website was an amazing experience from start to finish. He listened carefully to my ideas, offered creative suggestions, and turned everything into a clean, professional, and user-friendly site. Communication was always clear and timely, and every update was delivered exactly as promised. What I appreciated most was his attention to detail and willingness to go above and beyond to make sure the site was exactly what I needed. The design not only looks great but also works seamlessly, with smooth booking and payment features that make my business easier to run. I highly recommend his services to anyone looking for a reliable, talented, and professional web designer.",
+        author: "Frank",
+        company: "I’m very pleased with their services…",
     },
     {
         tone: "pink",
         quote:
-            "Steve very quickly understood what we were looking for. He was responsive & asked insightful questions. He then delivered work product beyond what we had experienced with other design partners in the past. We intend to continue leveraging Steve’s help on our projects as long as he’ll let us! We highly recommend working with him!",
-        author: "Anurati M.",
-        company: "Sempre Health",
+            "Chris seemed ready to talk about any change or fix any issue, day or night. Very responsive. Only drawbacks were a bit of a hard sell on some services past our ability to buy and one tech hiccough that took our email servers offline after the site went live (which was an understandable mistake and easy fix). Love the b-card design, too!",
+        author: "Jack Brown",
+        company: "Always there to help!",
     },
     {
         tone: "cream",
         quote:
-            "This is an EASY recommendation to make! Steve has not only delivered on the quality of our new dental logo, and web design, but he has also given us the best customer service that I could have asked for. I will be referring friends and family to Steve, and using him again for our business.",
-        author: "Holly D.",
-        company: "Renew Denture Clinic",
+            "The team was very responsive and attentive. Chris coordinated with the team everything I needed and found solutions that meet my need. I was incredibly busy and distracted but they persevered to deliver an excellent product.",
+        author: "Haven Skys",
+        company: "The team was very responsive and…",
     },
     {
         tone: "pink",
         quote:
-            "Steven has been amazing with our rebrand. He is always efficient and listens to our needs. He constantly gets our jobs done ahead of schedule and is very good with keeping me on track when I start neglecting my own deadlines. His work with rebuilding our whole website went seamless and it always stayed on brand.",
-        author: "Jessalyn Z.",
-        company: "Cameo & Cufflinks",
+            "I recently engaged Hypertech Verse for their web design services, and I must say, the experience has been nothing short of exceptional. From the initial consultation to the final delivery, they have exceeded my expectations in every aspect.",
+        author: "Evelyn",
+        company: "I recently engaged Hypertech Verse for…",
     },
     {
         tone: "cream",
         quote:
-            "I have known Steve for a number of years and his work has always blown me away! We had him build a logo for us and his work and professionalism blew us away. We cannot recommend him enough.",
-        author: "Thomas B.",
-        company: "Midas Labs",
+            "HyperTech Verse did a decent job on my website. Design looks good and works well on mobile. Communication was okay, but they missed a few deadlines. Pricing was fair for the quality. A solid 4/5 - room for improvement but I'm satisfied overall.",
+        author: "Brandon M. Chappell",
+        company: "HyperTech Verse did a decent job on my…",
     },
-    {
-        tone: "pink",
-        quote:
-            "We’ve been working regularly with Steve for at least seven years. We chose to work with him because of the exceptional work he does and the service he provides. Fast forward seven years and his creativity has flourished and his designs are better than ever. Steve has become a critical part of what we do!",
-        author: "Randy K.",
-        company: "Alberta Business Exchange",
-    },
-    {
-        tone: "white",
-        quote:
-            "Steve was awesome to work with. He’s extremely helpful and knowledgeable, and did an amazing job on my company’s logo design. Highly recommend for business owners looking to grow.",
-        author: "Rob L.",
-    },
+ 
+   
 ];
 
 function toneClasses(tone: Tone) {
@@ -209,7 +198,7 @@ export default function TestimonialsMasonry() {
                                         y="27"
                                         textAnchor="middle"
                                         fill="white"
-                                        fontSize="16"
+                                        fontSize="14"
                                         fontWeight="900"
                                         fontFamily="'Alkaline Caps', sans-serif"
                                         fontStyle="italic"
