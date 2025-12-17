@@ -70,7 +70,7 @@ export default function Footer() {
                         <a href="https://x.com/hypertechverse" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaTwitter size={24} />
                         </a>
-                        <a href="https://www.instagram.com/hypertechverse.llc/" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
+                        <a href="https://www.instagram.com/hypertechversellc/" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaInstagram size={24} />
                         </a>
                         <a href="https://www.linkedin.com/company/103623473" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
