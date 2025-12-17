@@ -75,10 +75,11 @@ function toneClasses(tone: Tone) {
 }
 
 const videoTestimonials = [
-    { src: "/reviewone.mp4", thumbnail: "/thumbnailone.jpg", title: "Review One" },
-    { src: "/reviewtwo.mp4", thumbnail: "/thumbnailtwo.jpg", title: "Review Two" },
-    { src: "/reviewthree.mp4", thumbnail: "/thumbnailthree.jpg", title: "Review Three" },
-    { src: "/reviewfour.mp4", thumbnail: "/thumbnailfour.jpg", title: "Review Four" },
+    { src: "/reviewone.mp4", thumbnail: "/thumbnailone.jpg", title: "Review One", youtubeUrl: null },
+    { src: "/reviewtwo.mp4", thumbnail: "/thumbnailtwo.jpg", title: "Review Two", youtubeUrl: null },
+    { src: "/reviewthree.mp4", thumbnail: "/thumbnailthree.jpg", title: "Review Three", youtubeUrl: null },
+    { src: "/reviewfour.mp4", thumbnail: "/thumbnailfour.jpg", title: "Review Four", youtubeUrl: null },
+    { src: null, thumbnail: "/thumbnailfive.jpg", title: "Review Five", youtubeUrl: "https://youtu.be/wgpYoBey-QM" },
 ];
 
 export default function TestimonialsMasonry() {
@@ -160,12 +161,20 @@ export default function TestimonialsMasonry() {
         startY.current = null;
     };
 
-    const handleVideoClick = (src: string) => {
-        if (playingVideo === src) {
-            setPlayingVideo(null);
-        } else {
-            setPlayingVideo(src);
-            setPaused(true); // Pause carousel when video is playing
+    const handleVideoClick = (video: { src: string | null; youtubeUrl: string | null }) => {
+        // If it's a YouTube video, open in new tab
+        if (video.youtubeUrl) {
+            window.open(video.youtubeUrl, '_blank', 'noopener,noreferrer');
+            return;
+        }
+        // Otherwise, handle local video playback
+        if (video.src) {
+            if (playingVideo === video.src) {
+                setPlayingVideo(null);
+            } else {
+                setPlayingVideo(video.src);
+                setPaused(true); // Pause carousel when video is playing
+            }
         }
     };
 
@@ -234,9 +243,9 @@ export default function TestimonialsMasonry() {
                                         key={index}
                                         className="relative flex-shrink-0 aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:opacity-90 transition-opacity duration-300"
                                         style={{ width: `calc((100% - ${(videosPerSlide - 1) * 16}px) / ${videosPerSlide})` }}
-                                        onClick={() => handleVideoClick(video.src)}
+                                        onClick={() => handleVideoClick(video)}
                                     >
-                                        {playingVideo === video.src ? (
+                                        {video.src && playingVideo === video.src ? (
                                             <video
                                                 src={video.src}
                                                 controls

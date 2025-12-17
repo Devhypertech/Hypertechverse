@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-export default function PrivacyPolicyPage() {
+export default function TermsAndConditionsPage() {
   return (
     <main className="min-h-screen bg-[#1d1d1d] text-[#fff9f1] pt-24 sm:pt-28 md:pt-32">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-8"
           style={{ fontFamily: "Recursive, sans-serif" }}
         >
-          Privacy Policy
+          Terms and Conditions
         </h1>
 
         <div
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
               1. Introduction
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              Hypertech Verse ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              Welcome to Hypertech Verse. These Terms and Conditions ("Terms") govern your access to and use of our website and services. By accessing or using our services, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access our services.
             </p>
           </section>
 
@@ -41,16 +41,29 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              2. Information We Collect
+              2. Services
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              We may collect information about you in a variety of ways. The information we may collect includes:
+              Hypertech Verse provides digital marketing, web design, branding, and related services. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time without prior notice.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2
+              className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              3. User Obligations
+            </h2>
+            <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
+              By using our services, you agree to:
             </p>
             <ul className="list-disc list-inside text-[#fff9f1]/90 space-y-2 ml-4">
-              <li>Personal data such as name, email address, phone number, and mailing address</li>
-              <li>Business information including company name and job title</li>
-              <li>Technical data such as IP address, browser type, and device information</li>
-              <li>Usage data including pages visited, time spent on pages, and navigation patterns</li>
+              <li>Provide accurate and complete information when requested</li>
+              <li>Use our services only for lawful purposes</li>
+              <li>Not interfere with or disrupt our services or servers</li>
+              <li>Not attempt to gain unauthorized access to any part of our services</li>
+              <li>Respect intellectual property rights</li>
             </ul>
           </section>
 
@@ -59,18 +72,28 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              3. How We Use Your Information
+              4. Intellectual Property
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              We use the information we collect to:
+              All content, designs, logos, and materials on our website are the property of Hypertech Verse or our licensors and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without our express written permission.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2
+              className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              5. Project Terms
+            </h2>
+            <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
+              When you engage our services:
             </p>
             <ul className="list-disc list-inside text-[#fff9f1]/90 space-y-2 ml-4">
-              <li>Provide, maintain, and improve our services</li>
-              <li>Process transactions and send related information</li>
-              <li>Send you technical notices, updates, and support messages</li>
-              <li>Respond to your comments, questions, and requests</li>
-              <li>Monitor and analyze trends, usage, and activities</li>
-              <li>Detect, prevent, and address technical issues</li>
+              <li>Project scope, timeline, and pricing will be outlined in a separate agreement</li>
+              <li>Payment terms will be specified in your project agreement</li>
+              <li>We retain the right to use completed work in our portfolio unless otherwise agreed</li>
+              <li>Revisions and changes are subject to the terms of your specific project agreement</li>
             </ul>
           </section>
 
@@ -79,16 +102,16 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              4. Information Sharing and Disclosure
+              6. Payment Terms
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
+              Payment terms will be specified in your project agreement. Generally:
             </p>
             <ul className="list-disc list-inside text-[#fff9f1]/90 space-y-2 ml-4">
-              <li>With service providers who assist us in operating our website and conducting our business</li>
-              <li>When required by law or to respond to legal process</li>
-              <li>To protect our rights, privacy, safety, or property</li>
-              <li>In connection with a merger, acquisition, or sale of assets</li>
+              <li>Deposits may be required before work begins</li>
+              <li>Final payment is typically due upon project completion</li>
+              <li>Late payments may incur additional fees</li>
+              <li>Refunds are handled on a case-by-case basis as outlined in your agreement</li>
             </ul>
           </section>
 
@@ -97,10 +120,10 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              5. Data Security
+              7. Limitation of Liability
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              We implement appropriate technical and organizational security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+              To the fullest extent permitted by law, Hypertech Verse shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from your use of our services.
             </p>
           </section>
 
@@ -109,29 +132,10 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              6. Your Rights
+              8. Indemnification
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              Depending on your location, you may have certain rights regarding your personal information, including:
-            </p>
-            <ul className="list-disc list-inside text-[#fff9f1]/90 space-y-2 ml-4">
-              <li>The right to access your personal information</li>
-              <li>The right to correct inaccurate information</li>
-              <li>The right to request deletion of your information</li>
-              <li>The right to object to processing of your information</li>
-              <li>The right to data portability</li>
-            </ul>
-          </section>
-
-          <section className="mb-8">
-            <h2
-              className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
-              style={{ fontFamily: "Recursive, sans-serif" }}
-            >
-              7. Cookies and Tracking Technologies
-            </h2>
-            <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              We use cookies and similar tracking technologies to track activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
+              You agree to indemnify and hold harmless Hypertech Verse, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising out of or relating to your use of our services or violation of these Terms.
             </p>
           </section>
 
@@ -140,10 +144,10 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              8. Third-Party Links
+              9. Termination
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              Our website may contain links to third-party websites. We are not responsible for the privacy practices of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.
+              We reserve the right to terminate or suspend your access to our services immediately, without prior notice, for any reason, including breach of these Terms. Upon termination, your right to use our services will cease immediately.
             </p>
           </section>
 
@@ -152,10 +156,10 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              9. Children's Privacy
+              10. Third-Party Services
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
+              Our services may integrate with or link to third-party services. We are not responsible for the content, policies, or practices of third-party services. Your interactions with third-party services are solely between you and the third party.
             </p>
           </section>
 
@@ -164,10 +168,10 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              10. Changes to This Privacy Policy
+              11. Changes to Terms
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
+              We reserve the right to modify these Terms at any time. We will notify you of any material changes by posting the updated Terms on this page and updating the "Last Updated" date. Your continued use of our services after such changes constitutes acceptance of the new Terms.
             </p>
           </section>
 
@@ -176,10 +180,22 @@ export default function PrivacyPolicyPage() {
               className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
               style={{ fontFamily: "Recursive, sans-serif" }}
             >
-              11. Contact Us
+              12. Governing Law
             </h2>
             <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
-              If you have any questions about this Privacy Policy, please contact us at:
+              These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Hypertech Verse operates, without regard to its conflict of law provisions.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2
+              className="text-2xl sm:text-3xl font-bold mb-4 text-[#FFD350]"
+              style={{ fontFamily: "Recursive, sans-serif" }}
+            >
+              13. Contact Us
+            </h2>
+            <p className="text-[#fff9f1]/90 leading-relaxed mb-4">
+              If you have any questions about these Terms and Conditions, please contact us at:
             </p>
             <div className="bg-[#fff9f1]/10 p-4 rounded-lg">
               <p className="text-[#fff9f1]/90 mb-2">

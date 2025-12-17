@@ -36,15 +36,30 @@ export default function Footer() {
                         </a>
                     </div>
 
-                    {/* Center Column with Logo */}
-                    <div className="flex justify-center py-6">
+                    {/* Center Column with Logo and Contact Details */}
+                    <div className="flex flex-col items-center py-6">
                         <Image
                             src="/footerlogo.png"
                             alt="Hypertech Verse Logo"
                             width={300}
                             height={240}
-                            className="object-contain"
+                            className="object-contain mb-6"
                         />
+                        {/* Contact Details - All in one line */}
+                        <div className="flex items-center justify-center gap-3 md:gap-6 text-xs md:text-sm whitespace-nowrap overflow-x-auto py-4 md:py-6">
+                            <div className="flex items-center gap-1 md:gap-2 shrink-0">
+                                <span className="text-[#fff9f1]">Phone:</span>
+                                <a href="tel:325-999-9372" className="text-[#fff9f1] hover:text-[#FFD350] transition">325-999-9372</a>
+                            </div>
+                            <div className="flex items-center gap-1 md:gap-2 shrink-0">
+                                <span className="text-[#fff9f1]">Email:</span>
+                                <a href="mailto:info@hypertechverse.com" className="text-[#fff9f1] hover:text-[#FFD350] transition">info@hypertechverse.com</a>
+                            </div>
+                            <div className="flex items-center gap-1 md:gap-2 shrink-0">
+                                <span className="text-[#fff9f1]">Location:</span>
+                                <span className="text-[#fff9f1] hover:text-[#FFD350] transition cursor-default">15819 Winter Cypress Wy, Cypress, TX 77429</span>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Right Column with Social Media Icons */}
@@ -73,10 +88,10 @@ export default function Footer() {
                 {/* Footer Bottom Text */}
                 <div className="flex flex-col sm:flex-row items-center justify-between mt-6 text-sm">
                     <div className="text-[#fff9f1] mb-4 sm:mb-0">
-                        @2025 Created By Hypertech Verse.
+                        @2025 Hypertech Verse.
                     </div>
                     <div className="flex justify-end space-x-6">
-                        <a href="#" className="hover:text-[#FFD350] transition">
+                        <a href="/terms-and-conditions" className="hover:text-[#FFD350] transition">
                             Terms & Conditions
                         </a>
                         <a href="/privacy-policy-2/" className="hover:text-[#FFD350] transition">

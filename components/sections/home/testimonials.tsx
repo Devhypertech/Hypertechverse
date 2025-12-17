@@ -18,12 +18,12 @@ const tagClasses = (t: string) =>
     `px-3 py-1 rounded-full text-xs font-semibold ring-1 ring-black/5 ${TAG_STYLES[t] || TAG_STYLES._}`;
 
 const featuredProjects = [
-    { image: "/portfolio/p1.png", title: "RAK Sushi", description: "A fresh sushi experience", tags: ["Branding", "Logo Design", "Web Design"] },
-    { image: "/portfolio/p2.png", title: "creative groove.", description: "Logo design", tags: ["Logo Design", "Illustration"] },
-    { image: "/portfolio/p3.png", title: "COLD BREW TR", description: "Bringing warmth to cold beer", tags: ["Branding", "Logo Design", "Web Design"] },
-    { image: "/portfolio/p4.png", title: "Beach Life", description: "Life's better at the beach", tags: ["Branding", "Logo Design", "Web Design"] },
-    { image: "/portfolio/p5.png", title: "Own your Style", description: "Taking kids outdoors", tags: ["Branding", "Web Design", "Illustration"] },
-    { image: "/portfolio/p6.png", title: "Monkey Business", description: "Illustration", tags: ["Illustration"] },
+    { image: "/portfolio/Saltydogtreat.png", title: "Wholesome treats for happy paws.", description: "Saltydogtreat", tags: ["Branding", "Logo Design", "Web Design"] },
+    { image: "/portfolio/Crumblcookies.png", title: "Freshly baked. Perfectly branded.", description: "Crumblcookies", tags: ["Branding", "Logo Design", "Web Design"] },
+    { image: "/portfolio/Dubicars.png", title: "Driving smarter car decisions.", description: "Dubicars", tags: ["Branding", "Logo Design", "Web Design"] },
+    { image: "/portfolio/Cravecookies.png", title: "Home of the Deep-Dish Cookie Drop.", description: "Cravecookies", tags: ["Branding", "Logo Design", "Web Design"] },
+    { image: "/portfolio/Bumpy.png", title: "Find love beyond borders.", description: "Bumpy", tags: ["Branding", "Web Design", "Illustration"] },
+    { image: "/portfolio/Arkimals.png", title: "Where imagination becomes art.", description: "Arkimals", tags: ["Illustration"] },
 ];
 
 export default function FeaturedWork() {
