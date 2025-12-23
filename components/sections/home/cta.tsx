@@ -9,10 +9,16 @@ import {
   brandingPackages,
   videoAnimationPackages,
   comboPackages,
+  smmPackages,
+  webVideosPackages,
+  ecommercePackages,
+  logoPackages,
+  seoPackages,
+  brandLaunchPackages,
 } from "../../../data/packages";
 
 export default function BrandPackages() {
-  const tabs = ["WEB DESIGNS", "LOGO DESIGNS", "BRANDING", "VIDEO ANIMATION", "MOBILE APPLICATIONS"];
+  const tabs = ["WEB DESIGNS", "LOGO DESIGNS", "BRANDING", "VIDEO ANIMATION", "SOCIAL MEDIA", "WEB VIDEOS", "E-COMMERCE", "SEO", "BRAND LAUNCH"];
   const [activeTab, setActiveTab] = useState(0);
 
   // Map tabs to package data
@@ -21,13 +27,21 @@ export default function BrandPackages() {
       case 0: // WEB DESIGNS
         return websitePackages || [];
       case 1: // LOGO DESIGNS
-        return comboPackages || [];
+        return logoPackages || [];
       case 2: // BRANDING
         return homePackages || [];
       case 3: // VIDEO ANIMATION
         return videoAnimationPackages || [];
-      case 4: // MOBILE APPLICATIONS
-        return websitePackages || []; // Fallback to website packages
+      case 4: // SOCIAL MEDIA
+        return smmPackages || [];
+      case 5: // WEB VIDEOS
+        return webVideosPackages || [];
+      case 6: // E-COMMERCE
+        return ecommercePackages || [];
+      case 7: // SEO
+        return seoPackages || [];
+      case 8: // BRAND LAUNCH
+        return brandLaunchPackages || [];
       default:
         return websitePackages || [];
     }
@@ -42,9 +56,12 @@ export default function BrandPackages() {
   const packages = getPackagesForTab(activeTab);
   const topThree = packages.slice(0, 3);
   const featured = packages[3]; // 4th card shown centered
+  const remainingPackages = packages.slice(4); // Packages 5 and beyond
 
   // For website packages, use taglines from homePackages
   const isWebsiteTab = activeTab === 0;
+  const isLogoDesignTab = activeTab === 1;
+  const isVideoAnimationTab = activeTab === 3;
 
   return (
     <section className="bg-[#1d1d1d] py-14 md:py-20">
@@ -115,9 +132,9 @@ export default function BrandPackages() {
                     </h3>
                     {pkg.price && (
                       <p className="mt-1 text-sm font-bold text-[#1d1d1d]/90">
-                        {"priceStrike" in pkg && pkg.priceStrike ? (
+                        {"priceStrike" in pkg && (pkg as any).priceStrike ? (
                           <>
-                            <span className="line-through mr-2">{pkg.priceStrike}</span>
+                            <span className="line-through mr-2">{(pkg as any).priceStrike}</span>
                             <span>{pkg.price}</span>
                           </>
                         ) : (
@@ -137,10 +154,10 @@ export default function BrandPackages() {
                   {/* Features */}
                   <div className="px-7 py-6 flex-1">
                     {/* Optional art (if you want to keep it) */}
-                    {"art" in pkg && pkg.art ? (
+                    {"art" in pkg && (pkg as any).art ? (
                       <div className="mb-5 flex justify-center">
                         <Image
-                          src={pkg.art}
+                          src={(pkg as any).art}
                           alt={pkg.title}
                           width={260}
                           height={180}
@@ -172,8 +189,110 @@ export default function BrandPackages() {
               ))}
             </div>
 
-            {/* Featured / Silver Card (centered like screenshot) */}
-            {featured ? (
+            {/* Second row of packages (for logo design and video animation tabs with 6 packages) */}
+            {(isLogoDesignTab || isVideoAnimationTab) && featured ? (
+              <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+                {/* 4th package */}
+                <article className="rounded-2xl border-2 border-black bg-[#fff9f1] overflow-hidden flex flex-col">
+                  <div className="px-6 pt-6 text-center">
+                    <h3 className="text-[15px] sm:text-base font-extrabold text-[#1d1d1d]">
+                      {featured.title}
+                    </h3>
+                    {featured.price && (
+                      <p className="mt-1 text-sm font-bold text-[#1d1d1d]/90">
+                        {"priceStrike" in featured && (featured as any).priceStrike ? (
+                          <>
+                            <span className="line-through mr-2">{(featured as any).priceStrike}</span>
+                            <span>{featured.price}</span>
+                          </>
+                        ) : (
+                          <span>{featured.price}</span>
+                        )}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mt-4 bg-[#1d1d1d] px-5 py-3 text-center">
+                    <p className="text-xs sm:text-sm font-extrabold text-white">
+                      Package Highlights
+                    </p>
+                  </div>
+
+                  <div className="px-7 py-6 flex-1">
+                    <ul className="space-y-2 text-sm text-[#1d1d1d]">
+                      {(featured.features || []).map((f, idx) => (
+                        <li key={idx} className="flex items-start gap-2">
+                          <span className="mt-[6px] h-2 w-2 rounded-full bg-[#1d1d1d]" />
+                          <span className="leading-snug">{f}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="border-t border-black/15 px-6 py-4">
+                    <Link
+                      href="/contact"
+                      className="block w-full rounded-md border-2 border-black bg-[#fff9f1] py-3 text-center text-sm font-extrabold text-[#1d1d1d] hover:bg-[#FFD350] transition"
+                    >
+                      Buy Now
+                    </Link>
+                  </div>
+                </article>
+
+                {/* 5th and 6th packages */}
+                {remainingPackages.map((pkg, i) => (
+                  <article
+                    key={i + 4}
+                    className="rounded-2xl border-2 border-black bg-[#fff9f1] overflow-hidden flex flex-col"
+                  >
+                    <div className="px-6 pt-6 text-center">
+                      <h3 className="text-[15px] sm:text-base font-extrabold text-[#1d1d1d]">
+                        {pkg.title}
+                      </h3>
+                      {pkg.price && (
+                        <p className="mt-1 text-sm font-bold text-[#1d1d1d]/90">
+                          {"priceStrike" in pkg && (pkg as any).priceStrike ? (
+                            <>
+                              <span className="line-through mr-2">{(pkg as any).priceStrike}</span>
+                              <span>{pkg.price}</span>
+                            </>
+                          ) : (
+                            <span>{pkg.price}</span>
+                          )}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="mt-4 bg-[#1d1d1d] px-5 py-3 text-center">
+                      <p className="text-xs sm:text-sm font-extrabold text-white">
+                        Package Highlights
+                      </p>
+                    </div>
+
+                    <div className="px-7 py-6 flex-1">
+                      <ul className="space-y-2 text-sm text-[#1d1d1d]">
+                        {(pkg.features || []).map((f, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="mt-[6px] h-2 w-2 rounded-full bg-[#1d1d1d]" />
+                            <span className="leading-snug">{f}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="border-t border-black/15 px-6 py-4">
+                      <Link
+                        href="/contact"
+                        className="block w-full rounded-md border-2 border-black bg-[#fff9f1] py-3 text-center text-sm font-extrabold text-[#1d1d1d] hover:bg-[#FFD350] transition"
+                      >
+                        Buy Now
+                      </Link>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            ) : featured && !isLogoDesignTab && !isVideoAnimationTab ? (
+              /* Featured / Silver Card (centered like screenshot) - for other tabs */
               <div className="mt-8 flex justify-center">
                 <article className="w-full max-w-3xl rounded-2xl border-2 border-black bg-[#fff9f1] overflow-hidden">
                   <div className="px-6 pt-6 text-center">
@@ -182,9 +301,9 @@ export default function BrandPackages() {
                     </h3>
                     {featured.price && (
                       <p className="mt-1 text-sm font-bold text-[#1d1d1d]/90">
-                        {"priceStrike" in featured && featured.priceStrike ? (
+                        {"priceStrike" in featured && (featured as any).priceStrike ? (
                           <>
-                            <span className="line-through mr-2">{featured.priceStrike}</span>
+                            <span className="line-through mr-2">{(featured as any).priceStrike}</span>
                             <span>{featured.price}</span>
                           </>
                         ) : (
