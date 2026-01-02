@@ -33,7 +33,7 @@ export default function UltimateAgency() {
 
                     {/* Right side - content */}
                     <ScrollAnimation animation="fadeInUp" delay={400}>
-                        <div className="flex flex-col items-center justify-center text-center sm:block sm:text-left w-full px-6 sm:px-0 mx-auto">
+                        <div className="flex flex-col items-center justify-center text-center sm:block sm:text-left w-full px-6 sm:px-0 mx-auto -mt-16 sm:-mt-24">
                             <ScrollAnimation animation="fadeInUp" delay={600}>
                                 <h2 className="text-2xl sm:text-4xl font-black tracking-tighter leading-tight mb-6 max-w-full break-words" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>
                                     <span className="text-[#FDE8E5]">Your </span>

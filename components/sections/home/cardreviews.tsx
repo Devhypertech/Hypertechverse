@@ -62,8 +62,8 @@ const items: T[] = [
         author: "Brandon M. Chappell",
         company: "HyperTech Verse did a decent job on my…",
     },
- 
-   
+
+
 ];
 
 function toneClasses(tone: Tone) {
@@ -71,7 +71,7 @@ function toneClasses(tone: Tone) {
         "rounded-xl border border-white/10 shadow-[0_6px_0_rgba(0,0,0,0.35)] p-5 md:p-6 mb-6 break-inside-avoid";
     if (tone === "cream") return `${base} bg-[#FDEDE8] text-[#1d1d1d]`;
     if (tone === "pink") return `${base} bg-[#EA7BBF] text-[#fff9f1]`;
-    return `${base} bg-[#fff9f1] text-[#1d1d1d]`;
+    return `${base} bg-[#FFD350] text-[#1d1d1d]`;
 }
 
 const videoTestimonials = [
@@ -195,7 +195,7 @@ export default function TestimonialsMasonry() {
                             <span className="block text-[#FFD350] italic relative ">
                                 {/* LOOK, MOM! speech bubble */}
                                 <svg
-                                    className="absolute -top-8 sm:-top-10 md:-top-12 left-2 sm:-left-4 md:left-20 w-24 sm:w-28 md:w-36 -rotate-22"
+                                    className="absolute -top-10 sm:-top-12 md:-top-14 left-2 sm:-left-4 md:left-20 w-24 sm:w-28 md:w-36 -rotate-22"
                                     viewBox="0 0 140 50"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"

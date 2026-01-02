@@ -59,7 +59,7 @@ export default function FeaturedWork() {
                                     {/* text + tags (no background) */}
                                     <div className="pt-4">
                                         <p className=" text-[#fff9f1] text-2xl" style={{ fontFamily: "'Recent Grotesk', sans-serif", fontWeight: 900 }}>{project.description}</p>
-                                        <h3 className="mt-1 text-lg font-semibold text-[#fff9f1] uppercase" style={{ fontFamily: "'Inter','Recent Grotesk', sans-serif", fontWeight: 800, color: '#EA7BBF' }}>{project.title}</h3>
+                                        <h3 className="mt-1 text-md font-semibold text-[#fff9f1] uppercase" style={{ fontFamily: "'Inter','Recent Grotesk', sans-serif", fontWeight: 800, color: '#EA7BBF' }}>{project.title}</h3>
 
                                         <div className="mt-4 flex flex-wrap gap-2">
                                             {project.tags.map((tag, i) => (

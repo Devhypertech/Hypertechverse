@@ -218,7 +218,7 @@ export default function PricingPage() {
   ];
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-16 pb-8 sm:py-8 bg-[#EA7BBF]">
         {/* Content container */}
@@ -243,7 +243,7 @@ export default function PricingPage() {
       </section>
 
       {/* Banner Section */}
-      <section className="bg-[#1d1d1d] py-8 overflow-hidden">
+      <section className="bg-[#1d1d1d] py-8 overflow-hidden w-full">
         <div className="relative w-screen left-1/2 right-1/2 -mx-[50vw]">
           <div className="relative h-[80px] sm:h-[100px] overflow-hidden">
             <div className="absolute inset-0 flex items-center animate-marquee-x whitespace-nowrap">
@@ -934,7 +934,7 @@ export default function PricingPage() {
             <ScrollAnimation animation="fadeInUp" delay={200}>
               <div className="mb-8 hover-scale">
                 <Image
-                  src="/telephone.png"
+                  src="/phone.png"
                   alt="Orange retro rotary phone"
                   width={200}
                   height={200}

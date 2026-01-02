@@ -22,6 +22,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="9M26ExhFTmIv34KYSs9AQ3tJBkDH_YKDWgkePTcs3zA" />
+
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TEVGD26JKP"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TEVGD26JKP');
+          `}
+        </Script>
+
         {/* Preload Alkaline Caps font with high priority */}
         <link
           rel="preconnect"

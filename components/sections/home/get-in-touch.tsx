@@ -20,7 +20,7 @@ export default function GetInTouch() {
                     <ScrollAnimation animation="fadeInUp" delay={200}>
                         <div className="mb-8 hover-scale">
                             <Image
-                                src="/telephone.png"
+                                src="/phone.png"
                                 alt="Orange retro rotary phone"
                                 width={200}
                                 height={200}
@@ -31,15 +31,21 @@ export default function GetInTouch() {
 
                     {/* Content */}
                     <ScrollAnimation animation="fadeInUp" delay={400}>
-                        <div className="space-y-4">
-                            <h2 className="text-7xl font-extrabold text-[#fff9f1] font-recent-grotesk">
+                        <div className="space-y-3">
+                            <h2
+                                className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#fff9f1] tracking-tight"
+                                style={{ fontFamily: "'Recursive', 'Arial Black', sans-serif", fontWeight: 900, }}
+                            >
                                 Get in touch
                             </h2>
-                            <p className="text-lg font-semibold text-[#EA7BBF]">
-                                I&apos;ll get back to you within 24hrs
+                            <p
+                                className="text-lg sm:text-xl text-[#EA7BBF]"
+                                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 500 }}
+                            >
+                                I&apos;ll get back to you within 24 hrs
                             </p>
                             {/* Get Started Button */}
-                            <div className="pt-4">
+                            <div className="pt-6">
                                 <Link
                                     href="/contact"
                                     className="inline-block bg-[#fff9f1] text-[#1d1d1d] px-8 py-4 rounded-xl hover:bg-[#FFD350] hover:text-[#1d1d1d] transition-all duration-300 font-bold hover-scale hover-lift"
@@ -47,9 +53,7 @@ export default function GetInTouch() {
                                     <span style={{
                                         fontSize: "24px",
                                         fontWeight: "bold",
-
                                     }}>
-
                                         Get Started
                                     </span>
                                 </Link>

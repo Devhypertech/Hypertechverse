@@ -68,10 +68,97 @@ export default function Hero() {
                         </div>
                     </ScrollAnimation>
 
-                    {/* Right image gallery - 6 images in proper layout */}
+                    {/* Right image gallery - 3x3 grid on mobile, 2 columns on desktop */}
                     <ScrollAnimation animation="fadeInRight" delay={400}>
-                        <div className="relative">
-                            <div className="grid grid-cols-2 gap-4">
+                        <div className="relative pb-[650px] md:pb-0">
+                            {/* Mobile: 3-column grid of square images */}
+                            <div className="grid grid-cols-3 gap-2 md:hidden">
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/main.png"
+                                        alt="Hero image 1"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                        priority
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/applications.png"
+                                        alt="Hero image 2"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/pattern.png"
+                                        alt="Hero image 3"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/galleryy.png"
+                                        alt="Hero image 4"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/mobileui.png"
+                                        alt="Hero image 5"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/centermob.png"
+                                        alt="Hero image 6"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/main.png"
+                                        alt="Hero image 7"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/applications.png"
+                                        alt="Hero image 8"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <div className="aspect-square rounded-xl overflow-hidden">
+                                    <Image
+                                        src="/hero/pattern.png"
+                                        alt="Hero image 9"
+                                        width={200}
+                                        height={200}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Desktop: Original 2-column layout */}
+                            <div className="hidden md:grid grid-cols-2 gap-4">
                                 {/* Left column */}
                                 <div className="space-y-2">
                                     <ScrollAnimation animation="fadeInUp" delay={600}>
@@ -131,8 +218,6 @@ export default function Hero() {
                                             height={600}
                                             className="h-56 w-full object-cover"
                                             style={{ minHeight: '14rem' }}
-                                            onError={(e) => console.error('Gallery image failed to load:', e)}
-                                            onLoad={() => console.log('Gallery image loaded successfully')}
                                         />
                                     </div>
                                     <ScrollAnimation animation="fadeInUp" delay={1100}>
@@ -154,54 +239,54 @@ export default function Hero() {
             </div>
 
             {/* Pink ribbon bar - overlapping hero images */}
-            <div className="absolute bottom-0 left-0 right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10">
-                <div className="mx-auto max-w-7xl px-4 py-3 sm:py-4 text-base sm:px-4 lg:px-4">
+            <div className="absolute bottom-4 left-4 right-4 md:bottom-0 md:left-0 md:right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10 rounded-3xl md:rounded-none">
+                <div className="mx-auto max-w-7xl px-6 py-15 md:py-12 text-base md:px-4 lg:px-8">
                     {/* Main Grid Layout */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
 
                         {/* Left Column */}
-                        <ScrollAnimation animation="fadeInLeft" delay={200}>
-                            <div className="flex items-start gap-2 sm:gap-3">
+                        <ScrollAnimation animation="fadeInUp" delay={200}>
+                            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4 md:gap-3">
                                 <Image
                                     src="/icons/smie.png"
                                     alt="Smile icon"
-                                    width={52}
-                                    height={32}
-                                    className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
+                                    width={80}
+                                    height={80}
+                                    className="w-24 h-24 md:w-16 md:h-16 flex-shrink-0"
                                 />
-                                <p className="leading-snug font-bold text-sm sm:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
+                                <p className="leading-snug font-bold text-base md:text-sm lg:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
                                     Make your customers hungry for more with a flavour-focused brand
                                 </p>
                             </div>
                         </ScrollAnimation>
 
-                        {/* Center Column (Now fixed and centered) */}
-                        <ScrollAnimation animation="fadeInRight" delay={400}>
-                            <div className="flex items-start gap-2 sm:gap-3">
+                        {/* Center Column */}
+                        <ScrollAnimation animation="fadeInUp" delay={400}>
+                            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4 md:gap-3">
                                 <Image
                                     src="/icons/book.png"
                                     alt="Book icon"
-                                    width={52}
-                                    height={32}
-                                    className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
+                                    width={80}
+                                    height={80}
+                                    className="w-24 h-24 md:w-16 md:h-16 flex-shrink-0"
                                 />
-                                <p className="leading-snug font-bold text-sm sm:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
+                                <p className="leading-snug font-bold text-base md:text-sm lg:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
                                     Our brand packages have the recipe to get you the results you need, fast
                                 </p>
                             </div>
                         </ScrollAnimation>
 
                         {/* Right Column */}
-                        <ScrollAnimation animation="fadeInRight" delay={600}>
-                            <div className="flex items-start gap-2 sm:gap-3">
+                        <ScrollAnimation animation="fadeInUp" delay={600}>
+                            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left gap-4 md:gap-3">
                                 <Image
                                     src="/icons/opros.png"
-                                    alt="Book icon"
-                                    width={52}
-                                    height={32}
-                                    className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0"
+                                    alt="Exclamation icon"
+                                    width={80}
+                                    height={80}
+                                    className="w-24 h-24 md:w-16 md:h-16 flex-shrink-0"
                                 />
-                                <p className="leading-snug font-bold text-sm sm:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
+                                <p className="leading-snug font-bold text-base md:text-sm lg:text-base" style={{ fontFamily: "'Poppins', 'Recent Grotesk', sans-serif" }}>
                                     Establish a captivating web presence and grow your audience
                                 </p>
                             </div>

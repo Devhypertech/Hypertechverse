@@ -42,11 +42,11 @@ export default function UnfairAdvantage() {
                         <div className="flex items-center gap-3 mb-4">
                             <div className="w-3 h-3 rounded-full bg-black"></div>
                             <span className="text-black font-black text-sm md:text-base uppercase tracking-wide" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                            Let's Build Your Brand
+                                Let's Build Your Brand
                             </span>
                         </div>
                         <h2 className="text-[#EA7BBF] text-[40px] leading-[1.05] font-black tracking-tighter md:text-6xl lg:text-7xl" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>
-                        What Makes Us Different? Results. 
+                            What Makes Us Different? Results.
                         </h2>
                     </ScrollAnimation>
 
@@ -54,7 +54,7 @@ export default function UnfairAdvantage() {
                     <ScrollAnimation animation="fadeInRight" delay={300}>
                         <div className="flex flex-col justify-center">
                             <p className="text-black text-base md:text-lg leading-relaxed mb-6" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                            We're not just another design agency. We're the team that makes your phone ring with customers, your inbox flood, and your revenue grow.
+                                We're not just another design agency. We're the team that makes your phone ring with customers, your inbox flood, and your revenue grow.
                             </p>
                             <Link
                                 href="/contact"
@@ -77,7 +77,7 @@ export default function UnfairAdvantage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {features.slice(0, 3).map((feature, index) => (
                             <ScrollAnimation key={index} animation="fadeInUp" delay={400 + index * 100}>
-                                <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow">
+                                <div className="p-6 md:p-8 flex flex-col items-center text-center">
                                     <div className="mb-4">
                                         <Image
                                             src={feature.icon}
@@ -103,7 +103,7 @@ export default function UnfairAdvantage() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8 max-w-4xl">
                             {features.slice(3).map((feature, index) => (
                                 <ScrollAnimation key={index + 3} animation="fadeInUp" delay={700 + index * 100}>
-                                    <div className="bg-white rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow">
+                                    <div className="p-6 md:p-8 flex flex-col items-center text-center">
                                         <div className="mb-4">
                                             <Image
                                                 src={feature.icon}
