@@ -74,12 +74,18 @@ function toneClasses(tone: Tone) {
     return `${base} bg-[#FFD350] text-[#1d1d1d]`;
 }
 
+const getYouTubeId = (url: string) => {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=|shorts\/)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+};
+
 const videoTestimonials = [
-    { src: "/reviewone.mp4", thumbnail: "/thumbnailone.jpg", title: "Review One", youtubeUrl: null },
-    { src: "/reviewtwo.mp4", thumbnail: "/thumbnailtwo.jpg", title: "Review Two", youtubeUrl: null },
-    { src: "/reviewthree.mp4", thumbnail: "/thumbnailthree.jpg", title: "Review Three", youtubeUrl: null },
-    { src: "/reviewfour.mp4", thumbnail: "/thumbnailfour.jpg", title: "Review Four", youtubeUrl: null },
-    { src: null, thumbnail: "/thumbnailfive.jpg", title: "Review Five", youtubeUrl: "https://youtu.be/wgpYoBey-QM" },
+    { src: null, thumbnail: "https://img.youtube.com/vi/wgpYoBey-QM/maxresdefault.jpg", title: "Review One", youtubeUrl: "https://www.youtube.com/watch?v=wgpYoBey-QM" },
+    { src: null, thumbnail: "https://img.youtube.com/vi/6uPZOsXeQXM/maxresdefault.jpg", title: "Review Two", youtubeUrl: "https://www.youtube.com/shorts/6uPZOsXeQXM" },
+    { src: null, thumbnail: "https://img.youtube.com/vi/H8b21MBcnP4/maxresdefault.jpg", title: "Review Three", youtubeUrl: "https://www.youtube.com/shorts/H8b21MBcnP4" },
+    { src: null, thumbnail: "https://img.youtube.com/vi/Or9-ogYyGaY/maxresdefault.jpg", title: "Review Four", youtubeUrl: "https://www.youtube.com/shorts/Or9-ogYyGaY" },
+    { src: null, thumbnail: "https://img.youtube.com/vi/wgpYoBey-QM/maxresdefault.jpg", title: "Review Five", youtubeUrl: "https://www.youtube.com/watch?v=wgpYoBey-QM" },
 ];
 
 export default function TestimonialsMasonry() {
@@ -162,12 +168,17 @@ export default function TestimonialsMasonry() {
     };
 
     const handleVideoClick = (video: { src: string | null; youtubeUrl: string | null }) => {
-        // If it's a YouTube video, open in new tab
+        // Handle YouTube video playback
         if (video.youtubeUrl) {
-            window.open(video.youtubeUrl, '_blank', 'noopener,noreferrer');
+            if (playingVideo === video.youtubeUrl) {
+                setPlayingVideo(null);
+            } else {
+                setPlayingVideo(video.youtubeUrl);
+                setPaused(true);
+            }
             return;
         }
-        // Otherwise, handle local video playback
+        // Handle local video playback
         if (video.src) {
             if (playingVideo === video.src) {
                 setPlayingVideo(null);
@@ -245,7 +256,14 @@ export default function TestimonialsMasonry() {
                                         style={{ width: `calc((100% - ${(videosPerSlide - 1) * 16}px) / ${videosPerSlide})` }}
                                         onClick={() => handleVideoClick(video)}
                                     >
-                                        {video.src && playingVideo === video.src ? (
+                                        {video.youtubeUrl && playingVideo === video.youtubeUrl ? (
+                                            <iframe
+                                                src={`https://www.youtube.com/embed/${getYouTubeId(video.youtubeUrl)}?autoplay=1`}
+                                                className="w-full h-full rounded-lg"
+                                                allow="autoplay; encrypted-media"
+                                                allowFullScreen
+                                            />
+                                        ) : video.src && playingVideo === video.src ? (
                                             <video
                                                 src={video.src}
                                                 controls

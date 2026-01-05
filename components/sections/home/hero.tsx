@@ -6,11 +6,11 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 export default function Hero() {
     return (
         <section className="relative overflow-x-hidden bg-[#1d1d1d] text-[#fff9f1] w-full pt-16 md:pt-0">
-            <div className="relative mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8 pt-4 pb-20 w-full box-border">
-                <div className="grid items-center gap-6 lg:gap-10 lg:grid-cols-2 w-full">
+            <div className="relative w-full pt-4 pb-20 box-border">
+                <div className="grid items-center lg:gap-16 lg:grid-cols-[45%_55%] w-full">
                     {/* Left copy */}
                     <ScrollAnimation animation="fadeInLeft" delay={200}>
-                        <div className="w-full pr-2 relative z-10">
+                        <div className="w-full pr-0 lg:pr-4 pl-4 sm:pl-6 lg:pl-8 xl:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] relative z-10">
                             <h1
                                 className="font-black leading-tight max-w-full relative z-10"
                                 style={{
@@ -157,8 +157,8 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            {/* Desktop: Original 2-column layout */}
-                            <div className="hidden md:grid grid-cols-2 gap-4">
+                            {/* Desktop: 3-column layout */}
+                            <div className="hidden md:grid grid-cols-3 gap-2">
                                 {/* Left column */}
                                 <div className="space-y-2">
                                     <ScrollAnimation animation="fadeInUp" delay={600}>
@@ -168,7 +168,7 @@ export default function Hero() {
                                                 alt="Street scene with yellow car and neon signs"
                                                 width={300}
                                                 height={400}
-                                                className="h-48 w-full object-cover"
+                                                className="h-56 w-full object-cover"
                                                 priority
                                             />
                                         </div>
@@ -180,7 +180,7 @@ export default function Hero() {
                                                 alt="App icons on sandy background"
                                                 width={300}
                                                 height={400}
-                                                className="h-48 w-full object-cover"
+                                                className="h-56 w-full object-cover"
                                             />
                                         </div>
                                     </ScrollAnimation>
@@ -197,7 +197,7 @@ export default function Hero() {
                                     </ScrollAnimation>
                                 </div>
 
-                                {/* Right column */}
+                                {/* Center column */}
                                 <div className="space-y-2">
                                     <ScrollAnimation animation="fadeInUp" delay={700}>
                                         <div className="rounded-2xl overflow-hidden">
@@ -206,7 +206,7 @@ export default function Hero() {
                                                 alt="Pattern background"
                                                 width={300}
                                                 height={400}
-                                                className="h-44 w-full object-cover"
+                                                className="h-52 w-full object-cover"
                                             />
                                         </div>
                                     </ScrollAnimation>
@@ -216,18 +216,54 @@ export default function Hero() {
                                             alt="Gallery image"
                                             width={300}
                                             height={600}
-                                            className="h-56 w-full object-cover"
-                                            style={{ minHeight: '14rem' }}
+                                            className="h-64 w-full object-cover"
                                         />
                                     </div>
-                                    <ScrollAnimation animation="fadeInUp" delay={1100}>
+                                    <ScrollAnimation animation="fadeInUp" delay={900}>
                                         <div className="rounded-2xl overflow-hidden">
                                             <Image
                                                 src="/hero/centermob.png"
                                                 alt="Center mobile image"
                                                 width={300}
                                                 height={700}
-                                                className="h-64 w-full object-cover"
+                                                className="h-72 w-full object-cover"
+                                            />
+                                        </div>
+                                    </ScrollAnimation>
+                                </div>
+
+                                {/* Right column */}
+                                <div className="space-y-2">
+                                    <ScrollAnimation animation="fadeInUp" delay={750}>
+                                        <div className="rounded-2xl overflow-hidden">
+                                            <Image
+                                                src="/hero/pattern.png"
+                                                alt="Pattern design"
+                                                width={300}
+                                                height={400}
+                                                className="h-52 w-full object-cover"
+                                            />
+                                        </div>
+                                    </ScrollAnimation>
+                                    <ScrollAnimation animation="fadeInUp" delay={950}>
+                                        <div className="rounded-2xl overflow-hidden">
+                                            <Image
+                                                src="/hero/main.png"
+                                                alt="Street scene"
+                                                width={300}
+                                                height={400}
+                                                className="h-60 w-full object-cover"
+                                            />
+                                        </div>
+                                    </ScrollAnimation>
+                                    <ScrollAnimation animation="fadeInUp" delay={1100}>
+                                        <div className="rounded-2xl overflow-hidden">
+                                            <Image
+                                                src="/hero/applications.png"
+                                                alt="Applications showcase"
+                                                width={300}
+                                                height={700}
+                                                className="h-80 w-full object-cover"
                                             />
                                         </div>
                                     </ScrollAnimation>

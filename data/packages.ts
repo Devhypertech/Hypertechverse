@@ -1093,7 +1093,7 @@ export const logoPackages = [
 export const brandLaunchPackages = [
   {
     title: "Starter Brand Launch",
-    price: "PKR 5,000",
+    price: "$5,000",
     description: "Best for: New startups, personal brands, first-time online presence",
     features: [
       "One-Page Website / Landing Page",
@@ -1125,7 +1125,7 @@ export const brandLaunchPackages = [
   },
   {
     title: "Growth Brand Launch",
-    price: "PKR 15,000",
+    price: "$15,000",
     description: "Best for: Growing businesses, service brands, serious startups",
     features: [
       "Multi-Page Business Website (4–6 Pages)",
@@ -1174,7 +1174,7 @@ export const brandLaunchPackages = [
   },
   {
     title: "Authority Brand Launch 🏆 BEST SELLER",
-    price: "PKR 25,000",
+    price: "$25,000",
     description: "Best for: eCommerce brands, funded startups, authority-building businesses",
     features: [
       "Custom Website OR Full eCommerce Store",
