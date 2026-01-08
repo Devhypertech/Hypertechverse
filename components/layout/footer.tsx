@@ -6,20 +6,9 @@ export default function Footer() {
         <footer className="bg-[#1d1d1d] text-[#fff9f1] py-6">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-                {/* Footer Menu in the Center */}
-                <div className="flex flex-wrap justify-center py-14 gap-4 sm:gap-6 md:space-x-8 mb-6">
-                    <a href="/portfolio" className="text-[#fff9f1] hover:text-[#FFD350] transition">Portfolio</a>
-                    <a href="/services" className="text-[#fff9f1] hover:text-[#FFD350] transition">Services</a>
-                    <a href="/about" className="text-[#fff9f1] hover:text-[#FFD350] transition">About</a>
-                    <a href="/blogs" className="text-[#fff9f1] hover:text-[#FFD350] transition">Blogs</a>
-                    <a href="/pricing" className="text-[#fff9f1] hover:text-[#FFD350] transition">Pricing</a>
-                    <a href="/contact" className="text-[#fff9f1] hover:text-[#FFD350] transition">Contact</a>
-                </div>
-
-                {/* Three Columns Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-
-                    {/* Left Column with Get Started Button */}
+                {/* Footer Menu with Get Started Button on Left */}
+                <div className="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center py-14 gap-6 mb-6">
+                    {/* Get Started Button - Left */}
                     <div className="text-center md:text-left">
                         <a
                             href="/contact"
@@ -28,42 +17,24 @@ export default function Footer() {
                             <span style={{
                                 fontSize: "24px",
                                 fontWeight: "bold",
-
                             }}>
-
                                 Get Started
                             </span>
                         </a>
                     </div>
 
-                    {/* Center Column with Logo and Contact Details */}
-                    <div className="flex flex-col items-center py-6">
-                        <Image
-                            src="/footerlogo.png"
-                            alt="Hypertech Verse Logo"
-                            width={300}
-                            height={240}
-                            className="object-contain mb-6"
-                        />
-                        {/* Contact Details - All in one line */}
-                        <div className="flex items-center justify-center gap-3 md:gap-6 text-xs md:text-sm whitespace-nowrap overflow-x-auto py-4 md:py-6">
-                            <div className="flex items-center gap-1 md:gap-2 shrink-0">
-                                <span className="text-[#fff9f1]">Phone:</span>
-                                <a href="tel:325-999-9372" className="text-[#fff9f1] hover:text-[#FFD350] transition">325-999-9372</a>
-                            </div>
-                            <div className="flex items-center gap-1 md:gap-2 shrink-0">
-                                <span className="text-[#fff9f1]">Email:</span>
-                                <a href="mailto:info@hypertechverse.com" className="text-[#fff9f1] hover:text-[#FFD350] transition">info@hypertechverse.com</a>
-                            </div>
-                            <div className="flex items-center gap-1 md:gap-2 shrink-0">
-                                <span className="text-[#fff9f1]">Location:</span>
-                                <span className="text-[#fff9f1] hover:text-[#FFD350] transition cursor-default">15819 Winter Cypress Wy, Cypress, TX 77429</span>
-                            </div>
-                        </div>
+                    {/* Menu Links - Center */}
+                    <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8">
+                        <a href="/portfolio" className="text-[#fff9f1] hover:text-[#FFD350] transition">Portfolio</a>
+                        <a href="/services" className="text-[#fff9f1] hover:text-[#FFD350] transition">Services</a>
+                        <a href="/about" className="text-[#fff9f1] hover:text-[#FFD350] transition">About</a>
+                        <a href="/blogs" className="text-[#fff9f1] hover:text-[#FFD350] transition">Blogs</a>
+                        <a href="/pricing" className="text-[#fff9f1] hover:text-[#FFD350] transition">Pricing</a>
+                        <a href="/contact" className="text-[#fff9f1] hover:text-[#FFD350] transition">Contact</a>
                     </div>
 
-                    {/* Right Column with Social Media Icons */}
-                    <div className="flex flex-wrap justify-end gap-4">
+                    {/* Social Media Icons - Right */}
+                    <div className="flex flex-nowrap justify-center md:justify-end gap-4">
                         <a href="https://www.facebook.com/hypertechverse" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaFacebook size={24} />
                         </a>
@@ -82,6 +53,32 @@ export default function Footer() {
                         <a href="https://www.youtube.com/@HypertechVerse" target="_blank" rel="noopener noreferrer" className="text-[#FDA5D5] hover:text-[#FFD350] transition">
                             <FaYoutube size={24} />
                         </a>
+                    </div>
+                </div>
+
+                {/* Logo and Contact Details - Centered */}
+                <div className="flex flex-col items-center py-6">
+                    <Image
+                        src="/footerlogo.png"
+                        alt="Hypertech Verse Logo"
+                        width={300}
+                        height={240}
+                        className="object-contain mb-6"
+                    />
+                    {/* Contact Details - Stacked on mobile, inline on desktop */}
+                    <div className="flex flex-col items-center gap-3 md:flex-row md:gap-6 text-xs md:text-sm py-4 md:py-6">
+                        <div className="flex items-center gap-1 md:gap-2">
+                            <span className="text-[#fff9f1]">Phone:</span>
+                            <a href="tel:325-999-9372" className="text-[#fff9f1] hover:text-[#FFD350] transition">325-999-9372</a>
+                        </div>
+                        <div className="flex items-center gap-1 md:gap-2">
+                            <span className="text-[#fff9f1]">Email:</span>
+                            <a href="mailto:info@hypertechverse.com" className="text-[#fff9f1] hover:text-[#FFD350] transition">info@hypertechverse.com</a>
+                        </div>
+                        <div className="flex items-center gap-1 md:gap-2 text-center">
+                            <span className="text-[#fff9f1]">Location:</span>
+                            <span className="text-[#fff9f1] hover:text-[#FFD350] transition cursor-default">15819 Winter Cypress Wy, Cypress, TX 77429</span>
+                        </div>
                     </div>
                 </div>
 

@@ -1,11 +1,35 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 
 export default function Hero() {
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+
+        // Only add scroll listener on desktop
+        const mediaQuery = window.matchMedia('(min-width: 768px)');
+        if (mediaQuery.matches) {
+            window.addEventListener('scroll', handleScroll, { passive: true });
+        }
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    // Parallax transform values for each column
+    const column1Transform = `translateY(${scrollY * -0.15}px)`; // Goes up
+    const column2Transform = `translateY(${scrollY * 0.1}px)`;   // Goes down
+    const column3Transform = `translateY(${scrollY * -0.08}px)`; // Goes up slightly
+
     return (
-        <section className="relative overflow-x-hidden bg-[#1d1d1d] text-[#fff9f1] w-full pt-16 md:pt-0">
+        <section className="relative overflow-hidden bg-[#1d1d1d] text-[#fff9f1] w-full pt-16 md:pt-0">
             <div className="relative w-full pt-4 pb-20 box-border">
                 <div className="grid items-center lg:gap-16 lg:grid-cols-[45%_55%] w-full">
                     {/* Left copy */}
@@ -68,10 +92,10 @@ export default function Hero() {
                         </div>
                     </ScrollAnimation>
 
-                    {/* Right image gallery - 3x3 grid on mobile, 2 columns on desktop */}
+                    {/* Right image gallery - 3x3 grid on mobile, 3 vertical columns on desktop with parallax */}
                     <ScrollAnimation animation="fadeInRight" delay={400}>
                         <div className="relative pb-[650px] md:pb-0">
-                            {/* Mobile: 3-column grid of square images */}
+                            {/* Mobile: 3-column grid of square images - unchanged */}
                             <div className="grid grid-cols-3 gap-2 md:hidden">
                                 <div className="aspect-square rounded-xl overflow-hidden">
                                     <Image
@@ -157,116 +181,127 @@ export default function Hero() {
                                 </div>
                             </div>
 
-                            {/* Desktop: 3-column layout */}
-                            <div className="hidden md:grid grid-cols-3 gap-2">
-                                {/* Left column */}
-                                <div className="space-y-2">
-                                    <ScrollAnimation animation="fadeInUp" delay={600}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/main.png"
-                                                alt="Street scene with yellow car and neon signs"
-                                                width={300}
-                                                height={400}
-                                                className="h-56 w-full object-cover"
-                                                priority
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
-                                    <ScrollAnimation animation="fadeInUp" delay={800}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/applications.png"
-                                                alt="App icons on sandy background"
-                                                width={300}
-                                                height={400}
-                                                className="h-56 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
-                                    <ScrollAnimation animation="fadeInUp" delay={1000}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/mobileui.png"
-                                                alt="Mobile phone interface"
-                                                width={300}
-                                                height={1200}
-                                                className="h-80 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
+                            {/* Desktop: 3 vertical columns with parallax scroll animation */}
+                            <div className="hidden md:flex gap-3 items-start justify-end pr-4">
+                                {/* Column 1 - moves UP on scroll */}
+                                <div
+                                    className="flex flex-col gap-0 will-change-transform"
+                                    style={{
+                                        transform: column1Transform,
+                                        transition: 'transform 0.1s ease-out'
+                                    }}
+                                >
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/main.png"
+                                            alt="Street scene with yellow car and neon signs"
+                                            width={220}
+                                            height={320}
+                                            className="w-full object-cover"
+                                            style={{ height: '280px' }}
+                                            priority
+                                        />
+                                    </div>
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/applications.png"
+                                            alt="App icons on sandy background"
+                                            width={220}
+                                            height={280}
+                                            className="w-full object-cover"
+                                            style={{ height: '240px' }}
+                                        />
+                                    </div>
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/mobileui.png"
+                                            alt="Mobile phone interface"
+                                            width={220}
+                                            height={360}
+                                            className="w-full object-cover"
+                                            style={{ height: '300px' }}
+                                        />
+                                    </div>
                                 </div>
 
-                                {/* Center column */}
-                                <div className="space-y-2">
-                                    <ScrollAnimation animation="fadeInUp" delay={700}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/pattern.png"
-                                                alt="Pattern background"
-                                                width={300}
-                                                height={400}
-                                                className="h-52 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
+                                {/* Column 2 - moves DOWN on scroll */}
+                                <div
+                                    className="flex flex-col gap-0 will-change-transform"
+                                    style={{
+                                        transform: column2Transform,
+                                        transition: 'transform 0.1s ease-out'
+                                    }}
+                                >
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/pattern.png"
+                                            alt="Pattern background"
+                                            width={220}
+                                            height={260}
+                                            className="w-full object-cover"
+                                            style={{ height: '220px' }}
+                                        />
+                                    </div>
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
                                             src="/hero/galleryy.png"
                                             alt="Gallery image"
-                                            width={300}
-                                            height={600}
-                                            className="h-64 w-full object-cover"
+                                            width={220}
+                                            height={320}
+                                            className="w-full object-cover"
+                                            style={{ height: '280px' }}
                                         />
                                     </div>
-                                    <ScrollAnimation animation="fadeInUp" delay={900}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/centermob.png"
-                                                alt="Center mobile image"
-                                                width={300}
-                                                height={700}
-                                                className="h-72 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/centermob.png"
+                                            alt="Center mobile image"
+                                            width={220}
+                                            height={340}
+                                            className="w-full object-cover"
+                                            style={{ height: '300px' }}
+                                        />
+                                    </div>
                                 </div>
 
-                                {/* Right column */}
-                                <div className="space-y-2">
-                                    <ScrollAnimation animation="fadeInUp" delay={750}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/pattern.png"
-                                                alt="Pattern design"
-                                                width={300}
-                                                height={400}
-                                                className="h-52 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
-                                    <ScrollAnimation animation="fadeInUp" delay={950}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/main.png"
-                                                alt="Street scene"
-                                                width={300}
-                                                height={400}
-                                                className="h-60 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
-                                    <ScrollAnimation animation="fadeInUp" delay={1100}>
-                                        <div className="rounded-2xl overflow-hidden">
-                                            <Image
-                                                src="/hero/applications.png"
-                                                alt="Applications showcase"
-                                                width={300}
-                                                height={700}
-                                                className="h-80 w-full object-cover"
-                                            />
-                                        </div>
-                                    </ScrollAnimation>
+                                {/* Column 3 - moves UP slightly on scroll */}
+                                <div
+                                    className="flex flex-col gap-0 will-change-transform"
+                                    style={{
+                                        transform: column3Transform,
+                                        transition: 'transform 0.1s ease-out'
+                                    }}
+                                >
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/pattern.png"
+                                            alt="Pattern design"
+                                            width={220}
+                                            height={240}
+                                            className="w-full object-cover"
+                                            style={{ height: '200px' }}
+                                        />
+                                    </div>
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/main.png"
+                                            alt="Street scene"
+                                            width={220}
+                                            height={300}
+                                            className="w-full object-cover"
+                                            style={{ height: '260px' }}
+                                        />
+                                    </div>
+                                    <div className="rounded-2xl overflow-hidden">
+                                        <Image
+                                            src="/hero/applications.png"
+                                            alt="Applications showcase"
+                                            width={220}
+                                            height={380}
+                                            className="w-full object-cover"
+                                            style={{ height: '340px' }}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
