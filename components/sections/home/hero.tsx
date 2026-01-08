@@ -29,12 +29,12 @@ export default function Hero() {
     const column3Transform = `translateY(${scrollY * -0.08}px)`; // Goes up slightly
 
     return (
-        <section className="relative overflow-hidden bg-[#1d1d1d] text-[#fff9f1] w-full pt-16 md:pt-0">
+        <section className="relative overflow-hidden bg-[#1d1d1d] text-[#fff9f1] w-full pt-24 md:pt-0">
             <div className="relative w-full pt-4 pb-20 box-border">
                 <div className="grid items-center lg:gap-16 lg:grid-cols-[45%_55%] w-full">
                     {/* Left copy */}
                     <ScrollAnimation animation="fadeInLeft" delay={200}>
-                        <div className="w-full pr-0 lg:pr-4 pl-4 sm:pl-6 lg:pl-8 xl:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] relative z-10">
+                        <div className="w-full pr-4 lg:pr-4 pl-4 sm:pl-6 lg:pl-8 xl:pl-[max(2rem,calc((100vw-80rem)/2+2rem))] relative z-10 text-center lg:text-left">
                             <h1
                                 className="font-black leading-tight max-w-full relative z-10"
                                 style={{
