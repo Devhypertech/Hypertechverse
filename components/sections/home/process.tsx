@@ -33,32 +33,61 @@ export default function UnfairAdvantage() {
     ];
 
     return (
-        <section className="bg-[#FBEAE2] py-16 md:py-20 lg:py-24 overflow-hidden">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="bg-[#FBEAE2] py-16 md:py-20 lg:py-24 overflow-x-hidden">
+            <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-8">
                 {/* Top Section: Heading and Paragraph */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-16">
-                    {/* Left: Heading */}
+                    {/* All content stacked on mobile, split on desktop */}
                     <ScrollAnimation animation="fadeInLeft" delay={200}>
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="w-3 h-3 rounded-full bg-black"></div>
-                            <span className="text-black font-black text-sm md:text-base uppercase tracking-wide" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
-                                Let's Build Your Brand
-                            </span>
+                        <div className="text-center lg:text-left">
+                            <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                                <div className="w-3 h-3 rounded-full bg-black"></div>
+                                <span className="text-black font-black text-sm md:text-base uppercase tracking-wide" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                                    Let's Build Your Brand
+                                </span>
+                            </div>
+                            <h2
+                                className="text-[#EA7BBF] leading-[1.05] font-black tracking-tighter"
+                                style={{
+                                    fontFamily: "'Recent Grotesk', 'Recursive', sans-serif",
+                                    fontWeight: 900,
+                                    fontSize: 'clamp(2rem, 8vw, 4.5rem)',
+                                    wordWrap: 'break-word',
+                                    overflowWrap: 'break-word'
+                                }}
+                            >
+                                What Makes Us Different? Results.
+                            </h2>
+
+                            {/* Paragraph and Button - visible on mobile only */}
+                            <div className="lg:hidden mt-6">
+                                <p className="text-black text-base leading-relaxed mb-6" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                                    We're not just another design agency. We're the team that makes your phone ring with customers, your inbox flood, and your revenue grow.
+                                </p>
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-full font-black text-sm hover:bg-[#1d1d1d] transition-colors"
+                                    style={{ fontFamily: "'Recent Grotesk', sans-serif" }}
+                                >
+                                    Get Started Now
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </Link>
+                            </div>
                         </div>
-                        <h2 className="text-[#EA7BBF] text-[40px] leading-[1.05] font-black tracking-tighter md:text-6xl lg:text-7xl" style={{ fontFamily: "'Recent Grotesk', 'Recursive', sans-serif", fontWeight: 900 }}>
-                            What Makes Us Different? Results.
-                        </h2>
                     </ScrollAnimation>
 
-                    {/* Right: Paragraph and Button */}
+                    {/* Right: Paragraph and Button - visible on desktop only */}
                     <ScrollAnimation animation="fadeInRight" delay={300}>
-                        <div className="flex flex-col justify-center">
-                            <p className="text-black text-base md:text-lg leading-relaxed mb-6" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
+                        <div className="hidden lg:flex flex-col justify-center items-start text-left">
+                            <p className="text-black text-lg leading-relaxed mb-6" style={{ fontFamily: "'Recent Grotesk', sans-serif" }}>
                                 We're not just another design agency. We're the team that makes your phone ring with customers, your inbox flood, and your revenue grow.
                             </p>
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-black text-sm md:text-base hover:bg-[#1d1d1d] transition-colors w-fit"
+                                className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full font-black text-base hover:bg-[#1d1d1d] transition-colors"
                                 style={{ fontFamily: "'Recent Grotesk', sans-serif" }}
                             >
                                 Get Started Now
