@@ -16,9 +16,8 @@ export default function WhyChooseUs() {
             shadow-[0_18px_60px_rgba(0,0,0,0.45)]
           "
         >
-          {/* Right image fills height: absolutely positioned, no top/bottom gap */}
-          <div className="pointer-events-none select-none absolute inset-y-0 right-2 md:right-4 flex items-stretch z-[1]">
-            {/* Set a max so it doesn’t explode on huge screens, but always touches top & bottom */}
+          {/* Right image - hidden on mobile, visible on md+ */}
+          <div className="pointer-events-none select-none absolute inset-y-0 right-2 md:right-4 hidden md:flex items-stretch z-[1]">
             <Image
               src="/services/question.png"
               alt="Why Choose Us Character"
@@ -31,10 +30,10 @@ export default function WhyChooseUs() {
 
           {/* Content */}
           <div className="relative z-[2]">
-            {/* Give the left column extra right padding so text never goes under the image */}
-            <div className="px-6 sm:px-8 lg:px-10 py-8 md:py-10 pr-[260px] md:pr-[380px]">
+            {/* Give the left column extra right padding on desktop so text never goes under the image */}
+            <div className="px-6 sm:px-8 lg:px-10 py-8 md:py-10 md:pr-[380px] text-center md:text-left">
               <h2
-                className="text-[#fff9f1] uppercase tracking-tight leading-[1] text-[32px] md:text-[44px] font-extrabold"
+                className="text-[#fff9f1] uppercase tracking-tight leading-[1] text-[28px] sm:text-[32px] md:text-[44px] font-extrabold"
                 style={{ fontFamily: "Inter, sans-serif" }}
               >
                 WHY CHOOSE US?
@@ -43,7 +42,7 @@ export default function WhyChooseUs() {
               <p
                 className="
                   text-[#fff9f1]/90 capitalize
-                  text-lg leading-relaxed
+                  text-base sm:text-lg leading-relaxed
                   mt-4 max-w-[66ch]
                 "
                 style={{ fontFamily: 'Poppins, sans-serif' }}
@@ -79,6 +78,17 @@ export default function WhyChooseUs() {
                   EXPLORE NOW
                 </span>
               </Link>
+            </div>
+
+            {/* Mobile image - shown below content on small screens */}
+            <div className="md:hidden flex justify-center pb-4 -mt-2">
+              <Image
+                src="/services/question.png"
+                alt="Why Choose Us Character"
+                width={300}
+                height={300}
+                className="w-[200px] h-auto object-contain"
+              />
             </div>
           </div>
         </div>

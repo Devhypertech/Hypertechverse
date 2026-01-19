@@ -85,7 +85,7 @@ const videoTestimonials = [
     { src: null, thumbnail: "https://img.youtube.com/vi/6uPZOsXeQXM/maxresdefault.jpg", title: "Review Two", youtubeUrl: "https://www.youtube.com/shorts/6uPZOsXeQXM" },
     { src: null, thumbnail: "https://img.youtube.com/vi/H8b21MBcnP4/maxresdefault.jpg", title: "Review Three", youtubeUrl: "https://www.youtube.com/shorts/H8b21MBcnP4" },
     { src: null, thumbnail: "https://img.youtube.com/vi/Or9-ogYyGaY/maxresdefault.jpg", title: "Review Four", youtubeUrl: "https://www.youtube.com/shorts/Or9-ogYyGaY" },
-    { src: null, thumbnail: "https://img.youtube.com/vi/wgpYoBey-QM/maxresdefault.jpg", title: "Review Five", youtubeUrl: "https://www.youtube.com/watch?v=wgpYoBey-QM" },
+    // { src: null, thumbnail: "https://img.youtube.com/vi/wgpYoBey-QM/maxresdefault.jpg", title: "Review Five", youtubeUrl: "https://www.youtube.com/watch?v=wgpYoBey-QM" },
 ];
 
 export default function TestimonialsMasonry() {
@@ -172,6 +172,7 @@ export default function TestimonialsMasonry() {
         if (video.youtubeUrl) {
             if (playingVideo === video.youtubeUrl) {
                 setPlayingVideo(null);
+                setPaused(false);
             } else {
                 setPlayingVideo(video.youtubeUrl);
                 setPaused(true);
@@ -182,9 +183,10 @@ export default function TestimonialsMasonry() {
         if (video.src) {
             if (playingVideo === video.src) {
                 setPlayingVideo(null);
+                setPaused(false);
             } else {
                 setPlayingVideo(video.src);
-                setPaused(true); // Pause carousel when video is playing
+                setPaused(true);
             }
         }
     };
@@ -202,7 +204,7 @@ export default function TestimonialsMasonry() {
                             className="text-3xl sm:text-4xl md:text-5xl leading-tight text-[#fff9f1]"
                             style={{ fontFamily: "'Alkaline Caps', sans-serif", fontWeight: 900 }}
                         >
-                            <span className="block italic"><span className="text-8xl sm:text-10xl md:text-12xl italic">N</span>ICE THINGS</span>
+                            <span className="block italic" style={{ fontFamily: "'Alkaline Caps', sans-serif", fontWeight: 900 }}><span className="text-8xl sm:text-10xl md:text-12xl italic" style={{ fontFamily: "'Alkaline Caps', sans-serif", fontWeight: 900 }}>N</span>ICE THINGS</span>
                             <span className="block text-[#FFD350] italic relative ">
                                 {/* LOOK, MOM! speech bubble */}
                                 <svg
@@ -257,12 +259,29 @@ export default function TestimonialsMasonry() {
                                         onClick={() => handleVideoClick(video)}
                                     >
                                         {video.youtubeUrl && playingVideo === video.youtubeUrl ? (
-                                            <iframe
-                                                src={`https://www.youtube.com/embed/${getYouTubeId(video.youtubeUrl)}?autoplay=1`}
-                                                className="w-full h-full rounded-lg"
-                                                allow="autoplay; encrypted-media"
-                                                allowFullScreen
-                                            />
+                                            <div className="relative w-full h-full">
+                                                <iframe
+                                                    src={`https://www.youtube-nocookie.com/embed/${getYouTubeId(video.youtubeUrl)}?autoplay=1&playsinline=1&rel=0&modestbranding=1&enablejsapi=1`}
+                                                    className="w-full h-full rounded-lg"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowFullScreen
+                                                    title={video.title}
+                                                />
+                                                {/* Close button - larger and more prominent on mobile */}
+                                                <button
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        setPlayingVideo(null);
+                                                        setPaused(false);
+                                                    }}
+                                                    className="absolute top-3 right-3 z-20 w-12 h-12 md:w-10 md:h-10 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition-colors shadow-lg"
+                                                    aria-label="Close video"
+                                                >
+                                                    <svg className="w-6 h-6 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                                                    </svg>
+                                                </button>
+                                            </div>
                                         ) : video.src && playingVideo === video.src ? (
                                             <video
                                                 src={video.src}

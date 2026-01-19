@@ -23,8 +23,7 @@
 
 html,
 body {
-  overflow-x: hidden;
-  max-width: 100vw;
+  overflow-x: visible;
 }
 
 body {
@@ -395,8 +394,14 @@ h6 {
     transform: scale(1);
   }
 
-  /* Smooth transitions for all interactive elements */
-  * {
+  /* Smooth transitions for interactive elements - avoid universal selector for all properties */
+  a,
+  button,
+  .hover-lift,
+  .hover-glow,
+  .hover-scale,
+  .hover-rotate,
+  .hover-shake {
     transition: all 0.2s ease;
   }
 
@@ -466,53 +471,73 @@ h6 {
 }
 
 /* === GEPANDA SCROLL CARDS STYLES === */
-.card {
-  position: sticky;
-  top: 80px;
+.stack-outer {
+  position: relative;
+  /* Note: Do NOT use overflow: hidden here - it breaks sticky positioning */
+}
+
+.stack-container {
+  position: relative;
+}
+
+.cards-container {
+  width: 100%;
   margin: 0 auto;
-  width: 100% !important;
-  max-width: 1200px !important;
-  height: 150px;
-  border-width: 0px;
-  /* background: #f80707; */
+  position: relative;
+  /* Ensure container is tall enough for all sticky headers to stack and stay visible */
+  padding-bottom: 80vh;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    padding: 0 50px;
+  }
+}
+
+/* Service card - sticky stacking cards */
+.service-card {
+  position: sticky;
+  margin: 60vh auto 0;
+  /* Large top margin creates scroll distance for stacking */
+  width: 100%;
+  max-width: 1200px;
+  min-height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  will-change: transform;
-  z-index: 1;
-  transition: z-index 0s ease, transform 0.3s ease, height 0.3s ease;
-  overflow: hidden;
-  margin-bottom: -75px;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
-.card:last-child {
-  margin-bottom: 0;
+.service-card:first-child {
+  margin-top: 0;
 }
 
-.card:hover {
-  z-index: 10;
-  transform: scale(1.02);
-  height: 300px;
+.service-card:last-child {
+  margin-bottom: 0px;
 }
 
-@media (min-width: 768px) {
-  .card:hover {
-    height: 400px;
+@media (min-width: 640px) {
+  .service-card {
+    min-height: 320px;
+    font-size: 1.4rem;
+    padding: 2rem;
   }
 }
 
 @media (min-width: 768px) {
-  .card {
-    top: 100px;
-    height: 200px;
+  .service-card {
+    min-height: 400px;
     font-size: 2rem;
-    margin-bottom: -100px;
+    padding: 2rem 3rem;
   }
+}
 
-  .card:last-child {
-    margin-bottom: 0;
-  }
+/* Hover effect for cards */
+.card:hover .step-box {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 .step-box {
@@ -548,11 +573,38 @@ h6 {
   min-width: 100%;
   max-width: 100%;
   height: 100%;
+  /* Mobile: Stack vertically and center */
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .step-content {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 .step-text {
   color: #141414;
   font-family: 'MD NICHROME TEST', 'Arial', 'Helvetica', sans-serif;
+}
+
+.step-image {
+  /* Mobile: center image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .step-image {
+    max-width: none;
+    width: auto;
+    display: block;
+  }
 }
 
 .step-label {
@@ -581,33 +633,25 @@ h6 {
 
 .step-text p {
   font-size: 0.8rem;
-  line-height: 1.4;
-  margin-bottom: 1rem;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease, max-height 0.3s ease, margin-bottom 0.3s ease;
-}
-
-.card:hover .step-text p {
+  line-height: 1.5;
+  margin-bottom: 0;
   opacity: 1;
-  max-height: 200px;
-  margin-bottom: 1rem;
+  color: #141414;
 }
 
 @media (min-width: 768px) {
   .step-text p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 }
 
 .step-image img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   border-radius: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Individual card backgrounds */

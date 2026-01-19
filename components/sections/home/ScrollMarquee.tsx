@@ -81,46 +81,46 @@ export default function ScrollMarquee() {
                     transform: 'translate3d(0,0,0)',
                     backfaceVisibility: 'hidden',
                     WebkitBackfaceVisibility: 'hidden',
-                    fontFamily: "'Oswald', sans-serif !important"
+                    fontFamily: "'Recent Grotesk', sans-serif !important"
                 }}
             >
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk',  !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
-                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Oswald', sans-serif !important" }}>
+                    <span className="text-[#FDEDE8] text-[80px] sm:text-[100px] md:text-[140px] lg:text-[180px] font-black  leading-none whitespace-nowrap px-4" style={{ fontFamily: "'Recent Grotesk', !important" }}>
                         • Featured Work • Featured Work • Featured Work
                     </span>
                 </div>

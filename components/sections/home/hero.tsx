@@ -109,7 +109,7 @@ export default function Hero() {
                                 </div>
                                 <div className="aspect-square rounded-xl overflow-hidden">
                                     <Image
-                                        src="/hero/applications.png"
+                                        src="/hero/topblur.png"
                                         alt="Hero image 2"
                                         width={200}
                                         height={200}
@@ -154,7 +154,7 @@ export default function Hero() {
                                 </div>
                                 <div className="aspect-square rounded-xl overflow-hidden">
                                     <Image
-                                        src="/hero/main.png"
+                                        src="/hero/applications.png"
                                         alt="Hero image 7"
                                         width={200}
                                         height={200}
@@ -163,7 +163,7 @@ export default function Hero() {
                                 </div>
                                 <div className="aspect-square rounded-xl overflow-hidden">
                                     <Image
-                                        src="/hero/applications.png"
+                                        src="/hero/main.png"
                                         alt="Hero image 8"
                                         width={200}
                                         height={200}
@@ -172,7 +172,7 @@ export default function Hero() {
                                 </div>
                                 <div className="aspect-square rounded-xl overflow-hidden">
                                     <Image
-                                        src="/hero/pattern.png"
+                                        src="/hero/botright.png"
                                         alt="Hero image 9"
                                         width={200}
                                         height={200}
@@ -193,18 +193,18 @@ export default function Hero() {
                                 >
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/main.png"
+                                            src="/hero/topblur.png"
                                             alt="Street scene with yellow car and neon signs"
                                             width={220}
                                             height={320}
                                             className="w-full object-cover"
-                                            style={{ height: '280px' }}
+                                            style={{ height: '280px', width: '280px' }}
                                             priority
                                         />
                                     </div>
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/applications.png"
+                                            src="/hero/main.png"
                                             alt="App icons on sandy background"
                                             width={220}
                                             height={280}
@@ -214,7 +214,7 @@ export default function Hero() {
                                     </div>
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/mobileui.png"
+                                            src="/hero/applications.png"
                                             alt="Mobile phone interface"
                                             width={220}
                                             height={360}
@@ -232,7 +232,7 @@ export default function Hero() {
                                         transition: 'transform 0.1s ease-out'
                                     }}
                                 >
-                                    <div className="rounded-2xl overflow-hidden">
+                                    {/* <div className="rounded-2xl overflow-hidden">
                                         <Image
                                             src="/hero/pattern.png"
                                             alt="Pattern background"
@@ -241,15 +241,15 @@ export default function Hero() {
                                             className="w-full object-cover"
                                             style={{ height: '220px' }}
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/galleryy.png"
+                                            src="/hero/pattern.png"
                                             alt="Gallery image"
                                             width={220}
                                             height={320}
                                             className="w-full object-cover"
-                                            style={{ height: '280px' }}
+                                            style={{ height: '480px', width: '320px' }}
                                         />
                                     </div>
                                     <div className="rounded-2xl overflow-hidden">
@@ -274,7 +274,7 @@ export default function Hero() {
                                 >
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/pattern.png"
+                                            src="/hero/galleryy.png"
                                             alt="Pattern design"
                                             width={220}
                                             height={240}
@@ -284,7 +284,7 @@ export default function Hero() {
                                     </div>
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/main.png"
+                                            src="/hero/mobileui.png"
                                             alt="Street scene"
                                             width={220}
                                             height={300}
@@ -294,7 +294,7 @@ export default function Hero() {
                                     </div>
                                     <div className="rounded-2xl overflow-hidden">
                                         <Image
-                                            src="/hero/applications.png"
+                                            src="/hero/botright.png"
                                             alt="Applications showcase"
                                             width={220}
                                             height={380}
@@ -310,7 +310,7 @@ export default function Hero() {
             </div>
 
             {/* Pink ribbon bar - overlapping hero images */}
-            <div className="absolute bottom-4 left-4 right-4 md:bottom-0 md:left-0 md:right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10 rounded-3xl md:rounded-none">
+            <div className="absolute bottom-4 left-4 right-4 md:bottom-0 md:left-0 md:right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10 rounded-3xl md:rounded-none mt-8 md:mt-0">
                 <div className="mx-auto max-w-7xl px-6 py-15 md:py-12 text-base md:px-4 lg:px-8">
                     {/* Main Grid Layout */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">

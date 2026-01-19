@@ -6,24 +6,24 @@ import ScrollAnimation from "../../../src/components/ScrollAnimationSimple";
 export default function ServiceHero() {
     return (
         <section className="relative overflow-hidden bg-[#EA7BBF] text-[#fff9f1]">
-            <div className="relative mx-auto max-w-7xl w-full px-14 sm:px-6 lg:px-8">
-                <div className="grid items-center justify-center gap-10 pt-20 pb-4 lg:grid-cols-2 lg:pt-40 lg:pb-8">
+            <div className="relative mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8">
+                <div className="grid items-center justify-center gap-10 pt-32 pb-4 lg:grid-cols-2 lg:pt-40 lg:pb-8">
 
                     {/* Left copy */}
                     <ScrollAnimation animation="fadeInLeft" delay={150}>
-                        <div className="relative">
+                        <div className="relative text-center lg:text-left">
                             {/* eyebrow */}
                             <p
-                                className="mb-4 text-xl sm:text-2xl font-extrabold tracking-[0.08em] uppercase"
+                                className="mb-4 text-sm sm:text-xl md:text-2xl font-extrabold tracking-[0.05em] sm:tracking-[0.08em] uppercase whitespace-nowrap"
                                 style={{ fontFamily: "Recursive, sans-serif" }}
                             >
                                 {"{ BEYOND SERVICES WE DRIVE }"}
                             </p>
 
                             {/* headline + arrow badge */}
-                            <div className="relative inline-block">
+                            <div className="relative inline-block pr-16 sm:pr-0 mx-auto lg:mx-0">
                                 <h1
-                                    className="leading-[0.78] font-black uppercase text-[76px] sm:text-[108px] lg:text-[136px]"
+                                    className="leading-[0.78] font-black uppercase text-[clamp(36px,11vw,64px)] sm:text-[108px] lg:text-[136px]"
                                     style={{ fontFamily: "Recursive, sans-serif" }}
                                 >
                                     Success
@@ -33,7 +33,7 @@ export default function ServiceHero() {
                                 <Link
                                     href="/contact"
                                     aria-label="Start a project"
-                                    className="absolute -right-10 top-1/2 -translate-y-1/2 grid h-16 w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_10px_0_rgba(0,0,0,0.25)] hover:translate-y-[-48%] transition-transform"
+                                    className="absolute -right-4 sm:-right-10 top-1/2 -translate-y-1/2 grid h-12 w-12 sm:h-16 sm:w-16 place-items-center rounded-full bg-[#FFD350] text-[#1d1d1d] shadow-[0_10px_0_rgba(0,0,0,0.25)] hover:translate-y-[-48%] transition-transform"
                                 >
                                     <svg
                                         width="24"
