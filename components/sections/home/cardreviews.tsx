@@ -142,7 +142,7 @@ export default function TestimonialsMasonry() {
         setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
     };
 
-    // Touch/swipe handlers
+    // Touch/swipe handlers - works even when video is playing to allow switching videos
     const onTouchStart = (e: React.TouchEvent) => {
         startX.current = e.touches[0].clientX;
         startY.current = e.touches[0].clientY;
@@ -155,8 +155,13 @@ export default function TestimonialsMasonry() {
         const diffX = startX.current - endX;
         const diffY = startY.current - endY;
 
-        // Only swipe if horizontal movement is greater than vertical
-        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+        // Only swipe if horizontal movement is greater than vertical (with sufficient distance)
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 60) {
+            // Stop current video when swiping
+            if (playingVideo) {
+                setPlayingVideo(null);
+                setPaused(false);
+            }
             if (diffX > 0) {
                 goToNext();
             } else {
@@ -254,34 +259,77 @@ export default function TestimonialsMasonry() {
                                 {videoTestimonials.map((video, index) => (
                                     <div
                                         key={index}
-                                        className="relative flex-shrink-0 aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden cursor-pointer group hover:opacity-90 transition-opacity duration-300"
+                                        className={`relative flex-shrink-0 aspect-[9/16] bg-gray-600 rounded-lg overflow-hidden transition-opacity duration-300 ${playingVideo !== video.youtubeUrl && playingVideo !== video.src ? 'cursor-pointer group hover:opacity-90' : ''}`}
                                         style={{ width: `calc((100% - ${(videosPerSlide - 1) * 16}px) / ${videosPerSlide})` }}
-                                        onClick={() => handleVideoClick(video)}
+                                        onClick={() => {
+                                            // Only handle click to START playing - don't interfere with iframe when video is active
+                                            if (playingVideo !== video.youtubeUrl && playingVideo !== video.src) {
+                                                handleVideoClick(video);
+                                            }
+                                        }}
                                     >
                                         {video.youtubeUrl && playingVideo === video.youtubeUrl ? (
-                                            <div className="relative w-full h-full">
+                                            <>
                                                 <iframe
-                                                    src={`https://www.youtube-nocookie.com/embed/${getYouTubeId(video.youtubeUrl)}?autoplay=1&playsinline=1&rel=0&modestbranding=1&enablejsapi=1`}
-                                                    className="w-full h-full rounded-lg"
+                                                    src={`https://www.youtube-nocookie.com/embed/${getYouTubeId(video.youtubeUrl)}?autoplay=1&playsinline=1&rel=0&modestbranding=1&controls=0`}
+                                                    className="absolute inset-0 w-full h-full rounded-lg pointer-events-none"
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowFullScreen
                                                     title={video.title}
                                                 />
-                                                {/* Close button - larger and more prominent on mobile */}
-                                                <button
+                                                {/* Full overlay - tap to stop, swipe to navigate */}
+                                                <div
+                                                    className="absolute inset-0 z-10 flex items-center justify-center"
+                                                    onTouchStart={(e) => {
+                                                        e.stopPropagation();
+                                                        startX.current = e.touches[0].clientX;
+                                                        startY.current = e.touches[0].clientY;
+                                                    }}
+                                                    onTouchEnd={(e) => {
+                                                        e.stopPropagation();
+                                                        e.preventDefault();
+
+                                                        const endX = e.changedTouches[0].clientX;
+                                                        const endY = e.changedTouches[0].clientY;
+
+                                                        if (!startX.current || !startY.current) {
+                                                            // Simple tap - stop video
+                                                            setPlayingVideo(null);
+                                                            setPaused(false);
+                                                            return;
+                                                        }
+
+                                                        const diffX = startX.current - endX;
+                                                        const diffY = startY.current - endY;
+
+                                                        // Check if it's a swipe (moved more than 40px horizontally)
+                                                        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 40) {
+                                                            setPlayingVideo(null);
+                                                            setPaused(false);
+                                                            diffX > 0 ? goToNext() : goToPrev();
+                                                        } else if (Math.abs(diffX) < 15 && Math.abs(diffY) < 15) {
+                                                            // It's a tap - stop video
+                                                            setPlayingVideo(null);
+                                                            setPaused(false);
+                                                        }
+                                                        startX.current = null;
+                                                        startY.current = null;
+                                                    }}
                                                     onClick={(e) => {
                                                         e.stopPropagation();
+                                                        e.preventDefault();
                                                         setPlayingVideo(null);
                                                         setPaused(false);
                                                     }}
-                                                    className="absolute top-3 right-3 z-20 w-12 h-12 md:w-10 md:h-10 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center text-white transition-colors shadow-lg"
-                                                    aria-label="Close video"
                                                 >
-                                                    <svg className="w-6 h-6 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
-                                                    </svg>
-                                                </button>
-                                            </div>
+                                                    {/* Pause icon hint */}
+                                                    <div className="w-16 h-16 bg-black/40 rounded-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
+                                                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </>
                                         ) : video.src && playingVideo === video.src ? (
                                             <video
                                                 src={video.src}
@@ -302,8 +350,14 @@ export default function TestimonialsMasonry() {
                                                     className="object-cover rounded-lg"
                                                     unoptimized
                                                 />
-                                                <div className="absolute inset-0 flex items-center justify-center bg-[#1d1d1d]/30 group-hover:bg-[#1d1d1d]/20 transition-colors duration-300 rounded-lg">
-                                                    <div className="w-16 h-16 bg-[#fff9f1]/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                                                <div
+                                                    className="absolute inset-0 flex items-center justify-center bg-[#1d1d1d]/30 group-hover:bg-[#1d1d1d]/20 transition-colors duration-300 rounded-lg cursor-pointer"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        handleVideoClick(video);
+                                                    }}
+                                                >
+                                                    <div className="w-16 h-16 bg-[#fff9f1]/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg pointer-events-none">
                                                         <svg
                                                             className="w-8 h-8 text-[#1d1d1d] ml-1"
                                                             fill="currentColor"
