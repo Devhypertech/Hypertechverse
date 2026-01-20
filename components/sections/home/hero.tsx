@@ -94,7 +94,7 @@ export default function Hero() {
 
                     {/* Right image gallery - 3x3 grid on mobile, 3 vertical columns on desktop with parallax */}
                     <ScrollAnimation animation="fadeInRight" delay={400}>
-                        <div className="relative pb-[650px] md:pb-0">
+                        <div className="relative pb-0">
                             {/* Mobile: 3-column grid of square images - unchanged */}
                             <div className="grid grid-cols-3 gap-2 md:hidden">
                                 <div className="aspect-square rounded-xl overflow-hidden">

@@ -26,7 +26,7 @@ export default function WebDevelopmentPage() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="min-h-[70vh] sm:min-h-[80vh] lg:min-h-screen grid md:grid-cols-2 items-center">
             {/* Left copy */}
-            <div className="py-12 sm:py-16 md:py-0">
+            <div className="pt-24 pb-12 sm:pt-28 sm:pb-16 md:py-0">
               <div className="max-w-2xl">
                 {/* Headline */}
                 <div className="relative inline-block">

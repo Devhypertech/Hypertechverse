@@ -484,13 +484,15 @@ h6 {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  /* Ensure container is tall enough for all sticky headers to stack and stay visible */
-  padding-bottom: 80vh;
+  /* Mobile: smaller padding since sticky stacking creates less visual overlap */
+  padding-bottom: 10vh;
 }
 
 @media (min-width: 768px) {
   .cards-container {
     padding: 0 50px;
+    /* Desktop: moderate padding for sticky stacking without excessive space */
+    padding-bottom: 10vh;
   }
 }
 
@@ -781,4 +783,12 @@ h6 {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #EA7BBF #2a2a2a;
+}
+
+/* Fix service page hero headings being cut off on mobile */
+@media (max-width: 767px) {
+  main>section:first-child>div>div {
+    padding-top: 8rem;
+    /* 96px to clear the fixed header */
+  }
 }
