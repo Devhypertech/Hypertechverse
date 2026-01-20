@@ -185,7 +185,7 @@ export default function Hero() {
                             <div className="hidden md:flex gap-3 items-start justify-end pr-4">
                                 {/* Column 1 - moves UP on scroll */}
                                 <div
-                                    className="flex flex-col gap-0 will-change-transform"
+                                    className="flex flex-col gap-3  will-change-transform"
                                     style={{
                                         transform: column1Transform,
                                         transition: 'transform 0.1s ease-out'
@@ -226,7 +226,7 @@ export default function Hero() {
 
                                 {/* Column 2 - moves DOWN on scroll */}
                                 <div
-                                    className="flex flex-col gap-0 will-change-transform"
+                                    className="flex flex-col gap-3 will-change-transform"
                                     style={{
                                         transform: column2Transform,
                                         transition: 'transform 0.1s ease-out'
@@ -266,7 +266,7 @@ export default function Hero() {
 
                                 {/* Column 3 - moves UP slightly on scroll */}
                                 <div
-                                    className="flex flex-col gap-0 will-change-transform"
+                                    className="flex flex-col gap-3  will-change-transform"
                                     style={{
                                         transform: column3Transform,
                                         transition: 'transform 0.1s ease-out'
