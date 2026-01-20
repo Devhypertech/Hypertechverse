@@ -309,8 +309,8 @@ export default function Hero() {
                 </div>
             </div>
 
-            {/* Pink ribbon bar - overlapping hero images */}
-            <div className="absolute bottom-4 left-4 right-4 md:bottom-0 md:left-0 md:right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10 rounded-3xl md:rounded-none mt-8 md:mt-0">
+            {/* Pink ribbon bar - below hero images on mobile, overlapping on desktop */}
+            <div className="relative md:absolute bottom-auto md:bottom-0 left-0 right-0 bg-[#EA7BBF] text-[#1d1d1d] z-10 rounded-3xl md:rounded-none mt-8 md:mt-0 mx-4 md:mx-0">
                 <div className="mx-auto max-w-7xl px-6 py-15 md:py-12 text-base md:px-4 lg:px-8">
                     {/* Main Grid Layout */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
